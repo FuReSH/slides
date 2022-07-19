@@ -26,27 +26,6 @@ tags:
 
 >Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
 
-::: columns
-:::: column
-
-### Visualisierung
-
-![ADHO Konferenzen, 2014--18](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-1036-DH-conference-paper-abstracts-2014-2018-w_100.svg){#fig:wordcloud-adho-1}
-
-::::
-:::: column
-
-![Digital Humanities Quarterly](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-429-articles-from-DHQ-w_100.svg){#fig:wordcloud-dhq-1}
-
-::::
-:::
-
-
-
-## How did they build this?
-
->Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
-
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox-operationalisierung.jpg)
 
 # Blackboxes öffnen
