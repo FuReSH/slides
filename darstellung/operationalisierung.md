@@ -28,7 +28,25 @@ tags:
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox-operationalisierung.jpg)
 
-# Blackboxes öffnen
+------------
+
+![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
+
+::: notes
+
+-  dieser Abschnitt dient der ersten Entzauberung
+-  Aufwand für Datenerfassung
+-  Kräfteverhältnis zwischen Platformen und Wissenschaft
+
+:::
+
+## Datenerfassung vs. Analyse
+
+![Unsere Erwartungen und Wünsche](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg){#fig:datafication-expectations}
+
+## Datenerfassung vs. Analyse
+
+![Unsere Erwartungen und Wünsche](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg){#fig:datafication-reality}
 
 # Operationalisierung
 ## Blackboxes öffnen!
