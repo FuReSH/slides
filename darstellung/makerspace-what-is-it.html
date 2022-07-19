@@ -80,8 +80,8 @@
                         overflow: hidden;
                         /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
                       font-size: 12px;*/
-                        line-height: 1.2; 
-                        word-wrap: break-word;
+                      line-height: 1.2; 
+                      word-wrap: break-word;
                     }
                     body,
                     .reveal-viewport {
@@ -469,7 +469,8 @@
                         padding: 0;
                         /*height: inherit;*/
                     }
-                    div.figure p.caption {
+                    div.figure p.caption,
+                    figcaption {
                         position: relative;
                         float: right;
                         text-align: right;
@@ -664,13 +665,11 @@
                     ul li,
                     ol li {
                         margin-top: 0.2em;
-                    /*margin-right: 0em;*/
-                    margin-bottom: 0.2em;
-                    /*margin-left: 1.5em;*/
-                    padding: 0 0 0 0px;
-                    line-height: 120%;
-                    font-size: inherit;
-                    font-style: normal;
+                        margin-bottom: 0.2em;
+                        padding: 0 0 0 0px;
+                        line-height: 120%;
+                        font-size: inherit;
+                        font-style: normal;
                     }
                     li li {
                         font-size: inherit;
@@ -737,6 +736,18 @@
                     li li ol li {
                         list-style-type: decimal;
                     }
+
+                    /***********
+                    indentation of nested lists
+                    ***********/
+
+                    ul ul,
+                    ul ol,
+                    ol ol,
+                    ol ul {
+                        padding-inline-start: 2em;
+                    }
+
                     /*this is to accomodated the snipped highlight js*/
                     pre ul li {
                         margin-top: 0;
@@ -994,245 +1005,259 @@
 
                 <section id="title-slide">
           <h1 class="title">Scholarly Makerspace</h1>
-                    <p class="subtitle">Operationalisierung</p>
+                    <p class="subtitle">DFG-Projekt “Future e-Research
+Support in the Humanities” (2022–25)</p>
                               <p class="author">Till Grallert</p>
                                         <p class="date">2022-06-01</p>
                   </section>
                 
         <section>
-        <section id="blackboxes" class="title-slide slide level1">
-        <h1>Blackboxes</h1>
+        <section id="raison-detre" class="title-slide slide level1">
+        <h1>Raison d’etre</h1>
 
         </section>
-        <section id="blackboxes-1" class="slide level2">
-        <h2>Blackboxes</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/blackbox/blackbox_question-mark.png" /></p>
+        <section id="postdigitaler-moment" class="slide level2">
+        <h2>Postdigitaler Moment</h2>
+        <ul>
+        <li>Alles ist bereits immer durch Computer re-medialisiert
+        <ul>
+        <li>Das gilt für Forschungsgegenstände, Quellen, und
+        Werkzeuge</li>
+        </ul></li>
+        <li>Die Unterscheidung zwischen <em>digital</em> und
+        <em>analog</em> bzw. hergebrachten Ansätzen ist bedeutungslos
+        geworden <span class="citation" data-cites="Berry+2017">(Berry
+        und Fagerjord <em>Digital humanities</em> 2017)</span></li>
+        </ul>
         </section>
-        <section id="how-did-they-build-this-1" class="slide level2">
-        <h2>How did they build this? [1]</h2>
-        <blockquote>
-        <p>Wir bauen einen <em>Scholarly Makerspace</em> auf und wollen
-        eine <strong>Liste von Werkzeugen</strong> kuratieren, die auf
-        der <strong>Häufigkeit</strong> ihrer <strong>Benutzung in der
-        Forschung</strong> beruht.</p>
-        </blockquote>
+        <section id="kennen-sie-die" class="slide level2">
+        <h2>Kennen Sie die?</h2>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg" /></p>
+        </section>
+        <section
+        id="die-geistes--und-kulturwissenschaften-haben-ein-problem"
+        class="slide level2">
+        <h2>Die Geistes- und Kulturwissenschaften haben ein Problem</h2>
         <div class="columns">
         <div class="column">
-        <table>
-        <thead>
-        <tr class="header">
-        <th>term</th>
-        <th>freq</th>
-        <th>freq.rel</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>R</td>
-        <td>259</td>
-        <td>1</td>
-        </tr>
-        <tr class="even">
-        <td>TEI</td>
-        <td>155</td>
-        <td>0.6</td>
-        </tr>
-        <tr class="odd">
-        <td>internet</td>
-        <td>134</td>
-        <td>0.52</td>
-        </tr>
-        <tr class="even">
-        <td>NLP</td>
-        <td>118</td>
-        <td>0.46</td>
-        </tr>
-        <tr class="odd">
-        <td>XML</td>
-        <td>117</td>
-        <td>0.45</td>
-        </tr>
-        <tr class="even">
-        <td>GitHub</td>
-        <td>98</td>
-        <td>0.38</td>
-        </tr>
-        <tr class="odd">
-        <td>API</td>
-        <td>88</td>
-        <td>0.34</td>
-        </tr>
-        <tr class="even">
-        <td>OA</td>
-        <td>77</td>
-        <td>0.3</td>
-        </tr>
-        <tr class="odd">
-        <td>ML</td>
-        <td>76</td>
-        <td>0.29</td>
-        </tr>
-        <tr class="even">
-        <td>GIS</td>
-        <td>70</td>
-        <td>0.27</td>
-        </tr>
-        <tr class="odd">
-        <td>topic modeling</td>
-        <td>67</td>
-        <td>0.26</td>
-        </tr>
-        <tr class="even">
-        <td>LOD</td>
-        <td>66</td>
-        <td>0.25</td>
-        </tr>
-        <tr class="odd">
-        <td>Python</td>
-        <td>66</td>
-        <td>0.25</td>
-        </tr>
-        <tr class="even">
-        <td>OCR</td>
-        <td>64</td>
-        <td>0.25</td>
-        </tr>
-        <tr class="odd">
-        <td>network analysis</td>
-        <td>62</td>
-        <td>0.24</td>
-        </tr>
-        </tbody>
-        </table>
-        <!--
-        | distant reading     |   50 |     0.19 |
-        | RDF                 |   50 |     0.19 |
-        | NER                 |   48 |     0.19 |
-        | text mining         |   38 |     0.15 |
-        | LDA                 |   37 |     0.14 |
-        -->
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg" /></p>
         </div><div class="column">
+        <ul>
+        <li>Es herrscht in der Breite ein Mangel[*] an
+        <ul>
+        <li><strong>Theorie</strong>: Verständnis des epistemischen
+        Wandels</li>
+        <li><strong>Methode</strong>: Beherrschung der notwendigen
+        Werkzeuge</li>
+        <li>positivem <strong>Wissen</strong>: Überblick über die
+        Möglichkeiten</li>
+        </ul></li>
+        <li><em>“Digital” Humanities</em> als Indikator</li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="die-blackbox" class="slide level2">
+        <h2>[*] Die Blackbox</h2>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" /></p>
+        <blockquote>
+        <p>The term black box […] is a device or system that, for
+        convenience, is described solely in terms of its inputs and
+        outputs. One need not understand anything about what goes on
+        inside such black boxes. One simply brackets them as instruments
+        that perform certain valuable functions. <span class="citation"
+        data-cites="Winner+1993">(Winner <span>„Upon opening the black
+        box“</span> 1993, 365)</span></p>
+        </blockquote>
+        <aside class="notes">
+        <ul>
+        <li>Schutz von Betriebsgeheimnissen</li>
+        <li>Nutzerfreundlichkeit</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="von-digital-consumers-zu-digital-citizens"
+        class="slide level2">
+        <h2>Von <em>digital consumers</em> zu <em>digital
+        citizens</em></h2>
+        <div class="columns">
+        <div class="column">
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" /></p>
+        </div><div class="column">
+        <h3 id="aufgaben">Aufgaben</h3>
+        <p>Wir müssen</p>
+        <ul>
+        <li>den epistemischen Wandel ergreifen</li>
+        <li>Blackboxes öffnen</li>
+        <li>Wissensdomäne massiv ausweiten</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li><em>digital citizenry</em> ist von <span class="citation"
+        data-cites="Rankin2018PeoplesHistory">(<strong>Rankin2018PeoplesHistory?</strong>)</span>
+        geprägt</li>
+        <li>kann <strong>nur kollaborativ</strong> adäquat bewältigt
+        werden.</li>
+        <li>Tool literacy ist extrem aufwändig</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="ein-prototypischer-scholarly-makerspace"
+        class="title-slide slide level1">
+        <h1>Ein prototypischer Scholarly Makerspace!?</h1>
+
+        </section>
+        <section id="maker-space" class="slide level2">
+        <h2>Maker-<strong>Space</strong></h2>
+        <blockquote>
+        <p>Der Grundgedanke von Makerspaces ist das Teilen von
+        <strong>Räumen</strong>, <strong>Ressourcen</strong> und
+        <strong>Wissen</strong> innerhalb einer
+        <strong>Gemeinschaft</strong>, welche Einzelpersonen sonst nicht
+        zur Verfügung stünden <span class="citation"
+        data-cites="Spath2019Makerspaces">(Späth, Seidl, und Heinzel
+        <span>„Verbreitung und Ausgestaltung von Makerspaces an
+        Universitäten in Deutschland“</span> 2019, 41)</span></p>
+        </blockquote>
+        </section>
+        <section id="aufgaben-1" class="slide level2">
+        <h2>Aufgaben</h2>
+        <p>Stärkung der <em>tool literacy</em> (Werkzeugkompetenz) mit
+        den Zielen der</p>
+        <ul>
+        <li><strong>Teilhabe</strong> an der Digitalität</li>
+        <li>kritische <strong>Reflexion</strong> über ein neues
+        epistmeisches Paradigma</li>
+        <li>Genese <strong>neuer Erkenntnisse</strong> für die Geistes-
+        und Kulturwissenschaften</li>
+        </ul>
+        </section>
+        <section id="making-und-maker-culture" class="slide level2">
+        <h2>Making und maker culture</h2>
+        <ul>
+        <li>Aneignung von Wissen und Fertigkeiten mit Fokus auf die
+        Digitalität</li>
+        <li>Experimentierendes, exploratives Machen mit Computern und
+        digitalen Artefakten</li>
+        </ul>
+        <div class="columns">
+        <div class="column">
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/blackbox/blackbox_question-mark.png" /></p>
+        </div><div class="column">
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" /></p>
+        </div>
+        </div>
+        </section>
+        <section id="scholarly" class="slide level2">
+        <h2>Scholarly</h2>
+        <p>Fokus auf <em>tool literacy</em> (Werkzeugkompetenz)</p>
+        <ul>
+        <li>durch Forschungsfragen getrieben</li>
+        <li>die Auswirkungen auf den Erkenntnisprozess untersuchend</li>
+        <li>die gesellschaftlichen Auswirkungen untersuchend?</li>
+        </ul>
+        <aside class="notes">
+        <ul>
+        <li>durch Forschungsfragen getrieben:
+        <ul>
+        <li>Wie lassen sich genuin digitale, kulturelle Artefakte für
+        die Zeitgeschichte des 21. Jahrhunderts einsetzen</li>
+        <li>Wie lassen sich (sehr) große Corpora mit <em>distant
+        reading</em> statistisch valide erschließen?</li>
+        <li>Wie lassen sich Soziale Medien für die Untersuchung
+        gesellschaftlichen Wandels in repressiven Systemen nutzen?</li>
+        </ul></li>
+        <li>die Auswirkungen auf den Erkenntnisprozess untersuchend:
+        <ul>
+        <li>Welche Auswirkungen haben OCR Algorithmen und Normalisierung
+        auf die Qualität meines Korpus?</li>
+        <li>Was ist die Auswirkung von abstrahierenden
+        Operationalisierungen für die quantitative Auswertung?</li>
+        </ul></li>
+        <li>die gesellschaftlichen Auswirkungen untersuchend?
+        <ul>
+        <li>Wie hoch ist der Verbrauch natürlicher Ressourcen für das
+        Training einer KI auf die Klassifizierung von Abbildungen in
+        mittelalterlichen Handschriften?</li>
+        <li>Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen
+        für die Herstellung und Erhalt der notwendigen technischen
+        Infrastrukturen?</li>
+        <li>Welche Folge hat eine auf Beiträge in den Sozialmedien
+        trainierte KI für die Hausratversicherungen in sozialen
+        Brennpunkten?</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="prototyp" class="slide level2">
+        <h2>Prototyp</h2>
+        <ul>
+        <li>Fokus auf Übertragbarkeit und Nachnutzbarkeit
+        <ul>
+        <li>Dokumentation</li>
+        <li>Modularisierung</li>
+        <li>Offene Lizenzen</li>
+        </ul></li>
+        <li>Begleitende Studien</li>
+        </ul>
+        </section></section>
+        <section>
+        <section id="die-grundbausteine"
+        class="title-slide slide level1">
+        <h1>Die Grundbausteine</h1>
+
+        </section>
+        <section id="raum" class="slide level2">
+        <h2>Raum</h2>
         <figure>
         <img
-        data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-1036-DH-conference-paper-abstracts-2014-2018-w_100.svg"
-        alt="ADHO Konferenzen, 2014–18" />
-        <figcaption aria-hidden="true">ADHO Konferenzen,
-        2014–18</figcaption>
+        data-src="https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg"
+        alt="Der Scholarly Makerspace an der UB der HU Berlin" />
+        <figcaption aria-hidden="true">Der Scholarly Makerspace an der
+        UB der HU Berlin</figcaption>
         </figure>
-        </div><!-- :::: column
-
-        ![Digital Humanities Quarterly](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-429-articles-from-DHQ-w_100.svg)
-
-        :::: -->
-        </div>
         </section>
-        <section id="how-did-they-build-this-2" class="slide level2">
-        <h2>How did they build this? [2]</h2>
-        <blockquote>
-        <p>Wir bauen einen <em>Scholarly Makerspace</em> auf und wollen
-        eine <strong>Liste von Werkzeugen</strong> kuratieren, die auf
-        der <strong>Häufigkeit</strong> ihrer <strong>Benutzung in der
-        Forschung</strong> beruht.</p>
-        </blockquote>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox-operationalisierung.jpg" /></p>
+        <section id="resourcen" class="slide level2">
+        <h2>Resourcen</h2>
+        <ul>
+        <li>Metaphorische physische Werkzeuge</li>
+        <li>Modularisierte digitale/ computationale Werkzeuge</li>
+        <li>Dockingstationen</li>
+        <li>Zugang zu GPU-Rechner, Servern des CMS</li>
+        </ul>
+        </section>
+        <section id="wissen" class="slide level2">
+        <h2>Wissen</h2>
+        <ul>
+        <li>Personal schafft, bereitet auf und vermittelt Wissen über
+        Werkzeuge</li>
+        <li>gemeinsames Experimentieren</li>
+        </ul>
+        </section>
+        <section id="gemeinschaft" class="slide level2">
+        <h2>Gemeinschaft</h2>
+        <ul>
+        <li>gemeinsames, offenes Forschen</li>
+        <li>Vermittlung zwischen Wissensdomainen</li>
+        </ul>
         </section></section>
         <section>
-        <section id="operationalisierung"
-        class="title-slide slide level1">
-        <h1>Operationalisierung</h1>
+        <section id="schluß-danke" class="title-slide slide level1">
+        <h1>Schluß / Danke!</h1>
 
         </section>
-        <section id="blackboxes-öffnen" class="slide level2">
-        <h2>Blackboxes öffnen!</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" /></p>
-        </section>
-        <section id="operationalisierung-forschungsprozess"
-        class="slide level2">
-        <h2>Operationalisierung: Forschungsprozess</h2>
-        <blockquote>
-        <p>Wir bauen einen <em>Scholarly Makerspace</em> auf und wollen
-        eine <strong>Liste von Werkzeugen</strong> kuratieren, die auf
-        der <strong>Häufigkeit</strong> ihrer <strong>Benutzung in der
-        Forschung</strong> beruht.</p>
-        </blockquote>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/forschungsprozess.jpg" /></p>
+        <section id="refs" class="slide level2">
+        <h2>Literatur</h2>
         </section></section>
-        <section>
-        <section id="corpus-building" class="title-slide slide level1">
-        <h1>Corpus building</h1>
-
-        </section>
-        <section id="corpus-building-user-scenario"
-        class="slide level2">
-        <h2>Corpus building: user scenario</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe">Eingabe —&gt; Verarbeitung
-        —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_concrete.jpg" /></p>
-        </section>
-        <section id="corpus-building-konzeptionell"
-        class="slide level2">
-        <h2>Corpus building: konzeptionell</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe-1">Eingabe —&gt;
-        Verarbeitung —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_conceptual.jpg" /></p>
-        </section>
-        <section id="corpus-building-blackboxes-öffnen"
-        class="slide level2">
-        <h2>Corpus building: Blackboxes öffnen!</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" /></p>
-        </section>
-        <section id="corpus-building-technisch" class="slide level2">
-        <h2>Corpus building: technisch</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe-2">Eingabe —&gt;
-        Verarbeitung —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_technical.jpg" /></p>
-        </section>
-        <section id="web-scraping-technisch" class="slide level2">
-        <h2>Web scraping: technisch</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe-3">Eingabe —&gt;
-        Verarbeitung —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/web-scraping_technical.jpg" /></p>
-        </section>
-        <section id="transformation-technisch" class="slide level2">
-        <h2>Transformation: technisch</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe-4">Eingabe —&gt;
-        Verarbeitung —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/transformation_technical.jpg" /></p>
-        </section></section>
-        <section>
-        <section id="computationelle-analyse"
-        class="title-slide slide level1">
-        <h1>Computationelle Analyse:</h1>
-
-        </section>
-        <section id="distant-reading" class="slide level2">
-        <h2>Distant Reading</h2>
-        <div class="columns-3">
-        <div class="column">
-        <h3 id="input">Input</h3>
-        </div>
-        <div class="column">
-        <h3 id="analyse">Analyse</h3>
-        </div>
-        <div class="column">
-        <h3 id="ergebnisse">Ergebnisse</h3>
-        </div>
-        </div>
-        </section></section>
-        <section id="ergebnisanalyse" class="title-slide slide level1">
-        <h1>Ergebnisanalyse</h1>
-
-        </section>
       </div>
     </div>
 

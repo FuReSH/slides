@@ -123,17 +123,25 @@ Stärkung der *tool literacy* (Werkzeugkompetenz) mit den Zielen der
 
 Fokus auf *tool literacy* (Werkzeugkompetenz)
 
+- durch Forschungsfragen getrieben
+- die Auswirkungen auf den Erkenntnisprozess untersuchend
+- die gesellschaftlichen Auswirkungen untersuchend?
+
+::: notes
+
 - durch Forschungsfragen getrieben:
-    + Wie lassne sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
+    + Wie lassen sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
     + Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
     + Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
 - die Auswirkungen auf den Erkenntnisprozess untersuchend:
     + Welche Auswirkungen haben OCR Algorithmen und Normalisierung auf die Qualität meines Korpus?
     + Was ist die Auswirkung von abstrahierenden Operationalisierungen für die quantitative Auswertung?
-- die gesellschaftlichen Auswirkungen untersuchend? {>>wohl eher nicht<<}
+- die gesellschaftlichen Auswirkungen untersuchend?
     + Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
     + Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
     + Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
+
+:::
 
 ## Prototyp
 
@@ -145,6 +153,9 @@ Fokus auf *tool literacy* (Werkzeugkompetenz)
 
 # Die Grundbausteine
 ## Raum
+
+![Der Scholarly Makerspace an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg)
+
 ## Resourcen
 
 - Metaphorische physische Werkzeuge
