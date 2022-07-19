@@ -51,7 +51,7 @@ tags:
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg)
 
-Technische Systeme verschleiern ihre Funktionsweisen
+>The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
 
 ::: notes
 
@@ -68,7 +68,7 @@ Technische Systeme verschleiern ihre Funktionsweisen
 ![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
 
 ::::
-:::: columns
+:::: column
 
 ### Aufgaben
 
@@ -82,32 +82,24 @@ Wir müssen
 :::
 ::: notes
 
+- *digital citizenry* ist von [@Rankin2018PeoplesHistory, 11] geprägt
 - kann **nur kollaborativ** adäquat bewältigt werden. 
 + Tool literacy ist extrem aufwändig
 
 :::
-
-# Scholarly Makerspace
-
-# Aufgaben
-## Aufgaben
-
-- Stärkung der *tool literacy* (Werkzeugkompetenz) mit den Zielen der
-    + Teilhabe an der Digitalität
-    + kritische Reflexion über ein neues epistmeisches Paradigma
-    + Genese neue Erkenntnisse für die Geistes- und Kulturwissenschaften
-- Durch Vermittlung
 
 # Ein prototypischer Scholarly Makerspace!?
 ## Maker-**Space**
 
 >Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden [@Spath2019Makerspaces, 41]
 
-- Vier Grundbausteine
-    1. Raum: in der UB
-    2. Ressourcen: Werkzeuge, inkl. Infrastrukturen
-    3. Wissen: Personal
-    4. Gemeinschaft
+## Aufgaben
+
+Stärkung der *tool literacy* (Werkzeugkompetenz) mit den Zielen der
+
++ **Teilhabe** an der Digitalität
++ kritische **Reflexion** über ein neues epistmeisches Paradigma
++ Genese **neuer Erkenntnisse** für die Geistes- und Kulturwissenschaften
 
 ## Making und maker culture
 
@@ -117,14 +109,12 @@ Wir müssen
 ::: columns
 :::: column
 
-![Blackbox](blackbox.jpg)
+![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_question-mark.png)
 
 ::::
 :::: column
 
->How did they build this?
-
->Was passiert, wenn wir die "Blackbox" öffnen?
+![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
 
 ::::
 :::
