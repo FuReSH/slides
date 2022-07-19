@@ -18,46 +18,76 @@ tags:
     - slides
 ---
 
-# Darstellung in 5 Folien
-## 1. Postdigitaler Moment
+# Raison d'etre
+## Postdigitaler Moment
 
 - Alles ist bereits immer durch Computer re-medialisiert
     + Das gilt für Forschungsgegenstände, Quellen, und Werkzeuge 
 - Die Unterscheidung zwischen *digital* und *analog* bzw. hergebrachten Ansätzen ist bedeutungslos geworden [@Berry+2017]
 
-## 2. Die Geistes- und Kulturwissenschaften haben ein Problem
+## Kennen Sie die?
+
+![](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
+
+## Die Geistes- und Kulturwissenschaften haben ein Problem
+
+::: columns
+:::: column
+![](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
+::::
+:::: column
+
+- Es herrscht in der Breite ein Mangel[\*] an 
+    + **Theorie**: Verständnis des epistemischen Wandels
+    + **Methode**: Beherrschung der notwendigen Werkzeuge
+    + positivem **Wissen**: Überblick über die Möglichkeiten
+- *"Digital" Humanities* als Indikator
+
+::::
+:::
+
+
+## [\*] Die Blackbox
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg)
+
+Technische Systeme verschleiern ihre Funktionsweisen
+
+::: notes
+
++ Schutz von Betriebsgeheimnissen
++ Nutzerfreundlichkeit
+
+:::
+
+## Von *digital consumers* zu *digital citizens*
 
 ::: columns
 :::: column
 
-- Es herrscht in der Breite ein Mangel[\*] an 
-    + Theorie: Verständnis des epistemischen Wandels
-    + Methode: Beherrschung der notwendigen Werkzeuge
-    + positivem Wissen: Überblick über die Möglichkeiten
-- *"Digital" Humanities* als Indikator
+![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
 
 ::::
-:::: column
-<!-- Illustration:  -->
-![](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-1036-DH-conference-paper-abstracts-2014-2018-w_100.svg)
+:::: columns
+
+### Aufgaben
+
+Wir müssen 
+
+- den epistemischen Wandel ergreifen
+- Blackboxes öffnen
+- Wissensdomäne massiv ausweiten 
+
 ::::
 :::
+::: notes
 
-## [\*] Die Blackbox
+- kann **nur kollaborativ** adäquat bewältigt werden. 
++ Tool literacy ist extrem aufwändig
 
-- Technische Systeme verschleiern ihre Funktionsweisen
-    + Schutz von Betriebsgeheimnissen
-    + Nutzerfreundlichkeit
+:::
 
-## 3. Den epistemischen Wandel ergreifen
-
-- Blackboxes müssen geöffnet werden
-- Massive Ausweitung der Wissensdomäne kann **nur kollaborativ** adäquat bewältigt werden. 
-    + Tool literacy ist extrem aufwändig
-
-## 4. Scholarly Makerspace
-
-something
+# Scholarly Makerspace
 
 # Aufgaben
 ## Aufgaben
