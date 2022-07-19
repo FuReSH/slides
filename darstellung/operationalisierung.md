@@ -18,7 +18,9 @@ tags:
     - slides
 ---
 
-------------
+# How did they build this?
+
+--------
 
 ![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_question-mark.png)
 
@@ -28,7 +30,9 @@ tags:
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox-operationalisierung.jpg)
 
-------------
+# Operationalisierung
+
+--------
 
 ![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
 
@@ -40,25 +44,23 @@ tags:
 
 :::
 
-## Datenerfassung vs. Analyse
-
-![Unsere Erwartungen und Wünsche](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg){#fig:datafication-expectations}
-
-## Datenerfassung vs. Analyse
-
-![Unsere Erwartungen und Wünsche](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg){#fig:datafication-reality}
-
-# Operationalisierung
-## Blackboxes öffnen!
-
-![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
-
 ## Operationalisierung: Forschungsprozess
 
 >Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
 
-![](https://furesh.github.io/slides/assets/images/operationalisierung/forschungsprozess.jpg)
+![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg)
 
+## Wir groß sind die Blackboxes?
+
+![Unsere Erwartungen und Wünsche](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg){#fig:datafication-expectations}
+
+## Wir groß sind die Blackboxes?
+
+![Die (bittere) Realität](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg){#fig:datafication-reality}
+
+## Was haben wir um sie zu öffnen?
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg)
 
 # Corpus building
 ## Corpus building: user scenario
