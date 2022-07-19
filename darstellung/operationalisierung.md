@@ -44,19 +44,21 @@ tags:
 
 :::
 
-## Operationalisierung: Forschungsprozess
+## Forschungsprozess
 
 >Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg)
 
 ## Wir groß sind die Blackboxes?
+### Unsere Erwartungen und Wünsche
 
-![Unsere Erwartungen und Wünsche](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg){#fig:datafication-expectations}
+![](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg)
 
 ## Wir groß sind die Blackboxes?
+### Die (bittere) Realität
 
-![Die (bittere) Realität](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg){#fig:datafication-reality}
+![](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg)
 
 ## Was haben wir um sie zu öffnen?
 
@@ -164,4 +166,4 @@ tags:
 :::: -->
 :::
 
-# Ergebnisanalyse
+<!-- # Ergebnisanalyse -->
