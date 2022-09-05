@@ -56,34 +56,30 @@ tags:
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg)
 
-# Datenerhebung/ Corpus building
-## Datenerhebung
+# Datenerfassung {data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" data-background-size="90%"}
+## Datenerfassung: Werkzeugliste
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_concrete.jpg)
 
-## Datenerhebung: konzeptionell
+## Datenerfassung: konzeptionell
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_conceptual.jpg)
 
-## Datenerhebung: technisch
-### Eingabe ---> Verarbeitung ---> Ausgabe
 
-![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_technical.jpg)
-
-## Datenerhebung: Web scraping
+## Datenerfassung: Web scraping
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/web-scraping_technical.jpg)
 
-## Datenerhebung: Transformation
+## Datenerfassung: Transformation
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/transformation_technical.jpg)
 
 
-# Computationelle Analyse: 
+# Computationelle Analyse {data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" data-background-size="90%"}
 ## Distant Reading
 
 ::: columns-3
@@ -144,7 +140,7 @@ tags:
 
 ### Visualisierung
 
-![Wordcloud der relativen Häufigkeiten, ADHO Konferenzen, 2014--18](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-1036-DH-conference-paper-abstracts-2014-2018-w_100.svg){#fig:wordcloud-adho-2}
+![Wordcloud der relativen Häufigkeiten, ADHO Konferenzen, 2014--18](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){#fig:wordcloud-adho-2}
 
 ::::
 <!-- :::: column
