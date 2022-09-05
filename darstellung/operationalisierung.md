@@ -56,32 +56,28 @@ tags:
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg)
 
-# Corpus building
-## Corpus building: user scenario
+# Datenerhebung/ Corpus building
+## Datenerhebung
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_concrete.jpg)
 
-## Corpus building: konzeptionell
+## Datenerhebung: konzeptionell
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_conceptual.jpg)
 
-## Corpus building: Blackboxes öffnen!
-
-![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
-
-## Corpus building: technisch
+## Datenerhebung: technisch
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_technical.jpg)
 
-## Web scraping: technisch
+## Datenerhebung: Web scraping
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/web-scraping_technical.jpg)
 
-## Transformation: technisch
+## Datenerhebung: Transformation
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/transformation_technical.jpg)
