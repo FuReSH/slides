@@ -18,11 +18,7 @@ tags:
     - slides
 ---
 
-# How did they build this?
-
---------
-
-![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_question-mark.png)
+# How did they build this? {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/black-box_question-mark-people-c_blue.png" data-background-size="90%"}
 
 ## How did they build this?
 
@@ -30,11 +26,13 @@ tags:
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox-operationalisierung.jpg)
 
-# Operationalisierung
+# Operationalisierung {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" data-background-size="90%"}
 
---------
+## Forschungsprozess
 
-![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
+>Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg)
 
 ::: notes
 
@@ -43,12 +41,6 @@ tags:
 -  Kräfteverhältnis zwischen Platformen und Wissenschaft
 
 :::
-
-## Forschungsprozess
-
->Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg)
 
 ## Wir groß sind die Blackboxes?
 ### Unsere Erwartungen und Wünsche
