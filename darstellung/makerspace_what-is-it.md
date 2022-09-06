@@ -128,10 +128,11 @@ Wir müssen
 
 ## Gegenstand
 
-- Jeweils drei Komponenten [@Drucker2021DHCoursebook]
-    1. Erstellung, Aufbereitung **digitaler Materialien**
-    2. **computationelle Be- / Verarbeitung** dieser Materialien
-    3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
+Die computationelle Forschung in den Geistes- und Kulturwissenschaften umfasst drei Komponenten [@Drucker2021DHCoursebook]
+
+1. Erstellung, Aufbereitung **digitaler Materialien**
+2. **computationelle Be- / Verarbeitung** dieser Materialien
+3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
 
 ## Ziele
 
@@ -164,8 +165,11 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 ## Ansatz
 ### Making
 
-- *Making* als Experimentieren, Tüfteln, Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+>Do artefacts have politics? [@Winner+1980]
+>Do politics have artefacts? [@DunbarHester2014LowPower]
+
 - Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+- *Making* als Experimentieren, Tüfteln, Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
 - *Maker turn*: Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
 
 ::: notes
@@ -174,7 +178,7 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
     + 1970er Kalifornien: kooperative Werkstätten
     + Recht auf Reparatur
     + DIY: do it yourself culture
-- bezieht sich auf 
+- bezieht sich auf [@Wythoff2022MinimalComputing], der die beiden Fragen verknüpft hat
     + Do artefacts have politics? [@Winner+1980]
     + Do politics have artefacts? [@DunbarHester2014LowPower]
 - Kritik an Maker culture als omnipotenter maskuliner Raum:
@@ -186,10 +190,13 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 ## Prototyp
 
 - Fokus auf Übertragbarkeit und Nachnutzbarkeit
-    + Dokumentation
-    - Modularisierung
-    - Offene Lizenzen 
+    + Nur das absolut Notwendige selber machen
+    + Nutzung bestehender offener Infrastrukturen
+    + Modulares System
+    + Dokumentation, Dokumentation, Dokumentation
+    + Open Data und Open Science von Anfang an
 - Begleitende Studien
+    + Forschungs- und Projektseminare
 
 # Die Infrastruktur
 ## Raum
@@ -198,10 +205,25 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 ## Resourcen
 
-- Metaphorische physische Werkzeuge
-- Modularisierte digitale/ computationale Werkzeuge
+::: columns
+:::: column
+
+### Werkzeuge
+
+- Metaphorische physische Werkzeuge, Werkzeugkoffer und -regale mit
+- Modularisierte computationelle Werkzeuge
+- Mit Verweisen auf Literatur, Tutorials, Use cases
+
+::::
+:::: column
+
+### Infrastruktur
+
 - Dockingstationen
 - Zugang zu GPU-Rechner, Servern des CMS
+
+::::
+:::
 
 ::: notes
 
