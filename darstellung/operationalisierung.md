@@ -20,7 +20,20 @@ tags:
 
 # How did they build this? {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/black-box_question-mark-people-c_blue.png" data-background-size="90%"}
 
-## How did they build this?
+## Die Blackbox
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg)
+
+>The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
+
+::: notes
+
++ Schutz von Betriebsgeheimnissen
++ Nutzerfreundlichkeit
+
+:::
+
+## Beispiel: Werzeugliste
 
 >Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
 
@@ -29,8 +42,6 @@ tags:
 # Operationalisierung {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" data-background-size="90%"}
 
 ## Forschungsprozess
-
->Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg)
 
@@ -57,6 +68,10 @@ tags:
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg)
 
 # Datenerfassung {data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" data-background-size="90%"}
+## Beispiel: Werzeugliste
+
+>Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
+
 ## Datenerfassung: Werkzeugliste
 ### Eingabe ---> Verarbeitung ---> Ausgabe
 

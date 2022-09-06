@@ -3,8 +3,8 @@ title: "Scholarly Makerspace"
 subtitle: "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 author:
     - Till Grallert
-affiliation: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
-date: 2022-06-01 
+institute: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
+date: 2022-09-05
 status: draft
 lang: de
 bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
@@ -18,12 +18,22 @@ tags:
     - slides
 ---
 
+## Was?
+
+DFG-Projekt zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften unter Beteiligung von Universitätsbibliothek und den Lehrstühlen für Digital History (Inst. f. Geschichte) und Information Processing and Analytics (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin (2022--25).
+
 # Raison d'etre
 ## Postdigitaler Moment
 
-- Alles ist bereits immer durch Computer re-medialisiert
-    + Das gilt für Forschungsgegenstände, Quellen, und Werkzeuge 
+- Alles ist bereits immer durch Computer re-medialisiert 
 - Die Unterscheidung zwischen *digital* und *analog* bzw. hergebrachten Ansätzen ist bedeutungslos geworden [@Berry+2017]
+- >It is our position that the “digital” cannot be understood as a separate domain of culture. If we actually examine the digital [...] we see that today digital information processing is present in every aspect of our lives [@CPCAbout].
+
+::: notes
+
+Das gilt für Forschungsgegenstände, Quellen, und Werkzeuge
+
+:::
 
 ## Kennen Sie die?
 
@@ -60,7 +70,7 @@ tags:
 
 :::
 
-## Von *digital consumers* zu *digital citizens*
+## Aufgabe <br/>Von *digital consumers* zu *digital citizens*
 
 ::: columns
 :::: column
@@ -70,7 +80,6 @@ tags:
 ::::
 :::: column
 
-### Aufgaben
 
 Wir müssen 
 
@@ -89,43 +98,17 @@ Wir müssen
 :::
 
 # Ein prototypischer Scholarly Makerspace!?
-## Maker-**Space**
+## Makerspace
 
 >Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden [@Spath2019Makerspaces, 41]
 
-## Aufgaben
 
-Stärkung der *tool literacy* (Werkzeugkompetenz) mit den Zielen der
+## Gegenstand
 
-+ **Teilhabe** an der Digitalität
-+ kritische **Reflexion** über ein neues epistmeisches Paradigma
-+ Genese **neuer Erkenntnisse** für die Geistes- und Kulturwissenschaften
-
-## Making und maker culture
-
-- Aneignung von Wissen und Fertigkeiten mit Fokus auf die Digitalität
-- Experimentierendes, exploratives Machen mit Computern und digitalen Artefakten
-
-::: columns
-:::: column
-
-![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_question-mark.png)
-
-::::
-:::: column
-
-![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
-
-::::
-:::
-
-## Scholarly
-
-Fokus auf *tool literacy* (Werkzeugkompetenz)
-
+- digitale und computationelle Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 - durch Forschungsfragen getrieben
 - die Auswirkungen auf den Erkenntnisprozess untersuchend
-- die gesellschaftlichen Auswirkungen untersuchend?
+- die gesellschaftlichen Auswirkungen untersuchend
 
 ::: notes
 
@@ -143,6 +126,63 @@ Fokus auf *tool literacy* (Werkzeugkompetenz)
 
 :::
 
+## Gegenstand
+
+- Jeweils drei Komponenten [@Drucker2021DHCoursebook]
+    1. Erstellung, Aufbereitung **digitaler Materialien**
+    2. **computationelle Be- / Verarbeitung** dieser Materialien
+    3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
+
+## Ziele
+
+Stärkung der *tool literacy* (Werkzeugkompetenz) für:
+
++ **Teilhabe** an der Digitalität durch computationelle Methoden,
++ kritische **Reflexion** über ein neues epistemisches Paradigma,
++ Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
+
+## Ansatz
+### Minimal computing
+
+>Das Haus ist gebaut aus den Steinen, die vorhanden waren [@Brecht1967SchlechteZeiten].
+
+Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" und "was haben wir?" handlungsleitend. [@Gil+2016]
+
+- Kontextabhängig
+- Hilfe zur Selbsthilfe
+- Fokus auf **methodische Zugänge** mit beispielhaften Implementation
+
+::: notes
+
+- die minimale Lösung ist unter den Bedingungen der Wissenschaft, die einzig machbare
+- muss im Einklang mit guter Wissenschaftlicher Praxis stehen
+- Nutzer_innen sollen ermächtigt werden
+- Lösungen müssen nach dem Verlassen des Makerspaces funktional bleiben
+
+:::
+
+## Ansatz
+### Making
+
+- *Making* als Experimentieren, Tüfteln, Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+- Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+- *Maker turn*: Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+
+::: notes
+
+- Geschichte
+    + 1970er Kalifornien: kooperative Werkstätten
+    + Recht auf Reparatur
+    + DIY: do it yourself culture
+- bezieht sich auf 
+    + Do artefacts have politics? [@Winner+1980]
+    + Do politics have artefacts? [@DunbarHester2014LowPower]
+- Kritik an Maker culture als omnipotenter maskuliner Raum:
+    - >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
+
+:::
+
+
 ## Prototyp
 
 - Fokus auf Übertragbarkeit und Nachnutzbarkeit
@@ -151,7 +191,7 @@ Fokus auf *tool literacy* (Werkzeugkompetenz)
     - Offene Lizenzen 
 - Begleitende Studien
 
-# Die Grundbausteine
+# Die Infrastruktur
 ## Raum
 
 ![Der Scholarly Makerspace an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg)
@@ -163,6 +203,12 @@ Fokus auf *tool literacy* (Werkzeugkompetenz)
 - Dockingstationen
 - Zugang zu GPU-Rechner, Servern des CMS
 
+::: notes
+
+Das muss ausgebaut werden
+
+:::
+
 ## Wissen
 
 - Personal schafft, bereitet auf und vermittelt Wissen über Werkzeuge
@@ -173,5 +219,79 @@ Fokus auf *tool literacy* (Werkzeugkompetenz)
 - gemeinsames, offenes Forschen
 - Vermittlung zwischen Wissensdomainen
 
+# Unser Angebot
+## Wer sind unsere Zielgruppen?
+
+Forscher_innen aller Karrierstufen nach dem Master
+
+::: columns-3
+:::: column
+
+### Typ 1
+
+Keine / geringe Kenntnisse aber Interesse an DH
+
+::::
+:::: column
+
+### Typ 2
+
+Detaillierte Vorstellungen aber mangelnde Kenntnisse für konkrete Umsetzung
+
+::::
+:::: column
+
+### Typ 3
+
+Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
+
+::::
+:::
+
+## Was bieten wir an?
+### Hilfe zur Selbsthilfe
+
+- Infrastruktur für eigenes Arbeiten
+    + wöchentliche Einführungen in den Scholarly Makerspace
+    + offene Materialien und Infrastrukturen für die Nachnutzung und Erweiterung
+- "Sprechstunden" bzw. gemeinsames Experimentieren
+    + Drop-in
+    + Offene Sprechstunde
+    + gezielte Beratung
+- Community hours für den Austausch
+
+## Was bieten wir nicht an?
+
+- Wir schreiben keine Anträge
+- Wir setzen keine Projekte um
+- Wir bauen keine Webseiten
+- Wir machen keinen dauerhaften Toolsupport
+
 # Schluß / Danke!
 ## Literatur {#refs}
+
+# Material
+## Wir?
+
+::: columns
+:::: column
+
+- durch Werte bestimmt, wie
+    + Zugänglichkeit
+    + Teilhabe
+    + Nachhaltigkeit: sozial, ökologisch, technologisch
+    + Verantwortlichkeit
+    + Gerechtigkeit
+    + [FAIR](https://www.go-fair.org/fair-principles/): **F**indability, **A**ccessability, **I**nteroperability, **R**euse
+    + [CARE](https://www.gida-global.org/care): **C**ollective benefit, **A**uthority to control, **R**esponsibility, **E**thics 
+::::
+:::: column
+
+- bestimmt die Bedingungen unter denen wir arbeiten, z.B. Zugänge zu
+    + Materialien
+    + Methoden
+    + Werkzeugen
+    + Arbeitskraft
+
+::::
+:::
