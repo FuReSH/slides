@@ -656,6 +656,8 @@
                         font-style: normal;
                         margin-top: 0.1em;
                         margin-bottom: 0.5em;
+                        margin-left: 0.5em;
+                        list-style-position: outside;
                         /* all lists should be centered */
                         /*text-align: left;*/
                         /*margin-left: auto;
@@ -1255,8 +1257,10 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <blockquote>
         <p>Do artefacts have politics? <span class="citation"
         data-cites="Winner+1980">(Winner <span>„Do artifacts have
-        politics?“</span> 1980)</span> Do politics have artefacts? <span
-        class="citation"
+        politics?“</span> 1980)</span></p>
+        </blockquote>
+        <blockquote>
+        <p>Do politics have artefacts? <span class="citation"
         data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
         Power to the People</em> 2014)</span></p>
         </blockquote>
@@ -1310,6 +1314,11 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </section>
         <section id="prototyp" class="slide level2">
         <h2>Prototyp</h2>
+        <div class="columns">
+        <div class="c_width-30">
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_icons.jpg" /></p>
+        </div><div class="c_width-60">
         <ul>
         <li>Fokus auf Übertragbarkeit und Nachnutzbarkeit
         <ul>
@@ -1324,6 +1333,8 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <li>Forschungs- und Projektseminare</li>
         </ul></li>
         </ul>
+        </div>
+        </div>
         </section></section>
         <section>
         <section id="die-infrastruktur"
@@ -1360,6 +1371,13 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </ul>
         </div>
         </div>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg" /></p>
+        </section>
+        <section id="resourcen-1" class="slide level2">
+        <h2>Resourcen</h2>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_architecture.jpg" /></p>
         <aside class="notes">
         <p>Das muss ausgebaut werden</p>
         </aside>
@@ -1380,8 +1398,9 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </ul>
         </section></section>
         <section>
-        <section id="unser-angebot" class="title-slide slide level1">
-        <h1>Unser Angebot</h1>
+        <section id="wie-sieht-das-konkret-aus"
+        class="title-slide slide level1">
+        <h1>Wie sieht das konkret aus</h1>
 
         </section>
         <section id="wer-sind-unsere-zielgruppen" class="slide level2">
@@ -1634,7 +1653,13 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                                                                              
+                                              
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+                width: 1000,
+                        height: 800,
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,

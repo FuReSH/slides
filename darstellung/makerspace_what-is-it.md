@@ -25,9 +25,10 @@ DFG-Projekt zur Förderung von *digitaler* und *computationaler* **Werkzeugkompe
 # Raison d'etre
 ## Postdigitaler Moment
 
+>It is our position that the “digital” cannot be understood as a separate domain of culture. If we actually examine the digital [...] we see that today digital information processing is present in every aspect of our lives [@CPCAbout].
+
 - Alles ist bereits immer durch Computer re-medialisiert 
 - Die Unterscheidung zwischen *digital* und *analog* bzw. hergebrachten Ansätzen ist bedeutungslos geworden [@Berry+2017]
-- >It is our position that the “digital” cannot be understood as a separate domain of culture. If we actually examine the digital [...] we see that today digital information processing is present in every aspect of our lives [@CPCAbout].
 
 ::: notes
 
@@ -166,6 +167,7 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 ### Making
 
 >Do artefacts have politics? [@Winner+1980]
+
 >Do politics have artefacts? [@DunbarHester2014LowPower]
 
 - Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
@@ -189,6 +191,15 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 ## Prototyp
 
+::: columns
+:::: c_width-30
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_icons.jpg)
+
+::::
+:::: c_width-60
+
+
 - Fokus auf Übertragbarkeit und Nachnutzbarkeit
     + Nur das absolut Notwendige selber machen
     + Nutzung bestehender offener Infrastrukturen
@@ -197,6 +208,9 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
     + Open Data und Open Science von Anfang an
 - Begleitende Studien
     + Forschungs- und Projektseminare
+
+::::
+:::
 
 # Die Infrastruktur
 ## Raum
@@ -225,6 +239,12 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 ::::
 :::
 
+![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
+
+## Resourcen
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_architecture.jpg)
+
 ::: notes
 
 Das muss ausgebaut werden
@@ -241,7 +261,7 @@ Das muss ausgebaut werden
 - gemeinsames, offenes Forschen
 - Vermittlung zwischen Wissensdomainen
 
-# Unser Angebot
+# Wie sieht das konkret aus
 ## Wer sind unsere Zielgruppen?
 
 Forscher_innen aller Karrierstufen nach dem Master
@@ -288,6 +308,7 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 - Wir setzen keine Projekte um
 - Wir bauen keine Webseiten
 - Wir machen keinen dauerhaften Toolsupport
+
 
 # Schluß / Danke!
 ## Literatur {#refs}
