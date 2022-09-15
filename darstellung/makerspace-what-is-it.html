@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
+          <meta name="author" content="Sophie Eckenstaler">
               <meta name="dcterms.date" content="2022-09-05">
                 <title>Scholarly Makerspace</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -539,7 +540,9 @@
                     .columns-2 > .column {
                         width: 50%;
                     }
-                    .c_width-60 {
+                    .c_width-60,
+                    .column-60,
+                    .columns .wide {
                         width: 64%;
                         position: relative;
                         float: left;
@@ -549,7 +552,9 @@
                         position: relative;
                         float: left;
                     }
-                    .c_width-30 {
+                    .c_width-30,
+                    .column-30,
+                    .columns .narrow {
                         width: 33%;
                         position: relative;
                         float: left;
@@ -1010,6 +1015,7 @@
                     <p class="subtitle">DFG-Projekt “Future e-Research
 Support in the Humanities” (2022–25)</p>
                               <p class="author">Till Grallert</p>
+                    <p class="author">Sophie Eckenstaler</p>
                               <p class="institute">Future e-Research
 Support in the Humanities, Humboldt-Universität zu Berlin</p>
                               <p class="date">2022-09-05</p>
@@ -1033,20 +1039,20 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </section>
         <section id="postdigitaler-moment" class="slide level2">
         <h2>Postdigitaler Moment</h2>
-        <ul>
-        <li>Alles ist bereits immer durch Computer re-medialisiert</li>
-        <li>Die Unterscheidung zwischen <em>digital</em> und
-        <em>analog</em> bzw. hergebrachten Ansätzen ist bedeutungslos
-        geworden <span class="citation" data-cites="Berry+2017">(Berry
-        und Fagerjord <em>Digital humanities</em> 2017)</span></li>
-        <li><blockquote>
+        <blockquote>
         <p>It is our position that the “digital” cannot be understood as
         a separate domain of culture. If we actually examine the digital
         […] we see that today digital information processing is present
         in every aspect of our lives <span class="citation"
         data-cites="CPCAbout">(<span>„About Us“</span>
         o. J.)</span>.</p>
-        </blockquote></li>
+        </blockquote>
+        <ul>
+        <li>Alles ist bereits immer durch Computer re-medialisiert</li>
+        <li>Die Unterscheidung zwischen <em>digital</em> und
+        <em>analog</em> bzw. hergebrachten Ansätzen ist bedeutungslos
+        geworden <span class="citation" data-cites="Berry+2017">(Berry
+        und Fagerjord <em>Digital humanities</em> 2017)</span></li>
         </ul>
         <aside class="notes">
         <p>Das gilt für Forschungsgegenstände, Quellen, und
@@ -1081,26 +1087,6 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </ul>
         </div>
         </div>
-        </section>
-        <section id="die-blackbox" class="slide level2">
-        <h2>[*] Die Blackbox</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" /></p>
-        <blockquote>
-        <p>The term black box […] is a device or system that, for
-        convenience, is described solely in terms of its inputs and
-        outputs. One need not understand anything about what goes on
-        inside such black boxes. One simply brackets them as instruments
-        that perform certain valuable functions. <span class="citation"
-        data-cites="Winner+1993">(Winner <span>„Upon opening the black
-        box“</span> 1993, 365)</span></p>
-        </blockquote>
-        <aside class="notes">
-        <ul>
-        <li>Schutz von Betriebsgeheimnissen</li>
-        <li>Nutzerfreundlichkeit</li>
-        </ul>
-        </aside>
         </section>
         <section id="aufgabe-von-digital-consumers-zu-digital-citizens"
         class="slide level2">
@@ -1264,9 +1250,9 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
         Power to the People</em> 2014)</span></p>
         </blockquote>
+        <p>Werkzeuge und Methoden sind mit Machtverhältnissen
+        verwoben</p>
         <ul>
-        <li>Werkzeuge und Methoden sind mit Machtverhältnissen
-        verwoben</li>
         <li><em>Making</em> als Experimentieren, Tüfteln, Ausprobieren,
         Werkeln als Selbstermächtigung mit dem Ziel der
         (Wieder)Aneignung der Produktionsmittel</li>
@@ -1315,10 +1301,10 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <section id="prototyp" class="slide level2">
         <h2>Prototyp</h2>
         <div class="columns">
-        <div class="c_width-30">
+        <div class="narrow">
         <p><img
         data-src="https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_icons.jpg" /></p>
-        </div><div class="c_width-60">
+        </div><div class="wide">
         <ul>
         <li>Fokus auf Übertragbarkeit und Nachnutzbarkeit
         <ul>
@@ -1498,6 +1484,26 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </ul>
         </div>
         </div>
+        </section>
+        <section id="die-blackbox" class="slide level2">
+        <h2>[*] Die Blackbox</h2>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" /></p>
+        <blockquote>
+        <p>The term black box […] is a device or system that, for
+        convenience, is described solely in terms of its inputs and
+        outputs. One need not understand anything about what goes on
+        inside such black boxes. One simply brackets them as instruments
+        that perform certain valuable functions. <span class="citation"
+        data-cites="Winner+1993">(Winner <span>„Upon opening the black
+        box“</span> 1993, 365)</span></p>
+        </blockquote>
+        <aside class="notes">
+        <ul>
+        <li>Schutz von Betriebsgeheimnissen</li>
+        <li>Nutzerfreundlichkeit</li>
+        </ul>
+        </aside>
         </section></section>
       </div>
     </div>
@@ -1673,7 +1679,7 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
                     <span class="c_left">2022-09-05</span>
                         <span class="c_left">|</span>
                                         <span class="c_left">Till
-Grallert</span>
+Grallert, Sophie Eckenstaler</span>
                 <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</span>
         </div>

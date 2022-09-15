@@ -3,6 +3,7 @@ title: "Scholarly Makerspace"
 subtitle: "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 author:
     - Till Grallert
+    - Sophie Eckenstaler
 institute: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
 date: 2022-09-05
 status: draft
@@ -57,19 +58,6 @@ Das gilt für Forschungsgegenstände, Quellen, und Werkzeuge
 ::::
 :::
 
-
-## [\*] Die Blackbox
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg)
-
->The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
-
-::: notes
-
-+ Schutz von Betriebsgeheimnissen
-+ Nutzerfreundlichkeit
-
-:::
 
 ## Aufgabe <br/>Von *digital consumers* zu *digital citizens*
 
@@ -170,7 +158,8 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 >Do politics have artefacts? [@DunbarHester2014LowPower]
 
-- Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+
 - *Making* als Experimentieren, Tüfteln, Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
 - *Maker turn*: Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
 
@@ -192,12 +181,12 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 ## Prototyp
 
 ::: columns
-:::: c_width-30
+:::: narrow
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_icons.jpg)
 
 ::::
-:::: c_width-60
+:::: wide
 
 
 - Fokus auf Übertragbarkeit und Nachnutzbarkeit
@@ -233,8 +222,10 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 ### Infrastruktur
 
-- Dockingstationen
-- Zugang zu GPU-Rechner, Servern des CMS
+- Dockingstationen für Laptops
+- Vorhandene Resourcen an der HU Berlin nutzbar machen
+    + Zugang zu GPU-Rechner
+    + Servern des CMS
 
 ::::
 :::
@@ -337,4 +328,17 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
     + Arbeitskraft
 
 ::::
+:::
+
+## [\*] Die Blackbox
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg)
+
+>The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
+
+::: notes
+
++ Schutz von Betriebsgeheimnissen
++ Nutzerfreundlichkeit
+
 :::
