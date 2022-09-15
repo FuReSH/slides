@@ -131,8 +131,7 @@ Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 + kritische **Reflexion** über ein neues epistemisches Paradigma,
 + Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
 
-## Ansatz
-### Minimal computing
+## Ansatz: Minimal computing
 
 >Das Haus ist gebaut aus den Steinen, die vorhanden waren [@Brecht1967SchlechteZeiten].
 
@@ -151,17 +150,17 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 :::
 
-## Ansatz
-### Making
+## Ansatz: Making
+
+Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 >Do artefacts have politics? [@Winner+1980]
 
 >Do politics have artefacts? [@DunbarHester2014LowPower]
 
-Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
-- *Making* als Experimentieren, Tüfteln, Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
-- *Maker turn*: Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+- **Making** als Experimentieren, Tüfteln, Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+- **Maker turn**: Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
 
 ::: notes
 
@@ -250,13 +249,30 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 :::
 
-## Resourcen
+## Die Infrastruktur hinter dem Werkzeugregal
+
+::: columns
+:::: column
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_architecture.jpg)
+
+::::
+:::: column
+
+- Offen und Modular
+- Wissen(smanagement)
+- Gemeinschaft(lich)
+
+::::
+:::
 
 ::: notes
 
 Das muss ausgebaut werden
+
+- Diese Infrastruktur dient dem Wissensmanagement
+- Wissen wird durch Personal und Community geschaffen, aufbereitet und vermittelt
+- Wissen wird in die Gemeinschaft / Gesellschaft zurückgegeben
 
 :::
 

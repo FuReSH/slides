@@ -627,8 +627,15 @@
                     }
                     blockquote {
                         padding-left: 1em;
+                        padding-left: 1em;
+                        margin-bottom: 1em;
+                        text-align: right;
                         /*font-style: italic;*/
                         clear: both;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
                     }
                     blockquote > p:before {
                         content: "> "
@@ -661,8 +668,9 @@
                         font-style: normal;
                         margin-top: 0.1em;
                         margin-bottom: 0.5em;
-                        margin-left: 0.5em;
-                        list-style-position: outside;
+                        /*margin-left: 1.5em;*/
+                        list-style-position: inside;
+                        padding-left: 1em;
                         /* all lists should be centered */
                         /*text-align: left;*/
                         /*margin-left: auto;
@@ -783,8 +791,8 @@
                     h6,
                     dl,
                     table {
-                        margin-left: 1em;
-                        margin-right: 1em;
+                        margin-left: 0.5em;
+                        margin-right: 0.5em;
                         margin-top: 0.5em;
                         margin-bottom: 0.5em;
                     }
@@ -1205,9 +1213,8 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         Geistes- und Kulturwissenschaften–}</li>
         </ul>
         </section>
-        <section id="ansatz" class="slide level2">
-        <h2>Ansatz</h2>
-        <h3 id="minimal-computing">Minimal computing</h3>
+        <section id="ansatz-minimal-computing" class="slide level2">
+        <h2>Ansatz: Minimal computing</h2>
         <blockquote>
         <p>Das Haus ist gebaut aus den Steinen, die vorhanden waren
         <span class="citation"
@@ -1237,9 +1244,10 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </ul>
         </aside>
         </section>
-        <section id="ansatz-1" class="slide level2">
-        <h2>Ansatz</h2>
-        <h3 id="making">Making</h3>
+        <section id="ansatz-making" class="slide level2">
+        <h2>Ansatz: Making</h2>
+        <p>Werkzeuge und Methoden sind mit Machtverhältnissen
+        verwoben</p>
         <blockquote>
         <p>Do artefacts have politics? <span class="citation"
         data-cites="Winner+1980">(Winner <span>„Do artifacts have
@@ -1250,14 +1258,12 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
         Power to the People</em> 2014)</span></p>
         </blockquote>
-        <p>Werkzeuge und Methoden sind mit Machtverhältnissen
-        verwoben</p>
         <ul>
-        <li><em>Making</em> als Experimentieren, Tüfteln, Ausprobieren,
-        Werkeln als Selbstermächtigung mit dem Ziel der
+        <li><strong>Making</strong> als Experimentieren, Tüfteln,
+        Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der
         (Wieder)Aneignung der Produktionsmittel</li>
-        <li><em>Maker turn</em>: Kreativität von Design, Herstellung und
-        Erfahrung von (digitalen) Objekten als From von
+        <li><strong>Maker turn</strong>: Kreativität von Design,
+        Herstellung und Erfahrung von (digitalen) Objekten als From von
         Wissenschaft</li>
         </ul>
         <aside class="notes">
@@ -1345,27 +1351,73 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <h3 id="werkzeuge">Werkzeuge</h3>
         <ul>
         <li>Metaphorische physische Werkzeuge, Werkzeugkoffer und
-        -regale mit</li>
+        -regale</li>
         <li>Modularisierte computationelle Werkzeuge</li>
-        <li>Mit Verweisen auf Literatur, Tutorials, Use cases</li>
+        <li>Verweise auf Literatur, Tutorials, Use cases</li>
         </ul>
         </div><div class="column">
         <h3 id="infrastruktur">Infrastruktur</h3>
         <ul>
-        <li>Dockingstationen</li>
-        <li>Zugang zu GPU-Rechner, Servern des CMS</li>
+        <li>Dockingstationen für Laptops</li>
+        <li>Vorhandene Resourcen an der HU Berlin nutzbar machen
+        <ul>
+        <li>Zugang zu GPU-Rechner</li>
+        <li>Servern des CMS</li>
+        </ul></li>
         </ul>
         </div>
         </div>
+        </section>
+        <section id="metaphern-ernst-nehmen" class="slide level2">
+        <h2>Metaphern ernst nehmen</h2>
+        <h3 id="werkzeuge-1">Werkzeuge</h3>
         <p><img
         data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg" /></p>
+        <ul>
+        <li><strong>Werkzeug</strong> als Sammelbegriff für Methoden,
+        Software, Hardware, Sprachen, Formate</li>
+        <li>Werkzeuge sind zunächst eine <strong>Blackbox</strong></li>
+        <li>Benötigen
+        <ul>
+        <li><strong>Werkstoffe</strong> und als <strong>Input</strong>
+        und</li>
+        <li><strong>Knowhow</strong> für den Gebrauch</li>
+        </ul></li>
+        <li>Generieren einen <strong>Output</strong></li>
+        </ul>
+        <aside class="notes">
+        <ul>
+        <li>Blackboxes enthalten häufig weitere Blackboxes</li>
+        <li>diese Werkzeuge können dann einer Werkzeugkiste / einem
+        Werkzeugregal zugeordnet werden</li>
+        <li>Auf einer Werkbank können die Werkzeuge benutzt werden</li>
+        </ul>
+        </aside>
         </section>
-        <section id="resourcen-1" class="slide level2">
-        <h2>Resourcen</h2>
+        <section id="die-infrastruktur-hinter-dem-werkzeugregal"
+        class="slide level2">
+        <h2>Die Infrastruktur hinter dem Werkzeugregal</h2>
+        <div class="columns">
+        <div class="column">
         <p><img
         data-src="https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_architecture.jpg" /></p>
+        </div><div class="column">
+        <ul>
+        <li>Offen und Modular</li>
+        <li>Wissen(smanagement)</li>
+        <li>Gemeinschaft(lich)</li>
+        </ul>
+        </div>
+        </div>
         <aside class="notes">
         <p>Das muss ausgebaut werden</p>
+        <ul>
+        <li>Diese Infrastruktur dient dem Wissensmanagement</li>
+        <li>Wissen wird durch Personal und Community geschaffen,
+        aufbereitet und vermittelt</li>
+        <li>Wissen wird in die Gemeinschaft / Gesellschaft
+        zurückgegeben</li>
+        </ul>
         </aside>
         </section>
         <section id="wissen" class="slide level2">
