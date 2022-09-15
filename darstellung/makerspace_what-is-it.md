@@ -213,9 +213,9 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ### Werkzeuge
 
-- Metaphorische physische Werkzeuge, Werkzeugkoffer und -regale mit
+- Metaphorische physische Werkzeuge, Werkzeugkoffer und -regale
 - Modularisierte computationelle Werkzeuge
-- Mit Verweisen auf Literatur, Tutorials, Use cases
+- Verweise auf Literatur, Tutorials, Use cases
 
 ::::
 :::: column
@@ -230,7 +230,25 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 ::::
 :::
 
+## Metaphern ernst nehmen
+### Werkzeuge
+
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
+
+- **Werkzeug** als Sammelbegriff für Methoden, Software, Hardware, Sprachen, Formate
+- Werkzeuge sind zunächst eine **Blackbox**
+- Benötigen 
+    + **Werkstoffe** und als **Input** und 
+    + **Knowhow** für den Gebrauch
+- Generieren einen **Output**
+
+::: notes
+
+- Blackboxes enthalten häufig weitere Blackboxes
+- diese Werkzeuge können dann einer Werkzeugkiste / einem Werkzeugregal zugeordnet werden
+- Auf einer Werkbank können die Werkzeuge benutzt werden
+
+:::
 
 ## Resourcen
 
