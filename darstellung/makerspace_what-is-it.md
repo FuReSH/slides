@@ -59,7 +59,8 @@ Das gilt für Forschungsgegenstände, Quellen, und Werkzeuge
 :::
 
 
-## Aufgabe <br/>Von *digital consumers* zu *digital citizens*
+## Aufgabe 
+### Von *digital consumers* zu *digital citizens*
 
 ::: columns
 :::: column
@@ -200,7 +201,12 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 ::::
 :::
 
-# Die Infrastruktur
+# Die Infrastruktur an der UB
+
+---------
+
+>Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden [@Spath2019Makerspaces, 41]
+
 ## Raum
 
 ![Der Scholarly Makerspace an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg)
