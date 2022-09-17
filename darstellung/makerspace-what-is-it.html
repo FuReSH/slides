@@ -1412,7 +1412,93 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <li>Generieren einen <strong>Output</strong></li>
         </ul>
         <br>
-        <?php include "./blackbox_snippet.html" ?>
+        <!-- BLACKBOX CODE SNIPPET-->
+        <div class="container-md blackbox" style="
+            background: #5049a94a;
+            font-family: Consolas;
+            padding: 1rem;
+            box-shadow: 10px 20px 15px silver;
+            border-radius: 10px;">
+            <div class="row"></div>
+                <div class="col-12">
+                    <h4>Try the blackbox</h4> 
+                </div>            
+            <div>
+            <div class="row mt-4 g-2">
+                <div class="col-md-auto"><p>Input:</p></div>
+                <div class="col-md-5">
+                   <div class="form-floating">
+                    <textarea class="form-control to_clear" type="text" placeholder="Leave your text here" id="bb_example"></textarea>
+                    <label for="bb_example">Your text</label>
+                    </div> 
+                </div>
+                <div class="col-md-auto">
+                    <p id="bb_result">Output:</p>
+                </div>
+                <div class="col-md-auto">
+                    <p id="bb_result_count" class="to_clear"></p>
+                    <p id="bb_result_text" hidden class="to_clear"></p>
+                </div>
+            </div>
+            <hr>
+            <div class ="row g-2 justify-content-md-center">
+                <div class="col-md-auto"><button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', '');
+                                                                                                                    document.getElementById('bb_button_text').removeAttribute('disabled', '');">
+                                                                                                                    Count characters</button></div>
+                <div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden');
+                                                                                                                    document.getElementById('bb_button_clear').removeAttribute('disabled');
+                                                                                                                    this.setAttribute('disabled', '');">
+                                                                                                                    Show text</button></div>
+                                                                                                                    
+                <div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', '');
+                                                                                                                    document.getElementById('bb_button_count').removeAttribute('disabled');
+                                                                                                                    this.setAttribute('disabled', '');">Clear</button></div>
+            </div>                
+        </div>
+        <script>
+
+            document.getElementById("bb_button_count").addEventListener("click", function() { 
+                
+                let chars = document.getElementById("bb_example").value;  
+
+                let trimmedChars = chars.trim().replace(/ /g,'')
+                
+                let count = 0;
+                let output_text = [];
+
+                for (let index = 0; index < trimmedChars.length; index++) {
+                    const element = trimmedChars[index];
+                    let asc = element.charCodeAt(0);
+                    if(asc < 128) {
+                        output_text.push(element);
+                        count ++;
+                    }
+                }
+
+                let result_text = output_text.join("");
+                let result_count = count + " character(s)";
+                
+                document.getElementById("bb_result_count").innerHTML = result_count;
+                document.getElementById("bb_result_text").innerHTML = result_text;
+
+            });
+
+            document.getElementById("bb_button_clear").addEventListener("click", function() { 
+                
+                let text = document.getElementsByClassName('to_clear');
+
+                for (let index = 0; index < text.length; index++) {
+                    const element = text[index];
+                    if (document.getElementsByTagName("textarea")) {
+                        element.value = '';
+                    }
+                    if (document.getElementsByTagName("textarea")) {
+                        element.innerHTML = '';
+                    }
+                } 
+            });
+        </script>
+        <!-- END BLACKBOX CODE SNIPPET -->
         <aside class="notes">
         <ul>
         <li>Blackboxes enthalten häufig weitere Blackboxes</li>
