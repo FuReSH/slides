@@ -201,24 +201,38 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 ::::
 :::
 
-# Die Infrastruktur an der UB
+# Operationalisierung
 
 ---------
 
 >Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden [@Spath2019Makerspaces, 41]
 
+::: notes
+
+- Zentrale Frage in unserer Projektphase ist, wie sich Idee des Scholarly Makerspace an einem konkreten Ort, nämlich der UB, konkret umsetzen bzw. implementieren lässt
+    + hierbei ganz bei der traditionellen Maker-Culture und Maker-Bewegung, nämlich [Zitat] 
+
+:::
+
 ## Raum
 
 ![Der Scholarly Makerspace an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg)
 
-## Resourcen
+::: notes
+
+- 1. Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
+    + Herausforderung: bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
+
+:::
+
+## Ressourcen
 
 ::: columns
 :::: column
 
 ### Werkzeuge
 
-- Metaphorische physische Werkzeuge, Werkzeugkoffer und -regale
+- Metaphorische physische Werkzeuge, Werkzeugkisten und -regale
 - Modularisierte computationelle Werkzeuge
 - Verweise auf Literatur, Tutorials, Use cases
 
@@ -235,27 +249,83 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 ::::
 :::
 
+::: notes
+
+- 2. Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
+    + zum einen wollen wir Infrastrukturen vor Ort zur Verfügung stellen (Hardware, mit der gearbeitet werden kann, aktuell Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker, wenn Bedarf da ist), aber auch vorhandene Infrastrukturangebote an der HU nutzbar machen (Zugang zu GPU-Rechenkapazitäten, Server des CMS, etc.)
+    + zum anderen aggregieren wir bei uns digitale Werkzeuge, welche im geistewissenschaftlichen Forschungsprozess zum Einsatz kommen
+    + wobei wir Werkzeuge metaphorisch als physisch denken und diese entsprechend nach Werkzeugkisten  und -regale systematisieren
+    + daneben gibt es Werkzeuganleitungen, die aus Literatur, Tutorials und Best Practices bestehen
+
+:::
+
 ## Metaphern ernst nehmen
 ### Werkzeuge
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
 
-- **Werkzeug** als Sammelbegriff für Methoden, Software, Hardware, Sprachen, Formate
-- Werkzeuge sind zunächst eine **Blackbox**
+- **Werkzeug** generisch und klassifiziert in Methode, Software, Hardware, Sprache, Format, etc. (**Werkzeugkisten**)
+- Ausgangspunkt: Werkzeuge sind zunächst eine **Blackbox** 
 - Benötigen 
-    + **Werkstoffe** und als **Input** und 
+    + **Werkstoffe** als **Input** und 
     + **Knowhow** für den Gebrauch
-- Generieren einen **Output**
+- Generieren nach **Processing** / **Computing** einen **Output**
 
 ::: notes
 
-- Blackboxes enthalten häufig weitere Blackboxes
-- diese Werkzeuge können dann einer Werkzeugkiste / einem Werkzeugregal zugeordnet werden
-- Auf einer Werkbank können die Werkzeuge benutzt werden
+- da Defintion digitales Werkzeug/ Tool nicht eindeutig ist und Abgrenzungen schwierig sind, halten wir den Begriff generisch und offen
+- demzufolge alle digitalen Objekte, die im Forschungsprozess verwendet werden und demnach der Erkenntnisgenerierung dienen, sind Werkzeuge
+- diese wiederum lassen sich klassifizieren
+- Bei der Vermittlung von tool literacy ist der Ausgangpunkt, das alle Werkzeuge zunächst Backboxes sind
+- insbesondere der Schritt der Verarbeitung bzw. des Rechnens bleibt für viele unsichtbar
 
 :::
 
-## Die Infrastruktur hinter dem Werkzeugregal
+---------
+
+### Demo "Blackbox"
+
+<!-- hier Blackbox code snippet einfügen-->
+
+::: notes
+
+- kleines nicht repräsentatives Demo-Beispiel mitgebracht, um Blackbox zu veranschaulichen
+- erwartet als Input Plain Text
+- Was macht die Blackbox: sie zählt Zeichen des eingebenen Texts und gibt die gezählten Zeichen zurück
+- Beispiel mit King: Best Case > erwartbares Ergebnis (unproblematisch, auch wenn man nicht genau weiß, was im Hintergrund genau passiert)
+- Beispiel mit König: Worst Case > unerwartetes Ergebnis (problematisch)
+- hier kommt der Makerspace in Spiel: Maschinenraum öffen und hineinschauen, was da eigentlich passiert
+- Vermutung liegt nahe, dass die Maschine hier einen anderen Zeichensatz oder Zeichkodierung verwendet als meine und daher das Ergebnis verfälscht wird 
+
+:::
+
+## Wissen
+
+- Personal schafft, bereitet auf und vermittelt Wissen über Werkzeuge
+- gemeinsames Experimentieren
+
+::: notes
+
+- wichtig bei Bereitstellung für uns, diese nicht hierarchisch zu denken
+    + wir das Personal sind nicht die Experten, die frontal erklären
+
+:::
+
+## Gemeinschaft
+
+- gemeinsames, offenes Forschen
+- Vermittlung zwischen Wissensdomainen
+
+::: notes
+
+- uns geht es um die Gemeinschaft
+- Ziel ist ...
+
+:::
+
+# Wie sieht das konkret aus
+## Was bauen wir auf?
+### Werkzeugregal-Architektur
 
 ::: columns
 :::: column
@@ -274,25 +344,12 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ::: notes
 
-Das muss ausgebaut werden
-
-- Diese Infrastruktur dient dem Wissensmanagement
-- Wissen wird durch Personal und Community geschaffen, aufbereitet und vermittelt
-- Wissen wird in die Gemeinschaft / Gesellschaft zurückgegeben
+- Für Vortrag in Hamburg nur kurz zeigen und überspringen
+    + Diese Infrastruktur dient dem Wissensmanagement
+    + Wissen wird durch Personal und Community geschaffen, aufbereitet und vermittelt
+    + Wissen wird in die Gemeinschaft / Gesellschaft zurückgegeben
 
 :::
-
-## Wissen
-
-- Personal schafft, bereitet auf und vermittelt Wissen über Werkzeuge
-- gemeinsames Experimentieren 
-
-## Gemeinschaft
-
-- gemeinsames, offenes Forschen
-- Vermittlung zwischen Wissensdomainen
-
-# Wie sieht das konkret aus
 ## Wer sind unsere Zielgruppen?
 
 Forscher_innen aller Karrierstufen nach dem Master
