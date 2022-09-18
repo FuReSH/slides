@@ -324,7 +324,7 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 :::
 
 # Wie sieht das konkret aus
-## Was bauen wir auf?
+## Was bauen wir?
 ### Werkzeugregal-Architektur
 
 ::: columns
