@@ -13,6 +13,7 @@ reference-section-title: "Literatur"
 suppress-bibliography: true
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
+url: https://tinyurl.com/furesh-hamburg
 tags:
     - FuReSH
     - public relations
