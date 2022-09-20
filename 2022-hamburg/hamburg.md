@@ -282,23 +282,14 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 :::
 
----------
-
-### Demo "Blackbox"
+## Demo "Blackbox"
 
 <!-- hier Blackbox code snippet einfügen-->
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
         .blackbox p { color: white }
     </style>
-  </head>
-
-  <body>
 
     <div class="container-md blackbox" style="
             background: #5049a9 ;
@@ -336,16 +327,16 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
             <hr>
             <div class ="row g-2 justify-content-md-center">
                 <div class="col-md-auto"><button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', '');
-                                                                                                                    document.getElementById('bb_button_text').removeAttribute('disabled', '');">
-                                                                                                                    Count characters</button></div>
-                <div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden');
-                                                                                                                    document.getElementById('bb_button_clear').removeAttribute('disabled');
-                                                                                                                    this.setAttribute('disabled', '');">
-                                                                                                                    Show text</button></div>
-                                                                                                                    
-                <div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', '');
-                                                                                                                    document.getElementById('bb_button_count').removeAttribute('disabled');
-                                                                                                                    this.setAttribute('disabled', '');">Clear</button></div>
+                    document.getElementById('bb_button_text').removeAttribute('disabled', '');">
+                    Count characters</button></div>
+<div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden');
+                    document.getElementById('bb_button_clear').removeAttribute('disabled');
+                    this.setAttribute('disabled', '');">
+                    Show text</button></div>
+                    
+<div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', '');
+                    document.getElementById('bb_button_count').removeAttribute('disabled');
+                    this.setAttribute('disabled', '');">Clear</button></div>
             </div>                
         </div>
         <script>
@@ -392,10 +383,6 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
             });
         </script>
 
-
-  </body>
-
-</html>
 
 ::: notes
 
