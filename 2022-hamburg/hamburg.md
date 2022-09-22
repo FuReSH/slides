@@ -13,7 +13,7 @@ reference-section-title: "Literatur"
 suppress-bibliography: true
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
-url: https://tinyurl.com/furesh-hamburg-2022
+url: https://furesh.github.io/slides/2022-hamburg
 tags:
     - FuReSH
     - public relations
@@ -294,103 +294,80 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 <!-- hier Blackbox code snippet einfügen-->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <style>
-        .blackbox p { color: white }
-    </style>
+::: columns-3
+:::: column
 
-    <div class="container-md blackbox" style="
-            background: #5049a9 ;
-            font-family: -apple-system,
-'Segoe UI',
-  Roboto,
-  'Helvetica Neue', Arial,
-  'Noto Sans',
-  'Liberation Sans',
-  sans-serif;
-            padding: 1rem;
-            box-shadow: 10px 20px 15px silver;
-            border-radius: 10px";>
-            <div class="row"></div>
-                <div class="col-12 text-center">
-                    <p>Try the blackbox</p> 
-                </div>            
-            <div>
-            <div class="row mt-4 g-2">
-                <div class="col-md-auto"><p>Input:</p></div>
-                <div class="col-md-5">
-                   <div class="form-floating">
-                    <textarea class="form-control to_clear" type="text" placeholder="Leave your text here" id="bb_example"></textarea>
-                    <label for="bb_example">Your text</label>
-                    </div> 
-                </div>
-                <div class="col-md-auto">
-                    <p id="bb_result">Output:</p>
-                </div>
-                <div class="col-md-auto">
-                    <p id="bb_result_count" class="to_clear"></p>
-                    <p id="bb_result_text" hidden class="to_clear"></p>
-                </div>
-            </div>
-            <hr>
-            <div class ="row g-2 justify-content-md-center">
-                <div class="col-md-auto"><button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', '');
-                    document.getElementById('bb_button_text').removeAttribute('disabled', '');">
-                    Count characters</button></div>
-<div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden');
-                    document.getElementById('bb_button_clear').removeAttribute('disabled');
-                    this.setAttribute('disabled', '');">
-                    Show text</button></div>
-                    
-<div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', '');
-                    document.getElementById('bb_button_count').removeAttribute('disabled');
-                    this.setAttribute('disabled', '');">Clear</button></div>
-            </div>                
-        </div>
-        <script>
+### Input
 
-            document.getElementById("bb_button_count").addEventListener("click", function() { 
-                
-                let chars = document.getElementById("bb_example").value;  
+<textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_example"></textarea>
+<!-- <label for="bb_example">Your text</label> -->
 
-                let trimmedChars = chars.trim().replace(/ /g,'')
-                
-                let count = 0;
-                let output_text = [];
+::::
+:::: column
 
-                for (let index = 0; index < trimmedChars.length; index++) {
-                    const element = trimmedChars[index];
-                    let asc = element.charCodeAt(0);
-                    if(asc < 128) {
-                        output_text.push(element);
-                        count ++;
-                    }
-                }
+### Blackbox
 
-                let result_text = output_text.join("");
-                let result_count = count + " character(s)";
-                
-                document.getElementById("bb_result_count").innerHTML = result_count;
-                document.getElementById("bb_result_text").innerHTML = result_text;
+<button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', ''); document.getElementById('bb_button_text').removeAttribute('disabled', '');">Rechne</button>
+<button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden'); document.getElementById('bb_button_clear').removeAttribute('disabled'); this.setAttribute('disabled', '');">Zeige den Inhalt</button>
+<button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', ''); document.getElementById('bb_button_count').removeAttribute('disabled'); this.setAttribute('disabled', '');">Leeren</button>
 
-            });
+<p hidden class="to_clear" id="bb_result_text"></p>
 
-            document.getElementById("bb_button_clear").addEventListener("click", function() { 
-                
-                let text = document.getElementsByClassName('to_clear');
+::::
+:::: column
 
-                for (let index = 0; index < text.length; index++) {
-                    const element = text[index];
-                    if (document.getElementsByTagName("textarea")) {
-                        element.value = '';
-                    }
-                    if (document.getElementsByTagName("textarea")) {
-                        element.innerHTML = '';
-                    }
-                } 
-            });
-        </script>
+### Output
 
+<p id="bb_result_count" class="to_clear"></p>
+<!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+
+::::
+:::
+
+<!-- the script powering the blackbox -->
+<script>
+
+    document.getElementById("bb_button_count").addEventListener("click", function() { 
+        
+        let chars = document.getElementById("bb_example").value;  
+
+        let trimmedChars = chars.trim().replace(/ /g,'')
+        
+        let count = 0;
+        let output_text = [];
+
+        for (let index = 0; index < trimmedChars.length; index++) {
+            const element = trimmedChars[index];
+            let asc = element.charCodeAt(0);
+            if(asc < 128) {
+                output_text.push(element);
+                count ++;
+            }
+        }
+
+        let result_text = output_text.join("");
+        let result_count = count;
+        
+        document.getElementById("bb_result_count").innerHTML = result_count;
+        document.getElementById("bb_result_text").innerHTML = result_text;
+
+    });
+
+    document.getElementById("bb_button_clear").addEventListener("click", function() { 
+        
+        let text = document.getElementsByClassName('to_clear');
+
+        for (let index = 0; index < text.length; index++) {
+            const element = text[index];
+            if (document.getElementsByTagName("textarea")) {
+                element.value = '';
+            }
+            if (document.getElementsByTagName("textarea")) {
+                element.innerHTML = '';
+            }
+        } 
+    });
+</script>
 
 ::: notes
 
