@@ -221,8 +221,14 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ::: notes
 
-- 1. Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
+- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
     + Herausforderung: bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
++ Anforderungen: angenehme Atmosphäre
+        * Platz
+        * Licht
+        * Schallschutz
+        * Gruppenarbeitsplätze
+        * "Werkbänke"
 
 :::
 
@@ -265,19 +271,21 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
 
-- **Werkzeug** generisch und klassifiziert in Methode, Software, Hardware, Sprache, Format, etc. (**Werkzeugkisten**)
-- Ausgangspunkt: Werkzeuge sind zunächst eine **Blackbox** 
+- **Werkzeug**: Methode, Software, Hardware, Sprache, Format, etc.
+- Ausgangspunkte: 
+    + Werkzeuge sind zunächst eine **Blackbox**
+    + können als **Werkzeugkiste** wieder Werkzeuge enthalten
 - Benötigen 
     + **Werkstoffe** als **Input** und 
     + **Knowhow** für den Gebrauch
-- Generieren nach **Processing** / **Computing** einen **Output**
+- Generieren durch **Verarbeitung** / **Berechnung** einen **Output**
 
 ::: notes
 
 - da Defintion digitales Werkzeug/ Tool nicht eindeutig ist und Abgrenzungen schwierig sind, halten wir den Begriff generisch und offen
-- demzufolge alle digitalen Objekte, die im Forschungsprozess verwendet werden und demnach der Erkenntnisgenerierung dienen, sind Werkzeuge
+- demzufolge sind alle digitalen Objekte, die im Forschungsprozess verwendet werden und demnach der Erkenntnisgenerierung dienen,  Werkzeuge
 - diese wiederum lassen sich klassifizieren
-- Bei der Vermittlung von tool literacy ist der Ausgangpunkt, das alle Werkzeuge zunächst Backboxes sind
+- Bei der Vermittlung von tool literacy ist der Ausgangpunkt, das alle Werkzeuge zunächst Blackboxes sind
 - insbesondere der Schritt der Verarbeitung bzw. des Rechnens bleibt für viele unsichtbar
 
 :::
