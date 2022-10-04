@@ -49,7 +49,7 @@ Das gilt für Forschungsgegenstände, Quellen, und Werkzeuge
 ::::
 :::: column
 
-- Es herrscht in der Breite ein Mangel[\*] an 
+- Es herrscht in der Breite ein Mangel an 
     + **Theorie**: Verständnis des epistemischen Wandels
     + **Methode**: Beherrschung der notwendigen Werkzeuge
     + positivem **Wissen**: Überblick über die Möglichkeiten
@@ -216,12 +216,19 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ## Raum
 
-![Der Scholarly Makerspace an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg)
+![Der Scholarly Makerspace als Lernort an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg)
 
 ::: notes
 
-- 1. Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
+- Makerspace als Lernort
+- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
     + Herausforderung: bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
++ Anforderungen: angenehme Atmosphäre
+        * Platz
+        * Licht
+        * Schallschutz
+        * Gruppenarbeitsplätze
+        * "Werkbänke"
 
 :::
 
@@ -232,7 +239,7 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ### Werkzeuge
 
-- Metaphorische physische Werkzeuge, Werkzeugkisten und -regale
+- Metaphorische, physische Werkzeuge, Werkzeugkisten und -regale
 - Modularisierte computationelle Werkzeuge
 - Verweise auf Literatur, Tutorials, Use cases
 
@@ -264,19 +271,21 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
 
-- **Werkzeug** generisch und klassifiziert in Methode, Software, Hardware, Sprache, Format, etc. (**Werkzeugkisten**)
-- Ausgangspunkt: Werkzeuge sind zunächst eine **Blackbox** 
+- **Werkzeug**: Methode, Software, Hardware, Sprache, Format, etc.
+- Ausgangspunkte: 
+    + Werkzeuge sind zunächst eine **Blackbox**
+    + können als **Werkzeugkiste** wieder Werkzeuge enthalten
 - Benötigen 
     + **Werkstoffe** als **Input** und 
     + **Knowhow** für den Gebrauch
-- Generieren nach **Processing** / **Computing** einen **Output**
+- Generieren durch **Verarbeitung** / **Berechnung** einen **Output**
 
 ::: notes
 
 - da Defintion digitales Werkzeug/ Tool nicht eindeutig ist und Abgrenzungen schwierig sind, halten wir den Begriff generisch und offen
-- demzufolge alle digitalen Objekte, die im Forschungsprozess verwendet werden und demnach der Erkenntnisgenerierung dienen, sind Werkzeuge
+- demzufolge sind alle digitalen Objekte, die im Forschungsprozess verwendet werden und demnach der Erkenntnisgenerierung dienen,  Werkzeuge
 - diese wiederum lassen sich klassifizieren
-- Bei der Vermittlung von tool literacy ist der Ausgangpunkt, das alle Werkzeuge zunächst Backboxes sind
+- Bei der Vermittlung von tool literacy ist der Ausgangpunkt, das alle Werkzeuge zunächst Blackboxes sind
 - insbesondere der Schritt der Verarbeitung bzw. des Rechnens bleibt für viele unsichtbar
 
 :::
@@ -286,14 +295,100 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 ### Demo "Blackbox"
 
 <!-- hier Blackbox code snippet einfügen-->
+::: columns-3
+:::: column
+
+### Input
+
+<textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_example"></textarea>
+<!-- <label for="bb_example">Your text</label> -->
+
+::::
+:::: column
+
+### Blackbox
+
+<button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', ''); document.getElementById('bb_button_text').removeAttribute('disabled', '');">Rechne</button>
+<button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden'); document.getElementById('bb_button_clear').removeAttribute('disabled'); this.setAttribute('disabled', '');">Zeige den Inhalt</button>
+<button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', ''); document.getElementById('bb_button_count').removeAttribute('disabled'); this.setAttribute('disabled', '');">Leeren</button>
+
+<p hidden class="to_clear" id="bb_result_text"></p>
+
+::::
+:::: column
+
+### Output
+
+<p id="bb_result_count" class="to_clear"></p>
+<!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+
+::::
+:::
+
+<!-- the script powering the blackbox -->
+<script>
+
+    document.getElementById("bb_button_count").addEventListener("click", function() { 
+        
+        let chars = document.getElementById("bb_example").value;  
+
+        let trimmedChars = chars.trim().replace(/ /g,'')
+        
+        let count = 0;
+        let output_text = [];
+
+        for (let index = 0; index < trimmedChars.length; index++) {
+            const element = trimmedChars[index];
+            let asc = element.charCodeAt(0);
+            if(asc < 128) {
+                output_text.push(element);
+                count ++;
+            }
+        }
+
+        let result_text = output_text.join("");
+        let result_count = count;
+        
+        document.getElementById("bb_result_count").innerHTML = result_count;
+        document.getElementById("bb_result_text").innerHTML = result_text;
+
+    });
+
+    document.getElementById("bb_button_clear").addEventListener("click", function() { 
+        
+        let text = document.getElementsByClassName('to_clear');
+
+        for (let index = 0; index < text.length; index++) {
+            const element = text[index];
+            if (document.getElementsByTagName("textarea")) {
+                element.value = '';
+            }
+            if (document.getElementsByTagName("textarea")) {
+                element.innerHTML = '';
+            }
+        } 
+    });
+</script>
 
 ::: notes
 
 - kleines nicht repräsentatives Demo-Beispiel mitgebracht, um Blackbox zu veranschaulichen
-- erwartet als Input Plain Text
-- Was macht die Blackbox: sie zählt Zeichen des eingebenen Texts und gibt die gezählten Zeichen zurück
-- Beispiel mit King: Best Case > erwartbares Ergebnis (unproblematisch, auch wenn man nicht genau weiß, was im Hintergrund genau passiert)
-- Beispiel mit König: Worst Case > unerwartetes Ergebnis (problematisch)
+- Schritte: **nicht** vorher erklären, was hier passieren soll!
+    1. erwartet einen Input: Plain Text
+    2. Berechnen durch Blackbox
+        - Output: Eine Zahl
+    3. Frage an Publikum: was ist passiert?
+        - Antwort: die Blackbox zählt
+    4. Frage an Publikum: was wird gezählt?
+        - Antwort: Zeichen? Buchstaben?
+    5. Frage an Publikum: können Sie das verifizieren?
+    4. Zeige den Inhalt der Blackbox um zu überprüfen ob die Hypothese des Publikums stimmen kann
+    5. Frage an Publikum: was ist passiert?
+- Beispiel: Blackbox zählt ASCII Zeichen inkl. Satz- aber ohne Leerzeichen
+    1. Eingabe ohne Umlaute: z.B. "King" 
+        - Best Case -> erwartbares Ergebnis (unproblematisch, auch wenn man nicht genau weiß, was im Hintergrund genau passiert)
+    2. Eingabe mit Umlauten: z.B. "König"
+        - Worst Case -> unerwartetes Ergebnis (problematisch)
 - hier kommt der Makerspace in Spiel: Maschinenraum öffen und hineinschauen, was da eigentlich passiert
 - Vermutung liegt nahe, dass die Maschine hier einen anderen Zeichensatz oder Zeichkodierung verwendet als meine und daher das Ergebnis verfälscht wird 
 
@@ -302,24 +397,43 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 ## Wissen
 
 - Personal schafft, bereitet auf und vermittelt Wissen über Werkzeuge
-- gemeinsames Experimentieren
+- Aber: das Personal haben keinen Anspruch auf allumfassende Expertise
 
 ::: notes
 
 - wichtig bei Bereitstellung für uns, diese nicht hierarchisch zu denken
     + wir das Personal sind nicht die Experten, die frontal erklären
+- >To say, “I can do first aid,” is to underscore our entanglement with circuitry. And to say, “I don’t know all the circuitry,” at least implies the impossibility of such knowledge. That is, we can reject the autonomy or privacy of technologies without supposing we know them completely. Although we may understand how something works, we may not apprehend how or under what conditions it was made. [@Sayers2017Introduction, 2]
+- >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
 
 :::
 
 ## Gemeinschaft
 
-- gemeinsames, offenes Forschen
-- Vermittlung zwischen Wissensdomainen
+Die Gemeinschaft der je konkret Experimentierenden im *Scholarly Makerspace*
+
++ ist durch Werte bestimmt
++ bestimmt die Bedingungen unseres Arbeitens
+- zielt auf die Vermittlung zwischen Wissensdomänen
 
 ::: notes
 
-- uns geht es um die Gemeinschaft
-- Ziel ist ...
+- uns geht es um die Gemeinschaft, die die breite der beteiligten Wissensdomänen nur gemeinsam erschlossen werden kann.
+- Ziel ist *digital* or *computing citizens*, die über ihre Teilnahme  und -habe an einer Gemeinschaft definiert sind. 
+    + Unterschied zu Produzenten und *Makers*
+- durch Werte bestimmt, wie
+    + Zugänglichkeit
+    + Teilhabe
+    + Nachhaltigkeit: sozial, ökologisch, technologisch
+    + Verantwortlichkeit
+    + Gerechtigkeit
+    + [FAIR](https://www.go-fair.org/fair-principles/): **F**indability, **A**ccessability, **I**nteroperability, **R**euse
+    + [CARE](https://www.gida-global.org/care): **C**ollective benefit, **A**uthority to control, **R**esponsibility, **E**thics
+- bestimmt die Bedingungen unter denen wir arbeiten, z.B. Zugänge zu
+    + Materialien
+    + Methoden
+    + Werkzeugen
+    + Arbeitskraft
 
 :::
 

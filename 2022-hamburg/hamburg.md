@@ -50,7 +50,7 @@ Das gilt für Forschungsgegenstände, Quellen, und Werkzeuge
 ::::
 :::: column
 
-- Es herrscht in der Breite ein Mangel[\*] an 
+- Es herrscht in der Breite ein Mangel an 
     + **Theorie**: Verständnis des epistemischen Wandels
     + **Methode**: Beherrschung der notwendigen Werkzeuge
     + positivem **Wissen**: Überblick über die Möglichkeiten
@@ -221,6 +221,7 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ::: notes
 
+- Makerspace als Lernort
 - Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
     + Herausforderung: bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
 + Anforderungen: angenehme Atmosphäre
