@@ -5,7 +5,8 @@
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
           <meta name="author" content="Sophie Eckenstaler">
-              <meta name="dcterms.date" content="2022-09-05">
+          <meta name="author" content="Samantha Tirtohusodo">
+              <meta name="dcterms.date" content="2022-10-05">
                 <title>Scholarly Makerspace</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -449,6 +450,14 @@
                         margin-bottom: 1em;
                         text-align: center;
                     }
+                    /****************
+                    title slide
+                    *****************/
+
+                    span.author ~ span.author::before {
+                      content: ', ';
+                    }
+
                     /****************
                     images and figures
                     *****************/
@@ -1020,15 +1029,18 @@
 
                 <section id="title-slide">
           <h1 class="title">Scholarly Makerspace</h1>
-                    <p class="subtitle">DFG-Projekt “Future e-Research
-Support in the Humanities” (2022–25)</p>
-                              <p class="author">Till Grallert</p>
-                    <p class="author">Sophie Eckenstaler</p>
+                    <h2 class="subtitle">DFG-Projekt “Future e-Research
+Support in the Humanities” (2022–25)</h2>
+                              <p class="author">
+                      <span class="author">Till Grallert</span>
+                      <span class="author">Sophie Eckenstaler</span>
+                      <span class="author">Samantha Tirtohusodo</span>
+                    </p>
                               <p class="institute">Future e-Research
 Support in the Humanities, Humboldt-Universität zu Berlin</p>
-                              <p class="date">2022-09-05</p>
-                  </section>
-                
+                                        <p class="date">2022-10-05</p>
+                            </section>
+
         <section id="was" class="slide level2">
         <h2>Was?</h2>
         <p>DFG-Projekt zur Förderung von <em>digitaler</em> und
@@ -1082,7 +1094,7 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg" /></p>
         </div><div class="column">
         <ul>
-        <li>Es herrscht in der Breite ein Mangel[*] an
+        <li>Es herrscht in der Breite ein Mangel an
         <ul>
         <li><strong>Theorie</strong>: Verständnis des epistemischen
         Wandels</li>
@@ -1363,23 +1375,24 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <figure>
         <img
         data-src="https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg"
-        alt="Der Scholarly Makerspace an der UB der HU Berlin" />
-        <figcaption aria-hidden="true">Der Scholarly Makerspace an der
-        UB der HU Berlin</figcaption>
+        alt="Der Scholarly Makerspace als Lernort an der UB der HU Berlin" />
+        <figcaption aria-hidden="true">Der Scholarly Makerspace als
+        Lernort an der UB der HU Berlin</figcaption>
         </figure>
         <aside class="notes">
         <ul>
-        <li><ol type="1">
+        <li>Makerspace als Lernort</li>
         <li>Wichtig beim Scholarly Makerspace ist nach wie vor der
         physische Raum, in dem letztlich Austausch und Vernetzung der
-        Community stattfinden können</li>
-        </ol>
+        Community stattfinden können
         <ul>
         <li>Herausforderung: bzgl. Des Bibliotheksbau in Berlin
         (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant
         wurde, d.h. diese neuen Räume müssen erst geschaffen werden
         (nicht frei von Konflikten abläuft)</li>
         </ul></li>
+        <li>Anforderungen: angenehme Atmosphäre * Platz * Licht *
+        Schallschutz * Gruppenarbeitsplätze * “Werkbänke”</li>
         </ul>
         </aside>
         </section>
@@ -1389,7 +1402,7 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <div class="column">
         <h3 id="werkzeuge">Werkzeuge</h3>
         <ul>
-        <li>Metaphorische physische Werkzeuge, Werkzeugkisten und
+        <li>Metaphorische, physische Werkzeuge, Werkzeugkisten und
         -regale</li>
         <li>Modularisierte computationelle Werkzeuge</li>
         <li>Verweise auf Literatur, Tutorials, Use cases</li>
@@ -1407,12 +1420,9 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </div>
         </div>
         <aside class="notes">
-        <ul>
-        <li><ol start="2" type="1">
-        <li>Hinsichtlich der Ressourcen denken wir den Makerspace
-        zweiteilig:</li>
-        </ol>
-        <ul>
+        <p>Hinsichtlich der Ressourcen denken wir den Makerspace
+        zweiteilig:</p>
+        <ol type="1">
         <li>zum einen wollen wir Infrastrukturen vor Ort zur Verfügung
         stellen (Hardware, mit der gearbeitet werden kann, aktuell
         Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker,
@@ -1421,14 +1431,15 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         Server des CMS, etc.)</li>
         <li>zum anderen aggregieren wir bei uns digitale Werkzeuge,
         welche im geistewissenschaftlichen Forschungsprozess zum Einsatz
-        kommen</li>
+        kommen
+        <ul>
         <li>wobei wir Werkzeuge metaphorisch als physisch denken und
         diese entsprechend nach Werkzeugkisten und -regale
         systematisieren</li>
         <li>daneben gibt es Werkzeuganleitungen, die aus Literatur,
         Tutorials und Best Practices bestehen</li>
         </ul></li>
-        </ul>
+        </ol>
         </aside>
         </section>
         <section id="metaphern-ernst-nehmen" class="slide level2">
@@ -1437,31 +1448,34 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <p><img
         data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg" /></p>
         <ul>
-        <li><strong>Werkzeug</strong> generisch und klassifiziert in
-        Methode, Software, Hardware, Sprache, Format, etc.
-        (<strong>Werkzeugkisten</strong>)</li>
-        <li>Ausgangspunkt: Werkzeuge sind zunächst eine
-        <strong>Blackbox</strong></li>
+        <li><strong>Werkzeug</strong>: Methode, Software, Hardware,
+        Sprache, Format, etc.</li>
+        <li>Ausgangspunkte:
+        <ul>
+        <li>Werkzeuge sind zunächst eine <strong>Blackbox</strong></li>
+        <li>können als <strong>Werkzeugkiste</strong> wieder Werkzeuge
+        enthalten</li>
+        </ul></li>
         <li>Benötigen
         <ul>
         <li><strong>Werkstoffe</strong> als <strong>Input</strong>
         und</li>
         <li><strong>Knowhow</strong> für den Gebrauch</li>
         </ul></li>
-        <li>Generieren nach <strong>Processing</strong> /
-        <strong>Computing</strong> einen <strong>Output</strong></li>
+        <li>Generieren durch <strong>Verarbeitung</strong> /
+        <strong>Berechnung</strong> einen <strong>Output</strong></li>
         </ul>
         <aside class="notes">
         <ul>
         <li>da Defintion digitales Werkzeug/ Tool nicht eindeutig ist
         und Abgrenzungen schwierig sind, halten wir den Begriff
         generisch und offen</li>
-        <li>demzufolge alle digitalen Objekte, die im Forschungsprozess
-        verwendet werden und demnach der Erkenntnisgenerierung dienen,
-        sind Werkzeuge</li>
+        <li>demzufolge sind alle digitalen Objekte, die im
+        Forschungsprozess verwendet werden und demnach der
+        Erkenntnisgenerierung dienen, Werkzeuge</li>
         <li>diese wiederum lassen sich klassifizieren</li>
         <li>Bei der Vermittlung von tool literacy ist der Ausgangpunkt,
-        das alle Werkzeuge zunächst Backboxes sind</li>
+        das alle Werkzeuge zunächst Blackboxes sind</li>
         <li>insbesondere der Schritt der Verarbeitung bzw. des Rechnens
         bleibt für viele unsichtbar</li>
         </ul>
@@ -1471,61 +1485,34 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
 
         <h3 id="demo-blackbox">Demo “Blackbox”</h3>
         <!-- hier Blackbox code snippet einfügen-->
-        <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <style>
-        .blackbox p { color: white }
-    </style>
-  </head>
-
-  <body>
-
-    <div class="container-md blackbox" style="
-            background: #5049a9 ;
-            font-family: Consolas;
-            padding: 1rem;
-            box-shadow: 10px 20px 15px silver;
-            border-radius: 10px";>
-            <div class="row"></div>
-                <div class="col-12 text-center">
-                    <p>Try the blackbox</p> 
-                </div>            
-            <div>
-            <div class="row mt-4 g-2">
-                <div class="col-md-auto"><p>Input:</p></div>
-                <div class="col-md-5">
-                   <div class="form-floating">
-                    <textarea class="form-control to_clear" type="text" placeholder="Leave your text here" id="bb_example"></textarea>
-                    <label for="bb_example">Your text</label>
-                    </div> 
-                </div>
-                <div class="col-md-auto">
-                    <p id="bb_result">Output:</p>
-                </div>
-                <div class="col-md-auto">
-                    <p id="bb_result_count" class="to_clear"></p>
-                    <p id="bb_result_text" hidden class="to_clear"></p>
-                </div>
-            </div>
-            <hr>
-            <div class ="row g-2 justify-content-md-center">
-                <div class="col-md-auto"><button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', '');
-                                                                                                                    document.getElementById('bb_button_text').removeAttribute('disabled', '');">
-                                                                                                                    Count characters</button></div>
-                <div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden');
-                                                                                                                    document.getElementById('bb_button_clear').removeAttribute('disabled');
-                                                                                                                    this.setAttribute('disabled', '');">
-                                                                                                                    Show text</button></div>
-                                                                                                                    
-                <div class="col-md-auto"><button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', '');
-                                                                                                                    document.getElementById('bb_button_count').removeAttribute('disabled');
-                                                                                                                    this.setAttribute('disabled', '');">Clear</button></div>
-            </div>                
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="input">Input</h3>
+        <textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_example"></textarea>
+        <!-- <label for="bb_example">Your text</label> -->
         </div>
+        <div class="column">
+        <h3 id="blackbox">Blackbox</h3>
+        <button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute(&#39;disabled&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_text&#39;).removeAttribute(&#39;disabled&#39;, &#39;&#39;);">
+        Rechne
+        </button>
+        <button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById(&#39;bb_result_text&#39;).removeAttribute(&#39;hidden&#39;); document.getElementById(&#39;bb_button_clear&#39;).removeAttribute(&#39;disabled&#39;); this.setAttribute(&#39;disabled&#39;, &#39;&#39;);">
+        Zeige den Inhalt
+        </button>
+        <button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById(&#39;bb_result_text&#39;).setAttribute(&#39;hidden&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_count&#39;).removeAttribute(&#39;disabled&#39;); this.setAttribute(&#39;disabled&#39;, &#39;&#39;);">
+        Leeren
+        </button>
+        <p hidden class="to_clear" id="bb_result_text">
+        </p>
+        </div>
+        <div class="column">
+        <h3 id="output">Output</h3>
+        <p id="bb_result_count" class="to_clear">
+        </p>
+        <!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+        </div>
+        </div>
+        <!-- the script powering the blackbox -->
         <script>
 
             document.getElementById("bb_button_count").addEventListener("click", function() { 
@@ -1547,7 +1534,7 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
                 }
 
                 let result_text = output_text.join("");
-                let result_count = count + " character(s)";
+                let result_count = count;
                 
                 document.getElementById("bb_result_count").innerHTML = result_count;
                 document.getElementById("bb_result_text").innerHTML = result_text;
@@ -1569,28 +1556,45 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
                 } 
             });
         </script>
-
-
-  </body>
-
-</html>
-    
-    
-    
-    
-    
         <aside class="notes">
         <ul>
         <li>kleines nicht repräsentatives Demo-Beispiel mitgebracht, um
         Blackbox zu veranschaulichen</li>
-        <li>erwartet als Input Plain Text</li>
-        <li>Was macht die Blackbox: sie zählt Zeichen des eingebenen
-        Texts und gibt die gezählten Zeichen zurück</li>
-        <li>Beispiel mit King: Best Case &gt; erwartbares Ergebnis
-        (unproblematisch, auch wenn man nicht genau weiß, was im
-        Hintergrund genau passiert)</li>
-        <li>Beispiel mit König: Worst Case &gt; unerwartetes Ergebnis
-        (problematisch)</li>
+        <li>Schritte: <strong>nicht</strong> vorher erklären, was hier
+        passieren soll!
+        <ol type="1">
+        <li>erwartet einen Input: Plain Text</li>
+        <li>Berechnen durch Blackbox
+        <ul>
+        <li>Output: Eine Zahl</li>
+        </ul></li>
+        <li>Frage an Publikum: was ist passiert?
+        <ul>
+        <li>Antwort: die Blackbox zählt</li>
+        </ul></li>
+        <li>Frage an Publikum: was wird gezählt?
+        <ul>
+        <li>Antwort: Zeichen? Buchstaben?</li>
+        </ul></li>
+        <li>Frage an Publikum: können Sie das verifizieren?</li>
+        <li>Zeige den Inhalt der Blackbox um zu überprüfen ob die
+        Hypothese des Publikums stimmen kann</li>
+        <li>Frage an Publikum: was ist passiert?</li>
+        </ol></li>
+        <li>Beispiel: Blackbox zählt ASCII Zeichen inkl. Satz- aber ohne
+        Leerzeichen
+        <ol type="1">
+        <li>Eingabe ohne Umlaute: z.B. “King”
+        <ul>
+        <li>Best Case -&gt; erwartbares Ergebnis (unproblematisch, auch
+        wenn man nicht genau weiß, was im Hintergrund genau
+        passiert)</li>
+        </ul></li>
+        <li>Eingabe mit Umlauten: z.B. “König”
+        <ul>
+        <li>Worst Case -&gt; unerwartetes Ergebnis (problematisch)</li>
+        </ul></li>
+        </ol></li>
         <li>hier kommt der Makerspace in Spiel: Maschinenraum öffen und
         hineinschauen, was da eigentlich passiert</li>
         <li>Vermutung liegt nahe, dass die Maschine hier einen anderen
@@ -1604,7 +1608,8 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <ul>
         <li>Personal schafft, bereitet auf und vermittelt Wissen über
         Werkzeuge</li>
-        <li>gemeinsames Experimentieren</li>
+        <li>Aber: das Personal haben keinen Anspruch auf allumfassende
+        Expertise</li>
         </ul>
         <aside class="notes">
         <ul>
@@ -1614,19 +1619,74 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <li>wir das Personal sind nicht die Experten, die frontal
         erklären</li>
         </ul></li>
+        <li><blockquote>
+        <p>To say, “I can do first aid,” is to underscore our
+        entanglement with circuitry. And to say, “I don’t know all the
+        circuitry,” at least implies the impossibility of such
+        knowledge. That is, we can reject the autonomy or privacy of
+        technologies without supposing we know them completely. Although
+        we may understand how something works, we may not apprehend how
+        or under what conditions it was made. <span class="citation"
+        data-cites="Sayers2017Introduction">(Sayers
+        <span>„Introduction“</span> 2017, 2)</span></p>
+        </blockquote></li>
+        <li><blockquote>
+        <p>knowledge of circuitry is often conflated with (superheroic)
+        command over people, situations, and things. In present-day
+        “maker” cultures, consider the ubiquity of remarks such as
+        “getting under the hood” or “knowing the nuts and bolts,” which
+        tend to fuse logic with mastery, control with masculinity,
+        engineering with rationality, and programming with revealing.
+        <span class="citation"
+        data-cites="Sayers2017Introduction">(Sayers
+        <span>„Introduction“</span> 2017, 3)</span></p>
+        </blockquote></li>
         </ul>
         </aside>
         </section>
         <section id="gemeinschaft" class="slide level2">
         <h2>Gemeinschaft</h2>
+        <p>Die Gemeinschaft der je konkret Experimentierenden im
+        <em>Scholarly Makerspace</em></p>
         <ul>
-        <li>gemeinsames, offenes Forschen</li>
-        <li>Vermittlung zwischen Wissensdomainen</li>
+        <li>ist durch Werte bestimmt</li>
+        <li>bestimmt die Bedingungen unseres Arbeitens</li>
+        <li>zielt auf die Vermittlung zwischen Wissensdomänen</li>
         </ul>
         <aside class="notes">
         <ul>
-        <li>uns geht es um die Gemeinschaft</li>
-        <li>Ziel ist …</li>
+        <li>uns geht es um die Gemeinschaft, die die breite der
+        beteiligten Wissensdomänen nur gemeinsam erschlossen werden
+        kann.</li>
+        <li>Ziel ist <em>digital</em> or <em>computing citizens</em>,
+        die über ihre Teilnahme und -habe an einer Gemeinschaft
+        definiert sind.
+        <ul>
+        <li>Unterschied zu Produzenten und <em>Makers</em></li>
+        </ul></li>
+        <li>durch Werte bestimmt, wie
+        <ul>
+        <li>Zugänglichkeit</li>
+        <li>Teilhabe</li>
+        <li>Nachhaltigkeit: sozial, ökologisch, technologisch</li>
+        <li>Verantwortlichkeit</li>
+        <li>Gerechtigkeit</li>
+        <li><a href="https://www.go-fair.org/fair-principles/">FAIR</a>:
+        <strong>F</strong>indability, <strong>A</strong>ccessability,
+        <strong>I</strong>nteroperability, <strong>R</strong>euse</li>
+        <li><a href="https://www.gida-global.org/care">CARE</a>:
+        <strong>C</strong>ollective benefit, <strong>A</strong>uthority
+        to control, <strong>R</strong>esponsibility,
+        <strong>E</strong>thics</li>
+        </ul></li>
+        <li>bestimmt die Bedingungen unter denen wir arbeiten, z.B.
+        Zugänge zu
+        <ul>
+        <li>Materialien</li>
+        <li>Methoden</li>
+        <li>Werkzeugen</li>
+        <li>Arbeitskraft</li>
+        </ul></li>
         </ul>
         </aside>
         </section></section>
@@ -1636,7 +1696,7 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <h1>Wie sieht das konkret aus</h1>
 
         </section>
-        <section id="was-bauen-wir-auf" class="slide level2">
+        <section id="was-bauen-wir" class="slide level2">
         <h2>Was bauen wir?</h2>
         <h3
         id="werkzeugregal-architektur">Werkzeugregal-Architektur</h3>
@@ -1952,10 +2012,10 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2022-09-05</span>
+                    <span class="c_left">2022-10-05</span>
                         <span class="c_left">|</span>
                                         <span class="c_left">Till
-Grallert, Sophie Eckenstaler</span>
+Grallert, Sophie Eckenstaler, Samantha Tirtohusodo</span>
                 <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</span>
         </div>

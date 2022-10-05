@@ -4,8 +4,9 @@ subtitle: "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25
 author:
     - Till Grallert
     - Sophie Eckenstaler
+    - Samantha Tirtohusodo
 institute: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
-date: 2022-09-05
+date: 2022-10-05
 status: draft
 lang: de
 bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
@@ -258,11 +259,12 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ::: notes
 
-- 2. Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
-    + zum einen wollen wir Infrastrukturen vor Ort zur Verfügung stellen (Hardware, mit der gearbeitet werden kann, aktuell Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker, wenn Bedarf da ist), aber auch vorhandene Infrastrukturangebote an der HU nutzbar machen (Zugang zu GPU-Rechenkapazitäten, Server des CMS, etc.)
-    + zum anderen aggregieren wir bei uns digitale Werkzeuge, welche im geistewissenschaftlichen Forschungsprozess zum Einsatz kommen
-    + wobei wir Werkzeuge metaphorisch als physisch denken und diese entsprechend nach Werkzeugkisten  und -regale systematisieren
-    + daneben gibt es Werkzeuganleitungen, die aus Literatur, Tutorials und Best Practices bestehen
+Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
+
+1. zum einen wollen wir Infrastrukturen vor Ort zur Verfügung stellen (Hardware, mit der gearbeitet werden kann, aktuell Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker, wenn Bedarf da ist), aber auch vorhandene Infrastrukturangebote an der HU nutzbar machen (Zugang zu GPU-Rechenkapazitäten, Server des CMS, etc.)
+2. zum anderen aggregieren wir bei uns digitale Werkzeuge, welche im geistewissenschaftlichen Forschungsprozess zum Einsatz kommen
+    * wobei wir Werkzeuge metaphorisch als physisch denken und diese entsprechend nach Werkzeugkisten  und -regale systematisieren
+    * daneben gibt es Werkzeuganleitungen, die aus Literatur, Tutorials und Best Practices bestehen
 
 :::
 
