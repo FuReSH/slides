@@ -154,22 +154,40 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 ## Ansatz: Making
 
-Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+
 
 >Do artefacts have politics? [@Winner+1980]
 
 >Do politics have artefacts? [@DunbarHester2014LowPower]
 
+::: columns
+:::: column
 
-- **Making** als Experimentieren, Tüfteln, Ausprobieren, Werkeln als Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
-- **Maker turn**: Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+### Making
+
+- Experimentieren, Tüfteln, Ausprobieren, Werkeln 
+- Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+
+::::
+:::: column
+
+### Maker turn
+
+Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+
+::::
+:::
+
 
 ::: notes
 
+- Grundsatz: Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 - Geschichte
     + 1970er Kalifornien: kooperative Werkstätten
     + Recht auf Reparatur
     + DIY: do it yourself culture
+    + "Maker Movement Manifesto" von Hatch (2013)
+        * make, share, give, learn, tool up, play, participate, support, change
 - bezieht sich auf [@Wythoff2022MinimalComputing], der die beiden Fragen verknüpft hat
     + Do artefacts have politics? [@Winner+1980]
     + Do politics have artefacts? [@DunbarHester2014LowPower]
@@ -217,7 +235,7 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 ## Raum
 
-![Der Scholarly Makerspace als Lernort an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace.jpg)
+![Der Scholarly Makerspace als Lernort an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace_2.jpg)
 
 ::: notes
 
