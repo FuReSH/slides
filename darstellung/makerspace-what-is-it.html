@@ -425,7 +425,7 @@
                     .toolbar a:hover {
                         color: red
                     }
-                    @media screen and (max-device-width : 1600px) {
+                    @media screen and (max-device-width : 1024px) {
                         div.slide {
                             font-size: 100%;
                         }
@@ -454,9 +454,9 @@
                     title slide
                     *****************/
 
-                    span.author ~ span.author::before {
+                    /*span.author ~ span.author::before {
                       content: ', ';
-                    }
+                    }*/
 
                     /****************
                     images and figures
@@ -576,6 +576,47 @@
                         display: block;
                         float: right;
                     }
+
+                    /*****************
+                    blackbox
+                    ******************/
+
+                    .blackbox  * {
+                        font-size: inherit;
+                        font-family: inherit;
+                    }
+                    .blackbox > div,
+                    .blackbox > section {
+                        width: 32%;
+                        position: relative;
+                        /*float: left;*/
+                        min-height: 5em;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                    }
+                    .blackbox > .input,
+                    .blackbox > .output {
+                        width: 25%;
+                        background-color: rgba(245, 245, 245, 1);
+                    }
+                    .blackbox > .input {
+                        float: left;
+                    }
+                    .blackbox textarea {
+                        min-height: inherit;
+                        background-color: inherit;
+                    }
+                    .blackbox > .computing {
+                        background-color: black;
+                        min-height: 5em;
+                        /*padding: 1em;*/
+                        margin: 0 auto;
+                        color: white;
+                    }
+                    .blackbox > .output {
+                        float: right;
+                    }
+
                     /*****************
                     writing direction
                     ******************/
@@ -1031,13 +1072,12 @@
           <h1 class="title">Scholarly Makerspace</h1>
                     <h2 class="subtitle">DFG-Projekt “Future e-Research
 Support in the Humanities” (2022–25)</h2>
-                              <p class="author">
-                      <span class="author">Till Grallert</span>
-                      <span class="author">Sophie Eckenstaler</span>
-                      <span class="author">Samantha Tirtohusodo</span>
-                    </p>
-                              <p class="institute">Future e-Research
-Support in the Humanities, Humboldt-Universität zu Berlin</p>
+                                <p class="author">
+                          Till Grallert,               Sophie
+Eckenstaler,               Samantha Tirtohusodo            </p>
+                                <p class="institute">
+                            Future e-Research Support in the Humanities,
+Humboldt-Universität zu Berlin            </p>
                                         <p class="date">2022-10-05</p>
                             </section>
 
@@ -1496,14 +1536,20 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
 
         <h3 id="demo-blackbox">Demo “Blackbox”</h3>
         <!-- hier Blackbox code snippet einfügen-->
-        <div class="columns-3">
-        <div class="column">
-        <h3 id="input">Input</h3>
-        <textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_example"></textarea>
-        <!-- <label for="bb_example">Your text</label> -->
+        <div class="blackbox">
+        <div class="input">
+        <!-- ### Input -->
+        <textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_input"></textarea>
+        <!-- <label for="bb_input">Your text</label> -->
         </div>
-        <div class="column">
-        <h3 id="blackbox">Blackbox</h3>
+        <div class="output">
+        <!-- ### Output -->
+        <span id="bb_result_count" class="to_clear">
+        </span>
+        <!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+        </div>
+        <div class="computing">
+        <!-- ### Blackbox -->
         <button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute(&#39;disabled&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_text&#39;).removeAttribute(&#39;disabled&#39;, &#39;&#39;);">
         Rechne
         </button>
@@ -1513,22 +1559,16 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         <button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById(&#39;bb_result_text&#39;).setAttribute(&#39;hidden&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_count&#39;).removeAttribute(&#39;disabled&#39;); this.setAttribute(&#39;disabled&#39;, &#39;&#39;);">
         Leeren
         </button>
-        <p hidden class="to_clear" id="bb_result_text">
-        </p>
-        </div>
-        <div class="column">
-        <h3 id="output">Output</h3>
-        <p id="bb_result_count" class="to_clear">
-        </p>
-        <!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+        <span hidden class="to_clear" id="bb_result_text">
+        </span>
         </div>
         </div>
         <!-- the script powering the blackbox -->
         <script>
 
-            document.getElementById("bb_button_count").addEventListener("click", function() { 
-                
-                let chars = document.getElementById("bb_example").value;  
+            document.getElementById("bb_button_count").addEventListener("click", function() {
+
+                let chars = document.getElementById("bb_input").value;
 
                 let trimmedChars = chars.trim().replace(/ /g,'')
                 

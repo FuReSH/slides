@@ -314,33 +314,32 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 ### Demo "Blackbox"
 
-<!-- hier Blackbox code snippet einfügen-->
-::: columns-3
-:::: column
+::: blackbox
+:::: input
 
-### Input
+<!-- ### Input -->
 
-<textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_example"></textarea>
-<!-- <label for="bb_example">Your text</label> -->
-
-::::
-:::: column
-
-### Blackbox
-
-<button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', ''); document.getElementById('bb_button_text').removeAttribute('disabled', '');">Rechne</button>
-<button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden'); document.getElementById('bb_button_clear').removeAttribute('disabled'); this.setAttribute('disabled', '');">Zeige den Inhalt</button>
-<button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', ''); document.getElementById('bb_button_count').removeAttribute('disabled'); this.setAttribute('disabled', '');">Leeren</button>
-
-<p hidden class="to_clear" id="bb_result_text"></p>
+<textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_input"></textarea>
+<!-- <label for="bb_input">Your text</label> -->
 
 ::::
-:::: column
+:::: output
 
-### Output
+<!-- ### Output -->
 
-<p id="bb_result_count" class="to_clear"></p>
-<!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+<span id="bb_result_compute" class="to_clear"></span>
+<!-- <p id="bb_input_preprocessed" hidden class="to_clear"></p> -->
+
+::::
+:::: computing
+
+<!-- ### Blackbox -->
+
+<button type="button" class="btn btn-warning" id="bb_button_compute" onclick="this.setAttribute('disabled', ''); document.getElementById('bb_button_input').removeAttribute('disabled', '');">Rechne</button>
+<button disabled type="button" class="btn btn-warning" id="bb_button_input" onclick="document.getElementById('bb_input_preprocessed').removeAttribute('hidden'); document.getElementById('bb_button_clear').removeAttribute('disabled'); this.setAttribute('disabled', '');">Zeige den Inhalt</button>
+<button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_input_preprocessed').setAttribute('hidden', ''); document.getElementById('bb_button_compute').removeAttribute('disabled'); this.setAttribute('disabled', '');">Leeren</button>
+
+<span hidden class="to_clear" id="bb_input_preprocessed"></span>
 
 ::::
 :::
@@ -348,15 +347,15 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 <!-- the script powering the blackbox -->
 <script>
 
-    document.getElementById("bb_button_count").addEventListener("click", function() { 
-        
-        let chars = document.getElementById("bb_example").value;  
-
+    document.getElementById("bb_button_compute").addEventListener("click", function() { 
+        // get the input string from the HTML
+        let chars = document.getElementById("bb_input").value;  
+        // pre-process the input string
         let trimmedChars = chars.trim().replace(/ /g,'')
-        
+        // set dummy variables for the processing and output
         let count = 0;
         let output_text = [];
-
+        // the actual computing
         for (let index = 0; index < trimmedChars.length; index++) {
             const element = trimmedChars[index];
             let asc = element.charCodeAt(0);
@@ -368,9 +367,9 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
         let result_text = output_text.join("");
         let result_count = count;
-        
-        document.getElementById("bb_result_count").innerHTML = result_count;
-        document.getElementById("bb_result_text").innerHTML = result_text;
+        // write results to the HTML
+        document.getElementById("bb_result_compute").innerHTML = result_count;
+        document.getElementById("bb_input_preprocessed").innerHTML = result_text;
 
     });
 
