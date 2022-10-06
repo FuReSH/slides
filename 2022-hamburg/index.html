@@ -450,6 +450,14 @@
                         text-align: center;
                     }
                     /****************
+                    title slide
+                    *****************/
+
+                    /*span.author ~ span.author::before {
+                      content: ', ';
+                    }*/
+
+                    /****************
                     images and figures
                     *****************/
                     div.slide img {
@@ -567,6 +575,181 @@
                         display: block;
                         float: right;
                     }
+
+                    /*****************
+                    blackbox
+                    ******************/
+
+                    .blackbox  * {
+                        font-size: inherit;
+                        font-family: inherit;
+                    }
+                    .blackbox > div,
+                    .blackbox > section {
+                        width: 32%;
+                        position: relative;
+                        /*float: left;*/
+                        min-height: 5em;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                    }
+                    .blackbox > .input,
+                    .blackbox > .output {
+                        width: 25%;
+                        background-color: rgba(245, 245, 245, 1);
+                    }
+                    .blackbox > .input {
+                        float: left;
+                    }
+                    .blackbox > .output {
+                        float: right;
+                    }
+                    .blackbox textarea {
+                        min-height: inherit;
+                        background-color: inherit;
+                    }
+                    .blackbox > .computing,
+                    .blackbox > .content {
+                        min-height: 5em;
+                        /*padding: 1em;*/
+                        margin: 0 auto;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                    }
+                    .blackbox > .computing {
+                        background-color: black;
+                        color: white;
+                    }
+                    .blackbox > .content {
+
+                    }
+
+                    button {
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .blackbox button {
+                        min-width: 150px;
+                        height: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        top: 1em;
+                    }
+                    .button-36 {
+                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+                        border-radius: 8px;
+                        border-style: none;
+                        box-sizing: border-box;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        flex-shrink: 0;
+                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 4rem;
+                        padding: 0 1.6rem;
+                        text-align: center;
+                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                        transition: all .5s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                    }
+
+                    .button-36:hover {
+                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+                        transition-duration: .1s;
+                    }
+                    .button-49,
+                    .button-49:after {
+                      line-height: 50px;
+                      font-size: 20px;
+                      font-family: 'Bebas Neue', sans-serif;
+                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                      border: 0;
+                      color: #fff;
+                      letter-spacing: 3px;
+                      box-shadow: 6px 0px 0px #00E6F6;
+                      outline: transparent;
+                      position: relative;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                    }
+
+                    .button-49:after {
+                      --slice-0: inset(50% 50% 50% 50%);
+                      --slice-1: inset(80% -6px 0 0);
+                      --slice-2: inset(50% -6px 30% 0);
+                      --slice-3: inset(10% -6px 85% 0);
+                      --slice-4: inset(40% -6px 43% 0);
+                      --slice-5: inset(80% -6px 5% 0);
+
+                      content: 'ALTERNATE TEXT';
+                      display: block;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                      clip-path: var(--slice-0);
+                    }
+
+                    .button-49:hover:after {
+                      animation: 1s glitch;
+                      animation-timing-function: steps(2, end);
+                    }
+
+                    @keyframes glitch {
+                      0% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-20px, -10px);
+                      }
+                      10% {
+                        clip-path: var(--slice-3);
+                        transform: translate(10px, 10px);
+                      }
+                      20% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 10px);
+                      }
+                      30% {
+                        clip-path: var(--slice-3);
+                        transform: translate(0px, 5px);
+                      }
+                      40% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-5px, 0px);
+                      }
+                      50% {
+                        clip-path: var(--slice-3);
+                        transform: translate(5px, 0px);
+                      }
+                      60% {
+                        clip-path: var(--slice-4);
+                        transform: translate(5px, 10px);
+                      }
+                      70% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-10px, 10px);
+                      }
+                      80% {
+                        clip-path: var(--slice-5);
+                        transform: translate(20px, -10px);
+                      }
+                      90% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 0px);
+                      }
+                      100% {
+                        clip-path: var(--slice-1);
+                        transform: translate(0);
+                      }
+                    }
+
                     /*****************
                     writing direction
                     ******************/
@@ -1022,10 +1205,12 @@
           <h1 class="title">Lasst uns die Blackbox öffnen!</h1>
                     <h2 class="subtitle">Aufbau eines prototypischen
 Scholarly Makerspace</h2>
-                              <p class="author">Till Grallert</p>
-                    <p class="author">Sophie Eckenstaler</p>
-                              <p class="institute">Future e-Research
-Support in the Humanities, Humboldt-Universität zu Berlin</p>
+                                <p class="author">
+                          Till Grallert,               Sophie
+Eckenstaler            </p>
+                                <p class="institute">
+                            Future e-Research Support in the Humanities,
+Humboldt-Universität zu Berlin            </p>
                                         <p class="date">2022-09-20</p>
                               <p class="url"><a href="https://furesh.github.io/slides/2022-hamburg">https://furesh.github.io/slides/2022-hamburg</a></p>
                   </section>
@@ -1083,7 +1268,7 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg" /></p>
         </div><div class="column">
         <ul>
-        <li>Es herrscht in der Breite ein Mangel[*] an
+        <li>Es herrscht in der Breite ein Mangel an
         <ul>
         <li><strong>Theorie</strong>: Verständnis des epistemischen
         Wandels</li>
@@ -1370,6 +1555,7 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </figure>
         <aside class="notes">
         <ul>
+        <li>Makerspace als Lernort</li>
         <li>Wichtig beim Scholarly Makerspace ist nach wie vor der
         physische Raum, in dem letztlich Austausch und Vernetzung der
         Community stattfinden können
@@ -1471,92 +1657,85 @@ Support in the Humanities, Humboldt-Universität zu Berlin</p>
         </ul>
         </aside>
         </section>
-        <section id="demo-blackbox" class="slide level2">
-        <h2>Demo “Blackbox”</h2>
-        <!-- hier Blackbox code snippet einfügen-->
-        <div class="columns-3">
-        <div class="column">
-        <h3 id="input">Input</h3>
-        <textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_example"></textarea>
-        <!-- <label for="bb_example">Your text</label> -->
+        <section id="blackbox" class="slide level2">
+        <h2>Blackbox</h2>
+        <blockquote>
+        <p>The term black box […] is a device or system that, for
+        convenience, is described solely in terms of its inputs and
+        outputs. One need not understand anything about what goes on
+        inside such black boxes. One simply brackets them as instruments
+        that perform certain valuable functions. <span class="citation"
+        data-cites="Winner+1993">(Winner <span>„Upon opening the black
+        box“</span> 1993, 365)</span></p>
+        </blockquote>
+        <section id="demo" class="blackbox">
+        <h3>Demo</h3>
+        <div class="input">
+        <!-- ### Input -->
+        <textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
+        <!-- <label for="bb_input">Your text</label> -->
         </div>
-        <div class="column">
-        <h3 id="blackbox">Blackbox</h3>
-        <button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute(&#39;disabled&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_text&#39;).removeAttribute(&#39;disabled&#39;, &#39;&#39;);">
-        Rechne
+        <div class="output">
+        <!-- ### Output -->
+        <p><span id="bb_result_compute" class="to_clear"></span></p>
+        </div>
+        <div class="computing">
+        <!-- ### Blackbox -->
+        <button class="button-49" type="button" id="bb_button_compute" onclick="this.classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_button_input&#39;).classList.toggle(&#39;hidden&#39;);">
+        ???
         </button>
-        <button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById(&#39;bb_result_text&#39;).removeAttribute(&#39;hidden&#39;); document.getElementById(&#39;bb_button_clear&#39;).removeAttribute(&#39;disabled&#39;); this.setAttribute(&#39;disabled&#39;, &#39;&#39;);">
+        <button type="button" class="button-49 hidden" id="bb_button_input" onclick="this.classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_button_clear&#39;).classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_content&#39;).classList.toggle(&#39;hidden&#39;); ">
         Zeige den Inhalt
         </button>
-        <button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById(&#39;bb_result_text&#39;).setAttribute(&#39;hidden&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_count&#39;).removeAttribute(&#39;disabled&#39;); this.setAttribute(&#39;disabled&#39;, &#39;&#39;);">
+        <button type="button" class="button-49 hidden" id="bb_button_clear" onclick="this.classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_button_compute&#39;).classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_content&#39;).classList.toggle(&#39;hidden&#39;);">
         Leeren
         </button>
-        <p hidden class="to_clear" id="bb_result_text">
-        </p>
         </div>
-        <div class="column">
-        <h3 id="output">Output</h3>
-        <p id="bb_result_count" class="to_clear">
-        </p>
-        <!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+        <div id="bb_content" class="hidden content">
+        <p><span id="bb_input_preprocessed" class="to_clear"></span></p>
         </div>
-        </div>
+        </section>
         <!-- the script powering the blackbox -->
-        <script>
-
-            document.getElementById("bb_button_count").addEventListener("click", function() { 
-                
-                let chars = document.getElementById("bb_example").value;  
-
-                let trimmedChars = chars.trim().replace(/ /g,'')
-                
-                let count = 0;
-                let output_text = [];
-
-                for (let index = 0; index < trimmedChars.length; index++) {
-                    const element = trimmedChars[index];
-                    let asc = element.charCodeAt(0);
-                    if(asc < 128) {
-                        output_text.push(element);
-                        count ++;
-                    }
-                }
-
-                let result_text = output_text.join("");
-                let result_count = count;
-                
-                document.getElementById("bb_result_count").innerHTML = result_count;
-                document.getElementById("bb_result_text").innerHTML = result_text;
-
-            });
-
-            document.getElementById("bb_button_clear").addEventListener("click", function() { 
-                
-                let text = document.getElementsByClassName('to_clear');
-
-                for (let index = 0; index < text.length; index++) {
-                    const element = text[index];
-                    if (document.getElementsByTagName("textarea")) {
-                        element.value = '';
-                    }
-                    if (document.getElementsByTagName("textarea")) {
-                        element.innerHTML = '';
-                    }
-                } 
-            });
-        </script>
+        <script src="../assets/js/blackbox_count-ascii.js"></script>
         <aside class="notes">
         <ul>
         <li>kleines nicht repräsentatives Demo-Beispiel mitgebracht, um
         Blackbox zu veranschaulichen</li>
-        <li>erwartet als Input Plain Text</li>
-        <li>Was macht die Blackbox: sie zählt Zeichen des eingebenen
-        Texts und gibt die gezählten Zeichen zurück</li>
-        <li>Beispiel mit King: Best Case &gt; erwartbares Ergebnis
-        (unproblematisch, auch wenn man nicht genau weiß, was im
-        Hintergrund genau passiert)</li>
-        <li>Beispiel mit König: Worst Case &gt; unerwartetes Ergebnis
-        (problematisch)</li>
+        <li>Schritte: <strong>nicht</strong> vorher erklären, was hier
+        passieren soll!
+        <ol type="1">
+        <li>erwartet einen Input: Plain Text</li>
+        <li>Berechnen durch Blackbox
+        <ul>
+        <li>Output: Eine Zahl</li>
+        </ul></li>
+        <li>Frage an Publikum: was ist passiert?
+        <ul>
+        <li>Antwort: die Blackbox zählt</li>
+        </ul></li>
+        <li>Frage an Publikum: was wird gezählt?
+        <ul>
+        <li>Antwort: Zeichen? Buchstaben?</li>
+        </ul></li>
+        <li>Frage an Publikum: können Sie das verifizieren?</li>
+        <li>Zeige den Inhalt der Blackbox um zu überprüfen ob die
+        Hypothese des Publikums stimmen kann</li>
+        <li>Frage an Publikum: was ist passiert?</li>
+        </ol></li>
+        <li>Beispiel: Blackbox zählt ASCII Zeichen inkl. Satz- aber ohne
+        Leerzeichen
+        <ol type="1">
+        <li>Eingabe ohne Umlaute: z.B. “King”
+        <ul>
+        <li>Best Case -&gt; erwartbares Ergebnis (unproblematisch, auch
+        wenn man nicht genau weiß, was im Hintergrund genau
+        passiert)</li>
+        </ul></li>
+        <li>Eingabe mit Umlauten: z.B. “König”
+        <ul>
+        <li>Worst Case -&gt; unerwartetes Ergebnis (problematisch)</li>
+        </ul></li>
+        </ol></li>
         <li>hier kommt der Makerspace in Spiel: Maschinenraum öffen und
         hineinschauen, was da eigentlich passiert</li>
         <li>Vermutung liegt nahe, dass die Maschine hier einen anderen

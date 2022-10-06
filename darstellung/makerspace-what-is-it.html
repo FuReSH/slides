@@ -24,6 +24,25 @@
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
       ul.task-list{list-style: none;}
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }
     </style>
         <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
                     <style type="text/css">
@@ -46,8 +65,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -80,9 +99,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -93,8 +112,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -602,19 +621,153 @@
                     .blackbox > .input {
                         float: left;
                     }
+                    .blackbox > .output {
+                        float: right;
+                    }
                     .blackbox textarea {
                         min-height: inherit;
                         background-color: inherit;
                     }
-                    .blackbox > .computing {
-                        background-color: black;
+                    .blackbox > .computing,
+                    .blackbox > .content {
                         min-height: 5em;
                         /*padding: 1em;*/
                         margin: 0 auto;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                    }
+                    .blackbox > .computing {
+                        background-color: black;
                         color: white;
                     }
-                    .blackbox > .output {
-                        float: right;
+                    .blackbox > .content {
+
+                    }
+
+                    button {
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .blackbox button {
+                        min-width: 150px;
+                        height: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        top: 1em;
+                    }
+                    .button-36 {
+                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+                        border-radius: 8px;
+                        border-style: none;
+                        box-sizing: border-box;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        flex-shrink: 0;
+                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 4rem;
+                        padding: 0 1.6rem;
+                        text-align: center;
+                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                        transition: all .5s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                    }
+
+                    .button-36:hover {
+                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+                        transition-duration: .1s;
+                    }
+                    .button-49,
+                    .button-49:after {
+                      line-height: 50px;
+                      font-size: 20px;
+                      font-family: 'Bebas Neue', sans-serif;
+                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                      border: 0;
+                      color: #fff;
+                      letter-spacing: 3px;
+                      box-shadow: 6px 0px 0px #00E6F6;
+                      outline: transparent;
+                      position: relative;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                    }
+
+                    .button-49:after {
+                      --slice-0: inset(50% 50% 50% 50%);
+                      --slice-1: inset(80% -6px 0 0);
+                      --slice-2: inset(50% -6px 30% 0);
+                      --slice-3: inset(10% -6px 85% 0);
+                      --slice-4: inset(40% -6px 43% 0);
+                      --slice-5: inset(80% -6px 5% 0);
+
+                      content: 'ALTERNATE TEXT';
+                      display: block;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                      clip-path: var(--slice-0);
+                    }
+
+                    .button-49:hover:after {
+                      animation: 1s glitch;
+                      animation-timing-function: steps(2, end);
+                    }
+
+                    @keyframes glitch {
+                      0% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-20px, -10px);
+                      }
+                      10% {
+                        clip-path: var(--slice-3);
+                        transform: translate(10px, 10px);
+                      }
+                      20% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 10px);
+                      }
+                      30% {
+                        clip-path: var(--slice-3);
+                        transform: translate(0px, 5px);
+                      }
+                      40% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-5px, 0px);
+                      }
+                      50% {
+                        clip-path: var(--slice-3);
+                        transform: translate(5px, 0px);
+                      }
+                      60% {
+                        clip-path: var(--slice-4);
+                        transform: translate(5px, 10px);
+                      }
+                      70% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-10px, 10px);
+                      }
+                      80% {
+                        clip-path: var(--slice-5);
+                        transform: translate(20px, -10px);
+                      }
+                      90% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 0px);
+                      }
+                      100% {
+                        clip-path: var(--slice-1);
+                        transform: translate(0);
+                      }
                     }
 
                     /*****************
@@ -1532,13 +1685,22 @@ Humboldt-Universität zu Berlin            </p>
         </ul>
         </aside>
         </section>
-        <section class="slide level2">
-
-        <h3 id="demo-blackbox">Demo “Blackbox”</h3>
-        <div class="blackbox">
+        <section id="blackbox" class="slide level2">
+        <h2>Blackbox</h2>
+        <blockquote>
+        <p>The term black box […] is a device or system that, for
+        convenience, is described solely in terms of its inputs and
+        outputs. One need not understand anything about what goes on
+        inside such black boxes. One simply brackets them as instruments
+        that perform certain valuable functions. <span class="citation"
+        data-cites="Winner+1993">(Winner <span>„Upon opening the black
+        box“</span> 1993, 365)</span></p>
+        </blockquote>
+        <section id="demo" class="blackbox">
+        <h3>Demo</h3>
         <div class="input">
         <!-- ### Input -->
-        <textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_input"></textarea>
+        <textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
         <!-- <label for="bb_input">Your text</label> -->
         </div>
         <div class="output">
@@ -1547,19 +1709,20 @@ Humboldt-Universität zu Berlin            </p>
         </div>
         <div class="computing">
         <!-- ### Blackbox -->
-        <button type="button" class="btn btn-warning" id="bb_button_compute" onclick="this.setAttribute(&#39;disabled&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_input&#39;).removeAttribute(&#39;disabled&#39;, &#39;&#39;);">
-        Rechne
+        <button class="button-49" type="button" id="bb_button_compute" onclick="this.classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_button_input&#39;).classList.toggle(&#39;hidden&#39;);">
+        ???
         </button>
-        <button disabled type="button" class="btn btn-warning" id="bb_button_input" onclick="document.getElementById(&#39;bb_input_preprocessed&#39;).removeAttribute(&#39;hidden&#39;); document.getElementById(&#39;bb_button_clear&#39;).removeAttribute(&#39;disabled&#39;); this.setAttribute(&#39;disabled&#39;, &#39;&#39;);">
+        <button type="button" class="button-49 hidden" id="bb_button_input" onclick="this.classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_button_clear&#39;).classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_content&#39;).classList.toggle(&#39;hidden&#39;); ">
         Zeige den Inhalt
         </button>
-        <button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById(&#39;bb_input_preprocessed&#39;).setAttribute(&#39;hidden&#39;, &#39;&#39;); document.getElementById(&#39;bb_button_compute&#39;).removeAttribute(&#39;disabled&#39;); this.setAttribute(&#39;disabled&#39;, &#39;&#39;);">
+        <button type="button" class="button-49 hidden" id="bb_button_clear" onclick="this.classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_button_compute&#39;).classList.toggle(&#39;hidden&#39;); document.getElementById(&#39;bb_content&#39;).classList.toggle(&#39;hidden&#39;);">
         Leeren
         </button>
-        <p><span id="bb_input_preprocessed" class="to_clear"
-        hidden=""></span></p>
         </div>
+        <div id="bb_content" class="hidden content">
+        <p><span id="bb_input_preprocessed" class="to_clear"></span></p>
         </div>
+        </section>
         <!-- the script powering the blackbox -->
         <script src="../assets/js/blackbox_count-ascii.js"></script>
         <aside class="notes">
@@ -1780,14 +1943,6 @@ Humboldt-Universität zu Berlin            </p>
         </ul>
         </section></section>
         <section>
-        <section id="schluß-danke" class="title-slide slide level1">
-        <h1>Schluß / Danke!</h1>
-
-        </section>
-        <section id="refs" class="slide level2">
-        <h2>Literatur</h2>
-        </section></section>
-        <section>
         <section id="material" class="title-slide slide level1">
         <h1>Material</h1>
 
@@ -1846,6 +2001,98 @@ Humboldt-Universität zu Berlin            </p>
         <li>Nutzerfreundlichkeit</li>
         </ul>
         </aside>
+        </section></section>
+        <section>
+        <section id="schluß-danke" class="title-slide slide level1">
+        <h1>Schluß / Danke!</h1>
+
+        </section>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        role="doc-bibliography">
+        <div id="ref-CPCAbout" class="csl-entry" role="doc-biblioentry">
+        <span>„About Us“</span>. o. J. Centre for Postdigital Cultures.
+        Zugegriffen 5. September 2022. <a
+        href="https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/">https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/</a>.
+        </div>
+        <div id="ref-Berry+2017" class="csl-entry"
+        role="doc-biblioentry">
+        Berry, David M, und Anders Fagerjord. 2017. <em>Digital
+        humanities: knowledge and critique in a digital age</em>.
+        Cambridge; Malden: Polity.
+        </div>
+        <div id="ref-Brecht1967SchlechteZeiten" class="csl-entry"
+        role="doc-biblioentry">
+        Brecht, Bertolt. 1967. <span>„Schlechte Zeiten“</span>. In
+        <em>Gesammelte Gedichte</em>, 3:963. Frankfurt am Main:
+        Suhrkamp.
+        </div>
+        <div id="ref-Drucker2021DHCoursebook" class="csl-entry"
+        role="doc-biblioentry">
+        Drucker, Johanna. 2021. <em>The Digital Humanities Coursebook:
+        An Introduction to Digital Methods for Research and
+        Scholarship</em>. Abingdon: Routledge. <a
+        href="https://doi.org/10.4324/9781003106531">https://doi.org/10.4324/9781003106531</a>.
+        </div>
+        <div id="ref-DunbarHester2014LowPower" class="csl-entry"
+        role="doc-biblioentry">
+        Dunbar-Hester, Christina. 2014. <em>Low Power to the People:
+        Pirates, Protest, and Politics in FM Radio Activism</em>.
+        Cambridge: MIT Press. <a
+        href="https://worldcat.org/title/895772974">https://worldcat.org/title/895772974</a>.
+        </div>
+        <div id="ref-Gil+2016" class="csl-entry" role="doc-biblioentry">
+        Gil, Alex, und Élika Ortega. 2016. <span>„Global Outlooks in
+        Digital Humanities: Multilingual Practices and Minimal
+        Computing“</span>. In <em>Doing digital humanities: practice,
+        training, research</em>, herausgegeben von Constance Crompton,
+        Richard J Lane, und Ray Siemens, 22–34. Abingdon: Routledge.
+        </div>
+        <div id="ref-Rankin2018PeoplesHistory" class="csl-entry"
+        role="doc-biblioentry">
+        Rankin, Joy Lisi. 2018. <em>A People’s History of Computing in
+        the United States</em>. Harvard: Harvard University Press.
+        </div>
+        <div id="ref-Sayers2017Introduction" class="csl-entry"
+        role="doc-biblioentry">
+        Sayers, Jentery. 2017. <span>„Introduction: <span>‚I Don’t Know
+        All the Circuitry‘</span>“</span>. In <em>Making Things and
+        Drawing Boundaries</em>, herausgegeben von Jentery Sayers, 1–18.
+        Experiments in the Digital Humanities. University of Minnesota
+        Press. <a
+        href="https://doi.org/10.5749/j.ctt1pwt6wq.3">https://doi.org/10.5749/j.ctt1pwt6wq.3</a>.
+        </div>
+        <div id="ref-Spath2019Makerspaces" class="csl-entry"
+        role="doc-biblioentry">
+        Späth, Katharina, Tobias Seidl, und Viktoria Heinzel. 2019.
+        <span>„Verbreitung und Ausgestaltung von Makerspaces an
+        Universitäten in Deutschland“</span>. <em>o-bib. Das offene
+        Bibliotheksjournal</em> 6 (3): 40–55. <a
+        href="https://doi.org/10.5282/o-bib/2019h3s40-55">https://doi.org/10.5282/o-bib/2019h3s40-55</a>.
+        </div>
+        <div id="ref-Winner+1980" class="csl-entry"
+        role="doc-biblioentry">
+        Winner, Langdon. 1980. <span>„Do artifacts have
+        politics?“</span> <em>Daedalus</em>, 121–36.
+        </div>
+        <div id="ref-Winner+1993" class="csl-entry"
+        role="doc-biblioentry">
+        ———. 1993. <span>„Upon opening the black box and finding it
+        empty: Social constructivism and the philosophy of
+        technology“</span>. <em>Science, Technology, &amp; Human
+        Values</em> 18 (3): 362–78. <a
+        href="https://doi.org/10.1177/016224399301800306">https://doi.org/10.1177/016224399301800306</a>.
+        </div>
+        <div id="ref-Wythoff2022MinimalComputing" class="csl-entry"
+        role="doc-biblioentry">
+        Wythoff, Grant. 2022. <span>„Ensuring Minimal Computing Serves
+        Maximal Connection“</span>. Herausgegeben von Alex Gil und
+        Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
+        "Minimal Computing"). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html">http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html</a>.
+        </div>
+        </div>
         </section></section>
       </div>
     </div>

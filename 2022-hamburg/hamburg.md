@@ -291,92 +291,66 @@ Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
 
 :::
 
-## Demo "Blackbox"
+## Blackbox
 
-<!-- hier Blackbox code snippet einfügen-->
+>The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
 
-::: columns-3
-:::: column
+::: blackbox
 
-### Input
+### Demo
 
-<textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_example"></textarea>
-<!-- <label for="bb_example">Your text</label> -->
+:::: input
 
-::::
-:::: column
+<!-- ### Input -->
 
-### Blackbox
-
-<button type="button" class="btn btn-warning" id="bb_button_count" onclick="this.setAttribute('disabled', ''); document.getElementById('bb_button_text').removeAttribute('disabled', '');">Rechne</button>
-<button disabled type="button" class="btn btn-warning" id="bb_button_text" onclick="document.getElementById('bb_result_text').removeAttribute('hidden'); document.getElementById('bb_button_clear').removeAttribute('disabled'); this.setAttribute('disabled', '');">Zeige den Inhalt</button>
-<button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_result_text').setAttribute('hidden', ''); document.getElementById('bb_button_count').removeAttribute('disabled'); this.setAttribute('disabled', '');">Leeren</button>
-
-<p hidden class="to_clear" id="bb_result_text"></p>
+<textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
+<!-- <label for="bb_input">Your text</label> -->
 
 ::::
-:::: column
+:::: output
 
-### Output
+<!-- ### Output -->
 
-<p id="bb_result_count" class="to_clear"></p>
-<!-- <p id="bb_result_text" hidden class="to_clear"></p> -->
+<span id="bb_result_compute" class="to_clear"></span>
 
+::::
+:::: computing
+
+<!-- ### Blackbox -->
+
+<button class="button-49" type="button" id="bb_button_compute" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_input').classList.toggle('hidden');">???</button>
+<button type="button" class="button-49 hidden" id="bb_button_input" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_clear').classList.toggle('hidden'); document.getElementById('bb_content').classList.toggle('hidden'); ">Zeige den Inhalt</button>
+<button type="button" class="button-49 hidden" id="bb_button_clear" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_compute').classList.toggle('hidden'); document.getElementById('bb_content').classList.toggle('hidden');">Leeren</button>
+
+::::
+
+:::: {.hidden .content #bb_content}
+<span class="to_clear" id="bb_input_preprocessed"></span>
 ::::
 :::
 
 <!-- the script powering the blackbox -->
-<script>
-
-    document.getElementById("bb_button_count").addEventListener("click", function() { 
-        
-        let chars = document.getElementById("bb_example").value;  
-
-        let trimmedChars = chars.trim().replace(/ /g,'')
-        
-        let count = 0;
-        let output_text = [];
-
-        for (let index = 0; index < trimmedChars.length; index++) {
-            const element = trimmedChars[index];
-            let asc = element.charCodeAt(0);
-            if(asc < 128) {
-                output_text.push(element);
-                count ++;
-            }
-        }
-
-        let result_text = output_text.join("");
-        let result_count = count;
-        
-        document.getElementById("bb_result_count").innerHTML = result_count;
-        document.getElementById("bb_result_text").innerHTML = result_text;
-
-    });
-
-    document.getElementById("bb_button_clear").addEventListener("click", function() { 
-        
-        let text = document.getElementsByClassName('to_clear');
-
-        for (let index = 0; index < text.length; index++) {
-            const element = text[index];
-            if (document.getElementsByTagName("textarea")) {
-                element.value = '';
-            }
-            if (document.getElementsByTagName("textarea")) {
-                element.innerHTML = '';
-            }
-        } 
-    });
-</script>
+<script src="../assets/js/blackbox_count-ascii.js"></script>
 
 ::: notes
 
 - kleines nicht repräsentatives Demo-Beispiel mitgebracht, um Blackbox zu veranschaulichen
-- erwartet als Input Plain Text
-- Was macht die Blackbox: sie zählt Zeichen des eingebenen Texts und gibt die gezählten Zeichen zurück
-- Beispiel mit King: Best Case > erwartbares Ergebnis (unproblematisch, auch wenn man nicht genau weiß, was im Hintergrund genau passiert)
-- Beispiel mit König: Worst Case > unerwartetes Ergebnis (problematisch)
+- Schritte: **nicht** vorher erklären, was hier passieren soll!
+    1. erwartet einen Input: Plain Text
+    2. Berechnen durch Blackbox
+        - Output: Eine Zahl
+    3. Frage an Publikum: was ist passiert?
+        - Antwort: die Blackbox zählt
+    4. Frage an Publikum: was wird gezählt?
+        - Antwort: Zeichen? Buchstaben?
+    5. Frage an Publikum: können Sie das verifizieren?
+    4. Zeige den Inhalt der Blackbox um zu überprüfen ob die Hypothese des Publikums stimmen kann
+    5. Frage an Publikum: was ist passiert?
+- Beispiel: Blackbox zählt ASCII Zeichen inkl. Satz- aber ohne Leerzeichen
+    1. Eingabe ohne Umlaute: z.B. "King" 
+        - Best Case -> erwartbares Ergebnis (unproblematisch, auch wenn man nicht genau weiß, was im Hintergrund genau passiert)
+    2. Eingabe mit Umlauten: z.B. "König"
+        - Worst Case -> unerwartetes Ergebnis (problematisch)
 - hier kommt der Makerspace in Spiel: Maschinenraum öffen und hineinschauen, was da eigentlich passiert
 - Vermutung liegt nahe, dass die Maschine hier einen anderen Zeichensatz oder Zeichkodierung verwendet als meine und daher das Ergebnis verfälscht wird 
 

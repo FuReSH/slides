@@ -10,8 +10,6 @@ date: 2022-10-05
 status: draft
 lang: de
 bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
-reference-section-title: "Literatur"
-suppress-bibliography: true
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
@@ -310,11 +308,15 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 :::
 
----------
 
-### Demo "Blackbox"
+## Blackbox
+
+>The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
 
 ::: blackbox
+
+### Demo
+
 :::: input
 
 <!-- ### Input -->
@@ -334,12 +336,14 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 <!-- ### Blackbox -->
 
-<button type="button" id="bb_button_compute" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_input').classList.toggle('hidden');">Rechne</button>
-<button type="button" class="hidden" id="bb_button_input" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_clear').classList.toggle('hidden'); document.getElementById('bb_input_preprocessed').classList.toggle('hidden'); ">Zeige den Inhalt</button>
-<button type="button" class="hidden" id="bb_button_clear" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_compute').classList.toggle('hidden'); document.getElementById('bb_input_preprocessed').classList.toggle('hidden');">Leeren</button>
+<button class="button-49" type="button" id="bb_button_compute" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_input').classList.toggle('hidden');">???</button>
+<button type="button" class="button-49 hidden" id="bb_button_input" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_clear').classList.toggle('hidden'); document.getElementById('bb_content').classList.toggle('hidden'); ">Zeige den Inhalt</button>
+<button type="button" class="button-49 hidden" id="bb_button_clear" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_compute').classList.toggle('hidden'); document.getElementById('bb_content').classList.toggle('hidden');">Leeren</button>
 
-<span class="hidden to_clear" id="bb_input_preprocessed"></span>
+::::
 
+:::: {.hidden .content #bb_content}
+<span class="to_clear" id="bb_input_preprocessed"></span>
 ::::
 :::
 
@@ -488,9 +492,6 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 - Wir machen keinen dauerhaften Toolsupport
 
 
-# Schluß / Danke!
-## Literatur {#refs}
-
 # Material
 ## Wir?
 
@@ -529,3 +530,6 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 + Nutzerfreundlichkeit
 
 :::
+
+# Schluß / Danke!
+## Literatur {#refs}
