@@ -319,7 +319,7 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 <!-- ### Input -->
 
-<textarea class="form-control to_clear" type="text" placeholder="Geben sie einen Text ein" id="bb_input"></textarea>
+<textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
 <!-- <label for="bb_input">Your text</label> -->
 
 ::::
@@ -334,11 +334,11 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 <!-- ### Blackbox -->
 
-<button type="button" class="btn btn-warning" id="bb_button_compute" onclick="this.setAttribute('disabled', ''); document.getElementById('bb_button_input').removeAttribute('disabled', '');">Rechne</button>
-<button disabled type="button" class="btn btn-warning" id="bb_button_input" onclick="document.getElementById('bb_input_preprocessed').removeAttribute('hidden'); document.getElementById('bb_button_clear').removeAttribute('disabled'); this.setAttribute('disabled', '');">Zeige den Inhalt</button>
-<button disabled type="button" class="btn btn-warning" id="bb_button_clear" onclick="document.getElementById('bb_input_preprocessed').setAttribute('hidden', ''); document.getElementById('bb_button_compute').removeAttribute('disabled'); this.setAttribute('disabled', '');">Leeren</button>
+<button type="button" id="bb_button_compute" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_input').classList.toggle('hidden');">Rechne</button>
+<button type="button" class="hidden" id="bb_button_input" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_clear').classList.toggle('hidden'); document.getElementById('bb_input_preprocessed').classList.toggle('hidden'); ">Zeige den Inhalt</button>
+<button type="button" class="hidden" id="bb_button_clear" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_compute').classList.toggle('hidden'); document.getElementById('bb_input_preprocessed').classList.toggle('hidden');">Leeren</button>
 
-<span hidden class="to_clear" id="bb_input_preprocessed"></span>
+<span class="hidden to_clear" id="bb_input_preprocessed"></span>
 
 ::::
 :::
