@@ -317,32 +317,32 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 ### Demo
 
-:::: input
+:::: {.input #bb_div_input}
 
 <!-- ### Input -->
 
 <textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
-<!-- <label for="bb_input">Your text</label> -->
 
 ::::
-:::: output
+:::: {.hidden .output #bb_div_output}
 
 <!-- ### Output -->
 
 <span id="bb_result_compute" class="to_clear"></span>
+<!-- <p id="bb_input_preprocessed" hidden class="to_clear"></p> -->
 
 ::::
-:::: computing
+:::: {.computing #bb_div_blackbox}
 
 <!-- ### Blackbox -->
 
-<button class="button-49" type="button" id="bb_button_compute" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_input').classList.toggle('hidden');">???</button>
-<button type="button" class="button-49 hidden" id="bb_button_input" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_clear').classList.toggle('hidden'); document.getElementById('bb_content').classList.toggle('hidden'); ">Zeige den Inhalt</button>
-<button type="button" class="button-49 hidden" id="bb_button_clear" onclick="this.classList.toggle('hidden'); document.getElementById('bb_button_compute').classList.toggle('hidden'); document.getElementById('bb_content').classList.toggle('hidden');">Leeren</button>
+<button class="button-49" type="button" id="bb_button_compute">???</button>
+<button type="button" class="button-49 hidden" id="bb_button_input">Zeige den Inhalt</button>
+<button type="button" class="button-49 hidden" id="bb_button_clear">Leeren</button>
 
 ::::
 
-:::: {.hidden .content #bb_content}
+:::: {.hidden .content #bb_div_content}
 <span class="to_clear" id="bb_input_preprocessed"></span>
 ::::
 :::
