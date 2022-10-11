@@ -156,7 +156,9 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 >Do artefacts have politics? [@Winner+1980]
 
->Do politics have artefacts? [@DunbarHester2014LowPower]
+<!-- >Do politics have artefacts? [@DunbarHester2014LowPower] -->
+
+>To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. [@Tenen2016BluntInstrumentalism, 85]
 
 ::: columns
 :::: column
