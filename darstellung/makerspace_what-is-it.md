@@ -147,6 +147,7 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 - muss im Einklang mit guter Wissenschaftlicher Praxis stehen
 - Nutzer_innen sollen ermächtigt werden
 - Lösungen müssen nach dem Verlassen des Makerspaces funktional bleiben
+- *vorhanden* reicht im Sinne Heideggers nicht, Dinge müssen *zuhanden* sein
 
 :::
 
