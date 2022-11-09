@@ -1,18 +1,18 @@
 ---
-title: "Scholarly Makerspace"
+title: "Vorstellung des *Scholarly Makerspace*"
 subtitle: "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 author:
     - Till Grallert
     - Sophie Eckenstaler
     - Samantha Tirtohusodo
-institute: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
-date: 2022-10-05
+institute: Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum
+date: 2022-11-10
 status: draft
 lang: de
-bibliography: 
-    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+bibliography:
     - /Users/Shared/HUBox/FuReSH/assets/bibliography/FuReSH.csl.json
     - ../assets/bibliography/FuReSH.csl.json
+# bibliography:  https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
@@ -25,7 +25,7 @@ tags:
 
 DFG-Projekt zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften unter Beteiligung von Universitätsbibliothek und den Lehrstühlen für Digital History (Inst. f. Geschichte) und Information Processing and Analytics (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin (2022--25).
 
-# Ein prototypischer Scholarly Makerspace!?
+# Ein prototypischer Scholarly Makerspace?!
 ## Ein Makerspace?
 
 >Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden [@Spath2019Makerspaces, 41]
@@ -37,12 +37,12 @@ Damit sind Makerspaces *Lernorte* aber für was?
 
 :::
 
-## Ein Makerspace aber für was?
+## Ein Makerspace, aber für was?
 
 
 ![Ein 3D Drucker](../assets/images/3d-printer.jpg)
 
-## Ein Makerspace aber für was?
+## Ein Makerspace, aber für was?
 
 ![Kein 3D Drucker](../assets/images/3d-printer_struck-through.jpg)
 
@@ -63,7 +63,7 @@ Damit sind Makerspaces *Lernorte* aber für was?
 ::::
 :::
 
-## Für die digitale Werkzeugkompetenz in den Humanities
+## Ein Lernort für die digitale Werkzeugkompetenz in den Humanities
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
@@ -87,67 +87,12 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 :::
 
-## Aber *Making?*
+## Digitale Werkzeugkompetenz in den Humanities?
 
-
-
->Do artefacts have politics? [@Winner+1980]
-
-<!-- >Do politics have artefacts? [@DunbarHester2014LowPower] -->
-
->To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. [@Tenen2016BluntInstrumentalism, 85]
-
-::: columns
-:::: column
-
-### Making
-
-- Experimentieren, Tüfteln, Ausprobieren, Werkeln 
-- Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
-
-::::
-:::: column
-
-### Maker turn
-
-Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
-
-::::
-:::
-
-
-::: notes
-
-- Grundsatz: Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
-- Geschichte
-    + 1970er Kalifornien: kooperative Werkstätten
-    + Recht auf Reparatur
-    + DIY: do it yourself culture
-    + "Maker Movement Manifesto" von Hatch (2013)
-        * make, share, give, learn, tool up, play, participate, support, change
-- bezieht sich auf [@Wythoff2022MinimalComputing], der die beiden Fragen verknüpft hat
-    + Do artefacts have politics? [@Winner+1980]
-    + Do politics have artefacts? [@DunbarHester2014LowPower]
-- Kritik an Maker culture als omnipotenter maskuliner Raum:
-    - >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
-
-:::
-
-## Warum?
-
-::: columns
-:::: column
+>It is our position that the "digital" cannot be understood as a separate domain of culture. If we actually examine the digital [...] we see that today digital information processing is present in every aspect of our lives [@CPCAbout].
 
 - Die Unterscheidung zwischen **digital** und **analog** bzw. hergebrachten Ansätzen ist bedeutungslos geworden [@Berry+2017]
 - Sämtliche Aspekte der Forschung sind bereits immer durch Computer re-medialisiert
-
-::::
-:::: column
-
->It is our position that the “digital” cannot be understood as a separate domain of culture. If we actually examine the digital [...] we see that today digital information processing is present in every aspect of our lives [@CPCAbout].
-
-::::
-:::
 
 ::: notes
 
@@ -159,7 +104,38 @@ Aspekte / Komponenten computationeller Forschung in den Geistes- und Kulturwisse
 
 :::
 
-## Ziele
+## Digitale Werkzeugkompetenz in den Humanities?
+
+::: columns
+:::: column
+
+### text2text
+
+Mit [you.com](https://you.com/search?q=how+to+write+well&&tbm=youwrite&cfr=write&)
+
+>The humanities are under pressure. In an age of big data and computational power, the traditional methods of hermeneutics--close reading and interpretation--seem quaint. New approaches are needed to engage with the digital world, and one promising avenue is the creation of a prototypical scholarly makerspace.
+>
+>A makerspace is a place where people can come together to create things using technology. They are often open-ended environments where people can experiment and tinker with new ideas. This type of environment is ideal for exploring digital and computational tools, as well as for developing new ways of thinking about the humanities.
+
+<!-- >Digital technology is revolutionizing the way we live, work, and communicate. In particular, digital tools are transforming the humanities by providing new ways of accessing and analyzing information. As academics in the humanities, we need to be literate in these tools in order to keep up with the changing landscape of our discipline.
+
+>The digital transformation presents many challenges for us as scholars. For one thing, we must learn how to use new software and hardware platforms that enable us to access and analyze data more efficiently. Additionally, we need to develop new methods for conducting research that take advantage of the unique capabilities of digital technologies. Finally, we must grapple with the ethical implications of using these technologies in our work.
+
+>Despite these challenges, there are many reasons why developing digital tool literacy is essential for scholars in the humanities today. First and foremost amongst these is that it allows us to do our jobs better – plain and simple. With a better understanding of how to use digital technologies effectively, we can conduct research more efficiently and produce scholarship that is more impactful. Additionally, by being digitally literate we set ourselves apart from other scholars who may not have kept pace with the latest developments. Finally ,as society becomes increasingly digitized it is important that those of us working in those digital spaces have a strong foundation in their use. Only through developing our digital tool literacy can we continue to prosper as academics in the humanties field -->
+
+::::
+:::: column
+
+### text2image
+
+Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
+
+!["knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Torsten Hiltmann)](../assets/images/dell-e_knight.png)
+
+::::
+:::
+
+## Digitale Werkzeugkompetenz in den Humanities!
 
 Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 
@@ -167,28 +143,7 @@ Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 + kritische **Reflexion** über ein neues epistemisches Paradigma,
 + Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
 
-## Ansatz: Minimal computing
-
->Das Haus ist gebaut aus den Steinen, die vorhanden waren [@Brecht1967SchlechteZeiten].
-
-Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" und "was haben wir?" handlungsleitend. [@Gil+2016]
-
-- Kontextabhängig
-- Hilfe zur Selbsthilfe
-- Fokus auf **methodische Zugänge** mit beispielhaften Implementation
-
-::: notes
-
-- die minimale Lösung ist unter den Bedingungen der Wissenschaft, die einzig machbare
-- muss im Einklang mit guter Wissenschaftlicher Praxis stehen
-- Nutzer_innen sollen ermächtigt werden
-- Lösungen müssen nach dem Verlassen des Makerspaces funktional bleiben
-- *vorhanden* reicht im Sinne Heideggers nicht, Dinge müssen *zuhanden* sein
-
-:::
-
-## Ansatz: Making
-
+## Aber **Making** ?
 
 
 >Do artefacts have politics? [@Winner+1980]
@@ -257,242 +212,17 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 ::::
 :::
 
-# Operationalisierung
-
----------
-
->Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden [@Spath2019Makerspaces, 41]
-
-::: notes
-
-- Zentrale Frage in unserer Projektphase ist, wie sich Idee des Scholarly Makerspace an einem konkreten Ort, nämlich der UB, konkret umsetzen bzw. implementieren lässt
-    + hierbei ganz bei der traditionellen Maker-Culture und Maker-Bewegung, nämlich [Zitat] 
-
-:::
-
-## Raum
-
-![Der Scholarly Makerspace als Lernort an der UB der HU Berlin](https://furesh.github.io/slides/assets/images/photos/ub-makerspace_2.jpg)
-
-::: notes
-
-- Makerspace als Lernort
-- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
-    + Herausforderung: bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
-+ Anforderungen: angenehme Atmosphäre
-        * Platz
-        * Licht
-        * Schallschutz
-        * Gruppenarbeitsplätze
-        * "Werkbänke"
-
-:::
-
-## Ressourcen
-
-::: columns
-:::: column
-
-### Werkzeuge
-
-- Metaphorische, physische Werkzeuge, Werkzeugkisten und -regale
-- Modularisierte computationelle Werkzeuge
-- Verweise auf Literatur, Tutorials, Use cases
-
-::::
-:::: column
-
-### Infrastruktur
-
-- Dockingstationen für Laptops
-- Vorhandene Resourcen an der HU Berlin nutzbar machen
-    + Zugang zu GPU-Rechner
-    + Servern des CMS
-
-::::
-:::
-
-::: notes
-
-Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
-
-1. zum einen wollen wir Infrastrukturen vor Ort zur Verfügung stellen (Hardware, mit der gearbeitet werden kann, aktuell Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker, wenn Bedarf da ist), aber auch vorhandene Infrastrukturangebote an der HU nutzbar machen (Zugang zu GPU-Rechenkapazitäten, Server des CMS, etc.)
-2. zum anderen aggregieren wir bei uns digitale Werkzeuge, welche im geistewissenschaftlichen Forschungsprozess zum Einsatz kommen
-    * wobei wir Werkzeuge metaphorisch als physisch denken und diese entsprechend nach Werkzeugkisten  und -regale systematisieren
-    * daneben gibt es Werkzeuganleitungen, die aus Literatur, Tutorials und Best Practices bestehen
-
-:::
-
-## Metaphern ernst nehmen
-### Werkzeuge
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
-
-- **Werkzeug**: Methode, Software, Hardware, Sprache, Format, etc.
-- Ausgangspunkte: 
-    + Werkzeuge sind zunächst eine **Blackbox**
-    + können als **Werkzeugkiste** wieder Werkzeuge enthalten
-- Benötigen 
-    + **Werkstoffe** als **Input** und 
-    + **Knowhow** für den Gebrauch
-- Generieren durch **Verarbeitung** / **Berechnung** einen **Output**
-
-::: notes
-
-- da Defintion digitales Werkzeug/ Tool nicht eindeutig ist und Abgrenzungen schwierig sind, halten wir den Begriff generisch und offen
-- demzufolge sind alle digitalen Objekte, die im Forschungsprozess verwendet werden und demnach der Erkenntnisgenerierung dienen,  Werkzeuge
-- diese wiederum lassen sich klassifizieren
-- Bei der Vermittlung von tool literacy ist der Ausgangpunkt, das alle Werkzeuge zunächst Blackboxes sind
-- insbesondere der Schritt der Verarbeitung bzw. des Rechnens bleibt für viele unsichtbar
-
-:::
-
-
-## Blackbox
-
->The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
-
-::: blackbox
-
-### Demo
-
-:::: {.input #bb_div_input}
-
-<!-- ### Input -->
-
-<textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
-
-::::
-:::: {.hidden .output #bb_div_output}
-
-<!-- ### Output -->
-
-<span id="bb_result_compute" class="to_clear"></span>
-<!-- <p id="bb_input_preprocessed" hidden class="to_clear"></p> -->
-
-::::
-:::: {.computing #bb_div_blackbox}
-
-<!-- ### Blackbox -->
-
-<button class="button-49" type="button" id="bb_button_compute">???</button>
-<button type="button" class="button-49 hidden" id="bb_button_input">Zeige den Inhalt</button>
-<button type="button" class="button-49 hidden" id="bb_button_clear">Leeren</button>
-
-::::
-
-:::: {.hidden .content #bb_div_content}
-<span class="to_clear" id="bb_input_preprocessed"></span>
-::::
-:::
-
-<!-- the script powering the blackbox -->
-<script src="../assets/js/blackbox_count-ascii.js"></script>
-
-::: notes
-
-- kleines nicht repräsentatives Demo-Beispiel mitgebracht, um Blackbox zu veranschaulichen
-- Schritte: **nicht** vorher erklären, was hier passieren soll!
-    1. erwartet einen Input: Plain Text
-    2. Berechnen durch Blackbox
-        - Output: Eine Zahl
-    3. Frage an Publikum: was ist passiert?
-        - Antwort: die Blackbox zählt
-    4. Frage an Publikum: was wird gezählt?
-        - Antwort: Zeichen? Buchstaben?
-    5. Frage an Publikum: können Sie das verifizieren?
-    4. Zeige den Inhalt der Blackbox um zu überprüfen ob die Hypothese des Publikums stimmen kann
-    5. Frage an Publikum: was ist passiert?
-- Beispiel: Blackbox zählt ASCII Zeichen inkl. Satz- aber ohne Leerzeichen
-    1. Eingabe ohne Umlaute: z.B. "King" 
-        - Best Case -> erwartbares Ergebnis (unproblematisch, auch wenn man nicht genau weiß, was im Hintergrund genau passiert)
-    2. Eingabe mit Umlauten: z.B. "König"
-        - Worst Case -> unerwartetes Ergebnis (problematisch)
-- hier kommt der Makerspace in Spiel: Maschinenraum öffen und hineinschauen, was da eigentlich passiert
-- Vermutung liegt nahe, dass die Maschine hier einen anderen Zeichensatz oder Zeichkodierung verwendet als meine und daher das Ergebnis verfälscht wird 
-
-:::
-
-## Wissen
-
-- Personal schafft, bereitet auf und vermittelt Wissen über Werkzeuge
-- Aber: das Personal haben keinen Anspruch auf allumfassende Expertise
-
-::: notes
-
-- wichtig bei Bereitstellung für uns, diese nicht hierarchisch zu denken
-    + wir das Personal sind nicht die Experten, die frontal erklären
-- >To say, “I can do first aid,” is to underscore our entanglement with circuitry. And to say, “I don’t know all the circuitry,” at least implies the impossibility of such knowledge. That is, we can reject the autonomy or privacy of technologies without supposing we know them completely. Although we may understand how something works, we may not apprehend how or under what conditions it was made. [@Sayers2017Introduction, 2]
-- >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
-
-:::
-
-## Gemeinschaft
-
-Die Gemeinschaft der je konkret Experimentierenden im *Scholarly Makerspace*
-
-+ ist durch Werte bestimmt
-+ bestimmt die Bedingungen unseres Arbeitens
-- zielt auf die Vermittlung zwischen Wissensdomänen
-
-::: notes
-
-- uns geht es um die Gemeinschaft, die die breite der beteiligten Wissensdomänen nur gemeinsam erschlossen werden kann.
-- Ziel ist *digital* or *computing citizens*, die über ihre Teilnahme  und -habe an einer Gemeinschaft definiert sind. 
-    + Unterschied zu Produzenten und *Makers*
-- durch Werte bestimmt, wie
-    + Zugänglichkeit
-    + Teilhabe
-    + Nachhaltigkeit: sozial, ökologisch, technologisch
-    + Verantwortlichkeit
-    + Gerechtigkeit
-    + [FAIR](https://www.go-fair.org/fair-principles/): **F**indability, **A**ccessability, **I**nteroperability, **R**euse
-    + [CARE](https://www.gida-global.org/care): **C**ollective benefit, **A**uthority to control, **R**esponsibility, **E**thics
-- bestimmt die Bedingungen unter denen wir arbeiten, z.B. Zugänge zu
-    + Materialien
-    + Methoden
-    + Werkzeugen
-    + Arbeitskraft
-
-:::
-
-# Wie sieht das konkret aus
-## Was bauen wir?
-### Werkzeugregal-Architektur
-
-::: columns
-:::: column
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_architecture.jpg)
-
-::::
-:::: column
-
-- Offen und Modular
-- Wissen(smanagement)
-- Gemeinschaft(lich)
-
-::::
-:::
-
-::: notes
-
-- Für Vortrag in Hamburg nur kurz zeigen und überspringen
-    + Diese Infrastruktur dient dem Wissensmanagement
-    + Wissen wird durch Personal und Community geschaffen, aufbereitet und vermittelt
-    + Wissen wird in die Gemeinschaft / Gesellschaft zurückgegeben
-
-:::
+# Serviceportfolio
 ## Wer sind unsere Zielgruppen?
 
-Forscher_innen aller Karrierstufen nach dem Master
+Forscher_innen aller Karrierstufen ab der Promotionsphase
 
 ::: columns-3
 :::: column
 
 ### Typ 1
 
-Keine / geringe Kenntnisse aber Interesse an DH
+Keine / geringe Kenntnisse aber Interesse an Digital Humanities
 
 ::::
 :::: column
@@ -514,61 +244,101 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 ## Was bieten wir an?
 ### Hilfe zur Selbsthilfe
 
-- Infrastruktur für eigenes Arbeiten
+- Infrastruktur und Resourcen für eigenes Arbeiten
     + wöchentliche Einführungen in den Scholarly Makerspace
     + offene Materialien und Infrastrukturen für die Nachnutzung und Erweiterung
+    <!-- + Zugang zu technischen Infrastrukturen der HU (z.B. CMS) -->
 - "Sprechstunden" bzw. gemeinsames Experimentieren
     + Drop-in
     + Offene Sprechstunde
     + gezielte Beratung
 - Community hours für den Austausch
 
-## Was bieten wir nicht an?
-
-- Wir schreiben keine Anträge
-- Wir setzen keine Projekte um
-- Wir bauen keine Webseiten
-- Wir machen keinen dauerhaften Toolsupport
-
-
-# Material
-## Wir?
+## Was bieten wir an?
+### Einen Lernort
 
 ::: columns
 :::: column
 
-- durch Werte bestimmt, wie
-    + Zugänglichkeit
-    + Teilhabe
-    + Nachhaltigkeit: sozial, ökologisch, technologisch
-    + Verantwortlichkeit
-    + Gerechtigkeit
-    + [FAIR](https://www.go-fair.org/fair-principles/): **F**indability, **A**ccessability, **I**nteroperability, **R**euse
-    + [CARE](https://www.gida-global.org/care): **C**ollective benefit, **A**uthority to control, **R**esponsibility, **E**thics 
+![Lage des *Scholarly Makerspace*s im 3. OG des Grimm-Zentrums](../assets/images/location-within-the-library_2d-annotated.jpg)
+
 ::::
 :::: column
 
-- bestimmt die Bedingungen unter denen wir arbeiten, z.B. Zugänge zu
-    + Materialien
-    + Methoden
-    + Werkzeugen
-    + Arbeitskraft
+![Der *Scholarly Makerspace* im Grimm-Zentrum](../assets/images/photos/ub-makerspace_2.jpg)
 
 ::::
 :::
 
-## [\*] Die Blackbox
 
-![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg)
-
->The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
 
 ::: notes
 
-+ Schutz von Betriebsgeheimnissen
-+ Nutzerfreundlichkeit
+- Makerspace als Lernort
+- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
++ Herausforderung: 
+    * bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
++ Anforderungen: angenehme Atmosphäre
+        * Platz
+        * Licht
+        * Schallschutz
+        * Gruppenarbeitsplätze
+        * "Werkbänke"
 
 :::
+
+## Was bieten wir an?
+### Infrastruktur und Resourcen
+
+::: columns
+:::: column
+
+### Werkzeuge
+
+- Metaphorische, physische Werkzeuge, Werkzeugkisten und -regale
+- Modularisierte computationelle Werkzeuge
+- Verweise auf Literatur, Tutorials, Use cases
+
+::::
+:::: column
+
+### Infrastruktur
+
+- Dockingstationen für Laptops
+- Vorhandene Resourcen an der HU Berlin nutzbar machen
+    + Zugang zu GPU-Rechner
+    + Server des CMS
+
+::::
+:::
+
+::: notes
+
+Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
+
+1. zum einen wollen wir Infrastrukturen vor Ort zur Verfügung stellen (Hardware, mit der gearbeitet werden kann, aktuell Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker, wenn Bedarf da ist), aber auch vorhandene Infrastrukturangebote an der HU nutzbar machen (Zugang zu GPU-Rechenkapazitäten, Server des CMS, etc.)
+2. zum anderen aggregieren wir bei uns digitale Werkzeuge, welche im geisteswissenschaftlichen Forschungsprozess zum Einsatz kommen
+    * wobei wir Werkzeuge metaphorisch als physisch denken und diese entsprechend nach Werkzeugkisten  und -regale systematisieren
+    * daneben gibt es Werkzeuganleitungen, die aus Literatur, Tutorials und Best Practices bestehen
+
+:::
+
+## Was bieten wir nicht an?
+
+- Wir haben keine 3D Drucker
+- Wir schreiben keine Anträge
+- Wir setzen keine Projekte um
+- Wir machen keinen dauerhaften Support
+- Wir bauen keine Webseiten
+
+::: notes
+
+- Wir können Kontakt zu Leuten mit 3D Druckern herstellen
+
+:::
+
+# Wie arbeiten wir?
+
 
 # Schluß / Danke!
 ## Literatur {#refs}
