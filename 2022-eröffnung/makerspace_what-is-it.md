@@ -21,9 +21,9 @@ tags:
     - slides
 ---
 
-## Was?
+---------
 
-DFG-Projekt zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften unter Beteiligung von Universitätsbibliothek und den Lehrstühlen für Digital History (Inst. f. Geschichte) und Information Processing and Analytics (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin (2022--25).
+Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanities" zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften an Universitätsbibliothek unter Beteiligung der Lehrstühle für *Digital History* (Inst. f. Geschichte) und *Information Processing and Analytics* (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin einen **prototypischen *Scholarly Makerspace*** auf (2022--25).
 
 # Ein prototypischer Scholarly Makerspace?!
 ## Ein Makerspace?
@@ -63,7 +63,7 @@ Damit sind Makerspaces *Lernorte* aber für was?
 ::::
 :::
 
-## Ein Lernort für die digitale Werkzeugkompetenz in den Humanities
+## Ein Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
@@ -106,6 +106,8 @@ Aspekte / Komponenten computationeller Forschung in den Geistes- und Kulturwisse
 
 ## Digitale Werkzeugkompetenz in den Humanities?
 
+Maschinen sind auf dem Weg überzeugende Schöpfer werden ...
+
 ::: columns
 :::: column
 
@@ -133,6 +135,15 @@ Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
 !["knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Torsten Hiltmann)](../assets/images/dell-e_knight.png)
 
 ::::
+:::
+
+
+::: notes
+
+- DALL-E bassiert auf den GPT (Generative Pre-trained Transformer) Modellen von OpenAI
+- GPT-3 wird auch zur Textgenese genutzt
+- [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion)
+
 :::
 
 ## Digitale Werkzeugkompetenz in den Humanities!
@@ -252,7 +263,9 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
     + Drop-in
     + Offene Sprechstunde
     + gezielte Beratung
-- Community hours für den Austausch
+- Vernetzung in die DH Community in Berlin und beyond
+    + Community hours für den Austausch
+    + Veranstaltungskalender
 
 ## Was bieten wir an?
 ### Einen Lernort
@@ -287,6 +300,36 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 
 :::
 
+## Was bieten wir an
+### Erfahrungen und Wissen
+
+::: columns-3
+:::: column
+
+![Sophie Eckenstaler](../assets/images/photos/portrait_se-circle.png)
+
+::::
+:::: column
+
+![Till Grallert, PhD](../assets/images/photos/portrait_tg-circle.png)
+
+::::
+:::: column
+
+![Samantha Tirtohusodo]()
+
+::::
+:::
+
+::: notes
+
+- wichtig bei Bereitstellung für uns, diese nicht hierarchisch zu denken
+    + wir das Personal sind nicht die Experten, die frontal erklären
+- >To say, “I can do first aid,” is to underscore our entanglement with circuitry. And to say, “I don’t know all the circuitry,” at least implies the impossibility of such knowledge. That is, we can reject the autonomy or privacy of technologies without supposing we know them completely. Although we may understand how something works, we may not apprehend how or under what conditions it was made. [@Sayers2017Introduction, 2]
+- >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
+
+:::
+
 ## Was bieten wir an?
 ### Infrastruktur und Resourcen
 
@@ -305,9 +348,10 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 ### Infrastruktur
 
 - Dockingstationen für Laptops
-- Vorhandene Resourcen an der HU Berlin nutzbar machen
-    + Zugang zu GPU-Rechner
+- Nutzbarmachung vorhandener Resourcen an der HU
+    + GPU-Rechner
     + Server des CMS
+    + 3D Drucker :-)
 
 ::::
 :::
