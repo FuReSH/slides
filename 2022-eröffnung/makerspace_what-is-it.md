@@ -63,7 +63,7 @@ Damit sind Makerspaces *Lernorte* aber für was?
 ::::
 :::
 
-## Ein Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
+## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
@@ -270,6 +270,8 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 ## Was bieten wir an?
 ### Einen Lernort
 
+Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr geöffnet
+
 ::: columns
 :::: column
 
@@ -282,8 +284,6 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 
 ::::
 :::
-
-
 
 ::: notes
 

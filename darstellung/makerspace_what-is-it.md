@@ -447,9 +447,10 @@ Die Gemeinschaft der je konkret Experimentierenden im *Scholarly Makerspace*
     + Wissen wird in die Gemeinschaft / Gesellschaft zurückgegeben
 
 :::
+
 ## Wer sind unsere Zielgruppen?
 
-Forscher_innen aller Karrierstufen nach dem Master
+Forscher_innen aller Karrierstufen ab der Promotionsphase
 
 ::: columns-3
 :::: column
