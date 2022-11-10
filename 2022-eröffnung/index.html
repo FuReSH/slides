@@ -129,10 +129,11 @@
                     div.c_header {
                         top: 0;
                     }
-                    footer {
+                    footer,
+                    footer * {
                         bottom: 0;
                         background-color: #8a0f14;
-                        color: white;
+                        color: white !important;
                     }
 
                     footer {
@@ -140,7 +141,8 @@
                     }
 
                     footer span {
-                        text-transform:  capitalize; /*this doesn't seem to have an effect*/
+                        /*text-transform:  capitalize; */
+                        /*this doesn't seem to have an effect*/
                         display: inline-block;
                         padding-left: 0.5em;
                         padding-right: 0.5em;
@@ -604,6 +606,17 @@
                     .c_right {
                         display: block;
                         float: right;
+                    }
+                    .c_center {
+                        display: block;
+                        /*clear: both;*/
+                        margin: 0 auto;
+                    }
+
+                    span.c_left,
+                    span.c_right,
+                    span.c_center {
+                        display: inline-block;
                     }
 
                     /*****************
@@ -1272,15 +1285,16 @@ Universitätsbibliothek, Grimm-Zentrum            </p>
         <section class="slide level2">
 
         <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
-        Support in the Humanities” zur Förderung von <em>digitaler</em>
-        und <em>computationaler</em> <strong>Werkzeugkompetenz</strong>
-        (<em>tool literacy</em>) in den Geistes- und
-        Kulturwissenschaften an Universitätsbibliothek unter Beteiligung
-        der Lehrstühle für <em>Digital History</em> (Inst.
-        f. Geschichte) und <em>Information Processing and Analytics</em>
-        (Inst.f. Bibliotheks- und Informationswissenschaften) der
-        Humboldt-Universität zu Berlin einen <strong>prototypischen
-        <em>Scholarly Makerspace</em></strong> auf (2022–25).</p>
+        Support in the Humanities” an der Universitätsbibliothek der
+        Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle
+        für <em>Digital History</em> (Inst. f. Geschichte) und
+        <em>Information Processing and Analytics</em> (Inst.f.
+        Bibliotheks- und Informationswissenschaften) einen
+        <strong>prototypischen <em>Scholarly Makerspace</em></strong>
+        zur Förderung <strong>digitaler</strong> und
+        <strong>computationaler Werkzeugkompetenz</strong> (<em>tool
+        literacy</em>) in den Geistes- und Kulturwissenschaften auf
+        (2022–25).</p>
         <div class="columns-3">
         <div class="column">
         <figure>
@@ -2152,7 +2166,7 @@ Universitätsbibliothek, Grimm-Zentrum            </p>
     <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -2297,13 +2311,13 @@ Universitätsbibliothek, Grimm-Zentrum            </p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1000,
                         height: 800,
-                                        
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2318,6 +2332,7 @@ Universitätsbibliothek, Grimm-Zentrum            </p>
                         <span class="c_left">|</span>
                                         <span class="c_left">Till
 Grallert, Sophie Eckenstaler, Samantha Tirtohusodo</span>
+                        <span class="c_center"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></span>
                 <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</span>
         </div>
