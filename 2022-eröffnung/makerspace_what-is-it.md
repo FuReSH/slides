@@ -26,6 +26,12 @@ tags:
 
 Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanities" zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften an Universitätsbibliothek unter Beteiligung der Lehrstühle für *Digital History* (Inst. f. Geschichte) und *Information Processing and Analytics* (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin einen **prototypischen *Scholarly Makerspace*** auf (2022--25).
 
+## Heutige Vorstellung
+
+1. Was ist denn ein "prototypischer" *Scholarly Makerspace*
+2. Unser Serviceprofil
+3. (Wie sieht das *Tüfteln* bei uns eigentlich aus?)
+
 # Ein prototypischer Scholarly Makerspace?!
 ## Ein Makerspace?
 
