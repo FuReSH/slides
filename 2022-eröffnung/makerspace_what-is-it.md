@@ -6,13 +6,14 @@ author:
     - Sophie Eckenstaler
     - Samantha Tirtohusodo
 institute: Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum
+homepage: https://makerspace.hypotheses.org/
 date: 2022-11-10
 status: draft
 lang: de
 bibliography:
     - /Users/Shared/HUBox/FuReSH/assets/bibliography/FuReSH.csl.json
     - ../assets/bibliography/FuReSH.csl.json
-# bibliography:  https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+# bibliography:  ../assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
@@ -28,12 +29,14 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
 # Ein prototypischer Scholarly Makerspace?!
 ## Ein Makerspace?
 
->Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden [@Spath2019Makerspaces, 41]
+>Im Wesentlichen geht es bei der Makerbewegung um das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**. Diese Ressourcen stehen Einzelpersonen privat oft nicht zur Verfügung. Die Ermöglichung des Zugangs für alle, stellt so einen zentralen Faktor für eine offene und demokratische Gesellschaft dar. [@Heinzeletal2020Einleitung, 2]
 
 
 ::: notes
 
-Damit sind Makerspaces *Lernorte* aber für was?
+Damit sind Makerspaces 
+    - *Lernorte*
+    - wichtige Schnittstelle zwischen **formellem** und **informellem** Lernen [@Heinzeletal2020Einleitung, 1]
 
 :::
 
@@ -41,6 +44,15 @@ Damit sind Makerspaces *Lernorte* aber für was?
 
 
 ![Ein 3D Drucker](../assets/images/3d-printer.jpg)
+
+
+::: notes
+
+- Werkstätten für Selbermacher:innen
+    + Fab Lab, 
+- „Makerspace“ hieß  ursprünglich auch die erste kommerziell betriebene Werkstatt bei der 3D-Drucker  gemietet und genutzt werden konnten (HATCH 2013)
+
+:::
 
 ## Ein Makerspace, aber für was?
 
@@ -200,12 +212,12 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 :::
 
 
-## Prototyp
+## Ein prototypischer Scholarly Makerspace
 
 ::: columns
 :::: narrow
 
-![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_icons.jpg)
+![](../assets/images/operationalisierung/toolbox_icons.jpg)
 
 ::::
 :::: wide
@@ -316,7 +328,7 @@ Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr ge
 ::::
 :::: column
 
-![Samantha Tirtohusodo]()
+![Samantha Tirtohusodo](../assets/images/photos/portrait_st-circle.png)
 
 ::::
 :::
@@ -356,6 +368,8 @@ Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr ge
 ::::
 :::
 
+![](../assets/images/operationalisierung/blackbox_contents.jpg)
+
 ::: notes
 
 Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
@@ -381,8 +395,98 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 :::
 
-# Wie arbeiten wir?
+# Wie arbeiten wir? {data-background-image="../assets/images/blackbox/black-box_question-mark-people-c_blue.png" data-background-size="90%"}
+## Die Blackbox
 
+>The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
+
+![](../assets/images/operationalisierung/blackbox_io-2.jpg)
+
+
+::: notes
+
++ Schutz von Betriebsgeheimnissen
++ Nutzerfreundlichkeit
+
+:::
+
+## Was haben wir um sie zu öffnen?
+
+![](../assets/images/operationalisierung/research-process_resources.jpg)
+
+## Minimal computing
+
+>Das Haus ist gebaut aus den Steinen, die vorhanden waren [@Brecht1967SchlechteZeiten].
+
+Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" und "was haben wir?" handlungsleitend. [@Gil+2016]
+
+- Kontextabhängig
+- Hilfe zur Selbsthilfe
+- Fokus auf **methodische Zugänge** mit beispielhaften Implementation
+
+::: notes
+
+- die minimale Lösung ist unter den Bedingungen der Wissenschaft, die einzig machbare
+- muss im Einklang mit guter Wissenschaftlicher Praxis stehen
+- Nutzer_innen sollen ermächtigt werden
+- Lösungen müssen nach dem Verlassen des Makerspaces funktional bleiben
+- *vorhanden* reicht im Sinne Heideggers nicht, Dinge müssen *zuhanden* sein
+
+:::
+
+## Was haben wir?
+
+![](../assets/images/operationalisierung/process_what-do-we-have.jpg)
+
+::: notes
+
+- Beispielhafter Prozess für den Einsatz von Software
+
+:::
+
+# Operationalisierung {data-background-image="../assets/images/blackbox/blackbox_makerspace-inside.png" data-background-size="90%"}
+
+## Forschungsprozess
+
+![](../assets/images/operationalisierung/research-process_generic.jpg)
+
+::: notes
+
+-  dieser Abschnitt dient der ersten Entzauberung
+-  Aufwand für Datenerfassung
+-  Kräfteverhältnis zwischen Platformen und Wissenschaft
+
+:::
+
+## Wir groß sind die Blackboxes?
+### Unsere Erwartungen und Wünsche
+
+![](../assets/images/operationalisierung/datafication-vs-analysis_expected.jpg)
+
+## Wir groß sind die Blackboxes?
+### Die (bittere) Realität
+
+![](../assets/images/operationalisierung/datafication-vs-analysis_real.jpg)
+
+## Beispiel: Werzeugliste
+
+>Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht (Unsere eigene User Story).
+
+## Datenerfassung: konzeptionell
+### Eingabe ---> Verarbeitung ---> Ausgabe
+
+![](../assets/images/operationalisierung/corpus-building_conceptual.jpg)
+
+## Datenerfassung: Werkzeugliste
+### Eingabe ---> Verarbeitung ---> Ausgabe
+
+![](../assets/images/operationalisierung/corpus-building_concrete.jpg)
+
+
+## Datenerfassung: Web scraping
+### Eingabe ---> Verarbeitung ---> Ausgabe
+
+![](../assets/images/operationalisierung/web-scraping_technical_set-cards.jpg)
 
 # Schluß / Danke!
 ## Literatur {#refs}
