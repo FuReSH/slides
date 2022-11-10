@@ -284,6 +284,39 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 :::
 
 # Serviceportfolio
+## Was bieten wir an?
+### Einen Lernort
+
+Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr geöffnet
+
+::: columns
+:::: column
+
+![Lage des *Scholarly Makerspace*s im 3. OG des Grimm-Zentrums](../assets/images/location-within-the-library_2d-annotated.jpg)
+
+::::
+:::: column
+
+![Der *Scholarly Makerspace* im Grimm-Zentrum](../assets/images/photos/ub-makerspace_2.jpg)
+
+::::
+:::
+
+::: notes
+
+- Makerspace als Lernort
+- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
++ Herausforderung: 
+    * bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
++ Anforderungen: angenehme Atmosphäre
+        * Platz
+        * Licht
+        * Schallschutz
+        * Gruppenarbeitsplätze
+        * "Werkbänke"
+
+:::
+
 ## Wer sind unsere Zielgruppen?
 
 Forscher_innen aller Karrierstufen ab der Promotionsphase
@@ -348,38 +381,6 @@ in die DH Community in Berlin und beyond
 ::::
 :::
 
-## Was bieten wir an?
-### Einen Lernort
-
-Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr geöffnet
-
-::: columns
-:::: column
-
-![Lage des *Scholarly Makerspace*s im 3. OG des Grimm-Zentrums](../assets/images/location-within-the-library_2d-annotated.jpg)
-
-::::
-:::: column
-
-![Der *Scholarly Makerspace* im Grimm-Zentrum](../assets/images/photos/ub-makerspace_2.jpg)
-
-::::
-:::
-
-::: notes
-
-- Makerspace als Lernort
-- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
-+ Herausforderung: 
-    * bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
-+ Anforderungen: angenehme Atmosphäre
-        * Platz
-        * Licht
-        * Schallschutz
-        * Gruppenarbeitsplätze
-        * "Werkbänke"
-
-:::
 
 ## Was bieten wir an
 ### Erfahrungen und Wissen
@@ -515,15 +516,62 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 # Operationalisierung {data-background-image="../assets/images/blackbox/blackbox_makerspace-inside.png" data-background-size="90%"}
 
+## Beispiel: Werzeugliste
+
+>Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht (Unsere eigene User Story).
+
+::: columns
+:::: column
+
+
+|         term        | freq | freq.rel |
+| ------------------- | ---- | -------- |
+| R                   |  259 |        1 |
+| TEI                 |  155 |      0.6 |
+| internet            |  134 |     0.52 |
+| NLP                 |  118 |     0.46 |
+| XML                 |  117 |     0.45 |
+| GitHub              |   98 |     0.38 |
+| API                 |   88 |     0.34 |
+| OA                  |   77 |      0.3 |
+| ML                  |   76 |     0.29 |
+| GIS                 |   70 |     0.27 |
+| topic modeling      |   67 |     0.26 |
+| LOD                 |   66 |     0.25 |
+| Python              |   66 |     0.25 |
+| OCR                 |   64 |     0.25 |
+| network analysis    |   62 |     0.24 |
+
+: Absolute und relative Häufigkeiten von "Werkzeugen" in ADHO Konferenz-Abstracts, 2014--18 {#tbl:freq-adho}
+
+<!--
+| distant reading     |   50 |     0.19 |
+| RDF                 |   50 |     0.19 |
+| NER                 |   48 |     0.19 |
+| text mining         |   38 |     0.15 |
+| LDA                 |   37 |     0.14 |
+-->
+
+::::
+:::: column
+
+![Wordcloud der relativen Häufigkeiten von "Werkzeugen" in ADHO Konferenz-Abstracts, 2014--18](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){#fig:wordcloud-adho-2}
+
+::::
+:::
+
 ## Forschungsprozess
 
 ![](../assets/images/operationalisierung/research-process_generic.jpg)
 
+[Diese Prozesse sind alle von rechts nach links zu lesen. Die Forschungsfrage bestimmt Methode und benötigte Datengrundlage]
+
 ::: notes
 
--  dieser Abschnitt dient der ersten Entzauberung
--  Aufwand für Datenerfassung
--  Kräfteverhältnis zwischen Platformen und Wissenschaft
+- **WICHTIG**: von rechts nach links lesen
+    1. was brauche ich?
+    2. was benötige ich dafür?
+    3. was habe ich?
 
 :::
 
@@ -532,14 +580,18 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 ![](../assets/images/operationalisierung/datafication-vs-analysis_expected.jpg)
 
+::: notes
+
+-  dieser Abschnitt dient der ersten Entzauberung
+-  Aufwand für Datenerfassung
+
+:::
+
 ## Wir groß sind die Blackboxes?
 ### Die (bittere) Realität
 
 ![](../assets/images/operationalisierung/datafication-vs-analysis_real.jpg)
 
-## Beispiel: Werzeugliste
-
->Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht (Unsere eigene User Story).
 
 ## Datenerfassung: konzeptionell
 ### Eingabe ---> Verarbeitung ---> Ausgabe
