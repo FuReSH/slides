@@ -26,6 +26,48 @@ tags:
 
 Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanities" zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften an Universitätsbibliothek unter Beteiligung der Lehrstühle für *Digital History* (Inst. f. Geschichte) und *Information Processing and Analytics* (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin einen **prototypischen *Scholarly Makerspace*** auf (2022--25).
 
+::: columns-3
+:::: column
+
+![Sophie Eckenstaler](../assets/images/photos/portrait_se-circle.png)
+
+::::
+:::: column
+
+![Till Grallert, PhD](../assets/images/photos/portrait_tg-circle.png)
+
+::::
+:::: column
+
+![Samantha Tirtohusodo](../assets/images/photos/portrait_st-circle.png)
+
+::::
+:::
+
+::: notes
+
+- Sophie
+    + Museologie, Medieninformatik sowie Digital History (MA)
+    + Doktorandin und Wimi am Lehrstuhl Digital History
+    + Schwerpunkt auf Research Software Engineering
+- Till
+    + Geschichte (PhD, MA)
+    + Islamwissenschaft, Judaistik und VWL
+    + mehr als 10 Jahre Erfahrungen in den DH
+        * Global DH, critical DH: unter den Bedingungen des Globalen Südens
+        * multilingual DH: vor allem Arabisch und Osmanisch
+        * Digitale Editorik, NER
+        * Netzwerkanalyse, Stilometrie
+        * Data viz
+- Sam
+    + Bibliotheks- und Informationsmanagement
+    + Information Science
+    + Außerdem am FID Buch-, Bibliothek-, und Informationswissenschaft angestellt
+    + Schwerpunkt
+        * User Experience
+
+:::
+
 ## Heutige Vorstellung
 
 1. Was ist denn ein "prototypischer" *Scholarly Makerspace*
