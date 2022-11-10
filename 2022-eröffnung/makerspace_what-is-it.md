@@ -315,17 +315,38 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 ## Was bieten wir an?
 ### Hilfe zur Selbsthilfe
 
-- Infrastruktur und Resourcen für eigenes Arbeiten
-    + wöchentliche Einführungen in den Scholarly Makerspace
-    + offene Materialien und Infrastrukturen für die Nachnutzung und Erweiterung
-    <!-- + Zugang zu technischen Infrastrukturen der HU (z.B. CMS) -->
-- "Sprechstunden" bzw. gemeinsames Experimentieren
-    + Drop-in
-    + Offene Sprechstunde
-    + gezielte Beratung
-- Vernetzung in die DH Community in Berlin und beyond
-    + Community hours für den Austausch
-    + Veranstaltungskalender
+::: columns-3
+:::: column
+
+### Infrastruktur
+
+und Resourcen für eigenes Arbeiten
+
++ wöchentliche Einführungen in den Scholarly Makerspace
++ offene Materialien und Infrastrukturen für die Nachnutzung und Erweiterung
+<!-- + Zugang zu technischen Infrastrukturen der HU (z.B. CMS) -->
+
+::::
+:::: column
+
+### gemeinsames Tüfteln
+
++ Drop-in
++ Offene Sprechstunde
++ gezielte Beratung
+
+::::
+:::: column
+
+### Vernetzung
+
+in die DH Community in Berlin und beyond
+
++ Community hours für den Austausch
++ Veranstaltungskalender
+
+::::
+:::
 
 ## Was bieten wir an?
 ### Einen Lernort
