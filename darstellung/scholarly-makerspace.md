@@ -1,11 +1,13 @@
 ---
 title: "Der *Scholarly Makerspace* an der UB der HU Berlin"
-subtitle: "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
+subtitle: "Was ist ein prototypischer *Scholarly Makerspace*?"
 author:
     - Till Grallert
     - Sophie Eckenstaler
     - Samantha Tirtohusodo
-institute: Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum
+institute: 
+    - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
+    - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
 event: 
 date: 2022-11-10
