@@ -1067,32 +1067,33 @@
                         margin-left: auto;
                         margin-right: auto;
                         /*font-size: 0.8em;*/
+                        border-collapse: collapse;
                     }
                     td,
                     th {
                         padding: 0.2em
                     }
+                    td {
+                        border-bottom-width: 1px;
+                        /*border-top-width: 1px;*/
+                        border-bottom-style: solid;
+                        /*border-top-style: solid;*/
+                        border-color: white;
+                    }
                     /*
                     highlight mouse-over on tables
                     */
                     tr:hover td {
-                                            /*background-color: red; */
-                                            border-top-color: #F46A00;
-                                            border-bottom-color: #F46A00;
-                                            border-bottom-width: 1px;
-                                            border-top-width: 1px;
-                                            border-bottom-style: solid;
-                                            border-top-style: solid;
-                                        }
-                                        td:hover {
-                                            background-color: #F46A00;
-                                            /*border-right-color: #F46A00;
-                                            border-left-color: #F46A00;
-                                            border-right-width: 1px;
-                                            border-left-width: 1px;
-                                            border-right-style: solid;
-                                            border-left-style: solid;*/
-                                        }
+                        /*background-color: red; */
+                        /*border-top-color: #F46A00;
+                        border-bottom-color: #F46A00;*/
+                        border-color: #F46A00;
+                        border-bottom-width: 1px;
+                        border-bottom-style: solid;
+                    }
+                    td:hover {
+                        background-color: #F46A00;
+                    }
                     .focus {
                         border-color: red;
                         border-width: 2px;
@@ -1300,7 +1301,7 @@ e-Research Support in the Humanities” (2022–25)</p>
                             </div>
       </div>
         </section>
-                
+
         <section class="slide level2">
 
         <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
@@ -1481,85 +1482,85 @@ e-Research Support in the Humanities” (2022–25)</p>
         <thead>
         <tr class="header">
         <th>term</th>
-        <th>freq</th>
-        <th>freq.rel</th>
+        <th style="text-align: right;">freq</th>
+        <th style="text-align: right;">freq.rel</th>
         </tr>
         </thead>
         <tbody>
         <tr class="odd">
         <td>R</td>
-        <td>259</td>
-        <td>1</td>
+        <td style="text-align: right;">259</td>
+        <td style="text-align: right;">1</td>
         </tr>
         <tr class="even">
         <td>TEI</td>
-        <td>155</td>
-        <td>0.6</td>
+        <td style="text-align: right;">155</td>
+        <td style="text-align: right;">0.6</td>
         </tr>
         <tr class="odd">
         <td>internet</td>
-        <td>134</td>
-        <td>0.52</td>
+        <td style="text-align: right;">134</td>
+        <td style="text-align: right;">0.52</td>
         </tr>
         <tr class="even">
         <td>NLP</td>
-        <td>118</td>
-        <td>0.46</td>
+        <td style="text-align: right;">118</td>
+        <td style="text-align: right;">0.46</td>
         </tr>
         <tr class="odd">
         <td>XML</td>
-        <td>117</td>
-        <td>0.45</td>
+        <td style="text-align: right;">117</td>
+        <td style="text-align: right;">0.45</td>
         </tr>
         <tr class="even">
         <td>GitHub</td>
-        <td>98</td>
-        <td>0.38</td>
+        <td style="text-align: right;">98</td>
+        <td style="text-align: right;">0.38</td>
         </tr>
         <tr class="odd">
         <td>API</td>
-        <td>88</td>
-        <td>0.34</td>
+        <td style="text-align: right;">88</td>
+        <td style="text-align: right;">0.34</td>
         </tr>
         <tr class="even">
         <td>OA</td>
-        <td>77</td>
-        <td>0.3</td>
+        <td style="text-align: right;">77</td>
+        <td style="text-align: right;">0.3</td>
         </tr>
         <tr class="odd">
         <td>ML</td>
-        <td>76</td>
-        <td>0.29</td>
+        <td style="text-align: right;">76</td>
+        <td style="text-align: right;">0.29</td>
         </tr>
         <tr class="even">
         <td>GIS</td>
-        <td>70</td>
-        <td>0.27</td>
+        <td style="text-align: right;">70</td>
+        <td style="text-align: right;">0.27</td>
         </tr>
         <tr class="odd">
         <td>topic modeling</td>
-        <td>67</td>
-        <td>0.26</td>
+        <td style="text-align: right;">67</td>
+        <td style="text-align: right;">0.26</td>
         </tr>
         <tr class="even">
         <td>LOD</td>
-        <td>66</td>
-        <td>0.25</td>
+        <td style="text-align: right;">66</td>
+        <td style="text-align: right;">0.25</td>
         </tr>
         <tr class="odd">
         <td>Python</td>
-        <td>66</td>
-        <td>0.25</td>
+        <td style="text-align: right;">66</td>
+        <td style="text-align: right;">0.25</td>
         </tr>
         <tr class="even">
         <td>OCR</td>
-        <td>64</td>
-        <td>0.25</td>
+        <td style="text-align: right;">64</td>
+        <td style="text-align: right;">0.25</td>
         </tr>
         <tr class="odd">
         <td>network analysis</td>
-        <td>62</td>
-        <td>0.24</td>
+        <td style="text-align: right;">62</td>
+        <td style="text-align: right;">0.24</td>
         </tr>
         </tbody>
         </table>
@@ -1657,6 +1658,7 @@ e-Research Support in the Humanities” (2022–25)</p>
         Serviceportfolio</a></li>
         <li><a href="operationalisierung.html">Wie sieht das Tüfteln
         aus?</a></li>
+        <li><a href="infrastruktur.html">Unser Backend</a></li>
         </ul>
         </section>
         <section id="refs" class="slide level2 unnumbered">

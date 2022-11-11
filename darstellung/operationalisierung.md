@@ -130,23 +130,23 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 :::: column
 
 
-|         term        | freq | freq.rel |
-| ------------------- | ---- | -------- |
-| R                   |  259 |        1 |
-| TEI                 |  155 |      0.6 |
-| internet            |  134 |     0.52 |
-| NLP                 |  118 |     0.46 |
-| XML                 |  117 |     0.45 |
-| GitHub              |   98 |     0.38 |
-| API                 |   88 |     0.34 |
-| OA                  |   77 |      0.3 |
-| ML                  |   76 |     0.29 |
-| GIS                 |   70 |     0.27 |
-| topic modeling      |   67 |     0.26 |
-| LOD                 |   66 |     0.25 |
-| Python              |   66 |     0.25 |
-| OCR                 |   64 |     0.25 |
-| network analysis    |   62 |     0.24 |
+| term                | freq  | freq.rel  |
+| ------------------- | ----: | --------: |
+| R                   | 259   | 1         |
+| TEI                 | 155   | 0.6       |
+| internet            | 134   | 0.52      |
+| NLP                 | 118   | 0.46      |
+| XML                 | 117   | 0.45      |
+| GitHub              | 98    | 0.38      |
+| API                 | 88    | 0.34      |
+| OA                  | 77    | 0.3       |
+| ML                  | 76    | 0.29      |
+| GIS                 | 70    | 0.27      |
+| topic modeling      | 67    | 0.26      |
+| LOD                 | 66    | 0.25      |
+| Python              | 66    | 0.25      |
+| OCR                 | 64    | 0.25      |
+| network analysis    | 62    | 0.24      |
 
 : Absolute und relative Häufigkeiten von "Werkzeugen" in ADHO Konferenz-Abstracts, 2014--18 {#tbl:freq-adho}
 
@@ -221,5 +221,6 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 - [Was ist ein protoypischer *Scholarly Makerspace*?](scholarly-makerspace.html)
 - [Unser Serviceportfolio](service-profil.html)
 - [Wie sieht das Tüfteln aus?](operationalisierung.html)
+- [Unser Backend](infrastruktur.html)
 
 ## Literatur {#refs}
