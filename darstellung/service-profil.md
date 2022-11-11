@@ -240,11 +240,23 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 ## Was bieten wir nicht an?
 
+
+::: columns
+:::: column
+
+![Kein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg)
+
+::::
+:::: column
+
 - Wir haben keine 3D Drucker
 - Wir schreiben keine Anträge
 - Wir setzen keine Projekte um
 - Wir machen keinen dauerhaften Support
 - Wir bauen keine Webseiten
+
+::::
+:::
 
 ::: notes
 
@@ -254,4 +266,9 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 
 # Schluß / Danke!
+## Weitere Informationen
+
+- [Was ist ein protoypischer *Scholarly Makerspace*?](scholarly-makerspace.html)
+- [Unser Serviceportfolio](service-profil.html)
+
 ## Literatur {#refs}

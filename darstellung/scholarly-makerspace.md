@@ -261,7 +261,7 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 :::
 
 
-## Ein prototypischer Scholarly Makerspace
+## Ein **prototypischer** Scholarly Makerspace
 
 ::: columns
 :::: narrow
@@ -285,4 +285,9 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 :::
 
 # Schluß / Danke!
+## Weitere Informationen
+
+- [Was ist ein protoypischer *Scholarly Makerspace*?](scholarly-makerspace.html)
+- [Unser Serviceportfolio](service-profil.html)
+
 ## Literatur {#refs}
