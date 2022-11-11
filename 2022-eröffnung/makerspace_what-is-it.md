@@ -377,7 +377,7 @@ und Resourcen für eigenes Arbeiten
 in die DH Community in Berlin und beyond
 
 + Community hours für den Austausch
-+ Veranstaltungskalender
++ [Veranstaltungskalender](https://makerspace.hypotheses.org/324)
 
 ::::
 :::
