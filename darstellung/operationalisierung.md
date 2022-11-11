@@ -1,6 +1,6 @@
 ---
 title: "Der *Scholarly Makerspace* an der UB der HU Berlin"
-subtitle: "Unser Serviceportfolio"
+subtitle: "Wie *tüfteln* wir eigentlich?"
 author:
     - Till Grallert
     - Sophie Eckenstaler
