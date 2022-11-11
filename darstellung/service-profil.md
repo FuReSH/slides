@@ -171,6 +171,20 @@ in die DH Community in Berlin und beyond
 :::
 
 
+::: notes
+
+- bestehende Vernetzungen
+    + Hackathon zur Archivierung von Ukrainischem Kulturgut 
+        * in den Räumen des IfG
+    + SPK Lab Partner
+    + Stiftung für die deutsche Wissenschaft (in der Folge des Hackathons)
+    + ADA Lovelace Center
+        * gemeinsamer jour fixe
+        * Veranstaltung zu Kulturen des Scheiterns
+    - SUB Hamburg, Symposium "Wissen Bauen 2025"
+:::
+
+
 ## Was bieten wir an
 ### Erfahrungen und Wissen
 
