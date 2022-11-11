@@ -289,8 +289,6 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 # Schluß / Danke!
 ## Weitere Informationen
 
-## Weitere Informationen
-
 - [Was ist ein protoypischer *Scholarly Makerspace*?](scholarly-makerspace.html)
 - [Unser Serviceportfolio](service-profil.html)
 - [Wie sieht das Tüfteln aus?](operationalisierung.html)
