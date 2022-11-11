@@ -1,15 +1,21 @@
 ---
-title: "Blackboxes öffnen"
+title: "Der *Scholarly Makerspace* an der UB der HU Berlin"
+subtitle: "Unser Serviceportfolio"
 author:
     - Till Grallert
     - Sophie Eckenstaler
-affiliation: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
-date: 2022-07-12 
-status: draft
+    - Samantha Tirtohusodo
+institute: 
+    - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
+    - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
+homepage: https://makerspace.hypotheses.org/
+date: 2022-11-10
+url: 
+status: published
 lang: de
-bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
-reference-section-title: "Literatur"
-suppress-bibliography: true
+bibliography:
+    - ../assets/bibliography/FuReSH.csl.json
+    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
@@ -18,13 +24,60 @@ tags:
     - slides
 ---
 
-# How did they build this? {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/black-box_question-mark-people-c_blue.png" data-background-size="90%"}
+---------
 
+Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanities" an der Universitätsbibliothek der Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle für *Digital History* (Inst. f. Geschichte) und *Information Processing and Analytics* (Inst.f. Bibliotheks- und Informationswissenschaften) einen **prototypischen *Scholarly Makerspace*** zur Förderung **digitaler** und **computationaler Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften auf (2022--25).
+
+::: columns-3
+:::: column
+
+![Sophie Eckenstaler](https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png)
+
+::::
+:::: column
+
+![Till Grallert, PhD](https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png)
+
+::::
+:::: column
+
+![Samantha Tirtohusodo](https://furesh.github.io/slides/assets/images/photos/portrait_st-circle.png)
+
+::::
+:::
+
+::: notes
+
+- Sophie
+    + Museologie, Medieninformatik sowie Digital History (MA)
+    + Doktorandin und Wimi am Lehrstuhl Digital History
+    + Schwerpunkt auf Research Software Engineering
+- Till
+    + Geschichte (PhD, MA)
+    + Islamwissenschaft, Judaistik und VWL
+    + mehr als 10 Jahre Erfahrungen in den DH
+        * Global DH, critical DH: unter den Bedingungen des Globalen Südens
+        * multilingual DH: vor allem Arabisch und Osmanisch
+        * Digitale Editorik, NER
+        * Netzwerkanalyse, Stilometrie
+        * Data viz
+- Sam
+    + Bibliotheks- und Informationsmanagement
+    + Information Science
+    + Außerdem am FID Buch-, Bibliothek-, und Informationswissenschaft angestellt
+    + Schwerpunkt
+        * User Experience
+
+:::
+
+
+# Wie arbeiten wir? {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/black-box_question-mark-people-c_blue.png" data-background-size="90%"}
 ## Die Blackbox
 
-![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg)
-
 >The term black box [...] is a device or system that, for convenience, is described solely in terms of its inputs and outputs. One need not understand anything about what goes on inside such black boxes. One simply brackets them as instruments that perform certain valuable functions. [@Winner+1993, 365]
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io-2.jpg)
+
 
 ::: notes
 
@@ -33,94 +86,49 @@ tags:
 
 :::
 
-## Beispiel: Werzeugliste
-
->Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox-operationalisierung.jpg)
-
-# Operationalisierung {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" data-background-size="90%"}
-
-## Forschungsprozess
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg)
-
-::: notes
-
--  dieser Abschnitt dient der ersten Entzauberung
--  Aufwand für Datenerfassung
--  Kräfteverhältnis zwischen Platformen und Wissenschaft
-
-:::
-
-## Wir groß sind die Blackboxes?
-### Unsere Erwartungen und Wünsche
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg)
-
-## Wir groß sind die Blackboxes?
-### Die (bittere) Realität
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg)
-
 ## Was haben wir um sie zu öffnen?
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg)
 
-# Datenerfassung {data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" data-background-size="90%"}
-## Beispiel: Werzeugliste
+## Minimal computing
 
->Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
+>Das Haus ist gebaut aus den Steinen, die vorhanden waren [@Brecht1967SchlechteZeiten].
 
-## Datenerfassung: Werkzeugliste
-### Eingabe ---> Verarbeitung ---> Ausgabe
+Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" und "was haben wir?" handlungsleitend. [@Gil+2016]
 
-![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_concrete.jpg)
+- Kontextabhängig
+- Hilfe zur Selbsthilfe
+- Fokus auf **methodische Zugänge** mit beispielhaften Implementation
 
-## Datenerfassung: konzeptionell
-### Eingabe ---> Verarbeitung ---> Ausgabe
+::: notes
 
-![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_conceptual.jpg)
+- die minimale Lösung ist unter den Bedingungen der Wissenschaft, die einzig machbare
+- muss im Einklang mit guter Wissenschaftlicher Praxis stehen
+- Nutzer_innen sollen ermächtigt werden
+- Lösungen müssen nach dem Verlassen des Makerspaces funktional bleiben
+- *vorhanden* reicht im Sinne Heideggers nicht, Dinge müssen *zuhanden* sein
 
-
-## Datenerfassung: Web scraping
-### Eingabe ---> Verarbeitung ---> Ausgabe
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/web-scraping_technical.jpg)
-
-## Datenerfassung: Transformation
-### Eingabe ---> Verarbeitung ---> Ausgabe
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/transformation_technical.jpg)
-
-
-# Computationelle Analyse {data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" data-background-size="90%"}
-## Distant Reading
-
-::: columns-3
-:::: column
-
-### Input
-
-::::
-:::: column
-
-### Analyse
-
-::::
-:::: column
-
-### Ergebnisse
-
-::::
 :::
 
-## Ergebnisse
+## Was haben wir?
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/process_what-do-we-have.jpg)
+
+::: notes
+
+- Beispielhafter Prozess für den Einsatz von Software
+
+:::
+
+# Operationalisierung {data-background-image="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png" data-background-size="90%"}
+
+## Beispiel: Werzeugliste
+
+>Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht (Unsere eigene User Story).
 
 ::: columns
 :::: column
 
-### Statistiken
 
 |         term        | freq | freq.rel |
 | ------------------- | ---- | -------- |
@@ -140,7 +148,7 @@ tags:
 | OCR                 |   64 |     0.25 |
 | network analysis    |   62 |     0.24 |
 
-: Absolute und relative Häufigkeit von Begriffen, ADHO Konferenzen, 2014--18 {#tbl:freq-adho}
+: Absolute und relative Häufigkeiten von "Werkzeugen" in ADHO Konferenz-Abstracts, 2014--18 {#tbl:freq-adho}
 
 <!--
 | distant reading     |   50 |     0.19 |
@@ -153,16 +161,65 @@ tags:
 ::::
 :::: column
 
-### Visualisierung
-
-![Wordcloud der relativen Häufigkeiten, ADHO Konferenzen, 2014--18](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){#fig:wordcloud-adho-2}
+![Wordcloud der relativen Häufigkeiten von "Werkzeugen" in ADHO Konferenz-Abstracts, 2014--18](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){#fig:wordcloud-adho-2}
 
 ::::
-<!-- :::: column
-
-![Digital Humanities Quarterly](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-429-articles-from-DHQ-w_100.svg)
-
-:::: -->
 :::
 
-<!-- # Ergebnisanalyse -->
+## Forschungsprozess
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg)
+
+[Diese Prozesse sind alle von rechts nach links zu lesen. Die Forschungsfrage bestimmt Methode und benötigte Datengrundlage]
+
+::: notes
+
+- **WICHTIG**: von rechts nach links lesen
+    1. was brauche ich?
+    2. was benötige ich dafür?
+    3. was habe ich?
+
+:::
+
+## Wir groß sind die Blackboxes?
+### Unsere Erwartungen und Wünsche
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg)
+
+::: notes
+
+-  dieser Abschnitt dient der ersten Entzauberung
+-  Aufwand für Datenerfassung
+
+:::
+
+## Wir groß sind die Blackboxes?
+### Die (bittere) Realität
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg)
+
+
+## Datenerfassung: konzeptionell
+### Eingabe ---> Verarbeitung ---> Ausgabe
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_conceptual.jpg)
+
+## Datenerfassung: Werkzeugliste
+### Eingabe ---> Verarbeitung ---> Ausgabe
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_concrete.jpg)
+
+
+## Datenerfassung: Web scraping
+### Eingabe ---> Verarbeitung ---> Ausgabe
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/web-scraping_technical_set-cards.jpg)
+
+# Schluß / Danke!
+## Weitere Informationen
+
+- [Was ist ein protoypischer *Scholarly Makerspace*?](scholarly-makerspace.html)
+- [Unser Serviceportfolio](service-profil.html)
+- [Wie sieht das Tüfteln aus?](operationalisierung.html)
+
+## Literatur {#refs}

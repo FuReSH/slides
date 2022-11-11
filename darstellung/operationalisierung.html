@@ -5,8 +5,9 @@
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
           <meta name="author" content="Sophie Eckenstaler">
-              <meta name="dcterms.date" content="2022-07-12">
-                <title>Blackboxes öffnen</title>
+          <meta name="author" content="Samantha Tirtohusodo">
+              <meta name="dcterms.date" content="2022-11-10">
+                <title>Der Scholarly Makerspace an der UB der HU Berlin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -23,6 +24,25 @@
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
       ul.task-list{list-style: none;}
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }
     </style>
         <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
                     <style type="text/css">
@@ -109,10 +129,11 @@
                     div.c_header {
                         top: 0;
                     }
-                    footer {
+                    footer,
+                    footer * {
                         bottom: 0;
                         background-color: #8a0f14;
-                        color: white;
+                        color: white !important;
                     }
 
                     footer {
@@ -120,7 +141,8 @@
                     }
 
                     footer span {
-                        text-transform:  capitalize; /*this doesn't seem to have an effect*/
+                        /*text-transform:  capitalize; */
+                        /*this doesn't seem to have an effect*/
                         display: inline-block;
                         padding-left: 0.5em;
                         padding-right: 0.5em;
@@ -450,6 +472,14 @@
                         text-align: center;
                     }
                     /****************
+                    title slide
+                    *****************/
+
+                    /*span.author ~ span.author::before {
+                      content: ', ';
+                    }*/
+
+                    /****************
                     images and figures
                     *****************/
                     div.slide img {
@@ -534,13 +564,25 @@
                     /*****************
                     columns
                     ******************/
+                    div.columns {
+                        /* newer? versions of reveal use display: flex */
+                        display: block;
+                        /*flex: none;*/
+                    }
+                    div.column {
+                        display: inline-block;
+                        flex: none;
+                    }
                     .columns-3 > .column {
                         width: 32%;
                     }
-                    .columns-2 > .column {
+                    .columns-2 > .column,
+                    .columns > .column {
                         width: 50%;
                     }
-                    .c_width-60 {
+                    .c_width-60,
+                    .column-60,
+                    .columns .wide {
                         width: 64%;
                         position: relative;
                         float: left;
@@ -550,7 +592,9 @@
                         position: relative;
                         float: left;
                     }
-                    .c_width-30 {
+                    .c_width-30,
+                    .column-30,
+                    .columns .narrow {
                         width: 33%;
                         position: relative;
                         float: left;
@@ -563,6 +607,218 @@
                         display: block;
                         float: right;
                     }
+                    .c_center {
+                        display: block;
+                        /*clear: both;*/
+                        margin: 0 auto;
+                    }
+                    .c_left-align {
+                        text-align: left;
+                    }
+
+                    .c_right-align {
+                        text-align: right;
+                    }
+
+                    span.c_left,
+                    span.c_right,
+                    span.c_center {
+                        display: inline-block;
+                    }
+
+                    /*****************
+                    blackbox
+                    ******************/
+
+                    .blackbox  * {
+                        font-size: inherit;
+                        font-family: inherit;
+                    }
+                    .blackbox > div,
+                    .blackbox > section {
+                        width: 32%;
+                        position: relative;
+                        /*float: left;*/
+                        min-height: 5em;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                    }
+                    .blackbox > .input,
+                    .blackbox > .output {
+                        width: 25%;
+                        background-color: rgba(245, 245, 245, 1);
+                    }
+                    .blackbox > .input {
+                        float: left;
+                    }
+                    .blackbox > .output {
+                        float: right;
+                    }
+                    .blackbox textarea {
+                        min-height: inherit;
+                        background-color: inherit;
+                    }
+                    .blackbox > .computing,
+                    .blackbox > .content {
+                        min-height: 5em;
+                        /*padding: 1em;*/
+                        margin: 0 auto;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                    }
+                    .blackbox > .computing {
+                        background-color: black;
+                        color: white;
+                    }
+                    .blackbox > .content {
+
+                    }
+
+                    button {
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .blackbox button {
+                        min-width: 150px;
+                        height: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        top: 1em;
+                    }
+                    .button-36 {
+                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+                        border-radius: 8px;
+                        border-style: none;
+                        box-sizing: border-box;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        flex-shrink: 0;
+                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 4rem;
+                        padding: 0 1.6rem;
+                        text-align: center;
+                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                        transition: all .5s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                    }
+
+                    .button-36:hover {
+                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+                        transition-duration: .1s;
+                    }
+                    .button-49,
+                    .button-49:after {
+                      line-height: 50px;
+                      font-size: 20px;
+                      font-family: 'Bebas Neue', sans-serif;
+                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                      border: 0;
+                      color: #fff;
+                      letter-spacing: 3px;
+                      box-shadow: 6px 0px 0px #00E6F6;
+                      outline: transparent;
+                      position: relative;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                    }
+
+                    .button-49:after {
+                      --slice-0: inset(50% 50% 50% 50%);
+                      --slice-1: inset(80% -6px 0 0);
+                      --slice-2: inset(50% -6px 30% 0);
+                      --slice-3: inset(10% -6px 85% 0);
+                      --slice-4: inset(40% -6px 43% 0);
+                      --slice-5: inset(80% -6px 5% 0);
+
+                      content: 'ALTERNATE TEXT';
+                      display: block;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                      clip-path: var(--slice-0);
+                    }
+
+                    .button-49:hover:after {
+                      animation: 1s glitch;
+                      animation-timing-function: steps(2, end);
+                    }
+
+                    @keyframes glitch {
+                      0% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-20px, -10px);
+                      }
+                      10% {
+                        clip-path: var(--slice-3);
+                        transform: translate(10px, 10px);
+                      }
+                      20% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 10px);
+                      }
+                      30% {
+                        clip-path: var(--slice-3);
+                        transform: translate(0px, 5px);
+                      }
+                      40% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-5px, 0px);
+                      }
+                      50% {
+                        clip-path: var(--slice-3);
+                        transform: translate(5px, 0px);
+                      }
+                      60% {
+                        clip-path: var(--slice-4);
+                        transform: translate(5px, 10px);
+                      }
+                      70% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-10px, 10px);
+                      }
+                      80% {
+                        clip-path: var(--slice-5);
+                        transform: translate(20px, -10px);
+                      }
+                      90% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 0px);
+                      }
+                      100% {
+                        clip-path: var(--slice-1);
+                        transform: translate(0);
+                      }
+                    }
+
+                    .hidden {
+                            /*display: none;*/
+                            visibility: hidden !important;
+                            width: 0 !important;
+                            height: 0 !important;
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            animation: 1s fadeOut;
+                        }
+                    @keyframes fadeOut {
+                      0% {
+                        opacity: 1;
+                      }
+                      100% {
+                        visibility: hidden;
+                        opacity: 0;
+                      }
+                    }
+
                     /*****************
                     writing direction
                     ******************/
@@ -623,8 +879,15 @@
                     }
                     blockquote {
                         padding-left: 1em;
+                        padding-left: 1em;
+                        margin-bottom: 1em;
+                        text-align: right;
                         /*font-style: italic;*/
                         clear: both;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
                     }
                     blockquote > p:before {
                         content: "> "
@@ -657,6 +920,9 @@
                         font-style: normal;
                         margin-top: 0.1em;
                         margin-bottom: 0.5em;
+                        /*margin-left: 1.5em;*/
+                        list-style-position: inside;
+                        padding-left: 1em;
                         /* all lists should be centered */
                         /*text-align: left;*/
                         /*margin-left: auto;
@@ -777,8 +1043,8 @@
                     h6,
                     dl,
                     table {
-                        margin-left: 1em;
-                        margin-right: 1em;
+                        margin-left: 0.5em;
+                        margin-right: 0.5em;
                         margin-top: 0.5em;
                         margin-bottom: 0.5em;
                     }
@@ -802,15 +1068,6 @@
                         margin-right: auto;
                         /*font-size: 0.8em;*/
                     }
-                    tr:hover td {
-                        /*background-color: red; */
-                        border-top-color: #F46A00;
-                        border-bottom-color: #F46A00;
-                        border-bottom-width: 1px;
-                        border-top-width: 1px;
-                        border-bottom-style: solid;
-                        border-top-style: solid;
-                    }
                     td,
                     th {
                         padding: 0.2em
@@ -818,6 +1075,24 @@
                     /*
                     highlight mouse-over on tables
                     */
+                    tr:hover td {
+                                            /*background-color: red; */
+                                            border-top-color: #F46A00;
+                                            border-bottom-color: #F46A00;
+                                            border-bottom-width: 1px;
+                                            border-top-width: 1px;
+                                            border-bottom-style: solid;
+                                            border-top-style: solid;
+                                        }
+                                        td:hover {
+                                            background-color: #F46A00;
+                                            /*border-right-color: #F46A00;
+                                            border-left-color: #F46A00;
+                                            border-right-width: 1px;
+                                            border-left-width: 1px;
+                                            border-right-style: solid;
+                                            border-left-style: solid;*/
+                                        }
                     .focus {
                         border-color: red;
                         border-width: 2px;
@@ -1005,26 +1280,112 @@
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">Blackboxes öffnen</h1>
-                              <p class="author">Till Grallert</p>
-                    <p class="author">Sophie Eckenstaler</p>
-                                        <p class="date">2022-07-12</p>
-                  </section>
+          <h1 class="title">Der <em>Scholarly Makerspace</em> an der UB
+der HU Berlin</h1>
+                    <h2 class="subtitle">Unser Serviceportfolio</h2>
+                    <div class="columns">
+          <div class="column c_left c_left-align">
+                      <p class="author">
+                          Till Grallert,               Sophie
+Eckenstaler,               Samantha Tirtohusodo            </p>
+                                                <p class="institute">Humboldt-Universität
+zu Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
+                            <p class="institute">DFG-Projekt “Future
+e-Research Support in the Humanities” (2022–25)</p>
+                                            <p class="url"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></p>
+                  </div>
+        <div class="column c_right c_right-align">
+                              <p class="date">2022-11-10</p>
+                            </div>
+      </div>
+        </section>
                 
+        <section class="slide level2">
+
+        <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
+        Support in the Humanities” an der Universitätsbibliothek der
+        Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle
+        für <em>Digital History</em> (Inst. f. Geschichte) und
+        <em>Information Processing and Analytics</em> (Inst.f.
+        Bibliotheks- und Informationswissenschaften) einen
+        <strong>prototypischen <em>Scholarly Makerspace</em></strong>
+        zur Förderung <strong>digitaler</strong> und
+        <strong>computationaler Werkzeugkompetenz</strong> (<em>tool
+        literacy</em>) in den Geistes- und Kulturwissenschaften auf
+        (2022–25).</p>
+        <div class="columns-3">
+        <div class="column">
+        <figure>
+        <img
+        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png"
+        alt="Sophie Eckenstaler" />
+        <figcaption aria-hidden="true">Sophie Eckenstaler</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure>
+        <img
+        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png"
+        alt="Till Grallert, PhD" />
+        <figcaption aria-hidden="true">Till Grallert, PhD</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure>
+        <img
+        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_st-circle.png"
+        alt="Samantha Tirtohusodo" />
+        <figcaption aria-hidden="true">Samantha Tirtohusodo</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Sophie
+        <ul>
+        <li>Museologie, Medieninformatik sowie Digital History (MA)</li>
+        <li>Doktorandin und Wimi am Lehrstuhl Digital History</li>
+        <li>Schwerpunkt auf Research Software Engineering</li>
+        </ul></li>
+        <li>Till
+        <ul>
+        <li>Geschichte (PhD, MA)</li>
+        <li>Islamwissenschaft, Judaistik und VWL</li>
+        <li>mehr als 10 Jahre Erfahrungen in den DH
+        <ul>
+        <li>Global DH, critical DH: unter den Bedingungen des Globalen
+        Südens</li>
+        <li>multilingual DH: vor allem Arabisch und Osmanisch</li>
+        <li>Digitale Editorik, NER</li>
+        <li>Netzwerkanalyse, Stilometrie</li>
+        <li>Data viz</li>
+        </ul></li>
+        </ul></li>
+        <li>Sam
+        <ul>
+        <li>Bibliotheks- und Informationsmanagement</li>
+        <li>Information Science</li>
+        <li>Außerdem am FID Buch-, Bibliothek-, und
+        Informationswissenschaft angestellt</li>
+        <li>Schwerpunkt
+        <ul>
+        <li>User Experience</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
         <section>
-        <section id="how-did-they-build-this"
-        class="title-slide slide level1"
+        <section id="wie-arbeiten-wir" class="title-slide slide level1"
         data-background-image="https://furesh.github.io/slides/assets/images/blackbox/black-box_question-mark-people-c_blue.png"
         data-background-size="90%">
         <h1
         data-background-image="https://furesh.github.io/slides/assets/images/blackbox/black-box_question-mark-people-c_blue.png"
-        data-background-size="90%">How did they build this?</h1>
+        data-background-size="90%">Wie arbeiten wir?</h1>
 
         </section>
         <section id="die-blackbox" class="slide level2">
         <h2>Die Blackbox</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg" /></p>
         <blockquote>
         <p>The term black box […] is a device or system that, for
         convenience, is described solely in terms of its inputs and
@@ -1034,6 +1395,8 @@
         data-cites="Winner+1993">(Winner <span>„Upon opening the black
         box“</span> 1993, 365)</span></p>
         </blockquote>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io-2.jpg" /></p>
         <aside class="notes">
         <ul>
         <li>Schutz von Betriebsgeheimnissen</li>
@@ -1041,16 +1404,54 @@
         </ul>
         </aside>
         </section>
-        <section id="beispiel-werzeugliste" class="slide level2">
-        <h2>Beispiel: Werzeugliste</h2>
-        <blockquote>
-        <p>Wir bauen einen <em>Scholarly Makerspace</em> auf und wollen
-        eine <strong>Liste von Werkzeugen</strong> kuratieren, die auf
-        der <strong>Häufigkeit</strong> ihrer <strong>Benutzung in der
-        Forschung</strong> beruht.</p>
-        </blockquote>
+        <section id="was-haben-wir-um-sie-zu-öffnen"
+        class="slide level2">
+        <h2>Was haben wir um sie zu öffnen?</h2>
         <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox-operationalisierung.jpg" /></p>
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg" /></p>
+        </section>
+        <section id="minimal-computing" class="slide level2">
+        <h2>Minimal computing</h2>
+        <blockquote>
+        <p>Das Haus ist gebaut aus den Steinen, die vorhanden waren
+        <span class="citation"
+        data-cites="Brecht1967SchlechteZeiten">(Brecht <span>„Schlechte
+        Zeiten“</span> 1967)</span>.</p>
+        </blockquote>
+        <p>Im Sinne des <em>minimal computing</em> ist das Spannungsfeld
+        aus “was brauchen wir?” und “was haben wir?” handlungsleitend.
+        <span class="citation" data-cites="Gil+2016">(Gil und Ortega
+        <span>„Global Outlooks in Digital Humanities“</span>
+        2016)</span></p>
+        <ul>
+        <li>Kontextabhängig</li>
+        <li>Hilfe zur Selbsthilfe</li>
+        <li>Fokus auf <strong>methodische Zugänge</strong> mit
+        beispielhaften Implementation</li>
+        </ul>
+        <aside class="notes">
+        <ul>
+        <li>die minimale Lösung ist unter den Bedingungen der
+        Wissenschaft, die einzig machbare</li>
+        <li>muss im Einklang mit guter Wissenschaftlicher Praxis
+        stehen</li>
+        <li>Nutzer_innen sollen ermächtigt werden</li>
+        <li>Lösungen müssen nach dem Verlassen des Makerspaces
+        funktional bleiben</li>
+        <li><em>vorhanden</em> reicht im Sinne Heideggers nicht, Dinge
+        müssen <em>zuhanden</em> sein</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="was-haben-wir" class="slide level2">
+        <h2>Was haben wir?</h2>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/process_what-do-we-have.jpg" /></p>
+        <aside class="notes">
+        <ul>
+        <li>Beispielhafter Prozess für den Einsatz von Software</li>
+        </ul>
+        </aside>
         </section></section>
         <section>
         <section id="operationalisierung"
@@ -1062,118 +1463,20 @@
         data-background-size="90%">Operationalisierung</h1>
 
         </section>
-        <section id="forschungsprozess" class="slide level2">
-        <h2>Forschungsprozess</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg" /></p>
-        <aside class="notes">
-        <ul>
-        <li>dieser Abschnitt dient der ersten Entzauberung</li>
-        <li>Aufwand für Datenerfassung</li>
-        <li>Kräfteverhältnis zwischen Platformen und Wissenschaft</li>
-        </ul>
-        </aside>
-        </section>
-        <section id="wir-groß-sind-die-blackboxes" class="slide level2">
-        <h2>Wir groß sind die Blackboxes?</h2>
-        <h3 id="unsere-erwartungen-und-wünsche">Unsere Erwartungen und
-        Wünsche</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg" /></p>
-        </section>
-        <section id="wir-groß-sind-die-blackboxes-1"
-        class="slide level2">
-        <h2>Wir groß sind die Blackboxes?</h2>
-        <h3 id="die-bittere-realität">Die (bittere) Realität</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg" /></p>
-        </section>
-        <section id="was-haben-wir-um-sie-zu-öffnen"
-        class="slide level2">
-        <h2>Was haben wir um sie zu öffnen?</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg" /></p>
-        </section></section>
-        <section>
-        <section id="datenerfassung" class="title-slide slide level1"
-        data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg"
-        data-background-size="90%">
-        <h1
-        data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg"
-        data-background-size="90%">Datenerfassung</h1>
-
-        </section>
-        <section id="beispiel-werzeugliste-1" class="slide level2">
+        <section id="beispiel-werzeugliste" class="slide level2">
         <h2>Beispiel: Werzeugliste</h2>
         <blockquote>
         <p>Wir bauen einen <em>Scholarly Makerspace</em> auf und wollen
         eine <strong>Liste von Werkzeugen</strong> kuratieren, die auf
         der <strong>Häufigkeit</strong> ihrer <strong>Benutzung in der
-        Forschung</strong> beruht.</p>
+        Forschung</strong> beruht (Unsere eigene User Story).</p>
         </blockquote>
-        </section>
-        <section id="datenerfassung-werkzeugliste" class="slide level2">
-        <h2>Datenerfassung: Werkzeugliste</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe">Eingabe —&gt; Verarbeitung
-        —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_concrete.jpg" /></p>
-        </section>
-        <section id="datenerfassung-konzeptionell" class="slide level2">
-        <h2>Datenerfassung: konzeptionell</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe-1">Eingabe —&gt;
-        Verarbeitung —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_conceptual.jpg" /></p>
-        </section>
-        <section id="datenerfassung-web-scraping" class="slide level2">
-        <h2>Datenerfassung: Web scraping</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe-2">Eingabe —&gt;
-        Verarbeitung —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/web-scraping_technical.jpg" /></p>
-        </section>
-        <section id="datenerfassung-transformation"
-        class="slide level2">
-        <h2>Datenerfassung: Transformation</h2>
-        <h3 id="eingabe-verarbeitung-ausgabe-3">Eingabe —&gt;
-        Verarbeitung —&gt; Ausgabe</h3>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/transformation_technical.jpg" /></p>
-        </section></section>
-        <section>
-        <section id="computationelle-analyse"
-        class="title-slide slide level1"
-        data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg"
-        data-background-size="90%">
-        <h1
-        data-background-image="https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io.jpg"
-        data-background-size="90%">Computationelle Analyse</h1>
-
-        </section>
-        <section id="distant-reading" class="slide level2">
-        <h2>Distant Reading</h2>
-        <div class="columns-3">
-        <div class="column">
-        <h3 id="input">Input</h3>
-        </div>
-        <div class="column">
-        <h3 id="analyse">Analyse</h3>
-        </div>
-        <div class="column">
-        <h3 id="ergebnisse">Ergebnisse</h3>
-        </div>
-        </div>
-        </section>
-        <section id="ergebnisse-1" class="slide level2">
-        <h2>Ergebnisse</h2>
         <div class="columns">
         <div class="column">
-        <h3 id="statistiken">Statistiken</h3>
         <div id="tbl:freq-adho">
         <table>
-        <caption>Table 1: Absolute und relative Häufigkeit von
-        Begriffen, ADHO Konferenzen, 2014–18</caption>
+        <caption>Table 1: Absolute und relative Häufigkeiten von
+        “Werkzeugen” in ADHO Konferenz-Abstracts, 2014–18</caption>
         <thead>
         <tr class="header">
         <th>term</th>
@@ -1268,22 +1571,119 @@
         | LDA                 |   37 |     0.14 |
         -->
         </div><div class="column">
-        <h3 id="visualisierung">Visualisierung</h3>
         <figure>
         <img
         data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg"
         id="fig:wordcloud-adho-2"
-        alt="Figure 1: Wordcloud der relativen Häufigkeiten, ADHO Konferenzen, 2014–18" />
+        alt="Figure 1: Wordcloud der relativen Häufigkeiten von “Werkzeugen” in ADHO Konferenz-Abstracts, 2014–18" />
         <figcaption aria-hidden="true">Figure 1: Wordcloud der relativen
-        Häufigkeiten, ADHO Konferenzen, 2014–18</figcaption>
+        Häufigkeiten von “Werkzeugen” in ADHO Konferenz-Abstracts,
+        2014–18</figcaption>
         </figure>
-        </div><!-- :::: column
-
-        ![Digital Humanities Quarterly](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-text-100_tools-in-429-articles-from-DHQ-w_100.svg)
-
-        :::: -->
         </div>
-        <!-- # Ergebnisanalyse -->
+        </div>
+        </section>
+        <section id="forschungsprozess" class="slide level2">
+        <h2>Forschungsprozess</h2>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/research-process_generic.jpg" /></p>
+        <p>[Diese Prozesse sind alle von rechts nach links zu lesen. Die
+        Forschungsfrage bestimmt Methode und benötigte
+        Datengrundlage]</p>
+        <aside class="notes">
+        <ul>
+        <li><strong>WICHTIG</strong>: von rechts nach links lesen
+        <ol type="1">
+        <li>was brauche ich?</li>
+        <li>was benötige ich dafür?</li>
+        <li>was habe ich?</li>
+        </ol></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="wir-groß-sind-die-blackboxes" class="slide level2">
+        <h2>Wir groß sind die Blackboxes?</h2>
+        <h3 id="unsere-erwartungen-und-wünsche">Unsere Erwartungen und
+        Wünsche</h3>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_expected.jpg" /></p>
+        <aside class="notes">
+        <ul>
+        <li>dieser Abschnitt dient der ersten Entzauberung</li>
+        <li>Aufwand für Datenerfassung</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="wir-groß-sind-die-blackboxes-1"
+        class="slide level2">
+        <h2>Wir groß sind die Blackboxes?</h2>
+        <h3 id="die-bittere-realität">Die (bittere) Realität</h3>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/datafication-vs-analysis_real.jpg" /></p>
+        </section>
+        <section id="datenerfassung-konzeptionell" class="slide level2">
+        <h2>Datenerfassung: konzeptionell</h2>
+        <h3 id="eingabe-verarbeitung-ausgabe">Eingabe —&gt; Verarbeitung
+        —&gt; Ausgabe</h3>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_conceptual.jpg" /></p>
+        </section>
+        <section id="datenerfassung-werkzeugliste" class="slide level2">
+        <h2>Datenerfassung: Werkzeugliste</h2>
+        <h3 id="eingabe-verarbeitung-ausgabe-1">Eingabe —&gt;
+        Verarbeitung —&gt; Ausgabe</h3>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/corpus-building_concrete.jpg" /></p>
+        </section>
+        <section id="datenerfassung-web-scraping" class="slide level2">
+        <h2>Datenerfassung: Web scraping</h2>
+        <h3 id="eingabe-verarbeitung-ausgabe-2">Eingabe —&gt;
+        Verarbeitung —&gt; Ausgabe</h3>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/web-scraping_technical_set-cards.jpg" /></p>
+        </section></section>
+        <section>
+        <section id="schluß-danke" class="title-slide slide level1">
+        <h1>Schluß / Danke!</h1>
+
+        </section>
+        <section id="weitere-informationen" class="slide level2">
+        <h2>Weitere Informationen</h2>
+        <ul>
+        <li><a href="scholarly-makerspace.html">Was ist ein
+        protoypischer <em>Scholarly Makerspace</em>?</a></li>
+        <li><a href="service-profil.html">Unser
+        Serviceportfolio</a></li>
+        <li><a href="operationalisierung.html">Wie sieht das Tüfteln
+        aus?</a></li>
+        </ul>
+        </section>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        role="doc-bibliography">
+        <div id="ref-Brecht1967SchlechteZeiten" class="csl-entry"
+        role="doc-biblioentry">
+        Brecht, Bertolt. 1967. <span>„Schlechte Zeiten“</span>. In
+        <em>Gesammelte Gedichte</em>, 3:963. Frankfurt am Main:
+        Suhrkamp.
+        </div>
+        <div id="ref-Gil+2016" class="csl-entry" role="doc-biblioentry">
+        Gil, Alex, und Élika Ortega. 2016. <span>„Global Outlooks in
+        Digital Humanities: Multilingual Practices and Minimal
+        Computing“</span>. In <em>Doing digital humanities: practice,
+        training, research</em>, herausgegeben von Constance Crompton,
+        Richard J Lane, und Ray Siemens, 22–34. Abingdon: Routledge.
+        </div>
+        <div id="ref-Winner+1993" class="csl-entry"
+        role="doc-biblioentry">
+        Winner, Langdon. 1993. <span>„Upon opening the black box and
+        finding it empty: Social constructivism and the philosophy of
+        technology“</span>. <em>Science, Technology, &amp; Human
+        Values</em> 18 (3): 362–78. <a
+        href="https://doi.org/10.1177/016224399301800306">https://doi.org/10.1177/016224399301800306</a>.
+        </div>
+        </div>
         </section></section>
       </div>
     </div>
@@ -1439,7 +1839,13 @@
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                                                                              
+                                              
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+                width: 1000,
+                        height: 800,
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -1450,10 +1856,11 @@
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2022-07-12</span>
+                    <span class="c_left">2022-11-10</span>
                         <span class="c_left">|</span>
                                         <span class="c_left">Till
-Grallert, Sophie Eckenstaler</span>
+Grallert, Sophie Eckenstaler, Samantha Tirtohusodo</span>
+                        <span class="c_center"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></span>
                 <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</span>
         </div>

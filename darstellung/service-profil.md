@@ -213,6 +213,8 @@ in die DH Community in Berlin und beyond
 - Modularisierte computationelle Werkzeuge
 - Verweise auf Literatur, Tutorials, Use cases
 
+![Unser Werkzeugregal und Werkzeugkisten](../assets/images/photos/makerspace_werkzeugregal.jpg)
+
 ::::
 :::: column
 
@@ -220,9 +222,10 @@ in die DH Community in Berlin und beyond
 
 - Dockingstationen für Laptops
 - Nutzbarmachung vorhandener Resourcen an der HU
-    + GPU-Rechner
-    + Server des CMS
+    + GPU-Rechner und Server
     + 3D Drucker :-)
+
+<!-- ![Unsere Dockingstationen](../assets/images/photos/makerspace_docking-stations.jpg) -->
 
 ::::
 :::
@@ -272,5 +275,6 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 - [Was ist ein protoypischer *Scholarly Makerspace*?](scholarly-makerspace.html)
 - [Unser Serviceportfolio](service-profil.html)
+- [Wie sieht das Tüfteln aus?](operationalisierung.html)
 
 ## Literatur {#refs}
