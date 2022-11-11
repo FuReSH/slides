@@ -258,6 +258,7 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 - Wir schreiben keine Anträge
 - Wir setzen keine Projekte um
 - Wir machen keinen dauerhaften Support
+- Wir bauen und hosten keine Werkzeuge
 - Wir bauen keine Webseiten
 
 ::::
