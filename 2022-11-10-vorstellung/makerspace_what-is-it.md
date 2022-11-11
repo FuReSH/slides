@@ -7,9 +7,10 @@ author:
     - Samantha Tirtohusodo
 institute: Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum
 homepage: https://makerspace.hypotheses.org/
-event: "Interne Vorstellung für die Koleg:innen an der UB"
+event: "Interne Vorstellung für die Kolleg:innen an der UB"
 date: 2022-11-10
-status: draft
+url: https://furesh.github.io/slides/2022-11-10-vorstellung
+status: published
 lang: de
 bibliography:
     - /Users/Shared/HUBox/FuReSH/assets/bibliography/FuReSH.csl.json
