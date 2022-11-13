@@ -141,7 +141,7 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 - Kontextabhängig
 - Hilfe zur Selbsthilfe
-- Fokus auf **methodische Zugänge** mit beispielhaften Implementation
+- Fokus auf **methodische Zugänge** mit beispielhafter Implementation
 
 ::: notes
 
