@@ -1,5 +1,5 @@
 ---
-title: "Der *Scholarly Makerspace* an der UB der HU Berlin"
+title: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 subtitle: "Wie *tüfteln* wir eigentlich?"
 author:
     - Till Grallert
@@ -9,8 +9,9 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-date: 2022-11-10
-url: https://furesh.github.io/slides/2022-eröffnung/
+event: Eröffnung
+date: 2022-11-14
+url: https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html
 status: published
 lang: de
 bibliography:

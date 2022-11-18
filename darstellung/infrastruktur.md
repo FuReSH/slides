@@ -1,5 +1,5 @@
 ---
-title: "Der *Scholarly Makerspace* an der UB der HU Berlin"
+title: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 subtitle: "Unser Backend"
 author:
     - Till Grallert

@@ -95,7 +95,7 @@ Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr ge
 ::: notes
 
 - Makerspace als Lernort
-- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
+- Wichtig beim Scholarly Makerspace ist der konkrete, physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
 + Herausforderung: 
     * bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
 + Anforderungen: angenehme Atmosphäre

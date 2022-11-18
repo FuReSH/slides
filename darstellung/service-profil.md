@@ -1,5 +1,5 @@
 ---
-title: "Der *Scholarly Makerspace* an der UB der HU Berlin"
+title: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 subtitle: "Unser Serviceportfolio"
 author:
     - Till Grallert
@@ -9,8 +9,9 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-date: 2022-11-10
-url: 
+event: Eröffnung
+date: 2022-11-14
+url: https://furesh.github.io/slides/2022-eröffnung/service-profil.html
 status: published
 lang: de
 bibliography:
@@ -94,7 +95,7 @@ Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr ge
 ::: notes
 
 - Makerspace als Lernort
-- Wichtig beim Scholarly Makerspace ist nach wie vor der physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
+- Wichtig beim Scholarly Makerspace ist der konkrete, physische Raum, in dem letztlich Austausch und Vernetzung der Community stattfinden können
 + Herausforderung: 
     * bzgl. Des Bibliotheksbau in Berlin (Grimm-Zentrum) die Bibliothek traditionell gedacht und geplant wurde, d.h. diese neuen Räume müssen erst geschaffen werden (nicht frei von Konflikten abläuft)
 + Anforderungen: angenehme Atmosphäre
