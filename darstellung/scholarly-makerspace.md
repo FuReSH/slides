@@ -211,6 +211,10 @@ Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
 
 ## Digitale Werkzeugkompetenz in den Humanities!
 
+>Do artefacts have politics? [@Winner+1980]
+
+>Your computer is on fire. Humankind can no longer afford to be lulled into complacency by narratives of techno-utopianism or technoneutrality, or by self-assured and oversimplified evasion. [@Mullaney2021Intro, 4]
+
 Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 
 + **Teilhabe** an der Digitalität durch computationelle Methoden,
@@ -220,7 +224,7 @@ Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 ## Aber **Making** ?
 
 
->Do artefacts have politics? [@Winner+1980]
+
 
 <!-- >Do politics have artefacts? [@DunbarHester2014LowPower] -->
 
