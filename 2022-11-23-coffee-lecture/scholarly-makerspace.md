@@ -160,26 +160,27 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 >Do artefacts have politics? [@Winner+1980]
 
->The Cloud *is* a factory. Your AI *is* a human. Sexism *is* a feature, not a bug. [@Mullaney2021Intro, 7, Hervorhebung im Original]
+>The Cloud *is* a factory. Your AI *is* a human. Sexism *is* a feature, not a bug. [@Mullaney2021Intro, 7]
 
 Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 
 ::: columns-3
-:::: column
+:::: wide
+
++ **Teilhabe** an der Digitalität durch computationelle Methoden,
++ kritische **Reflexion** über ein neues epistemisches Paradigma,
++ Genese **neuer Erkenntnisse**
+
+::::
+:::: narrow
 
 ![Word cloud der häufigsten Werkzeuge in den Digital Humanities](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
 
 ::::
-:::: column
 
-+ **Teilhabe** an der Digitalität durch computationelle Methoden,
-+ kritische **Reflexion** über ein neues epistemisches Paradigma,
-+ Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
+:::: narrow
 
-::::
-:::: column
-
-![Von OpenAIs [DALL-E](https://openai.com/blog/dall-e/) generiertes Bild: "knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Quelle: Torsten Hiltmann)](https://furesh.github.io/slides/assets/images/dell-e_knight.png)
+![Von OpenAIs [DALL-E](https://openai.com/blog/dall-e/) generiertes Bild<!--: "knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Quelle: Torsten Hiltmann)-->](https://furesh.github.io/slides/assets/images/dell-e_knight.png)
 
 ::::
 :::
