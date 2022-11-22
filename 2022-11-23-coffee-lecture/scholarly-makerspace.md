@@ -1,6 +1,6 @@
 ---
 title: "Kein 3D-Drucker?"
-subtile: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
+subtitle: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 author:
     - Till Grallert
     - Sophie Eckenstaler
@@ -9,7 +9,7 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-event: Eröffnung
+event: UB Coffee Lectures
 date: 2022-11-23
 url: https://furesh.github.io/slides/2022-11-23-coffee-lecture
 status: published
