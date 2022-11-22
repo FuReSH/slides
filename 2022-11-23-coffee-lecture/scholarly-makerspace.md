@@ -140,60 +140,19 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 ::: notes
 
-Aspekte / Komponenten computationeller Forschung in den Geistes- und Kulturwissenschaften [@Drucker2021DHCoursebook]
+- diese Folie erklärt warum wir uns mit digital tool literacy beschäftigen müssen
+    + eigentlich schon aus der vorhergehenden Folio über die Beispiele klar
 
-1. Erstellung, Aufbereitung **digitaler Materialien**
-2. **computationelle Be- / Verarbeitung** dieser Materialien
-3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
+- Aspekte / Komponenten computationeller Forschung in den Geistes- und Kulturwissenschaften [@Drucker2021DHCoursebook]
+    1. Erstellung, Aufbereitung **digitaler Materialien**
+    2. **computationelle Be- / Verarbeitung** dieser Materialien
+    3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
 
 - Es herrscht in der Breite ein Mangel an 
     + **Theorie**: Verständnis des epistemischen Wandels
     + **Methode**: Beherrschung der notwendigen Werkzeuge
     + positivem **Wissen**: Überblick über die Möglichkeiten
 - *"Digital" Humanities* als Indikator
-
-:::
-
-## Digitale Werkzeugkompetenz in den Humanities?
-
-Maschinen sind auf dem Weg überzeugende Schöpfer zu werden ...
-
-::: columns
-:::: column
-
-### text2text
-
-Mit [you.com](https://you.com/search?q=how+to+write+well&&tbm=youwrite&cfr=write&)
-
->The humanities are under pressure. In an age of big data and computational power, the traditional methods of hermeneutics--close reading and interpretation--seem quaint. New approaches are needed to engage with the digital world, and one promising avenue is the creation of a prototypical scholarly makerspace.
->
->A makerspace is a place where people can come together to create things using technology. They are often open-ended environments where people can experiment and tinker with new ideas. This type of environment is ideal for exploring digital and computational tools, as well as for developing new ways of thinking about the humanities.
-
-<!-- >Digital technology is revolutionizing the way we live, work, and communicate. In particular, digital tools are transforming the humanities by providing new ways of accessing and analyzing information. As academics in the humanities, we need to be literate in these tools in order to keep up with the changing landscape of our discipline.
-
->The digital transformation presents many challenges for us as scholars. For one thing, we must learn how to use new software and hardware platforms that enable us to access and analyze data more efficiently. Additionally, we need to develop new methods for conducting research that take advantage of the unique capabilities of digital technologies. Finally, we must grapple with the ethical implications of using these technologies in our work.
-
->Despite these challenges, there are many reasons why developing digital tool literacy is essential for scholars in the humanities today. First and foremost amongst these is that it allows us to do our jobs better – plain and simple. With a better understanding of how to use digital technologies effectively, we can conduct research more efficiently and produce scholarship that is more impactful. Additionally, by being digitally literate we set ourselves apart from other scholars who may not have kept pace with the latest developments. Finally ,as society becomes increasingly digitized it is important that those of us working in those digital spaces have a strong foundation in their use. Only through developing our digital tool literacy can we continue to prosper as academics in the humanties field -->
-
-::::
-:::: column
-
-### text2image
-
-Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
-
-!["knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Quelle: Torsten Hiltmann)](https://furesh.github.io/slides/assets/images/dell-e_knight.png)
-
-::::
-:::
-
-
-::: notes
-
-- Diese Folie kann auch weggelassen werden
-- DALL-E bassiert auf den GPT (Generative Pre-trained Transformer) Modellen von OpenAI
-- GPT-3 wird auch zur Textgenese genutzt
-- [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion)
 
 :::
 
@@ -205,9 +164,25 @@ Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
 
 Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 
+::: columns-3
+:::: column
+
+![Word cloud der häufigsten Werkzeuge in den Digital Humanities](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
+
+::::
+:::: column
+
 + **Teilhabe** an der Digitalität durch computationelle Methoden,
 + kritische **Reflexion** über ein neues epistemisches Paradigma,
 + Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
+
+::::
+:::: column
+
+![Von OpenAIs [DALL-E](https://openai.com/blog/dall-e/) generiertes Bild: "knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Quelle: Torsten Hiltmann)](https://furesh.github.io/slides/assets/images/dell-e_knight.png)
+
+::::
+:::
 
 ## Aber **Making** ?
 
