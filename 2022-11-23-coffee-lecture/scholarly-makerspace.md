@@ -228,6 +228,11 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 
 :::
 
+## Zusammenfassung
+
+<!-- add slide on opening the blackbox, digital consumers to digital citizens -->
+
+
 # Wie sieht das konkret aus?
 ## Wer sind unsere Zielgruppen?
 
