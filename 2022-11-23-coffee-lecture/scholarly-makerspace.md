@@ -85,21 +85,7 @@ Damit sind Makerspaces
 
 :::
 
-## Ein Makerspace, aber für was?
-
-
-![Ein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer.jpg)
-
-
-::: notes
-
-- Werkstätten für Selbermacher:innen
-    + Fab Lab, 
-- „Makerspace“ hieß  ursprünglich auch die erste kommerziell betriebene Werkstatt bei der 3D-Drucker  gemietet und genutzt werden konnten (HATCH 2013)
-
-:::
-
-## Ein Makerspace, aber für was?
+## Ein Makerspace ohne 3D-Drucker?
 
 ![Kein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg)
 
@@ -118,6 +104,14 @@ Damit sind Makerspaces
 ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png)
 
 ::::
+:::
+
+::: notes
+
+- Werkstätten für Selbermacher:innen
+    + Fab Lab, 
+- „Makerspace“ hieß  ursprünglich auch die erste kommerziell betriebene Werkstatt bei der 3D-Drucker  gemietet und genutzt werden konnten (HATCH 2013)
+
 :::
 
 ## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
@@ -264,30 +258,6 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 - Kritik an Maker culture als omnipotenter maskuliner Raum:
     - >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
 
-:::
-
-
-## Ein **prototypischer** Scholarly Makerspace
-
-::: columns
-:::: narrow
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_icons.jpg)
-
-::::
-:::: wide
-
-
-- Fokus auf Übertragbarkeit und Nachnutzbarkeit
-    + Nur das absolut Notwendige selber machen
-    + Nutzung bestehender offener Infrastrukturen
-    + Modulares System
-    + Dokumentation, Dokumentation, Dokumentation
-    + Open Data und Open Science von Anfang an
-- Begleitende Studien
-    + Forschungs- und Projektseminare
-
-::::
 :::
 
 # Schluß / Danke!
