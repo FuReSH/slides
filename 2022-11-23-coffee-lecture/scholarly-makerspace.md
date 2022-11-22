@@ -1,6 +1,6 @@
 ---
-title: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
-subtitle: "Was ist ein prototypischer *Scholarly Makerspace*?"
+title: "Kein 3D-Drucker?"
+subtile: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 author:
     - Till Grallert
     - Sophie Eckenstaler
@@ -10,8 +10,8 @@ institute:
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
 event: Eröffnung
-date: 2022-11-14
-url: https://furesh.github.io/slides/2022-eröffnung/scholarly-makerspace.html
+date: 2022-11-23
+url: https://furesh.github.io/slides/2022-11-23-coffee-lecture
 status: published
 lang: de
 bibliography:
