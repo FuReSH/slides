@@ -89,37 +89,30 @@ Damit sind Makerspaces
 
 ![Kein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg)
 
-## Ein **Scholarly** Makerspace!
-
-::: columns
-:::: column
-
-![Word cloud der häufigsten Werkzeuge in den Digital Humanities](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
-
-::::
-:::: column
-
-![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png)
-
-![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png)
-
-::::
-:::
-
-::: notes
-
-- Werkstätten für Selbermacher:innen
-    + Fab Lab, 
-- „Makerspace“ hieß  ursprünglich auch die erste kommerziell betriebene Werkstatt bei der 3D-Drucker  gemietet und genutzt werden konnten (HATCH 2013)
-
-:::
-
 ## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
+::: columns
+:::: column
+
 - durch Forschungsfragen getrieben
+
+![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png)
+
+<!-- ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png) -->
+
+::::
+:::: column
+
 - die Auswirkungen der Digitalität auf den Erkenntnisprozess untersuchend
+
+![Fehlerhafte Scans und Stand von OCR. Quelle: [Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1](https://www.deutsche-digitale-bibliothek.de/newspaper/item/MP2O2HAR4Q6JRV2WUMWAHTV7QA7X3V32?issuepage=1)](https://furesh.github.io/slides/assets/images/ocr_deutsches-zeitungsportal.png)
+
+
+::::
+:::
+
 - die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
 
 ::: notes
@@ -163,7 +156,7 @@ Aspekte / Komponenten computationeller Forschung in den Geistes- und Kulturwisse
 
 ## Digitale Werkzeugkompetenz in den Humanities?
 
-Maschinen sind auf dem Weg überzeugende Schöpfer werden ...
+Maschinen sind auf dem Weg überzeugende Schöpfer zu werden ...
 
 ::: columns
 :::: column
@@ -189,7 +182,7 @@ Mit [you.com](https://you.com/search?q=how+to+write+well&&tbm=youwrite&cfr=write
 
 Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
 
-!["knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Torsten Hiltmann)](https://furesh.github.io/slides/assets/images/dell-e_knight.png)
+!["knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Quelle: Torsten Hiltmann)](https://furesh.github.io/slides/assets/images/dell-e_knight.png)
 
 ::::
 :::
@@ -197,6 +190,7 @@ Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
 
 ::: notes
 
+- Diese Folie kann auch weggelassen werden
 - DALL-E bassiert auf den GPT (Generative Pre-trained Transformer) Modellen von OpenAI
 - GPT-3 wird auch zur Textgenese genutzt
 - [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion)
@@ -207,7 +201,7 @@ Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
 
 >Do artefacts have politics? [@Winner+1980]
 
->Your computer is on fire. Humankind can no longer afford to be lulled into complacency by narratives of techno-utopianism or technoneutrality, or by self-assured and oversimplified evasion. [@Mullaney2021Intro, 4]
+>The Cloud *is* a factory. Your AI *is* a human. Sexism *is* a feature, not a bug. [@Mullaney2021Intro, 7, Hervorhebung im Original]
 
 Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 
@@ -216,8 +210,6 @@ Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 + Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
 
 ## Aber **Making** ?
-
-
 
 
 <!-- >Do politics have artefacts? [@DunbarHester2014LowPower] -->
@@ -259,6 +251,203 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
     - >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
 
 :::
+
+# Wie sieht das konkret aus?
+## Wer sind unsere Zielgruppen?
+
+Forscher_innen aller Karrierstufen ab der Promotionsphase
+
+::: columns-3
+:::: column
+
+### Typ 1
+
+Keine / geringe Kenntnisse aber Interesse an Digital Humanities
+
+::::
+:::: column
+
+### Typ 2
+
+Detaillierte Vorstellungen aber mangelnde Kenntnisse für konkrete Umsetzung
+
+::::
+:::: column
+
+### Typ 3
+
+Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
+
+::::
+:::
+
+## Was bieten wir an?
+### Einen Lernort
+
+Der *Scholarly Makerspace* ist seit dem 14. November montags bis freitags von 10 bis 14 Uhr geöffnet
+
+::: columns
+:::: column
+
+![Lage des *Scholarly Makerspace*s im 3. OG des Grimm-Zentrums](https://furesh.github.io/slides/assets/images/location-within-the-library_2d-annotated.jpg)
+
+::::
+:::: column
+
+![Der *Scholarly Makerspace* im Grimm-Zentrum](https://furesh.github.io/slides/assets/images/photos/ub-makerspace_2.jpg)
+
+::::
+:::
+
+## Was bieten wir an?
+### Hilfe zur Selbsthilfe
+
+::: columns-3
+:::: column
+
+### Infrastruktur
+
+und Resourcen für eigenes Arbeiten
+
++ wöchentliche Einführungen in den Scholarly Makerspace
++ offene Materialien und Infrastrukturen für die Nachnutzung und Erweiterung
+<!-- + Zugang zu technischen Infrastrukturen der HU (z.B. CMS) -->
+
+::::
+:::: column
+
+### gemeinsames Tüfteln
+
++ Drop-in
++ Offene Sprechstunde
++ gezielte Beratung
+
+::::
+:::: column
+
+### Vernetzung
+
+in die DH Community in Berlin und beyond
+
++ Community hours für den Austausch
++ [Veranstaltungskalender](https://makerspace.hypotheses.org/324)
+
+::::
+:::
+
+
+::: notes
+
+- bestehende Vernetzungen
+    + Hackathon zur Archivierung von Ukrainischem Kulturgut 
+        * in den Räumen des IfG
+    + SPK Lab Partner
+    + Stiftung für die deutsche Wissenschaft (in der Folge des Hackathons)
+    + ADA Lovelace Center
+        * gemeinsamer jour fixe
+        * Veranstaltung zu Kulturen des Scheiterns
+    - SUB Hamburg, Symposium "Wissen Bauen 2025"
+:::
+
+
+## Was bieten wir an
+### Erfahrungen und Wissen
+
+::: columns-3
+:::: column
+
+![Sophie Eckenstaler](https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png)
+
+::::
+:::: column
+
+![Till Grallert, PhD](https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png)
+
+::::
+:::: column
+
+![Samantha Tirtohusodo](https://furesh.github.io/slides/assets/images/photos/portrait_st-circle.png)
+
+::::
+:::
+
+::: notes
+
+- wichtig für den gemeinschaftlichen Ansatz ist es, diesen nicht hierarchisch zu denken
+    + wir das Personal sind nicht die Experten, die frontal erklären
+- >To say, “I can do first aid,” is to underscore our entanglement with circuitry. And to say, “I don’t know all the circuitry,” at least implies the impossibility of such knowledge. That is, we can reject the autonomy or privacy of technologies without supposing we know them completely. Although we may understand how something works, we may not apprehend how or under what conditions it was made. [@Sayers2017Introduction, 2]
+- >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
+
+:::
+
+## Was bieten wir an?
+### Infrastruktur und Resourcen
+
+::: columns
+:::: column
+
+### Werkzeuge
+
+- Modularisierte Werkzeuge, Werkzeugkisten und -regale
+- Verweise auf Literatur, Tutorials, Use cases
+
+![Unser Werkzeugregal und Werkzeugkisten](../assets/images/photos/makerspace_werkzeugregal.jpg)
+
+::::
+:::: column
+
+### Infrastruktur
+
+- Dockingstationen für Laptops
+- Nutzbarmachung vorhandener Resourcen an der HU
+    + GPU-Rechner und Server
+    + 3D Drucker :-)
+
+<!-- ![Unsere Dockingstationen](../assets/images/photos/makerspace_docking-stations.jpg) -->
+
+::::
+:::
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
+
+::: notes
+
+Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
+
+1. zum einen wollen wir Infrastrukturen vor Ort zur Verfügung stellen (Hardware, mit der gearbeitet werden kann, aktuell Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker, wenn Bedarf da ist), aber auch vorhandene Infrastrukturangebote an der HU nutzbar machen (Zugang zu GPU-Rechenkapazitäten, Server des CMS, etc.)
+2. zum anderen aggregieren wir bei uns digitale Werkzeuge, welche im geisteswissenschaftlichen Forschungsprozess zum Einsatz kommen
+    * wobei wir Werkzeuge metaphorisch als physisch denken und diese entsprechend nach Werkzeugkisten  und -regale systematisieren
+    * daneben gibt es Werkzeuganleitungen, die aus Literatur, Tutorials und Best Practices bestehen
+
+:::
+
+## Was bieten wir nicht an?
+
+
+::: columns
+:::: column
+
+![Kein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg)
+
+::::
+:::: column
+
+- Wir haben keine 3D Drucker
+- Wir schreiben keine Anträge
+- Wir setzen keine Projekte um
+- Wir machen keinen dauerhaften Support
+- Wir bauen und hosten keine Werkzeuge
+- Wir bauen keine Webseiten
+
+::::
+:::
+
+::: notes
+
+- Wir können Kontakt zu Leuten mit 3D Druckern herstellen
+
+:::
+
 
 # Schluß / Danke!
 ## Weitere Informationen

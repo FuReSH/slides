@@ -77,7 +77,7 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
 ## Was bieten wir an?
 ### Einen Lernort
 
-Der *Scholarly Makerspace* ist ab dem 14. November täglich von 10 bis 14 Uhr geöffnet
+Der *Scholarly Makerspace* ist seit dem 14. November montags bis freitags von 10 bis 14 Uhr geöffnet
 
 ::: columns
 :::: column
