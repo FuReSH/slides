@@ -229,8 +229,38 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 :::
 
 ## Zusammenfassung
+### Von *digital consumers* zu *digital citizens*
 
-<!-- add slide on opening the blackbox, digital consumers to digital citizens -->
+::: columns
+:::: column
+
+![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
+
+::::
+:::: column
+
+
+Aufgaben
+
+- den epistemischen Wandel ergreifen
+- Blackboxes öffnen
+- Wissensdomäne massiv ausweiten 
+
+Angebot: Hilfe zur Selbsthilfe
+
+- Infrastruktur und Resourcen für eigenes Arbeiten
+- gemeinsames Tüfteln
+- Vernetzung
+
+::::
+:::
+::: notes
+
+- *digital citizenry* ist von [@Rankin2018PeoplesHistory, 11] geprägt
+- kann **nur kollaborativ** adäquat bewältigt werden. 
++ Tool literacy ist extrem aufwändig
+
+:::
 
 
 # Wie sieht das konkret aus?
