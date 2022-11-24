@@ -476,10 +476,10 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 ### Folien
 
-- [Was ist ein protoypischer *Scholarly Makerspace*?](scholarly-makerspace.html)
-- [Unser Serviceportfolio](service-profil.html)
-- [Wie sieht das Tüfteln aus?](operationalisierung.html)
-- [Unser Backend](infrastruktur.html)
+- [Was ist ein protoypischer *Scholarly Makerspace*?](https://furesh.github.io/slides/darstellung/scholarly-makerspace.html)
+- [Unser Serviceportfolio](https://furesh.github.io/slides/darstellung/service-profil.html)
+- [Wie sieht das Tüfteln aus?](https://furesh.github.io/slides/darstellung/operationalisierung.html)
+- [Unser Backend](https://furesh.github.io/slides/darstellung/infrastruktur.html)
 
 ### Matrial
 
