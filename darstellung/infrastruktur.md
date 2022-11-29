@@ -9,13 +9,10 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-date: 2022-11-10
 url: 
 status: published
 lang: de
-bibliography:
-    - ../assets/bibliography/FuReSH.csl.json
-    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json 
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
@@ -71,7 +68,72 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
 :::
 
 
-# Backend und Infrastruktur
+# Backend und Infrastruktur: Unsere Werkzeugregal-Architektur
+
+## Ziel
+
+Ein zentraler Pfeiler unseres Angebots ist ein kuratiertes Werkzeugregal mit digitalen Werkzeugen für die Geistes- und Kulturwissenschaften an der HU Berlin.
+
+::: notes
+
++ Diese Infrastruktur dient vordergründig dem Wissensmanagement
++ Wissen wird durch Personal und Community geschaffen, aufbereitet und vermittelt
++ Wissen wird in die Gemeinschaft / Gesellschaft zurückgegeben
+
+:::
+
+## Ausgangspunkt
+
+- Angebot existiert an der HU bisher nicht
+- folglich auch keine entsprechenden digitalen Infrastrukturen
+- Aufbau durch Makerspace
+
+## Vorgehen
+
+### Kein Tool Directory Nr. x
+
+- Kuratierte Werkzeuglisten gibt es schon z.B. DiRT Directory oder TAPoR 3
+- Problem:
+    + Maintainance
+    + Aktualität
+    + Nachnutzbarkeit (in anderen Kontexten)
+
+### Kein Großprojekt
+
+- EU-Projekt **SSHOC-Marketplace** (European Open Science Cloud)
+    + Anspruch auf Vollständigkeit
+    + Abdeckung des gesamten Forschungsprozesses mit Fokus auf den Daten und Datenlebenszyklus
+        - Digitale Tools sind hier eine Unterkategorie.
+
+## Vorgehen
+
+- Informationen bedarfsorientiert aggregieren und verteilen, kein neues Tool Directory ("DiRT-trap")
+- Gemeinschaft(lich)
+- Offen und Modular
+- Aufwand für UX und UI minimieren
+- Ausnutzung vorhandener offener Services/Infrastrukturen
+
+## Implementierung
+
+::: columns
+:::: narrow
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_architecture.jpg)
+
+::::
+:::: wide
+
+
+- Funktionale Trennung zwischen unseren Datenarten
+    + GitHub-Repository: Metadaten/ Werkzeugregal mit Werzeugkisten und Blackboxes
+    + Wikidata: inhaltlichen Daten/ Tools
+    + Zotero: bibliografische Daten (Tutorials etc.)
+- Alle Datenarten sind kontextunabhängig weiter verwendbar (da funktional keine Abhängigkeiten)
+- Aufbau eines Portals als zentraler Zugang zu den verteilten Daten
+
+::::
+:::
+
 ## Ein **prototypischer** Scholarly Makerspace
 
 ::: columns
@@ -87,39 +149,10 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
     + Nur das absolut Notwendige selber machen
     + Nutzung bestehender offener Infrastrukturen
     + Modulares System
-    + Dokumentation, Dokumentation, Dokumentation
     + Open Data und Open Science von Anfang an
-- Begleitende Studien
-    + Forschungs- und Projektseminare
+    + Dokumentation, Dokumentation, Dokumentation
 
 ::::
-:::
-
-## Werkzeugregal-Architektur
-
-Ein zentraler Pfeiler unseres Angebots ist ein kuratiertes Werkzeugregal 
-
-::: columns
-:::: column
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/toolbox_architecture.jpg)
-
-::::
-:::: column
-
-- Offen und Modular
-- Wissen(smanagement)
-- Gemeinschaft(lich)
-
-::::
-:::
-
-::: notes
-
-+ Diese Infrastruktur dient dem Wissensmanagement
-+ Wissen wird durch Personal und Community geschaffen, aufbereitet und vermittelt
-+ Wissen wird in die Gemeinschaft / Gesellschaft zurückgegeben
-
 :::
 
 ## Containerisierte Werkzeuge
