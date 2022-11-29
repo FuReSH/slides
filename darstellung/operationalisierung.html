@@ -6,8 +6,8 @@
           <meta name="author" content="Till Grallert">
           <meta name="author" content="Sophie Eckenstaler">
           <meta name="author" content="Samantha Tirtohusodo">
-              <meta name="dcterms.date" content="2022-11-10">
-                <title>Der Scholarly Makerspace an der UB der HU Berlin</title>
+              <meta name="dcterms.date" content="2022-11-14">
+                <title>Der Scholarly Makerspace an der UB der HU Berlin stellt sich vor</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -55,6 +55,49 @@
                        http://www.w3.org/Consortium/Legal/copyright-documents
                        http://www.w3.org/Consortium/Legal/copyright-software
                     */
+
+                    @font-face {
+                        font-family: AmiriWeb;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: regular;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: HeptaSlab;
+                        src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: linowrite;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
+                    }
+
 
                     /* render Arabic as rtl */
                     [lang = "ar"],
@@ -224,7 +267,9 @@
                     h3,
                     h4,
                     h5 {
-                        font-family: "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                        /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
+                    /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
+                        font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
                         font-weight: 400;
                         color: #113868;
                     }
@@ -364,38 +409,37 @@
                     ******************/
                     /* title and dividing slides */
                     /* put h1 in the center of the slide */
-                    div.titleslide h1 {
-                        margin-top: 4em;
+                    div.titleslide h1,
+                    #title-slide h1 {
+                        margin-top: 2em;
                     /*margin-bottom: auto;*/
                     font-size: 2em;
                     }
-                    div.level1 h1 {
-                        margin-top: 4em;
-                        font-size: 2em;
-                    }
+
                     h1,
                     h2,
                     h3,
                     h4 {
                         text-align: center;
                     }
-                    .reveal h1, h1 {
+                    div.reveal h1, h1 {
                         padding-bottom: 0.3em;
                         font-size: 1.75em;
                         line-height: 1.2;
                         border-bottom: 1px solid #eee;
+                        margin-top: 4em;
                     }
-                    .reveal h2, h2 {
+                    div.reveal h2, h2 {
                         padding-bottom: 0.3em;
                         font-size: 1.5em;
                         line-height: 1.225;
                         border-bottom: 1px solid #eee;
                     }
-                    .reveal h3, h3 {
+                    div.reveal h3, h3 {
                         font-size: 1.25em;
                         line-height: 1.43;
                     }
-                    .reveal h4, h4 {
+                    div.reveal h4, h4 {
                         font-size: 1em;
                     }
                     /******************
@@ -575,6 +619,17 @@
                     }
                     .columns-3 > .column {
                         width: 32%;
+                    }
+                    .columns-3 > .narrow {
+                        width: 23%;
+                        position: relative;
+                        float: left;
+                    }
+
+                    .columns-3 > .wide {
+                        width: 50%;
+                        position: relative;
+                        float: left;
                     }
                     .columns-2 > .column,
                     .columns > .column {
@@ -1295,7 +1350,7 @@
 
                 <section id="title-slide">
           <h1 class="title">Der <em>Scholarly Makerspace</em> an der UB
-der HU Berlin</h1>
+der HU Berlin stellt sich vor</h1>
                     <h2 class="subtitle">Wie <em>tüfteln</em> wir
 eigentlich?</h2>
                     <div class="columns">
@@ -1310,11 +1365,15 @@ e-Research Support in the Humanities” (2022–25)</p>
                                             <p class="url"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></p>
                   </div>
         <div class="column c_right c_right-align">
-                              <p class="date">2022-11-10</p>
-                            </div>
+                    <p class="event">
+                        <span>Eröffnung</span>
+          </p>
+                              <p class="date">2022-11-14</p>
+                              <p class="url"><a href="https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html">https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html</a></p>
+                  </div>
       </div>
         </section>
-
+                
         <section class="slide level2">
 
         <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
@@ -2232,7 +2291,7 @@ e-Research Support in the Humanities” (2022–25)</p>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2022-11-10</span>
+                    <span class="c_left">2022-11-14</span>
                         <span class="c_left">|</span>
                                         <span class="c_left">Till
 Grallert, Sophie Eckenstaler, Samantha Tirtohusodo</span>
