@@ -481,7 +481,7 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 - [Wie sieht das Tüfteln aus?](https://furesh.github.io/slides/darstellung/operationalisierung.html)
 - [Unser Backend](https://furesh.github.io/slides/darstellung/infrastruktur.html)
 
-### Matrial
+### Material
 
 - [Blackboxes zum Ausprobieren](https://furesh.github.io/blackbox-gamification/)
 

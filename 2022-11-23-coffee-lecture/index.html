@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html  lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
@@ -60,42 +60,42 @@
                         font-family: AmiriWeb;
                         font-style: normal;
                         font-weight: 400;
-                        src: url('../assets/fonts/amiri/amiri-regular.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
                     }
 
                     @font-face {
                         font-family: PTSans;
                         font-style: normal;
                         font-weight: 400;
-                        src: url('../assets/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
                     }
                     @font-face {
                         font-family: PTSans;
                         font-style: italic;
                         font-weight: 400;
-                        src: url('../assets/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
                     }
                     @font-face {
                         font-family: PTSans;
                         font-style: regular;
                         font-weight: bold;
-                        src: url('../assets/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
                     }
                     @font-face {
                         font-family: PTSans;
                         font-style: italic;
                         font-weight: bold;
-                        src: url('../assets/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
                     }
                     @font-face {
                         font-family: HeptaSlab;
-                        src: url('../assets/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
                     }
                     @font-face {
                         font-family: linowrite;
                         font-style: normal;
                         font-weight: 400;
-                        src: url('../assets/fonts/linowrite/linowrite.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
                     }
 
 
@@ -108,8 +108,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -142,9 +142,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -155,8 +155,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -266,7 +266,8 @@
                     h2,
                     h3,
                     h4,
-                    h5 {
+                    h5,
+                    th {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -953,7 +954,8 @@
                         font-size: 0.8em;
                         font-style: normal;
                         text-align: right;
-                        float: right;
+                    /*    the float attribute destroys the multi-column layout*/
+                    /*    float: right;*/
                         padding-bottom: 1em;
                     }
                     p.copyright {
@@ -1124,6 +1126,11 @@
                         /*font-size: 0.8em;*/
                         border-collapse: collapse;
                     }
+                    th {
+                        border-bottom-width: 2px;
+                        border-bottom-style: double;
+                        border-bottom-color: black;
+                    }
                     td,
                     th {
                         padding: 0.2em
@@ -1243,6 +1250,14 @@
                     div.references p {
                         margin: 5px 0px;
                     }
+                    /* alerts */
+                    div.alert {
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: red;
+                        margin-left: 2em;
+                        border-left-width: 1em;
+                    }
                     /*
                      hide images for work around for save as bug
                      where browsers fail to save images used by CSS
@@ -1339,7 +1354,7 @@
                     }
                     </style>
       </head>
-  <body>
+  <body onload="setCurrentDate()">
         <!-- FuReSH header -->
     <header>
         <!-- <img class="c_left c_logo" src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png"> -->
@@ -1367,12 +1382,12 @@ e-Research Support in the Humanities” (2022–25)</p>
                     <p class="event">
                         <span>UB Coffee Lectures</span>
           </p>
-                              <p class="date">2022-11-23</p>
+                                <p class="date">2022-11-23</p>
                               <p class="url"><a href="https://furesh.github.io/slides/2022-11-23-coffee-lecture">https://furesh.github.io/slides/2022-11-23-coffee-lecture</a></p>
                   </div>
       </div>
         </section>
-                
+
         <section class="slide level2">
 
         <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
@@ -2048,7 +2063,7 @@ e-Research Support in the Humanities” (2022–25)</p>
         href="https://furesh.github.io/slides/darstellung/infrastruktur.html">Unser
         Backend</a></li>
         </ul>
-        <h3 id="matrial">Matrial</h3>
+        <h3 id="material">Material</h3>
         <ul>
         <li><a
         href="https://furesh.github.io/blackbox-gamification/">Blackboxes
@@ -2149,7 +2164,7 @@ e-Research Support in the Humanities” (2022–25)</p>
     <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -2294,13 +2309,13 @@ e-Research Support in the Humanities” (2022–25)</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1000,
                         height: 800,
-                                        
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2312,13 +2327,26 @@ e-Research Support in the Humanities” (2022–25)</p>
         <footer>
         <div class="c_frame">
                     <span class="c_left">2022-11-23</span>
-                        <span class="c_left">|</span>
-                                        <span class="c_left">Till
-Grallert, Sophie Eckenstaler, Samantha Tirtohusodo</span>
+                            <span class="c_left">|</span>
+            <span class="c_left">Till Grallert, Sophie
+Eckenstaler, Samantha Tirtohusodo</span>
                         <span class="c_center"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></span>
                 <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</span>
         </div>
     </footer>
+    <script>
+            function setCurrentDate() {
+                let date = new Date().toLocaleDateString();
+                let collection = document.getElementsByClassName("current-date");
+                for (element of collection) {
+                    if (element.nodeName == "META" && !element.hasAttribute("content")) {
+                        element.setAttribute("content", date);
+                    } else {
+                        element.innerText = date;
+                    }
+                }
+            }
+        </script>
   </body>
   </html>
