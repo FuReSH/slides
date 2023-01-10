@@ -89,7 +89,7 @@ flowchart LR
 - Modelle: Mapping, Reduction, Purpose [@Stachowiak1973AllgemeineModelltheorie]
 - Sprach-Modelle: Wahrscheinlichkeitsverteilung von Tokens in einer Sequenz innerhalb eines Korpus
     + Modelle werden auf Basis eines Korpus von Texten *trainiert*
-    + "stochastic parrots" [@BenderEtal2021StochasticParrots, 617]
+    + stochastische Papageien [@BenderEtal2021StochasticParrots]
 - Groß: 
     + Hunderte Milliarden von Parametern
     + Benötigen hunderte GB Speicherplatz
@@ -105,12 +105,11 @@ flowchart BT
     comp1((Google)) --> lambda[(LaMDA: Language Models \nfor Dialog Applications)]
 </pre>
 <pre class="mermaid">
-flowchart BT
+flowchart LR
     comp2((OpenAI)) --> dalle[(DALL-E)]
-    comp2((OpenAI)) --> gpt[(GPT: Generative \nPre-trained Transformer)]
-    comp3((Microsoft)) -- invested --> comp2((OpenAI))
-    pers1[Elon Musk] -- co-founded --> comp2((OpenAI))
-
+    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
+    comp3((Microsoft)) -.->|invested| comp2
+    pers1[Elon Musk] -.->|co-founded| comp2
 </pre>
 
 ::::
@@ -159,6 +158,16 @@ flowchart BT
 - Ein "Chatbot" auf der Basis von GPT-3
 - Entwickelt von OpenAI
 - Veröffentlicht am 30 November 2022
+
+<pre class="mermaid">
+flowchart LR
+    comp2((OpenAI)) --> dalle[(DALL-E)]
+    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
+    gpt --> gpt3[(GPT-3)]
+    gpt3 --> chatgpt{ChatGPT}
+    comp3((Microsoft)) -.->|invested| comp2
+    pers1[Elon Musk] -.->|co-founded| comp2
+</pre>
 
 # Schluß / Danke!
 ## Literatur {#refs}

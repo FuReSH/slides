@@ -625,8 +625,10 @@
                         /*flex: none;*/
                     }
                     div.column {
-                        display: inline-block;
+                    /*    display: inline-block;*/
                         flex: none;
+                        display: block;
+                        float: left;
                     }
                     .columns-3 > .column {
                         width: 32%;
@@ -1498,12 +1500,11 @@ flowchart BT
     comp1((Google)) --> lambda[(LaMDA: Language Models \nfor Dialog Applications)]
 </pre>
 <pre class="mermaid">
-flowchart BT
+flowchart LR
     comp2((OpenAI)) --> dalle[(DALL-E)]
-    comp2((OpenAI)) --> gpt[(GPT: Generative \nPre-trained Transformer)]
-    comp3((Microsoft)) -- invested --> comp2((OpenAI))
-    pers1[Elon Musk] -- co-founded --> comp2((OpenAI))
-
+    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
+    comp3((Microsoft)) -.->|invested| comp2
+    pers1[Elon Musk] -.->|co-founded| comp2
 </pre>
         </div>
         </div>
@@ -1590,6 +1591,15 @@ flowchart BT
         <li>Entwickelt von OpenAI</li>
         <li>Veröffentlicht am 30 November 2022</li>
         </ul>
+<pre class="mermaid">
+flowchart LR
+    comp2((OpenAI)) --> dalle[(DALL-E)]
+    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
+    gpt --> gpt3[(GPT-3)]
+    gpt3 --> chatgpt{ChatGPT}
+    comp3((Microsoft)) -.->|invested| comp2
+    pers1[Elon Musk] -.->|co-founded| comp2
+</pre>
         </section></section>
         <section>
         <section id="schluß-danke" class="title-slide slide level1">
