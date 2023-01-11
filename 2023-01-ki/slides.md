@@ -2,28 +2,28 @@
 title: "KI?"
 subtitle: "Was soll das sein?!"
 author:
-    - Martin Dröge
     - Till Grallert
-affiliation: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
-date: 2023-01-04 
-status: draft
+institute: 
+    - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
+    - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
+homepage: https://makerspace.hypotheses.org/
+event: "Chat GPT - Fluch oder Segen generativer KIs für die universitäre Lehre?"
+# date: 2023-01-11
+url: https://furesh.github.io/slides/2023-01-ki
+status: published
 lang: de
-bibliography: 
-    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+bibliography:
     - /Users/Shared/HUBox/FuReSH/assets/bibliography/FuReSH.csl.json
-suppress-bibliography: false
+    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
     - FuReSH
-    - AI-Skills
-    - AI
-    - Event
-    - Introduction
+    - slides
 ---
 
 
-# Was ist das?
+# KI?!
 ## Künstliche Intelligenz (KI / AI)
 
 ::: columns
