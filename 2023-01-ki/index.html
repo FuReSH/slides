@@ -629,9 +629,11 @@
                         flex: none;
                         display: block;
                         float: left;
+                        padding-left: 10px;
+                        padding-right: 10px;
                     }
                     .columns-3 > .column {
-                        width: 32%;
+                        width: 31%;
                     }
                     .columns-3 > .narrow {
                         width: 23%;
@@ -645,8 +647,9 @@
                         float: left;
                     }
                     .columns-2 > .column,
-                    .columns > .column {
-                        width: 50%;
+                    .columns > .column,
+                    .c_width-50  {
+                        width: 47%;
                     }
                     .c_width-60,
                     .column-60,
@@ -656,7 +659,6 @@
                         float: left;
                     }
                     .c_width-50 {
-                        width: 50%;
                         position: relative;
                         float: left;
                     }
@@ -1452,15 +1454,32 @@ Grallert            </p>
         flowchart LR
             Input --&gt; bb[["Künstliche Intelligenz"]] --&gt; Output
         </pre> -->
-        <!-- ![KI/ML ist eine klassische "Blackbox"](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_io-2.jpg) -->
+        <div class="columns">
+        <div class="column">
         <h3 id="was">Was?</h3>
+        <ul>
+        <li>Oberbegriff für Algorithmen, die auf der Basis sehr großer
+        Datensätze statistische Modelle anlegen (trainieren)</li>
+        <li>Es gibt verschiedenste Arten des ML
         <ul>
         <li>Supervised</li>
         <li>unsupervised</li>
         <li>transfer learning</li>
         <li>deep learning</li>
+        <li>reinforcement learning</li>
+        </ul></li>
         </ul>
+        </div><div class="column">
         <h3 id="wie">Wie?</h3>
+        <figure>
+        <img
+        data-src="../assets/images/blackbox/black-box_question-mark-people-c_black.png"
+        alt="KI/ML ist eine klassische “Blackbox”" />
+        <figcaption aria-hidden="true">KI/ML ist eine klassische
+        “Blackbox”</figcaption>
+        </figure>
+        </div>
+        </div>
         <aside class="notes">
         <ul>
         <li>ist nicht neu</li>
@@ -1481,10 +1500,10 @@ Grallert            </p>
         <ul>
         <li>Modelle werden auf Basis eines Korpus von Texten
         <em>trainiert</em></li>
-        <li>“stochastic parrots” <span class="citation"
+        <li>stochastische Papageien <span class="citation"
         data-cites="BenderEtal2021StochasticParrots">(Bender u. a.
-        <span>„On the Dangers of Stochastic Parrots“</span> 2021,
-        617)</span></li>
+        <span>„On the Dangers of Stochastic Parrots“</span>
+        2021)</span></li>
         </ul></li>
         <li>Groß:
         <ul>
@@ -1493,19 +1512,14 @@ Grallert            </p>
         </ul></li>
         </ul>
         </div><div class="column">
-        <h3 id="beispiele">Beispiele</h3>
-<pre class="mermaid">
-flowchart BT
-    comp1((Google)) --> bert[(BERT: Bidirectional \nEncoder Representations \nfrom Transformers)]
-    comp1((Google)) --> lambda[(LaMDA: Language Models \nfor Dialog Applications)]
-</pre>
-<pre class="mermaid">
-flowchart LR
-    comp2((OpenAI)) --> dalle[(DALL-E)]
-    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
-    comp3((Microsoft)) -.->|invested| comp2
-    pers1[Elon Musk] -.->|co-founded| comp2
-</pre>
+        <h3 id="beispiel">Beispiel</h3>
+        <figure>
+        <img data-src="../assets/images/iOS-predictive-keyboard.png"
+        id="fig:ios-keyboard"
+        alt="Figure 2: Texteingabe eines Smartphones mit Hilfe eines LLM" />
+        <figcaption aria-hidden="true">Figure 2: Texteingabe eines
+        Smartphones mit Hilfe eines LLM</figcaption>
+        </figure>
         </div>
         </div>
         <aside class="notes">
@@ -1550,8 +1564,21 @@ flowchart LR
         </section>
         <section id="transformer-modelle" class="slide level2">
         <h2>Transformer Modelle</h2>
+        <!-- ![Quelle: https://www.flickr.com/photos/toybotstudios/5853934455, CC BY-NC 2.0](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/images/transformer-toy.png) -->
+        <figure>
+        <img data-src="../assets/images/transformer-models-toys.jpg"
+        alt="Quelle: https://www.flickr.com/photos/yellawolfstudios/52574812349, CC BY-NC 2.0" />
+        <figcaption aria-hidden="true">Quelle:
+        https://www.flickr.com/photos/yellawolfstudios/52574812349, CC
+        BY-NC 2.0</figcaption>
+        </figure>
+        </section>
+        <section id="transformer-modelle-1" class="slide level2">
+        <h2>Transformer Modelle</h2>
+        <div class="columns">
+        <div class="column">
         <ul>
-        <li>Anwendung: NLP, Computer Vision</li>
+        <li>Anwendung: z.B. Natural Language Processing (NLP)</li>
         <li>Prinzip:
         <ul>
         <li>Die Inputsequenz wird in Tokens (Worte) zerschnitten</li>
@@ -1559,25 +1586,51 @@ flowchart LR
         dem Informationen über die Position des Tokens in der
         Inputsequenz erfasst wird.</li>
         </ul></li>
-        <li>Beispiel: <code>Königin - weiblich = König</code></li>
+        <li>Beispiele:
+        <ul>
+        <li><code>Königin - weiblich = König</code></li>
+        <li><code>Arzt + weiblich = Krankenschwester</code></li>
+        </ul></li>
         </ul>
-        </section>
-        <section id="implementationen" class="slide level2">
-        <h2>Implementationen</h2>
+        </div><div class="column">
+<pre class="mermaid">
+flowchart LR
+    comp1((Google)) --> bert[(BERT: Bidirectional \nEncoder Representations \nfrom Transformers)]
+    comp1 --> lambda[(LaMDA: Language Models \nfor Dialog Applications)]
+</pre>
+<pre class="mermaid">
+flowchart LR
+    comp2((OpenAI)) --> dalle[(DALL-E)]
+    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
+</pre>
+        </div>
+        </div>
+        <div class="columns-3">
+        <div class="column">
         <ul>
         <li><a href="https://chat.openai.com/">ChatGPT</a></li>
         <li><a href="https://rytr.me/">Rytr</a></li>
         <li><a
         href="https://you.com/search?q=how+to+write+well">You</a></li>
+        </ul>
+        </div>
+        <div class="column">
+        <ul>
         <li><a href="https://www.gomoonbeam.com/">Moonbeam</a></li>
         <li><a href="https://elicit.org/">Elicit</a></li>
         <li><a href="https://lex.page/">Lex</a></li>
-        <li><a href="http://rtutor.ai">R Tutor</a>: Zum Erlernen von
-        R</li>
+        </ul>
+        </div>
+        <div class="column">
+        <ul>
+        <li><a href="http://rtutor.ai">R Tutor</a>
+        <!-- : Zum Erlernen von R--></li>
         <li><a href="">GitHub CoPilot</a></li>
         <li><a href="https://huggingface.co/openai-detector">OpenAI
         detector</a></li>
         </ul>
+        </div>
+        </div>
         </section></section>
         <section>
         <section id="chatgpt" class="title-slide slide level1">
@@ -1586,20 +1639,27 @@ flowchart LR
         </section>
         <section id="chatgpt-1" class="slide level2">
         <h2>ChatGPT</h2>
+        <div class="columns">
+        <div class="column">
         <ul>
         <li>Ein “Chatbot” auf der Basis von GPT-3</li>
         <li>Entwickelt von OpenAI</li>
         <li>Veröffentlicht am 30 November 2022</li>
         </ul>
+        </div><div class="column">
 <pre class="mermaid">
-flowchart LR
-    comp2((OpenAI)) --> dalle[(DALL-E)]
-    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
-    gpt --> gpt3[(GPT-3)]
-    gpt3 --> chatgpt{ChatGPT}
-    comp3((Microsoft)) -.->|invested| comp2
-    pers1[Elon Musk] -.->|co-founded| comp2
+flowchart BT
+    comp2((OpenAI\n2015)) --> gpt[(GPT: Generative\nPre-trained\nTransformer\n2018)]
+    gpt --> gpt3[(GPT-3\n2020)]
+    gpt3 --> dalle{DALL-E\n2021}
+    gpt3 ---> chatgpt{ChatGPT\n2022}
+    pers1[Elon Musk] -.-> |co-funded| comp2
+    pers2[Peter Thiel] -.-> |co-funded| comp2
+    comp4(("Amazon Web\nServices (AWS)")) -.-> |co-funded| comp2
+    comp3((Microsoft)) -.-> |invested| comp2
 </pre>
+        </div>
+        </div>
         </section></section>
         <section>
         <section id="schluß-danke" class="title-slide slide level1">
