@@ -69,7 +69,7 @@ flowchart LR
 
 ### Was?
 
-- Oberbegriff für Algorithmen, die auf der Basis sehr großer Datensätze statistische Modelle anlegen (trainieren)
+- Algorithmen, die auf der Basis sehr großer Datensätze statistische Modelle anlegen (trainieren)
 - Es gibt verschiedenste Arten des ML
     - Supervised
     - unsupervised
