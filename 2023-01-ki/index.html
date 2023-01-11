@@ -618,10 +618,15 @@
                     /*****************
                     columns
                     ******************/
-                    div.columns {
+                    div.columns,
+                    div.columns-2,
+                    div.columns-3 {
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                    }
+                    div.columns-3 {
+                        clear: both;
                     }
                     div.column {
                     /*    display: inline-block;*/
