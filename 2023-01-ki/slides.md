@@ -205,6 +205,11 @@ flowchart LR
 - Ein "Chatbot" auf der Basis von GPT-3
 - Entwickelt von OpenAI
 - Veröffentlicht am 30 November 2022
+- Zunächst "kostenfrei"
+
+![Aktuell häufig zu sehen. ChatGPT ist ausgelastet](../assets/images/chatgpt_over-capacity.png){#fig:chatgpt-max}
+
+
 
 ::::
 :::: column
