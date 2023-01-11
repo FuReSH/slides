@@ -139,7 +139,7 @@ flowchart LR
 
 <!-- ![Quelle: https://www.flickr.com/photos/toybotstudios/5853934455, CC BY-NC 2.0](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/images/transformer-toy.png) -->
 
-![Quelle: https://www.flickr.com/photos/yellawolfstudios/52574812349, CC BY-NC 2.0](../assets/images/transformer-models-toys.jpg)
+![Transformer! Quelle: https://www.flickr.com/photos/yellawolfstudios/52574812349, CC BY-NC 2.0](../assets/images/transformer-models-toys.jpg){#fig:transformer-models}
 
 ## Transformer Modelle
 
@@ -165,8 +165,7 @@ flowchart LR
 </pre>
 <pre class="mermaid">
 flowchart LR
-    comp2((OpenAI)) --> dalle[(DALL-E)]
-    comp2 --> gpt[(GPT: Generative \nPre-trained Transformer)]
+    comp2((OpenAI)) --> gpt[(GPT: Generative \nPre-trained Transformer)]
 </pre>
 
 ::::
