@@ -10,6 +10,7 @@ homepage: https://makerspace.hypotheses.org/
 event: "Chat GPT - Fluch oder Segen generativer KIs für die universitäre Lehre?"
 # date: 2023-01-11
 url: https://furesh.github.io/slides/2023-01-ki
+license: CC BY 4.0
 status: published
 lang: de
 bibliography:
