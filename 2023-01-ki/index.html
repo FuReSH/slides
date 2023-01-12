@@ -1411,9 +1411,36 @@ KIs für die universitäre Lehre?</span>
       </div>
         </section>
 
+        <section id="was-ist-chatgpt" class="slide level2">
+        <h2>Was ist ChatGPT?</h2>
+        <div class="columns">
+        <div class="column">
+        <blockquote>
+        <p>ChatGPT ist der Prototyp eines Chatbots, […] der auf
+        <strong>künstlicher Intelligenz</strong> (KI) beruht. Er wurde
+        von dem US-amerikanischen Unternehmen OpenAI entwickelt und im
+        November 2022 veröffentlicht. Um […] das dahinter stehende
+        <strong>Modell</strong> zu verbessern, wird die KI von ChatGPT
+        fortlaufend durch menschliches Feedback
+        <strong>trainiert</strong>. <cite><a
+        href="https://de.wikipedia.org/wiki/ChatGPT">Wikipedia</a></cite></p>
+        </blockquote>
+        </div><div class="column">
+<pre class="mermaid">
+flowchart RL
+    comp2((OpenAI\n2015)) --> gpt[(GPT: Generative\nPre-trained\nTransformer\n2018)]
+
+    gpt --> chatgpt{ChatGPT\n2022}
+
+    click chatgpt "https://chat.openai.com/" _blank
+</pre>
+        </div>
+        </div>
+        </section>
         <section>
-        <section id="ki" class="title-slide slide level1">
-        <h1>KI?!</h1>
+        <section id="ki-was-soll-das-sein"
+        class="title-slide slide level1">
+        <h1>KI? <br/>Was soll das sein?!</h1>
 
         </section>
         <section id="künstliche-intelligenz-ki-ai" class="slide level2">
@@ -1422,7 +1449,7 @@ KIs für die universitäre Lehre?</span>
         <div class="column">
         <figure>
         <img
-        data-src="../assets/images/photos/ai-plaque-darthmouth-reveal.jpg"
+        data-src="../assets/images/ai/ai-plaque-darthmouth-reveal.jpg"
         id="fig:plaque"
         alt="Figure 1: Enthüllung einer Gedenktafel im Darthmouth College, Quelle: (Belser „AI Conference Returns to College After 50 Yrs.“ 2006)" />
         <figcaption aria-hidden="true">Figure 1: Enthüllung einer
@@ -1502,38 +1529,44 @@ KIs für die universitäre Lehre?</span>
         <section id="large-language-models-llms" class="slide level2">
         <h2>Large Language Models (LLMs)</h2>
         <div class="columns">
-        <div class="column">
-        <h3 id="was-1">Was?</h3>
+        <section id="was-1" class="wide">
+        <h3>Was?</h3>
         <ul>
-        <li>Modelle: Mapping, Reduction, Purpose <span class="citation"
+        <li><strong>Modelle</strong> <span class="citation"
         data-cites="Stachowiak1973AllgemeineModelltheorie">(Stachowiak
-        <em>Allgemeine Modelltheorie</em> 1973)</span></li>
-        <li>Sprach-Modelle: Wahrscheinlichkeitsverteilung von Tokens in
-        einer Sequenz innerhalb eines Korpus
+        <em>Allgemeine Modelltheorie</em> 1973)</span>:
         <ul>
-        <li>Modelle werden auf Basis eines Korpus von Texten
+        <li>Abbildung</li>
+        <li>Verkürzung/Reduktion</li>
+        <li>Zweckbindung</li>
+        </ul></li>
+        <li><strong>Sprach</strong>Modelle: statistische
+        Wahrscheinlichkeitsverteilung von Tokens in einer Sequenz
+        innerhalb eines Korpus
+        <ul>
+        <li>werden auf Basis eines Korpus von Texten
         <em>trainiert</em></li>
-        <li>stochastische Papageien <span class="citation"
+        <li>sind “stochastische Papageien” <span class="citation"
         data-cites="BenderEtal2021StochasticParrots">(Bender u. a.
         <span>„On the Dangers of Stochastic Parrots“</span>
         2021)</span></li>
         </ul></li>
-        <li>Groß:
+        <li><strong>Große</strong> Sprachmodelle:
         <ul>
         <li>Hunderte Milliarden von Parametern</li>
         <li>Benötigen hunderte GB Speicherplatz</li>
         </ul></li>
         </ul>
-        </div><div class="column">
-        <h3 id="beispiel">Beispiel</h3>
+        </section><section id="beispiel" class="narrow">
+        <h3>Beispiel</h3>
         <figure>
-        <img data-src="../assets/images/iOS-predictive-keyboard.png"
+        <img data-src="../assets/images/ai/iOS-predictive-keyboard.png"
         id="fig:ios-keyboard"
         alt="Figure 2: Texteingabe eines Smartphones mit Hilfe eines LLM" />
         <figcaption aria-hidden="true">Figure 2: Texteingabe eines
         Smartphones mit Hilfe eines LLM</figcaption>
         </figure>
-        </div>
+        </section>
         </div>
         <aside class="notes">
         <ul>
@@ -1560,26 +1593,19 @@ KIs für die universitäre Lehre?</span>
         </li>
         <li>Welche sozio-kulturellen Biases perpetuieren sich hier?</li>
         </ul></li>
-        <li>Beispiele
+        <li>Beispiel GPT-3 (Generative Pre-trained Transformer)
         <ul>
-        <li><a href="https://github.com/google-research/bert">BERT</a>:
-        Bidirectional Encoder Representations from Transformers –&gt;
-        Google</li>
-        <li>LaMDA: Language Models for Dialog Applications –&gt;
-        Google</li>
-        <li>GPT: Generative Pre-trained Transformer –&gt; <a
-        href="https://openai.com/">OpenAI</a> &lt;– Microsoft</li>
-        <li>DALL-E –&gt; <a href="https://openai.com/">OpenAI</a> &lt;–
-        Microsoft</li>
+        <li>2048-token-long context and 175 billion parameters
+        (requiring 800 GB of storage).</li>
         </ul></li>
         </ul>
         </aside>
         </section>
         <section id="transformer-modelle" class="slide level2">
         <h2>Transformer Modelle</h2>
-        <!-- ![Quelle: https://www.flickr.com/photos/toybotstudios/5853934455, CC BY-NC 2.0](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/images/transformer-toy.png) -->
+        <!-- ![Quelle: https://www.flickr.com/photos/toybotstudios/5853934455, CC BY-NC 2.0](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/images/ai/transformer-toy.png) -->
         <figure>
-        <img data-src="../assets/images/transformer-models-toys.jpg"
+        <img data-src="../assets/images/ai/transformer-models-toys.jpg"
         id="fig:transformer-models"
         alt="Figure 3: Transformer! Quelle: https://www.flickr.com/photos/yellawolfstudios/52574812349, CC BY-NC 2.0" />
         <figcaption aria-hidden="true">Figure 3: Transformer! Quelle:
@@ -1587,18 +1613,20 @@ KIs für die universitäre Lehre?</span>
         BY-NC 2.0</figcaption>
         </figure>
         </section>
-        <section id="transformer-modelle-1" class="slide level2">
-        <h2>Transformer Modelle</h2>
+        <section id="transformer-modelle-2017" class="slide level2">
+        <h2>Transformer Modelle (2017)</h2>
         <div class="columns">
         <div class="column">
         <ul>
-        <li>Anwendung: z.B. Natural Language Processing (NLP)</li>
+        <li>Sind Anwendungen von deep learning, die vor allem für
+        Natural Language Processing (NLP) entwickelt wurden</li>
         <li>Prinzip:
         <ul>
-        <li>Die Inputsequenz wird in Tokens (Worte) zerschnitten</li>
-        <li>Tokens werden in Vektoren übersetzt (Word embedding), bei
-        dem Informationen über die Position des Tokens in der
-        Inputsequenz erfasst wird.</li>
+        <li>Die Inputsequenz wird in Tokens (Wörter, Sätze etc.)
+        zerschnitten</li>
+        <li>Tokens werden in Vektoren <em>übersetzt</em> (Word
+        embedding), bei dem Informationen über die Position des Tokens
+        in der Inputsequenz erfasst wird.</li>
         </ul></li>
         <li>Beispiele:
         <ul>
@@ -1611,6 +1639,7 @@ KIs für die universitäre Lehre?</span>
 flowchart LR
     comp1((Google)) --> bert[(BERT: Bidirectional \nEncoder Representations \nfrom Transformers)]
     comp1 --> lambda[(LaMDA: Language Models \nfor Dialog Applications)]
+    click bert "https://github.com/google-research/bert" _blank
 </pre>
 <pre class="mermaid">
 flowchart LR
@@ -1644,6 +1673,34 @@ flowchart LR
         </ul>
         </div>
         </div>
+        <aside class="notes">
+        <blockquote>
+        <p>Ein Transformer besteht im Wesentlichen aus in Serie
+        geschalteten Kodierern (Encoder) und in Serie geschalteten
+        Dekodierern (Decoder).[2][3][4] Die Eingabesequenz wird durch
+        eine sogenannte Embedding-Schicht in eine Vektorrepräsentation
+        überführt. Die Gewichte der Embedding-Schicht werden während des
+        Trainings angepasst. Im Falle des Transformers kommt zusätzlich
+        eine Positionskodierung zum Einsatz, wodurch die sequentielle
+        Abfolge der Wörter berücksichtigt werden kann. Ein Wort erhält
+        somit zu Beginn eines Satzes eine andere Repräsentation als am
+        Ende.[3]</p>
+        </blockquote>
+        <blockquote>
+        <p>Die Eingabesequenz wird in der Vektorrepräsentation einer
+        Serie von Kodierern übergeben und in eine interne Repräsentation
+        überführt. Diese interne Repräsentation bildet die Bedeutung der
+        Eingabesequenz abstrakt ab[4] und wird durch die Dekodierer in
+        eine Ausgabesequenz übersetzt.[4] Die Eingabesequenz wird
+        hierbei in Batches verarbeitet, wobei die Länge der
+        Kodierer-Dekodierer-Pipeline die maximale Länge der
+        Eingabesequenz beschränkt.[3] Je nach Größe des Netzwerks können
+        beispielsweise einzelne Sätze oder auch ganze Absätze
+        verarbeitet werden. Bei Eingabesequenzen, welche kürzer sind als
+        die Länge der Kodierer-Dekodierer-Pipeline, wird Padding
+        genutzt, um die Eingabesequenz aufzufüllen.[3]</p>
+        </blockquote>
+        </aside>
         </section></section>
         <section>
         <section id="chatgpt" class="title-slide slide level1">
@@ -1657,30 +1714,74 @@ flowchart LR
         <ul>
         <li>Ein “Chatbot” auf der Basis von GPT-3</li>
         <li>Entwickelt von OpenAI</li>
-        <li>Veröffentlicht am 30 November 2022</li>
-        <li>Zunächst “kostenfrei”</li>
         </ul>
+        </div><div class="column">
+        <ul>
+        <li>Veröffentlicht am 30 November 2022</li>
+        <li>unterstützt alle im Internet dominant vertretenen
+        Sprachen</li>
+        </ul>
+        </div>
+        </div>
+<pre class="mermaid">
+flowchart RL
+    comp2((OpenAI\n2015\nnonprofit)) ==> gpt[(GPT: Generative\nPre-trained\nTransformer\n2018)]
+    pers1[Elon Musk] -.-> |co-funded| comp2
+    pers2[Peter Thiel] -.-> |co-funded| comp2
+    comp4(("Amazon Web\nServices (AWS)")) -.-> |co-funded| comp2
+
+    gpt ==> comp5((OpenAI\n2019\nfor profit))
+    comp5 ==> gpt3[(GPT-3\n2020)]
+    comp3((Microsoft)) -.-> |invested| comp5
+    comp3 <-..- |exclusive use| gpt3
+
+    gpt3 --> dalle{DALL-E\n2021}
+    gpt3 ===> chatgpt{ChatGPT\n2022}
+    comp4 --> |hosts| data1[("Common Crawl\ndata set\n2011-")]
+    data1 --> |training\nset for| gpt
+
+    comp6((Common Crawl\nnonprofit)) --> |provides| data1
+
+
+    click chatgpt "https://chat.openai.com/" _blank
+    click dalle "https://openai.com/blog/dall-e/" _blank
+    click comp6 "http://commoncrawl.org/" _blank
+</pre>
+        </section>
+        <section id="wer-kann-das-benutzen" class="slide level2">
+        <h2>Wer kann das benutzen?</h2>
+        <ul>
+        <li>kostenfrei nach Anmeldung</li>
+        <li>Kapazität ist begrenzt</li>
+        </ul>
+        <div class="columns-3">
+        <div class="column">
         <figure>
-        <img data-src="../assets/images/chatgpt_over-capacity.png"
+        <img data-src="../assets/images/ai/chatgpt_over-capacity.png"
         id="fig:chatgpt-max"
         alt="Figure 4: Aktuell häufig zu sehen. ChatGPT ist ausgelastet" />
         <figcaption aria-hidden="true">Figure 4: Aktuell häufig zu
         sehen. ChatGPT ist ausgelastet</figcaption>
         </figure>
-        </div><div class="column">
-<pre class="mermaid">
-flowchart BT
-    comp2((OpenAI\n2015)) --> gpt[(GPT: Generative\nPre-trained\nTransformer\n2018)]
-    gpt --> gpt3[(GPT-3\n2020)]
-    gpt3 --> dalle{DALL-E\n2021}
-    gpt3 ---> chatgpt{ChatGPT\n2022}
-    pers1[Elon Musk] -.-> |co-funded| comp2
-    pers2[Peter Thiel] -.-> |co-funded| comp2
-    comp4(("Amazon Web\nServices (AWS)")) -.-> |co-funded| comp2
-    comp3((Microsoft)) -.-> |invested| comp2
-    click chatgpt "https://chat.openai.com/" _blank
-    click dalle "https://openai.com/blog/dall-e/" _blank
-</pre>
+        </div>
+        <div class="column">
+        <figure>
+        <img data-src="../assets/images/ai/chatgpt_phone-number.png"
+        id="fig:chatgpt-phone"
+        alt="Figure 5: Anmeldung verlangt nach einer verifizierten Telefonnummer" />
+        <figcaption aria-hidden="true">Figure 5: Anmeldung verlangt nach
+        einer verifizierten Telefonnummer</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure>
+        <img
+        data-src="../assets/images/ai/chatgpt_costing-money_reddit.png"
+        id="fig:chatgpt-cost"
+        alt="Figure 6: ChatGPTs Antwort zur Kostenfrage. Quelle: Reddit" />
+        <figcaption aria-hidden="true">Figure 6: ChatGPTs Antwort zur
+        Kostenfrage. Quelle: Reddit</figcaption>
+        </figure>
         </div>
         </div>
         </section></section>
