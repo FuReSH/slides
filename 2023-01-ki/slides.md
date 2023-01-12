@@ -275,18 +275,13 @@ flowchart RL
 
 ## Wer kann das benutzen?
 
-- kostenfrei nach Anmeldung
-- Kapazität ist begrenzt
 
-::: columns-3
+Die Nutzung ist zunächst kostenfrei nach Anmeldung und in der Kapazität begrenzt
+
+::: columns
 :::: column
 
 ![Aktuell häufig zu sehen. ChatGPT ist ausgelastet](../assets/images/ai/chatgpt_over-capacity.png){#fig:chatgpt-max}
-
-::::
-:::: column
-
-![Anmeldung verlangt nach einer verifizierten Telefonnummer](../assets/images/ai/chatgpt_phone-number.png){#fig:chatgpt-phone}
 
 ::::
 :::: column
