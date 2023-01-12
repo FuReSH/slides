@@ -23,12 +23,26 @@ tags:
 
 Diese Datei enthält eine Sammlung von Mermaid Diagrammen für die Weiternutzung in Präsentationen, Publikationen etc.
 
+# Mermaid
+## mermaid-filter for pandoc
+
+```bash
+pandoc -t html -F mermaid-filter -o mermaid-charts.html mermaid-charts.md
+```
+
+sometimes it might be necessary to explicitly address the mermaid filter
+
+```zsh
+pandoc -t html -F ~/node_modules/mermaid-filter/index.js -o mermaid-charts.html mermaid-charts.md
+pandoc -t html -F /Users/furesh/node_modules/mermaid-filter/index.js -o mermaid-charts.html mermaid-charts.md
+```
+
 # Themen
 ## ChatGPT
 
 
 
-<pre class="mermaid">
+```{.mermaid format=svg}
 ---
 title: Die einfache Antwort
 ---
@@ -38,7 +52,7 @@ flowchart RL
     gpt --> chatgpt{ChatGPT\n2022}
 
     click chatgpt "https://chat.openai.com/" _blank
-</pre>
+```
 
 <pre class="mermaid">
 ---

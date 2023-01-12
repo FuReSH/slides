@@ -159,8 +159,6 @@ flowchart LR
 
 ## Transformer Modelle
 
-<!-- ![Quelle: https://www.flickr.com/photos/toybotstudios/5853934455, CC BY-NC 2.0](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/images/ai/transformer-toy.png) -->
-
 ![Transformer! Quelle: https://www.flickr.com/photos/yellawolfstudios/52574812349, CC BY-NC 2.0](../assets/images/ai/transformer-models-toys.jpg){#fig:transformer-models}
 
 ## Transformer Modelle (2017)
@@ -175,7 +173,6 @@ flowchart LR
 - Beispiele: 
     - `Königin - weiblich = König`
     - `Arzt + weiblich = Krankenschwester`
-
 
 ::::
 :::: column
@@ -217,7 +214,6 @@ flowchart LR
 
 ::::
 :::
-
 
 ::: notes
 
