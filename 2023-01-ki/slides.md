@@ -40,15 +40,31 @@ tags:
 
 ### AI Skills
 
+"AI Skills" (BMBF, 2022--25)
+
 ::::
 :::: column
+
+![](https://dhistory.hypotheses.org/files/2021/02/Logo_DigitalHistoryBerlin_1000x600.png)
 
 ### Digital History
 
+Torsten Hiltmann
+
+Lehrstuhl für Digital History (seit 2020)
+
+[dhistory.hypotheses.org](https://dhistory.hypotheses.org)
+
 ::::
 :::: column
 
+![](https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png)
+
 ### Scholarly Makerspace
+
+"Future e-Research Support in the Humanities\" (DFG, 2022--25)
+
+[makerspace.hypotheses.org](https://makerspace.hypotheses.org/)
 
 ::::
 :::
