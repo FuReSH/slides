@@ -2,7 +2,13 @@
 title: "KI?"
 subtitle: "Was soll das sein?!"
 author:
+    - Martin Dröge
+    - Sophie Eckenstaler
+    - Anna Faust
     - Till Grallert
+    - Torsten Hiltmann
+    - Jan Krämer
+    - Lilian Löwenau
 institute: 
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
@@ -23,6 +29,7 @@ tags:
     - slides
 ---
 
+# Was ist ChatGPT?
 ## Was ist ChatGPT?
 
 ::: columns
@@ -58,7 +65,7 @@ flowchart RL
 :::: column
 
 - "Künstliche Intelligenz" ist ein **altes** Buzzword, das sich findige Wissenschaftler 1956 für einen Förderantrag ausgedacht haben.
-- Es ist besser von **maschinellem Lernen** (ML) und **künstlichen neuronalen Netzen** zu sprechen.
+- Es ist besser von **maschinellem Lernen** (ML) zu sprechen, das z.T. auf **künstlichen neuronalen Netzen** beruht.
 
 ::::
 :::
@@ -157,11 +164,11 @@ flowchart LR
     + 2048-token-long context and 175 billion parameters (requiring 800 GB of storage).
 :::
 
-## Transformer Modelle
+## Transformer Modelle {#transformer-1}
 
-![Transformer! Quelle: https://www.flickr.com/photos/yellawolfstudios/52574812349, CC BY-NC 2.0](../assets/images/ai/transformer-models-toys.jpg){#fig:transformer-models}
+![Transformer! Quelle: <https://www.flickr.com/photos/yellawolfstudios/52574812349>, CC BY-NC 2.0](../assets/images/ai/transformer-models-toys.jpg){#fig:transformer-models}
 
-## Transformer Modelle (2017)
+## Transformer Modelle (2017) {#transformer-2}
 
 ::: columns
 :::: column
@@ -192,6 +199,9 @@ flowchart LR
 :::
 
 ::: columns-3
+
+### Beispiele
+
 :::: column
 
 - [ChatGPT](https://chat.openai.com/)
@@ -289,5 +299,152 @@ Die Nutzung ist zunächst kostenfrei nach Anmeldung und in der Kapazität begren
 
 
 
+# Anmerkungen vom Grantler {data-background-image="../assets/images/ai/grantler.png" data-background-size="90%"}
+## LLMs sind Bullshit-Artists
+
+::: columns
+:::: column
+
+- Konzepte wie "Wahrheit" oder "Korrektheit" sind nur nebensächlicher Beifang
+- Optimiert werden "Menschenähnlichkeit" und "Menschengefälligkeit" 
+
+::::
+:::: column
+
+![[@Frankfurt2005Bullshit]](../assets/images/ai/on-bullshit.jpg)
+
+::::
+:::
+
+
+
+## Wer ist der Urheber? <br/>Wer ist zuständig?
+
+::: columns
+:::: column
+
+- Wo ist die Grenze zwischen Schöpfung und Remix der Ursprungsdaten?
+- "Zufallsausgaben" mit schutzwürdigen und privaten Informationen
+- Wie Training auf eigenen Schöpfungen kontrollieren?
+
+::::
+:::: column
+
+![](../assets/images/ai/feed-me-shrimp.png)
+
+::::
+:::
+
+## It is a riddle...
+
+>It is a riddle... wrapped in a mystery...inside an enigma
+
+<cite>Winston Churchill>
+
+::: columns
+:::: column
+
+LLMs sind Blackboxes...
+
+- ...gefüttert mit unbekannten Daten...
+- ... mit automatisierten (vor) Filtern....
+- ...potentiellen manuellen Antwortmustern...
+
+::::
+:::: column
+
+![](../assets/images/ai/churchill.png)
+
+::::
+:::
+
+# Reflektierter Umgang mit KI in der Schule
+## Beispiel: Deutschunterricht
+
+
+
+
+# Beispiele
+## Beispiel: Politik
+
+![](../assets/images/ai/kleine-anfrage-1.png)
+![](../assets/images/ai/kleine-anfrage-2.png)
+
+## Beispiel: Politik
+
+![](../assets/images/ai/kleine-anfrage-3.png)
+
+## Beispiel: Mathematik
+
+<video width="1000" height="800" controls>
+    <source src="../assets/video/example_ChatGPT-math.mp4" type="video/mp4"></source>
+    <p>Your browser does not support the video tag. </p>
+</video>
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: korrekt
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Literatur
+    + Nicht wissenschaftlich, veraltet
+    + Keine Relevanz für das Thema (Schelvis und Finkelstein)
+    + Fraglich/ problematisch (Pressac)
+    + Nicht existent (Taylor 2017)
+
+::::
+:::: column
+
+::::
+:::
+
+# Diskussion
+## Wie nun damit umgehen?
+
+::: columns
+:::: column
+
+### Allgemeine Probleme
+
+- Transparenz der Angebote
+- Monopole und Diversität der Anbietenden und der Methoden
+- Gerechter Zugang zu den neuen Ressourcen
+- Verantwortung für die inhaltlichen Grundlagen
+- Datenhoheit und Privatsphäre
+
+
+::::
+:::: column
+
+### Herausforderungen für die Lehre
+
+- Verbieten oder einbinden?
+- Welche konkreten Einsatzszenarien für Lehrende und Studierende gibt es?
+- Welche konkreten Kompetenzen müssen für einen reflektierten Umgang mit diesen Tools vermittelt werden (und wie)?
+- Müssen wir unsere Kompetenzmodelle und Prüfungsformate ändern und an die neuen Bedingungen anpassen, und wenn ja: wie?
+
+::::
+:::
+
+## Diskussion und Austausch
+
+
 # Schluß / Danke!
+## Weiterführende Angebote
+
+::: columns
+:::: column
+
+- Berliner Zentrum für Hochschullehre (<https://www.tu.berlin/bzhl>): KI in der Lehre
+
+::::
+:::: column
+
+![](../assets/images/ai/angebot_bzhl.png)
+
+::::
+:::
+
 ## Literatur {#refs}
