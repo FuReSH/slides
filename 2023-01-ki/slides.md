@@ -375,6 +375,20 @@ LLMs sind Blackboxes...
 
 
 
+::: notes
+
+Digitale Entwicklung im Bildungswesen 
+Eigenständiges Erbringen von Leistungen: Hausaufgaben, Präsentationen und – besonders sensibel – von Prüfungsleistungen.
+
+Ziel: zeitgemäße Prüfungsformate die an der Lebenswirklichkeit orientiert sind
+KI im Unterricht praktisch erproben
+
+KI-Klassenarbeit – Schüler können ihre Arbeit komplett oder tlw. mit KI-gestützen Textgeneratoren schreiben
+ 
+Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, fehlende Belege, Abweichen vom Thema, 
+
+:::
+
 # Beispiele
 ## Beispiel: Politik
 
@@ -435,10 +449,11 @@ LLMs sind Blackboxes...
 - Formal: <span style="border: 2px solid orange;">korrekt</span>
 - Inhaltlich: Fällt hinter Forschungsstand zurück
 
+![](../assets/images/ai/ts_abteilung-d-iv-spezialofenbau.jpg)
+
 ::::
 :::: column
 
-![](../assets/images/ai/ts_abteilung-d-iv-spezialofenbau.jpg)
 ![](../assets/images/ai/ts_cover_schule_industrie_und_holocaust.jpg)
 
 ::::
