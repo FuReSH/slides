@@ -465,15 +465,6 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 
 :::
 
-## Beispiel: Politik
-
-![](../assets/images/ai/kleine-anfrage-1.png)
-![](../assets/images/ai/kleine-anfrage-2.png)
-
-## Beispiel: Politik
-
-![](../assets/images/ai/kleine-anfrage-3.png)
-
 
 ## Beispiel: Geschichte
 
