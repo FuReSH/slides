@@ -320,7 +320,11 @@ flowchart RL
 ::::
 :::: column
 
-![ChatGPTs Antwort zur Kostenfrage. Quelle: Reddit](../assets/images/ai/chatgpt_costing-money_reddit.png){#fig:chatgpt-cost}
+<!-- ![ChatGPTs Antwort zur Kostenfrage. Quelle: Reddit](../assets/images/ai/chatgpt_costing-money_reddit.png){#fig:chatgpt-cost} -->
+<video width="500" height="400" controls>
+    <source src="../assets/video/example_ChatGPT-math.mp4" type="video/mp4"></source>
+    <p>Your browser does not support the video tag. </p>
+</video>
 
 ::::
 :::
@@ -468,12 +472,6 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 
 ![](../assets/images/ai/kleine-anfrage-3.png)
 
-## Beispiel: Mathematik
-
-<video width="1000" height="800" controls>
-    <source src="../assets/video/example_ChatGPT-math.mp4" type="video/mp4"></source>
-    <p>Your browser does not support the video tag. </p>
-</video>
 
 ## Beispiel: Geschichte
 
