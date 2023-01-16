@@ -10,7 +10,7 @@ author:
     - Jan Krämer
     - Lilian Löwenau
 institute: 
-    - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
+    - "Future e-Research Support in the Humanities"
     - "AI-Skills"
     - "Digital History, Institut für Geschichte"
 #homepage: https://makerspace.hypotheses.org/
@@ -31,9 +31,8 @@ tags:
     - slides
 ---
 
-# Willkommen
 
-------------------------
+## Willkommen
 
 ::: columns-3
 :::: column
