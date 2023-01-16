@@ -482,8 +482,8 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-- Formal: <span style="border: 2px solid orange;">korrekt</span>
-- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Formal: korrekt
+- Inhaltlich: <span style="border: 2px solid orange;">Fällt hinter Forschungsstand zurück</span>
 
 ::::
 :::: column
@@ -498,15 +498,15 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-- Formal: <span style="border: 2px solid orange;">korrekt</span>
-- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Formal: korrekt
+- Inhaltlich: <span style="border: 2px solid orange;">Fällt hinter Forschungsstand zurück</span>
 
 ![](../assets/images/ai/ts_abteilung-d-iv-spezialofenbau.jpg)
 
 ::::
 :::: column
 
-![](../assets/images/ai/ts_cover_schule_industrie_und_holocaust.jpg)
+![[@Schuele2010IndustrieUndHolocaust]](../assets/images/ai/ts_cover_schule_industrie_und_holocaust.jpg)
 
 ::::
 :::
@@ -517,8 +517,8 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-- Formal: <span style="border: 2px solid orange;">korrekt</span>
-- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Formal: korrekt
+- Inhaltlich: <span style="border: 2px solid orange;">Fällt hinter Forschungsstand zurück</span>
 - Literatur
     + Nicht wissenschaftlich, veraltet
     + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
@@ -536,8 +536,8 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-- Formal: <span style="border: 2px solid orange;">korrekt</span>
-- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Formal: korrekt
+- Inhaltlich: <span style="border: 2px solid orange;">Fällt hinter Forschungsstand zurück</span>
 - Literatur
     + Nicht wissenschaftlich, veraltet
     + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
@@ -556,8 +556,8 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-- Formal: <span style="border: 2px solid orange;">korrekt</span>
-- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Formal: korrekt
+- Inhaltlich: <span style="border: 2px solid orange;">Fällt hinter Forschungsstand zurück</span>
 - Literatur
     + Nicht wissenschaftlich, veraltet
     + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
@@ -578,8 +578,8 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-- Formal: <span style="border: 2px solid orange;">korrekt</span>
-- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Formal: korrekt
+- Inhaltlich: <span style="border: 2px solid orange;">Fällt hinter Forschungsstand zurück</span>
 - Literatur
     + Nicht wissenschaftlich, veraltet
     + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
@@ -599,8 +599,8 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-- Formal: <span style="border: 2px solid orange;">korrekt</span>
-- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Formal: korrekt
+- Inhaltlich: <span style="border: 2px solid orange;">Fällt hinter Forschungsstand zurück</span>
 - Literatur
     + Nicht wissenschaftlich, veraltet
     + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
