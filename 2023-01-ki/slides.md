@@ -268,12 +268,13 @@ flowchart LR
 
 - Ein "Chatbot" auf der Basis von GPT-3
 + Entwickelt von OpenAI
++ unterstützt alle im Internet dominant vertretenen Sprachen
 
 ::::
 :::: column
 
 + Veröffentlicht am 30 November 2022
-- unterstützt alle im Internet dominant vertretenen Sprachen
+- 1 Mio Nutzer_innen in 5 Tagen
 
 ::::
 :::
@@ -308,7 +309,8 @@ flowchart RL
 ## Wer kann das benutzen?
 
 
-Die Nutzung ist zunächst kostenfrei nach Anmeldung und in der Kapazität begrenzt
+- Die Nutzung ist **zunächst** kostenfrei nach Anmeldung und in der Kapazität begrenzt
+- Dient der Verbesserung der Modelle und Produktentwicklung
 
 ::: columns
 :::: column
