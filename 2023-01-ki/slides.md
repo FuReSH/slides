@@ -37,6 +37,8 @@ tags:
 ::: columns-3
 :::: column
 
+![](../assets/images/AI-SKILLS-Logo_4c.svg)
+
 ### AI Skills
 
 "AI Skills" (BMBF, 2022--25)
