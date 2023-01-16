@@ -1,6 +1,6 @@
 ---
-title: "KI?"
-subtitle: "Was soll das sein?!"
+title: "Chat GPT - Fluch oder Segen generativer KIs für die universitäre Lehre?"
+subtitle: "Informations- und Austauschveranstaltung"
 author:
     - Martin Dröge
     - Sophie Eckenstaler
@@ -10,11 +10,13 @@ author:
     - Jan Krämer
     - Lilian Löwenau
 institute: 
-    - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
-homepage: https://makerspace.hypotheses.org/
-event: "Chat GPT - Fluch oder Segen generativer KIs für die universitäre Lehre?"
-# date: 2023-01-11
+    - "AI-Skills"
+    - "Digital History, Institut für Geschichte"
+#homepage: https://makerspace.hypotheses.org/
+#event: "Chat GPT - Fluch oder Segen generativer KIs für die universitäre Lehre?"
+date: 2023-01-17
+#background-image: ../assets/images/ai/dall-e_chatgpt-lehre.png
 url: https://furesh.github.io/slides/2023-01-ki
 license: CC BY 4.0
 status: published
@@ -28,6 +30,30 @@ tags:
     - FuReSH
     - slides
 ---
+
+# Willkommen
+
+------------------------
+
+::: columns-3
+:::: column
+
+### AI Skills
+
+::::
+:::: column
+
+### Digital History
+
+::::
+:::: column
+
+### Scholarly Makerspace
+
+::::
+:::
+
+
 
 # Was ist ChatGPT?
 ## Was ist ChatGPT?
@@ -164,13 +190,15 @@ flowchart LR
     + 2048-token-long context and 175 billion parameters (requiring 800 GB of storage).
 :::
 
-## Transformer Modelle {#transformer-1}
 
-![Transformer! Quelle: <https://www.flickr.com/photos/yellawolfstudios/52574812349>, CC BY-NC 2.0](../assets/images/ai/transformer-models-toys.jpg){#fig:transformer-models}
-
-## Transformer Modelle (2017) {#transformer-2}
+## Transformer Modelle {#transformer-2}
 
 ::: columns
+:::: column
+
+![Transformer! Quelle: <https://www.flickr.com/photos/yellawolfstudios/5853934455>, CC BY-NC 2.0](../assets/images/ai/transformer-toy.png){#fig:transformer-model}
+
+::::
 :::: column
 
 - Sind Anwendungen von deep learning, die vor allem für Natural Language Processing (NLP) entwickelt wurden
@@ -182,26 +210,9 @@ flowchart LR
     - `Arzt + weiblich = Krankenschwester`
 
 ::::
-:::: column
-
-<pre class="mermaid">
-flowchart LR
-    comp1((Google)) --> bert[(BERT: Bidirectional \nEncoder Representations \nfrom Transformers)]
-    comp1 --> lambda[(LaMDA: Language Models \nfor Dialog Applications)]
-    click bert "https://github.com/google-research/bert" _blank
-</pre>
-<pre class="mermaid">
-flowchart LR
-    comp2((OpenAI)) --> gpt[(GPT: Generative \nPre-trained Transformer)]
-</pre>
-
-::::
 :::
 
 ::: columns-3
-
-### Beispiele
-
 :::: column
 
 - [ChatGPT](https://chat.openai.com/)
@@ -386,19 +397,159 @@ LLMs sind Blackboxes...
 ::: columns
 :::: column
 
-- Formal: korrekt
-- Inhaltlich: Fällt hinter Forschungsstand zurück
-- Literatur
-    + Nicht wissenschaftlich, veraltet
-    + Keine Relevanz für das Thema (Schelvis und Finkelstein)
-    + Fraglich/ problematisch (Pressac)
-    + Nicht existent (Taylor 2017)
+>Write a summary in scientific style on the role of Top & Sons in Auschwitz, citing literature and sources.
+
+>Topf & Sons was a German engineering firm that played a significant role in the Holocaust as a supplier of crematoria and incineration equipment to the Auschwitz concentration camp, where millions of Jews and other minorities were murdered. The company profited economically from the systematic extermination of Holocaust victims ...
+
+<cite>ChatGPT</cite>
 
 ::::
 :::: column
 
+![ChatGPT schreibt einen wissenschaftlichen Text zur Rolle von "Topf & Söhne" in Auschwitz](../assets/images/ai/chatgpt_topf-sons.png){#fig:topf}
+
 ::::
 :::
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: <span style="border: 2px solid orange;">korrekt</span>
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+
+::::
+:::: column
+
+![Formal korrekt aber veraltet](../assets/images/ai/chatgpt_topf-sons-annotated_1.png){#fig:topf-1}
+
+::::
+:::
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: <span style="border: 2px solid orange;">korrekt</span>
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+
+::::
+:::: column
+
+![](../assets/images/ai/ts_abteilung-d-iv-spezialofenbau.jpg)
+![](../assets/images/ai/ts_cover_schule_industrie_und_holocaust.jpg)
+
+::::
+:::
+
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: <span style="border: 2px solid orange;">korrekt</span>
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Literatur
+    + Nicht wissenschaftlich, veraltet
+    + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
+
+::::
+:::: column
+
+![Irrelevante Literatur](../assets/images/ai/chatgpt_topf-sons-annotated_2.png){#fig:topf-2}
+
+::::
+:::
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: <span style="border: 2px solid orange;">korrekt</span>
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Literatur
+    + Nicht wissenschaftlich, veraltet
+    + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
+    + <span style="border: 2px solid blue;">Fraglich/ problematisch (Pressac)</span>
+
+::::
+:::: column
+
+![Problematische Literatur](../assets/images/ai/chatgpt_topf-sons-annotated_3.png){#fig:topf-3}
+
+::::
+:::
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: <span style="border: 2px solid orange;">korrekt</span>
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Literatur
+    + Nicht wissenschaftlich, veraltet
+    + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
+    + <span style="border: 2px solid blue;">Fraglich/ problematisch (Pressac)</span>
+    + <span style="border: 2px solid red;">Nicht existent (Taylor 2017)</span>
+
+::::
+:::: column
+
+![Ausgedachte Literatur](../assets/images/ai/chatgpt_topf-sons-annotated_4.png){#fig:topf-4}
+
+::::
+:::
+
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: <span style="border: 2px solid orange;">korrekt</span>
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Literatur
+    + Nicht wissenschaftlich, veraltet
+    + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
+    + <span style="border: 2px solid blue;">Fraglich/ problematisch (Pressac)</span>
+    + <span style="border: 2px solid red;">Nicht existent (Taylor 2017)</span>
+
+::::
+:::: column
+
+![Hier müsste Taylor 2017 auftauchen](../assets/images/ai/source_taylor.png){#fig:fake-lit}
+
+::::
+:::
+
+## Beispiel: Geschichte
+
+::: columns
+:::: column
+
+- Formal: <span style="border: 2px solid orange;">korrekt</span>
+- Inhaltlich: Fällt hinter Forschungsstand zurück
+- Literatur
+    + Nicht wissenschaftlich, veraltet
+    + <span style="border: 2px solid green;">Keine Relevanz für das Thema (Schelvis und Finkelstein)</span>
+    + <span style="border: 2px solid blue;">Fraglich/ problematisch (Pressac)</span>
+    + <span style="border: 2px solid red;">Nicht existent (Taylor 2017)</span>
+- **Funktionsweise und Grenzen des Systems**
+- **Überprüfbarkeit und Nachvollziehbarkeit der Inhalte**
+
+::::
+:::: column
+
+![](../assets/images/ai/chatgpt_topf-sons-annotated_4.png){#fig:topf-5}
+
+::::
+:::
+
 
 # Diskussion
 ## Wie nun damit umgehen?
