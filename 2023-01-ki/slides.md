@@ -369,11 +369,10 @@ LLMs sind Blackboxes...
 ::::
 :::
 
-# Reflektierter Umgang mit KI in der Schule
-## Beispiel: Deutschunterricht
+# Beispiele
+## Reflektierter Umgang mit KI in der Schule <br/>Deutschunterricht
 
-
-
+![](../assets/images/ai/schule_1.png)
 
 ::: notes
 
@@ -389,7 +388,60 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 
 :::
 
-# Beispiele
+## Reflektierter Umgang mit KI in der Schule <br/>Deutschunterricht
+
+![](../assets/images/ai/schule_2.png)
+
+::: notes
+
+Digitale Entwicklung im Bildungswesen 
+Eigenständiges Erbringen von Leistungen: Hausaufgaben, Präsentationen und – besonders sensibel – von Prüfungsleistungen.
+
+Ziel: zeitgemäße Prüfungsformate die an der Lebenswirklichkeit orientiert sind
+KI im Unterricht praktisch erproben
+
+KI-Klassenarbeit – Schüler können ihre Arbeit komplett oder tlw. mit KI-gestützen Textgeneratoren schreiben
+ 
+Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, fehlende Belege, Abweichen vom Thema, 
+
+:::
+
+## Reflektierter Umgang mit KI in der Schule <br/>Deutschunterricht
+
+![](../assets/images/ai/schule_3.png)
+
+::: notes
+
+Digitale Entwicklung im Bildungswesen 
+Eigenständiges Erbringen von Leistungen: Hausaufgaben, Präsentationen und – besonders sensibel – von Prüfungsleistungen.
+
+Ziel: zeitgemäße Prüfungsformate die an der Lebenswirklichkeit orientiert sind
+KI im Unterricht praktisch erproben
+
+KI-Klassenarbeit – Schüler können ihre Arbeit komplett oder tlw. mit KI-gestützen Textgeneratoren schreiben
+ 
+Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, fehlende Belege, Abweichen vom Thema, 
+
+:::
+
+## Reflektierter Umgang mit KI in der Schule <br/>Deutschunterricht
+
+![](../assets/images/ai/schule_4.png)
+
+::: notes
+
+Digitale Entwicklung im Bildungswesen 
+Eigenständiges Erbringen von Leistungen: Hausaufgaben, Präsentationen und – besonders sensibel – von Prüfungsleistungen.
+
+Ziel: zeitgemäße Prüfungsformate die an der Lebenswirklichkeit orientiert sind
+KI im Unterricht praktisch erproben
+
+KI-Klassenarbeit – Schüler können ihre Arbeit komplett oder tlw. mit KI-gestützen Textgeneratoren schreiben
+ 
+Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, fehlende Belege, Abweichen vom Thema, 
+
+:::
+
 ## Beispiel: Politik
 
 ![](../assets/images/ai/kleine-anfrage-1.png)
