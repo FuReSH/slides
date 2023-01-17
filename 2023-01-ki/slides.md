@@ -199,10 +199,12 @@ flowchart LR
     + Abbildung
     + Verkürzung/Reduktion
     + Zweckbindung 
-- **Sprach**Modelle: statistische Wahrscheinlichkeitsverteilung von Tokens in einer Sequenz innerhalb eines Korpus
-    + werden auf Basis eines Korpus von Texten *trainiert*
-    + sind "stochastische Papageien" [@BenderEtal2021StochasticParrots]
-- **Große** Sprachmodelle: 
+- **Sprach**Modelle (LM): sind "stochastische Papageien" [@BenderEtal2021StochasticParrots]
+    + statistische Wahrscheinlichkeitsverteilung von Tokens (Buchstaben, Wörter, Strings) in einer Textsequenz innerhalb eines Korpus
+    + werden *trainiert*
+    + dienen der Stringvorhersage
+    + Idee ist alt [@ShannonWeaver1949MathematicalTheoryCommunication]
+- **Große** Sprachmodelle (LLM): 
     + Hunderte Milliarden von Parametern
     + Benötigen hunderte GB Speicherplatz
 
@@ -222,7 +224,10 @@ flowchart LR
     1. **Mapping**: Ein Model ist ein Model von etwas
     2. **Reduction**: Ein Model ist nicht das Original sondern bildet für die Untersuchenden wichtige Aspekte ab
     3. **Purpose**: Ein Model hat einen Zweck: es soll von jemanden für etwas benutzt werden
+- LM:
+    + >we understand the term language model (LM) to refer to systems which are trained on string prediction tasks: that is, predicting the likelihood of a token (character, word or string) given either its preceding context or (in bidirectional and masked LMs) its surrounding context. Such systems are unsupervised and when deployed, take a text as input, commonly outputting scores or string predictions.
 + "stochastic parrots" [@BenderEtal2021StochasticParrots, 617]
+    * >an LM is a system for haphazardly stitching together sequences of linguistic forms it has observed in its vast training data, according to probabilistic information about how they combine, but without any reference to meaning: a stochastic parrot. [BenderEtal2021StochasticParrots, 617]
     * Wer trifft die Auswahl?  
     * Welche sozio-kulturellen Biases perpetuieren sich hier?
 - Beispiel GPT-3 (Generative Pre-trained Transformer)
@@ -654,7 +659,7 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
-### Allgemeine Probleme
+### Rahmenbedingungen
 
 - Transparenz der Angebote
 - Monopole und Diversität der Anbietenden und der Methoden

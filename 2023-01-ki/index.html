@@ -1599,18 +1599,22 @@ flowchart RL
         <li>Verkürzung/Reduktion</li>
         <li>Zweckbindung</li>
         </ul></li>
-        <li><strong>Sprach</strong>Modelle: statistische
-        Wahrscheinlichkeitsverteilung von Tokens in einer Sequenz
-        innerhalb eines Korpus
-        <ul>
-        <li>werden auf Basis eines Korpus von Texten
-        <em>trainiert</em></li>
-        <li>sind “stochastische Papageien” <span class="citation"
+        <li><strong>Sprach</strong>Modelle (LM): sind “stochastische
+        Papageien” <span class="citation"
         data-cites="BenderEtal2021StochasticParrots">(Bender u. a.
-        <span>„On the Dangers of Stochastic Parrots“</span>
-        2021)</span></li>
+        <span>„On the Dangers of Stochastic Parrots“</span> 2021)</span>
+        <ul>
+        <li>statistische Wahrscheinlichkeitsverteilung von Tokens
+        (Buchstaben, Wörter, Strings) in einer Textsequenz innerhalb
+        eines Korpus</li>
+        <li>werden <em>trainiert</em></li>
+        <li>dienen der Stringvorhersage</li>
+        <li>Idee ist alt <span class="citation"
+        data-cites="ShannonWeaver1949MathematicalTheoryCommunication">(Shannon
+        und Weaver <em>The Mathematical Theory of Communication</em>
+        1949)</span></li>
         </ul></li>
-        <li><strong>Große</strong> Sprachmodelle:
+        <li><strong>Große</strong> Sprachmodelle (LLM):
         <ul>
         <li>Hunderte Milliarden von Parametern</li>
         <li>Benötigen hunderte GB Speicherplatz</li>
@@ -1643,11 +1647,30 @@ flowchart RL
         <li><strong>Purpose</strong>: Ein Model hat einen Zweck: es soll
         von jemanden für etwas benutzt werden</li>
         </ol></li>
+        <li>LM:
+        <ul>
+        <li><blockquote>
+        <p>we understand the term language model (LM) to refer to
+        systems which are trained on string prediction tasks: that is,
+        predicting the likelihood of a token (character, word or string)
+        given either its preceding context or (in bidirectional and
+        masked LMs) its surrounding context. Such systems are
+        unsupervised and when deployed, take a text as input, commonly
+        outputting scores or string predictions.</p>
+        </blockquote></li>
+        </ul></li>
         <li>“stochastic parrots” <span class="citation"
         data-cites="BenderEtal2021StochasticParrots">(Bender u. a.
         <span>„On the Dangers of Stochastic Parrots“</span> 2021,
         617)</span>
         <ul>
+        <li><blockquote>
+        <p>an LM is a system for haphazardly stitching together
+        sequences of linguistic forms it has observed in its vast
+        training data, according to probabilistic information about how
+        they combine, but without any reference to meaning: a stochastic
+        parrot. [BenderEtal2021StochasticParrots, 617]</p>
+        </blockquote></li>
         <li>Wer trifft die Auswahl?<br />
         </li>
         <li>Welche sozio-kulturellen Biases perpetuieren sich hier?</li>
@@ -2192,7 +2215,7 @@ flowchart RL
         <h2>Wie nun damit umgehen?</h2>
         <div class="columns">
         <div class="column">
-        <h3 id="allgemeine-probleme">Allgemeine Probleme</h3>
+        <h3 id="rahmenbedingungen">Rahmenbedingungen</h3>
         <ul>
         <li>Transparenz der Angebote</li>
         <li>Monopole und Diversität der Anbietenden und der
@@ -2288,6 +2311,12 @@ flowchart RL
         role="doc-biblioentry">
         Schüle, Annegret. 2010. <em>Industrie und Holocaust: Topf &amp;
         Söhne - Die Ofenbauer von Auschwitz</em>. Göttingen: Wallstein.
+        </div>
+        <div id="ref-ShannonWeaver1949MathematicalTheoryCommunication"
+        class="csl-entry" role="doc-biblioentry">
+        Shannon, Claude E., und Warren Weaver. 1949. <em>The
+        Mathematical Theory of Communication</em>. Urbana: University of
+        Illinois Press.
         </div>
         <div id="ref-Stachowiak1973AllgemeineModelltheorie"
         class="csl-entry" role="doc-biblioentry">
