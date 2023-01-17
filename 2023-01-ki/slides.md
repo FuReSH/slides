@@ -355,7 +355,7 @@ flowchart RL
 
 
 
-# Anmerkungen vom Grantler {data-background-image="../assets/images/ai/grantler.png" data-background-size="90%"}
+# Anmerkungen vom Grantler 
 ## LLMs sind Bullshit-Artists
 
 ::: columns
