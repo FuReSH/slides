@@ -77,17 +77,34 @@ Ein Lernort für digitale Werkzeugkompetenz in den Geistes- und Kulturwissenscha
 
 ## Willkommen
 
-Wir haben eine kleine Umfrage zu ChatGPT und ein Miroboard für das weitere Vorgehen vorbereitet
+Wir haben eine kleine Umfrage zu ChatGPT vorbereitet
 
 ::: columns
-:::: column
+:::: narrow
 
-[![Link zur Umfrage](../assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
+[![](../assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
 
 ::::
-:::: column
+:::: wide
 
-[![Link zum Miroboard](../assets/qrcodes/miroboard-2023-01-17.jpg)](https://miro.com/app/board/uXjVPx-jaBg=/?share_link_id=844298891902)
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" src="https://www.mentimeter.com/app/presentation/alxt4ogfx9nmje5vsvo9n2pjs96asmog/embed" style="height: 400px; width: 100%"> </iframe>
+
+::::
+:::
+
+## Willkommen
+
+Wir haben ein Miroboard für das weitere Vorgehen vorbereitet
+
+::: columns
+:::: narrow
+
+[![](../assets/qrcodes/miroboard-2023-01-17.jpg)](https://miro.com/app/board/uXjVPx-jaBg=/?share_link_id=844298891902)
+
+::::
+:::: wide
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVPx-jaBg=/?moveToViewport=-1520,-891,3038,1780&embedId=979447841857" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 ::::
 :::
