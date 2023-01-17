@@ -77,21 +77,20 @@ Ein Lernort für digitale Werkzeugkompetenz in den Geistes- und Kulturwissenscha
 
 ## Willkommen
 
-Wir haben eine kleine Umfrage zu ChatGPT vorbereitet
+Wir haben eine kleine Umfrage zu ChatGPT und ein Miroboard für das weitere Vorgehen vorbereitet
 
 ::: columns
-:::: narrow
+:::: column
 
-[![](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
+[![Link zur Umfrage](../assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
 
 ::::
-:::: wide
+:::: column
 
-<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" src="https://www.mentimeter.com/app/presentation/alxt4ogfx9nmje5vsvo9n2pjs96asmog/embed" style="height: 400px; width: 100%"> </iframe>
+[![Link zum Miroboard](../assets/qrcodes/miroboard-2023-01-17.jpg)](https://miro.com/app/board/uXjVPx-jaBg=/?share_link_id=844298891902)
 
 ::::
 :::
-
 
 
 # Was ist ChatGPT?
@@ -199,7 +198,7 @@ flowchart LR
     + Abbildung
     + Verkürzung/Reduktion
     + Zweckbindung 
-- **Sprach**Modelle (LM): sind "stochastische Papageien" [@BenderEtal2021StochasticParrots]
+- **Sprach**Modelle (LM):
     + statistische Wahrscheinlichkeitsverteilung von Tokens (Buchstaben, Wörter, Strings) in einer Textsequenz innerhalb eines Korpus
     + werden *trainiert*
     + dienen der Stringvorhersage
@@ -655,6 +654,7 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 
 # Diskussion
 ## Wie nun damit umgehen?
+### Grundlagen = informiert und methodisch reflektiert entscheinden
 
 ::: columns
 :::: column
@@ -662,10 +662,10 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ### Rahmenbedingungen
 
 - Transparenz der Angebote
-- Monopole und Diversität der Anbietenden und der Methoden
+- Diversität der Anbietenden
 - Gerechter Zugang zu den neuen Ressourcen
-- Verantwortung für die inhaltlichen Grundlagen
-- Datenhoheit und Privatsphäre
+- Hoheit über die inhaltlichen Grundlagen
+- Datenschutz und Privatsphäre
 
 
 ::::
@@ -675,8 +675,8 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 
 - Verbieten oder einbinden?
 - Welche konkreten Einsatzszenarien für Lehrende und Studierende gibt es?
-- Welche konkreten Kompetenzen müssen für einen reflektierten Umgang mit diesen Tools vermittelt werden (und wie)?
-- Müssen wir unsere Kompetenzmodelle und Prüfungsformate ändern und an die neuen Bedingungen anpassen, und wenn ja: wie?
+- Welche konkreten Kompetenzen müssen für einen reflektierten Umgang mit diesen Tools vermittelt werden?
+- Welche Kompetenzen sind durch die neuen Technologien gefährdet und wie müssen wir unsere Prüfungsformate entsprechend anpassen?
 
 ::::
 :::
@@ -688,7 +688,7 @@ Hier noch einmal unsere kleine Umfrage zu ChatGPT
 ::: columns
 :::: narrow
 
-[![](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
+[![](../assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
 
 ::::
 :::: wide
@@ -698,6 +698,22 @@ Hier noch einmal unsere kleine Umfrage zu ChatGPT
 ::::
 :::
 
+## Diskussion und Austausch
+
+Hier noch einmal unsere gemeinsames Miroboard zum weiteren Vorgehen
+
+::: columns
+:::: narrow
+
+[![](../assets/qrcodes/miroboard-2023-01-17.jpg)](https://miro.com/app/board/uXjVPx-jaBg=/?share_link_id=844298891902)
+
+::::
+:::: wide
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVPx-jaBg=/?moveToViewport=-1520,-891,3038,1780&embedId=979447841857" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+::::
+:::
 
 # Schluß / Danke!
 ## Weiterführende Angebote
