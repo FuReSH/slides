@@ -390,7 +390,7 @@ flowchart RL
 ::::
 :::: column
 
-![](../assets/images/ai/feed-me-shrimp.png)
+![Quelle: <https://twitter.com/feedmeshrimp/status/1555539430919774209>](../assets/images/ai/feed-me-shrimp.png)
 
 ::::
 :::
@@ -399,7 +399,7 @@ flowchart RL
 
 >It is a riddle... wrapped in a mystery...inside an enigma
 
-<cite>Winston Churchill>
+<cite>Winston Churchill</cite>
 
 ::: columns
 :::: column
