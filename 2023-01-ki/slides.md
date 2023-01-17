@@ -41,7 +41,9 @@ tags:
 
 ### AI Skills
 
-"AI Skills" (BMBF, 2022--25)
+"AI Skills" (BMBF, 2021--25)
+
+[hu.berlin/ai-skills](https://hu.berlin/ai-skills)
 
 ::::
 :::: column
@@ -52,7 +54,7 @@ tags:
 
 Torsten Hiltmann
 
-Lehrstuhl für Digital History (seit 2020)
+Professur für Digital History (seit 2020)
 
 [dhistory.hypotheses.org](https://dhistory.hypotheses.org)
 
@@ -63,9 +65,29 @@ Lehrstuhl für Digital History (seit 2020)
 
 ### Scholarly Makerspace
 
+Ein Lernort für digitale Werkzeugkompetenz in den Geistes- und Kulturwissenschaften
+
 "Future e-Research Support in the Humanities\" (DFG, 2022--25)
 
 [makerspace.hypotheses.org](https://makerspace.hypotheses.org/)
+
+::::
+:::
+
+
+## Willkommen
+
+Wir haben eine kleine Umfrage zu ChatGPT vorbereitet
+
+::: columns
+:::: narrow
+
+[![](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
+
+::::
+:::: wide
+
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" src="https://www.mentimeter.com/app/presentation/alxt4ogfx9nmje5vsvo9n2pjs96asmog/embed" style="height: 400px; width: 100%"> </iframe>
 
 ::::
 :::
@@ -655,6 +677,21 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 :::
 
 ## Diskussion und Austausch
+
+Hier noch einmal unsere kleine Umfrage zu ChatGPT
+
+::: columns
+:::: narrow
+
+[![](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
+
+::::
+:::: wide
+
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" src="https://www.mentimeter.com/app/presentation/alxt4ogfx9nmje5vsvo9n2pjs96asmog/embed" style="height: 400px; width: 100%"> </iframe>
+
+::::
+:::
 
 
 # Schluß / Danke!
