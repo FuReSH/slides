@@ -79,18 +79,7 @@ Ein Lernort für digitale Werkzeugkompetenz in den Geistes- und Kulturwissenscha
 
 Wir haben eine kleine Umfrage zu ChatGPT vorbereitet
 
-::: columns
-:::: narrow
-
-[![](../assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
-
-::::
-:::: wide
-
-<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" src="https://www.mentimeter.com/app/presentation/alxt4ogfx9nmje5vsvo9n2pjs96asmog/embed" style="height: 400px; width: 100%"> </iframe>
-
-::::
-:::
+![Ergebnisse der Umfrage am 17. Januar 2023. 178 Teilnehmer_innen haben abgestimmt](../assets/images/ai/mentimeter-2023-01-17_results.png){#fig:menti-results}
 
 ## Willkommen
 
@@ -700,20 +689,9 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 
 ## Diskussion und Austausch
 
-Hier noch einmal unsere kleine Umfrage zu ChatGPT
+Hier noch einmal die Ergebnisse unserer kleinen Umfrage zu ChatGPT
 
-::: columns
-:::: narrow
-
-[![](../assets/qrcodes/mentimeter-2023-01-17.png)](https://www.menti.com/alknb77irobe)
-
-::::
-:::: wide
-
-<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" src="https://www.mentimeter.com/app/presentation/alxt4ogfx9nmje5vsvo9n2pjs96asmog/embed" style="height: 400px; width: 100%"> </iframe>
-
-::::
-:::
+![Ergebnisse der Umfrage am 17. Januar 2023. 178 Teilnehmer_innen haben abgestimmt](../assets/images/ai/mentimeter-2023-01-17_results.png){#fig:menti-results-1}
 
 ## Diskussion und Austausch
 
