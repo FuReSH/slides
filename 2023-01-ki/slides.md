@@ -10,9 +10,9 @@ author:
     - Jan Krämer
     - Lilian Löwenau
 institute: 
-    - "Future e-Research Support in the Humanities"
     - "AI-Skills"
-    - "Digital History, Institut für Geschichte"
+    - "Digital History, Institut für Geschichtswissenschaften"
+    - "Scholarly Makerspace"
 #homepage: https://makerspace.hypotheses.org/
 #event: "Chat GPT - Fluch oder Segen generativer KIs für die universitäre Lehre?"
 date: 2023-01-17
@@ -56,7 +56,9 @@ Torsten Hiltmann
 
 Professur für Digital History (seit 2020)
 
-[dhistory.hypotheses.org](https://dhistory.hypotheses.org)
+Institut für Geschichtswissenschaften
+
+[hu.berlin/digital-history](https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history/lehrstuhl-fuer-digital-history)
 
 ::::
 :::: column
