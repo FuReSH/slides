@@ -252,11 +252,15 @@ class="sourceCode zsh"><code class="sourceCode zsh"><span id="cb2-1"><a href="#c
 <h1 id="themen">Themen</h1>
 <h2 id="unser-setup">Unser Setup</h2>
 <pre class="mermaid">
+---
+title: our setup
+---
+
 flowchart BT
     repo1[(GitHub\nrepository)]
     repo2[(Zenodo)]
     source1[(Wikidata)]
-    bibl1[(Zotero)]
+    bibl1[(Zotero\nGroup)]
     dir1[(TAPoR)]
     dir2[(SSH Open\nMarketplace)]
     ont1[(TaDiRAH)]
@@ -271,7 +275,7 @@ flowchart BT
     bibl1 -->|exports| file2
     repo1 -->|storing\nversion control| files
     files --> file1 & file2 & file3
-    repo1 -->|archives| repo2
+    repo2 -->|archiving| files
 
     %% do not set opacity as it will remove the text content
     classDef importance4 fill:red;
@@ -280,6 +284,33 @@ flowchart BT
     classDef importance1 fill:green;
 
     class file1 importance4
+</pre>
+<pre class="mermaid">
+---
+title: "Workflow data entry"
+---
+
+flowchart LR
+    user1((User))
+    file1[XYZ.tool.yml]
+    repo1[(GitHub\nrepository)]
+    proc1(GitHub\nAction 1)
+    proc2(GitHub\nAction 2)
+    act1{comit}
+    source1[(Wikidata)]
+    bibl1[(Zotero\nGroup)]
+    dir1[(TAPoR)]
+
+    user1 -->|creates| file1
+    user1 -->|edits| bibl1 & source1
+    file1 --> act1 --> repo1
+    act1 -->|triggers| proc1
+    proc1 -->|validates| file1
+    proc1 -->|triggers| proc2
+    proc2 -->|queries| source1 & dir1
+    proc2 -->|enriches| file1
+
+
 </pre>
 <h2 id="chatgpt">ChatGPT</h2>
 <pre class="mermaid" data-format="svg"><code>---
