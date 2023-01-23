@@ -519,7 +519,7 @@ Arbeitsaufträge z.T. unzureichend erfüllt: z.B. durch wirre Argumentation, feh
 ::: columns
 :::: column
 
->Write a summary in scientific style on the role of Top & Sons in Auschwitz, citing literature and sources.
+>Write a summary in scientific style on the role of Topf & Sons in Auschwitz, citing literature and sources.
 
 >Topf & Sons was a German engineering firm that played a significant role in the Holocaust as a supplier of crematoria and incineration equipment to the Auschwitz concentration camp, where millions of Jews and other minorities were murdered. The company profited economically from the systematic extermination of Holocaust victims ...
 
