@@ -597,7 +597,7 @@
                         margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
-                        max-width: 6em;
+                        max-width: 6em !important;
                         max-height: 4em;
                     }
                     /*img {
@@ -1418,12 +1418,13 @@ Makerspace</p>
                   </div>
       </div>
         </section>
-                
+
         <section id="willkommen" class="slide level2">
         <h2>Willkommen</h2>
         <div class="columns-3">
         <div class="column">
-        <p><img data-src="../assets/images/AI-SKILLS-Logo_4c.svg" /></p>
+        <p><img data-src="../assets/images/AI-SKILLS-Logo_4c.svg"
+        class="c_logo" /></p>
         <h3 id="ai-skills">AI Skills</h3>
         <p>“AI Skills” (BMBF, 2021–25)</p>
         <p><a
@@ -1431,17 +1432,20 @@ Makerspace</p>
         </div>
         <div class="column">
         <p><img
-        data-src="https://dhistory.hypotheses.org/files/2021/02/Logo_DigitalHistoryBerlin_1000x600.png" /></p>
+        data-src="https://dhistory.hypotheses.org/files/2021/02/Logo_DigitalHistoryBerlin_1000x600.png"
+        class="c_logo" /></p>
         <h3 id="digital-history">Digital History</h3>
         <p>Torsten Hiltmann</p>
         <p>Professur für Digital History (seit 2020)</p>
         <p>Institut für Geschichtswissenschaften</p>
         <p><a
-        href="https://dhistory.hypotheses.org">dhistory.hypotheses.org</a></p>
+        href="https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history/lehrstuhl-fuer-digital-history">hu.berlin/digital-history</a></p>
         </div>
         <div class="column">
+        <!-- ![](https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png) -->
         <p><img
-        data-src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png" /></p>
+        data-src="https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png"
+        class="c_logo" /></p>
         <h3 id="scholarly-makerspace">Scholarly Makerspace</h3>
         <p>Ein Lernort für digitale Werkzeugkompetenz in den Geistes-
         und Kulturwissenschaften</p>
@@ -2516,13 +2520,13 @@ flowchart RL
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1000,
                         height: 800,
-
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,

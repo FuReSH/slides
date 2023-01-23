@@ -37,7 +37,7 @@ tags:
 ::: columns-3
 :::: column
 
-![](../assets/images/AI-SKILLS-Logo_4c.svg)
+![](../assets/images/AI-SKILLS-Logo_4c.svg){.c_logo}
 
 ### AI Skills
 
@@ -48,7 +48,7 @@ tags:
 ::::
 :::: column
 
-![](https://dhistory.hypotheses.org/files/2021/02/Logo_DigitalHistoryBerlin_1000x600.png)
+![](https://dhistory.hypotheses.org/files/2021/02/Logo_DigitalHistoryBerlin_1000x600.png){.c_logo}
 
 ### Digital History
 
@@ -63,7 +63,8 @@ Institut für Geschichtswissenschaften
 ::::
 :::: column
 
-![](https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png)
+<!-- ![](https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png) -->
+![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png){.c_logo}
 
 ### Scholarly Makerspace
 
