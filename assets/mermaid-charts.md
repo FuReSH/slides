@@ -2,7 +2,7 @@
 title: "Sammlung von Mermaid-Diagrammen"
 subtitle: ""
 author:
-    - Sophie Eckenstaler 
+    - Till Grallert
 affiliation: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
 date: 2023-01-12 
 status: draft
@@ -38,6 +38,39 @@ pandoc -t html -F /Users/furesh/node_modules/mermaid-filter/index.js -o mermaid-
 ```
 
 # Themen
+## Unser Setup
+
+<pre class="mermaid">
+flowchart BT
+    repo1[(GitHub\nrepository)]
+    repo2[(Zenodo)]
+    source1[(Wikidata)]
+    bibl1[(Zotero)]
+    dir1[(TAPoR)]
+    dir2[(SSH Open\nMarketplace)]
+    ont1[(TaDiRAH)]
+    file1[.yml]
+    file2[.bib]
+    file3[.json\nschema]
+    files(plain-text files)
+
+    file1 -.->|points to| source1 & ont1 & dir1 & dir2 & file2
+    dir1 & dir2 -.->|points to| source1
+    file3 -->|validates| file1
+    bibl1 -->|exports| file2
+    repo1 -->|storing\nversion control| files
+    files --> file1 & file2 & file3
+    repo1 -->|archives| repo2
+
+    %% do not set opacity as it will remove the text content
+    classDef importance4 fill:red;
+    classDef importance3 fill:orange;
+    classDef importance2 fill:yellow;
+    classDef importance1 fill:green;
+
+    class file1 importance4
+</pre>
+
 ## ChatGPT
 
 
@@ -58,6 +91,7 @@ flowchart RL
 ---
 title: Die etwas interessantere Antwort
 ---
+
 flowchart RL
     comp2((OpenAI\n2015\nnonprofit)) ==> gpt[(GPT: Generative\nPre-trained\nTransformer\n2018)]
     pers1[Elon Musk] -.-> |co-funded| comp2
