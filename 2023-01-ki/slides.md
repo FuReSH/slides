@@ -26,6 +26,7 @@ bibliography:
     - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
+revealjs-url: https://furesh.github.io/slides/revealjs
 tags:
     - FuReSH
     - slides
@@ -96,7 +97,7 @@ Wir haben ein Miroboard für das weitere Vorgehen vorbereitet
 ::::
 :::: wide
 
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVPx-jaBg=/?moveToViewport=-1520,-891,3038,1780&embedId=979447841857" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<!-- <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVPx-jaBg=/?moveToViewport=-1520,-891,3038,1780&embedId=979447841857" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe> -->
 
 ::::
 :::
@@ -155,17 +156,6 @@ flowchart RL
 :::
 
 ## Maschinelles Lernen (ML)
-
-<!-- <pre class="mermaid">
----
-title: Blackbox KI
----
-
-flowchart LR
-    Input --&gt; bb[["Künstliche Intelligenz"]] --&gt; Output
-</pre> -->
-
-
 
 ::: columns
 :::: column
@@ -317,31 +307,54 @@ flowchart LR
 :::
 
 <pre class="mermaid">
-flowchart RL
-    comp2((OpenAI\n2015\nnonprofit)) ==> gpt[(GPT: Generative\nPre-trained\nTransformer\n2018)]
-    pers1[Elon Musk] -.-> |co-funded| comp2
-    pers2[Peter Thiel] -.-> |co-funded| comp2
-    comp4(("Amazon Web\nServices (AWS)")) -.-> |co-funded| comp2
+---
+title: Die etwas interessantere Antwort
+---
 
-    gpt ==> comp5((OpenAI\n2019\nfor profit))
-    comp5 ==> gpt3[(GPT-3\n2020)]
-    comp3((Microsoft)) -.-> |invested| comp5
-    comp3 <-..- |exclusive use| gpt3
+flowchart LR
+    %% nodes
+    gpt[(GPT: Generative\nPre-trained\nTransformer\n2018)]
+    gpt3[(GPT-3\n2020)]
+    chatgpt{ChatGPT\n2022}
+    dalle{DALL-E\n2021}
+    copil{GitHub\nCoPilot\n2021}
+    data1[("Common Crawl\ndata set\n2011-")]
 
-    gpt3 --> dalle{DALL-E\n2021}
-    gpt3 ===> chatgpt{ChatGPT\n2022}
-    comp4 --> |hosts| data1[("Common Crawl\ndata set\n2011-")]
+    pers1[Elon Musk]
+    pers2[Peter Thiel]
+    comp2((OpenAI\n2015\nnonprofit))
+    comp3((Microsoft))
+    comp4(("Amazon Web\nServices (AWS)"))
+    comp5((OpenAI\n2019\nfor profit))
+    comp6((Common Crawl\nnonprofit))
+    comp7((GitHub))
+
+    %% vertices
+    comp2 ==> gpt
+    pers1 -.->|co-funded| comp2
+    pers2 -.->|co-funded| comp2
+    comp4 -.->|co-funded| comp2
+    comp4 --> |hosts| data1
+    comp6 --> |provides| data1
     data1 --> |training\nset for| gpt
+    gpt ==> comp5
+    comp5 ==> gpt3
+    comp3 -.->|invested| comp5
+    gpt3 -.->|exclusive use| comp3
+    comp3 -.->|bought\n2018| comp7
+    gpt3 -->|powers| dalle & copil
+    gpt3 ====>|powers| chatgpt
+    comp7 -.- copil
 
-    comp6((Common Crawl\nnonprofit)) --> |provides| data1
-
-
+    %% hyperlinks
     click chatgpt "https://chat.openai.com/" _blank
     click dalle "https://openai.com/blog/dall-e/" _blank
     click comp6 "http://commoncrawl.org/" _blank
+
+    %% looks: note that classes can be defined in the main CSS
+    classDef focus stroke:blue,stroke-width:4px,font-size:1em
+    class comp2,comp5,gpt3,gpt,chatgpt focus
 </pre>
-
-
 
 ## Wer kann das benutzen?
 
@@ -708,7 +721,7 @@ Hier noch einmal unsere gemeinsames Miroboard zum weiteren Vorgehen
 ::::
 :::: wide
 
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVPx-jaBg=/?moveToViewport=-1520,-891,3038,1780&embedId=979447841857" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<!-- <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVPx-jaBg=/?moveToViewport=-1520,-891,3038,1780&embedId=979447841857" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe> -->
 
 ::::
 :::
