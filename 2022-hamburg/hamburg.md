@@ -13,6 +13,7 @@ reference-section-title: "Literatur"
 suppress-bibliography: true
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
+revealjs-url: https://furesh.github.io/slides/revealjs
 url: https://furesh.github.io/slides/2022-hamburg
 tags:
     - FuReSH

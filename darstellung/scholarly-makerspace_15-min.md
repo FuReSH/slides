@@ -193,6 +193,8 @@ Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 
 >To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. [@Tenen2016BluntInstrumentalism, 85]
 
+>Without access to the code, whether because it is proprietary or generated on the fly, as in the case of some machine-learning algorithms, analysts can only comment on the apparent operations of the code based on its effects. The operations of the code are left in the hands of those who can access it, usually those who have made or maintain it, and those who can read it. [@Marino2020CriticalCodeStudies, 4]
+
 ::: columns
 :::: column
 
