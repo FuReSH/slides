@@ -309,7 +309,87 @@ flowchart LR
     proc1 -->|triggers| proc2
     proc2 -->|queries| source1 & dir1
     proc2 -->|enriches| file1
+</pre>
+<pre class="mermaid">
+---
+title: categories
+---
 
+flowchart LR
+    %% nodes
+    software[Software]
+    hardware[Hardware]
+    method(Methods)
+    theory(Theories)
+    format[Formats]
+    language[Languages]
+    concept(Concepts)
+
+    %% edges: note that the layout does not imply hierarchies
+    theory -->|informs| method
+    method -->|is implemented\nby| software
+    method & format & language -->|uses| concept
+    software -->|requires| hardware
+    software -->|is written in| language
+    software -->|interaction requires| language
+    software -->|reads| format
+    software -->|writes| format
+
+    %% classes
+    classDef software fill:#ECA7F9
+    classDef language fill:#F24726
+    classDef concept fill:#F9C710
+    classDef format fill:#8BCA4B
+    class software software
+    class concept concept
+    class format format
+    class language language
+</pre>
+
+
+<pre class="mermaid">
+---
+title: "categories: example"
+---
+
+flowchart LR
+    %% nodes
+    software[Software]
+    hardware[Hardware]
+    method(Transformation)
+    theory(Theories)
+    html[HTML]
+    xslt[XSLT]
+    xslt1[Stylesheet]
+    xml[XML]
+    concept1(well-formed)
+    license(License)
+    saxon[Saxon\nXSLT\nProcessor]
+    java[Java]
+    csv[CSV]
+
+    %% edges
+    theory -->|informs| method
+    method -->|is implemented\nby| xslt1
+    saxon -->|runs| xslt1
+    xslt1 -->|reads| html
+    xslt1 -->|writes| csv
+    xslt1 -->|written in| xslt
+    xslt -->|written in| xml
+    xml -->|needs to be| concept1
+    saxon -->|requires| java
+    java -->|requires| hardware
+    saxon & java --> |carries| license
+
+%% classes
+    classDef software fill:#ECA7F9
+    classDef language fill:#F24726
+    classDef concept fill:#F9C710
+    classDef format fill:#8BCA4B
+    class software,saxon,xslt1,java software
+    class concept1,license concept
+    class html,csv,xml format
+    class xslt language
 
 </pre>
 <h2 id="chatgpt">ChatGPT</h2>
