@@ -15,6 +15,7 @@ lang: de
 bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json 
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
+revealjs-url: https://furesh.github.io/slides/revealjs
 tags:
     - FuReSH
     - public relations
