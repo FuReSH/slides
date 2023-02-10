@@ -133,6 +133,8 @@ flowchart LR
     classDef language fill:#F24726
     classDef concept fill:#F9C710
     classDef format fill:#8BCA4B
+    classDef method fill:#7ce5cb
+    class method method
     class software software
     class concept concept
     class format format
