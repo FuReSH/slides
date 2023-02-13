@@ -11,7 +11,7 @@ institute:
 homepage: https://makerspace.hypotheses.org/
 event: UB Coffee Lectures
 date: 
-url: https://furesh.github.io/slides/2022-11-23-coffee-lecture
+url: https://furesh.github.io/slides/
 status: published
 lang: de
 bibliography:
@@ -72,7 +72,7 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
 
 :::
 
-# Ein prototypischer Scholarly Makerspace?!
+# Ein Scholarly Makerspace?!
 ## Ein Makerspace?
 
 >Im Wesentlichen geht es bei der Makerbewegung um das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**. Diese Ressourcen stehen Einzelpersonen privat oft nicht zur Verfügung. Die Ermöglichung des Zugangs für alle, stellt so einen zentralen Faktor für eine offene und demokratische Gesellschaft dar. [@Heinzeletal2020Einleitung, 2]
@@ -114,6 +114,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 ::::
 :::
 
+
 - die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
 
 ::: notes
@@ -132,7 +133,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 :::
 
-## Digitale Werkzeugkompetenz in den Humanities?
+## **Digitale Werkzeugkompetenz** in den Humanities?
 
 >It is our position that the "digital" cannot be understood as a separate domain of culture. If we actually examine the digital [...] we see that today digital information processing is present in every aspect of our lives [@CPCAbout].
 
@@ -193,8 +194,6 @@ Stärkung der *tool literacy* (Werkzeugkompetenz) für:
 
 >To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. [@Tenen2016BluntInstrumentalism, 85]
 
->Without access to the code, whether because it is proprietary or generated on the fly, as in the case of some machine-learning algorithms, analysts can only comment on the apparent operations of the code based on its effects. The operations of the code are left in the hands of those who can access it, usually those who have made or maintain it, and those who can read it. [@Marino2020CriticalCodeStudies, 4]
-
 ::: columns
 :::: column
 
@@ -243,13 +242,13 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 :::: column
 
 
-Aufgaben
+### Aufgaben
 
 - den epistemischen Wandel ergreifen
 - Blackboxes öffnen
 - Wissensdomäne massiv ausweiten 
 
-Angebot: Hilfe zur Selbsthilfe
+### Angebot: Hilfe zur Selbsthilfe
 
 - Infrastruktur und Resourcen für eigenes Arbeiten
 - gemeinsames Tüfteln

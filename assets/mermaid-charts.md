@@ -122,7 +122,7 @@ flowchart LR
     theory -->|informs| method
     method -->|is implemented\nby| software
     method & format & language -->|uses| concept
-    software -->|requires| hardware
+    software -->|requires\nruns on| hardware
     software -->|is written in| language
     software -->|interaction requires| language
     software -->|reads| format
@@ -133,6 +133,8 @@ flowchart LR
     classDef language fill:#F24726
     classDef concept fill:#F9C710
     classDef format fill:#8BCA4B
+    classDef method fill:#00dada
+    class method method
     class software software
     class concept concept
     class format format
