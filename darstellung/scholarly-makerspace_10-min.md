@@ -3,8 +3,6 @@ title: "Kein 3D-Drucker?"
 subtitle: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 author:
     - Till Grallert
-    - Sophie Eckenstaler
-    - Samantha Tirtohusodo
 institute: 
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
@@ -94,97 +92,101 @@ Damit sind Makerspaces
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
-::: columns
-:::: column
 
-- durch Forschungsfragen getrieben
+1. durch Forschungsfragen getrieben
 
-![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png)
+![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png){#fig:network-analysis}
 
 <!-- ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png) -->
 
+:::notes
+
++ Wie lassen sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
++ Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
++ Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
+
+:::
+
+## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
+
+Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
+
+2. die Auswirkungen der Digitalität auf den Erkenntnisprozess untersuchend
+
+![Fehlerhafte Scans und Stand von OCR. Quelle: [Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1](https://www.deutsche-digitale-bibliothek.de/newspaper/item/MP2O2HAR4Q6JRV2WUMWAHTV7QA7X3V32?issuepage=1)](https://furesh.github.io/slides/assets/images/ocr_deutsches-zeitungsportal.png){#fig:ocr}
+
+:::notes
+
++ Welche Auswirkungen haben OCR Algorithmen und Normalisierung auf die Qualität meines Korpus?
++ Was ist die Auswirkung von abstrahierenden Operationalisierungen für die quantitative Auswertung?
+
+:::
+
+## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
+
+Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
+
+3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
+
+::: columns
+:::: column
+
+![Transformermodell "Optimus Prime". Quelle: <https://www.flickr.com/photos/yellawolfstudios/5853934455>, CC BY-NC 2.0](../assets/images/ai/transformer-toy.png){#fig:transformer-model}
+
+
 ::::
 :::: column
 
-- die Auswirkungen der Digitalität auf den Erkenntnisprozess untersuchend
-
-![Fehlerhafte Scans und Stand von OCR. Quelle: [Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1](https://www.deutsche-digitale-bibliothek.de/newspaper/item/MP2O2HAR4Q6JRV2WUMWAHTV7QA7X3V32?issuepage=1)](https://furesh.github.io/slides/assets/images/ocr_deutsches-zeitungsportal.png)
-
+![Transformermodell "ChatGPT"](../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png){#fig:chatgpt}
 
 ::::
 :::
 
 
-- die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
-
 ::: notes
 
-- durch Forschungsfragen getrieben:
-    + Wie lassen sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
-    + Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
-    + Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
-- die Auswirkungen auf den Erkenntnisprozess untersuchend:
-    + Welche Auswirkungen haben OCR Algorithmen und Normalisierung auf die Qualität meines Korpus?
-    + Was ist die Auswirkung von abstrahierenden Operationalisierungen für die quantitative Auswertung?
-- die gesellschaftlichen Auswirkungen untersuchend?
-    + Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
-    + Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
-    + Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
++ Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
++ Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
++ Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
 
 :::
 
-## **Digitale Werkzeugkompetenz** in den Humanities?
+## **Digitale Werkzeugkompetenz** (tool literacy) in den Humanities?!
 
 >It is our position that the "digital" cannot be understood as a separate domain of culture. If we actually examine the digital [...] we see that today digital information processing is present in every aspect of our lives [@CPCAbout].
 
-- Die Unterscheidung zwischen **digital** und **analog** bzw. hergebrachten Ansätzen ist bedeutungslos geworden [@Berry+2017]
-- Sämtliche Aspekte der Forschung sind bereits immer durch Computer re-medialisiert
+>Do artefacts have politics? [@Winner+1980]
+
+
+## Ziel <br/>Von *digital consumers* zu *digital citizens*
+
+
+Ziel der Stärkung von *tool literacy* ist:
+
+::: columns-3
+:::: column
+
+1. **Teilhabe** an der Digitalität durch computationelle Methoden,
+
+::::
+:::: column
+
+2. kritische **Reflexion** über ein neues epistemisches Paradigma,
+
+::::
+:::: column
+
+3 Genese **neuer Erkenntnisse**
+
+::::
+:::
 
 ::: notes
 
-- diese Folie erklärt warum wir uns mit digital tool literacy beschäftigen müssen
-    + eigentlich schon aus der vorhergehenden Folio über die Beispiele klar
+- *digital citizenry* ist von [@Rankin2018PeoplesHistory, 11] geprägt
+- kann **nur kollaborativ** adäquat bewältigt werden. 
++ Tool literacy ist extrem aufwändig
 
-- Aspekte / Komponenten computationeller Forschung in den Geistes- und Kulturwissenschaften [@Drucker2021DHCoursebook]
-    1. Erstellung, Aufbereitung **digitaler Materialien**
-    2. **computationelle Be- / Verarbeitung** dieser Materialien
-    3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
-
-- Es herrscht in der Breite ein Mangel an 
-    + **Theorie**: Verständnis des epistemischen Wandels
-    + **Methode**: Beherrschung der notwendigen Werkzeuge
-    + positivem **Wissen**: Überblick über die Möglichkeiten
-- *"Digital" Humanities* als Indikator
-
-:::
-
-## Digitale Werkzeugkompetenz in den Humanities!
-
->Do artefacts have politics? [@Winner+1980]
-
->The Cloud *is* a factory. Your AI *is* a human. Sexism *is* a feature, not a bug. [@Mullaney2021Intro, 7]
-
-Stärkung der *tool literacy* (Werkzeugkompetenz) für:
-
-::: columns-3
-:::: wide
-
-+ **Teilhabe** an der Digitalität durch computationelle Methoden,
-+ kritische **Reflexion** über ein neues epistemisches Paradigma,
-+ Genese **neuer Erkenntnisse**
-
-::::
-:::: narrow
-
-![Word cloud der häufigsten Werkzeuge in den Digital Humanities](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
-
-::::
-
-:::: narrow
-
-![Von OpenAIs [DALL-E](https://openai.com/blog/dall-e/) generiertes Bild<!--: "knight sitting in a student library, wearing in a Renaissance full body armour, with a closed tournament helmet, frantically tipping into an large desktop computer from the 2000s on the table in front of him" (Quelle: Torsten Hiltmann)-->](https://furesh.github.io/slides/assets/images/dell-e_knight.png)
-
-::::
 :::
 
 ## Aber **Making** ?
@@ -230,39 +232,7 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 
 :::
 
-## Zusammenfassung
-### Von *digital consumers* zu *digital citizens*
 
-::: columns
-:::: column
-
-![](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-inside.png)
-
-::::
-:::: column
-
-
-### Aufgaben
-
-- den epistemischen Wandel ergreifen
-- Blackboxes öffnen
-- Wissensdomäne massiv ausweiten 
-
-### Angebot: Hilfe zur Selbsthilfe
-
-- Infrastruktur und Resourcen für eigenes Arbeiten
-- gemeinsames Tüfteln
-- Vernetzung
-
-::::
-:::
-::: notes
-
-- *digital citizenry* ist von [@Rankin2018PeoplesHistory, 11] geprägt
-- kann **nur kollaborativ** adäquat bewältigt werden. 
-+ Tool literacy ist extrem aufwändig
-
-:::
 
 
 # Wie sieht das konkret aus?
@@ -420,8 +390,6 @@ in die DH Community in Berlin und beyond
 
 ::::
 :::
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/blackbox_contents.jpg)
 
 ::: notes
 
