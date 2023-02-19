@@ -9,9 +9,9 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-event: Eröffnung
-date: 2022-11-14
-url: https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html
+# event: Eröffnung
+date: 
+url: https://furesh.github.io/slides/darstellung/operationalisierung.html
 status: published
 lang: de
 bibliography:
@@ -88,9 +88,6 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
 
 :::
 
-## Was haben wir um sie zu öffnen?
-
-![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg)
 
 ## Minimal computing
 
@@ -112,12 +109,59 @@ Im Sinne des *minimal computing* ist das Spannungsfeld aus "was brauchen wir?" u
 
 :::
 
-## Was haben wir?
+## Was haben wir um sie zu öffnen?
+
+![](https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg)
+
+## Was ist in unserem Werkzeugkoffer?
+
+<pre class="mermaid">
+flowchart LR
+    %% nodes
+    software{Software}
+    hardware[Hardware]
+    method((Verfahren))
+    theory(Theorien)
+    format[Formate]
+    language{{Sprachen}}
+    concept(Konzepte)
+
+    %% edges: note that the layout does not imply hierarchies
+    theory -->|informiert| method
+    method -->|wird umgesetzt\ndurch| software
+    method & format & language & software -.->|benutzen| concept
+    software -->|benötigt| hardware
+    software -->|geschrieben in| language
+    software -->|benötigt zur\nInteraktion| language
+    software -->|liest| format
+    software -->|schreibt| format
+
+    %% classes
+    classDef software fill:#ECA7F9
+    classDef language fill:#F24726
+    classDef concept fill:#F9C710
+    classDef format fill:#8BCA4B
+    classDef method fill:#00dada
+    class method method
+    class software software
+    class concept concept
+    class format format
+    class language language
+</pre>
+
+::: notes
+
+- was ist / muss **vorhanden** sein?
+
+:::
+
+## Inwiefern beherrschen wir ein Werkzeug?
 
 ![](https://furesh.github.io/slides/assets/images/operationalisierung/process_what-do-we-have.jpg)
 
 ::: notes
 
+- Es reicht nicht nur, dass etwas **vorhanden** ist, es muss **zuhanden** sein
 - Beispielhafter Prozess für den Einsatz von Software
 
 :::

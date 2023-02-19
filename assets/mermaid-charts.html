@@ -348,6 +348,44 @@ flowchart LR
     class language language
 </pre>
 
+<pre class="mermaid">
+---
+title: categories
+---
+
+flowchart TD
+    %% nodes
+    software{Software}
+    hardware[Hardware]
+    method((Verfahren))
+    theory(Theorien)
+    format[Formate]
+    language{{Sprachen}}
+    concept(Konzepte)
+
+    %% edges: note that the layout does not imply hierarchies
+    theory -->|informiert| method
+    method -->|wird umgesetzt\ndurch| software
+    method & format & language & software -.->|benutzen| concept
+    software -->|benötigt| hardware
+    software -->|geschrieben in| language
+    software -->|benötigt zur\nInteraktion| language
+    software -->|liest| format
+    software -->|schreibt| format
+
+    %% classes
+    classDef software fill:#ECA7F9
+    classDef language fill:#F24726
+    classDef concept fill:#F9C710
+    classDef format fill:#8BCA4B
+    classDef method fill:#00dada
+    class method method
+    class software software
+    class concept concept
+    class format format
+    class language language
+</pre>
+
 
 <pre class="mermaid">
 ---

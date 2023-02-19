@@ -10,9 +10,14 @@ institute:
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
 url: 
+event:
+date:
 status: published
 lang: de
-bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json 
+bibliography:
+    - ../assets/bibliography/FuReSH.csl.json
+    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+    - /Users/Shared/BachCloud/HUBox/FuReSH/assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 revealjs-url: https://furesh.github.io/slides/revealjs
@@ -91,13 +96,18 @@ Ein zentraler Pfeiler unseres Angebots ist ein kuratiertes Werkzeugregal mit dig
 
 ## Vorgehen
 
+::: columns
+:::: column
+
 ### Kein Tool Directory Nr. x
 
-- Kuratierte Werkzeuglisten gibt es schon z.B. DiRT Directory oder TAPoR 3
-- Problem:
-    + Maintainance
-    + Aktualität
-    + Nachnutzbarkeit (in anderen Kontexten)
+- Kuratierte Werkzeuglisten gibt es schon z.B. Bamboo, DiRT Directory, TAPoR 3, forText ...
+- Probleme oder die "DiRT-Trap" [@GrantEtAl2020AbsorbingDiRT]
+    + Inhalt: Kuratierung, Umfang, Aktualität
+    + Technisch: Maintenance, Nachnutzbarkeit (in anderen Kontexten)
+
+::::
+:::: column
 
 ### Kein Großprojekt
 
@@ -106,13 +116,38 @@ Ein zentraler Pfeiler unseres Angebots ist ein kuratiertes Werkzeugregal mit dig
     + Abdeckung des gesamten Forschungsprozesses mit Fokus auf den Daten und Datenlebenszyklus
         - Digitale Tools sind hier eine Unterkategorie.
 
+::::
+:::
+
 ## Vorgehen
 
 - Informationen bedarfsorientiert aggregieren und verteilen, kein neues Tool Directory ("DiRT-trap")
-- Gemeinschaft(lich)
-- Offen und Modular
-- Aufwand für UX und UI minimieren
-- Ausnutzung vorhandener offener Services/Infrastrukturen
+- Prinzipen: 
+    + Minimaler und nachhaltiger Resourceneinsatz
+    + Offen und modular von Anfang an
+    + Gemeinschaft(lich)
+
+<!-- - Aufwand für UX und UI minimieren
+- Ausnutzung vorhandener offener Services/Infrastrukturen -->
+
+::: notes
+
+- wir schlucken unsere eigene Medizin und halten uns an *minimal computing*
+- minimal: wir haben nur unsere Resourcen
+    + Planet
+    + Projekt
+    + dient der auch der Transparenz
+- wir bauen nichts neu, das bereits besteht
+    + Re-use von Infrastrukturen 
+    + Re-use von Inhalten
+- offen von anfang an
+- gemeinschaftlich
+    + das Projekt hat einen Zweck
+    + Bedarf der Gemeinschaft decken
+    + Gemeinschaften bildent
+    + DH funktioniert nur im Zusammenspiel von Menschen miteinander und mit Maschinen
+
+:::
 
 ## Implementierung
 

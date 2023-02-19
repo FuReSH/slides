@@ -28,6 +28,25 @@
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }
     </style>
         <link rel="stylesheet" href="https://furesh.github.io/slides/revealjs/dist/theme/none.css" id="theme">
                     <style type="text/css">
@@ -635,7 +654,7 @@
                     .columns-2 > .column,
                     .columns > .column,
                     .c_width-50  {
-                        width: 47%;
+                        width: 48%;
                     }
                     .c_width-60,
                     .column-60,
@@ -980,6 +999,7 @@
                     ul,
                     ol {
                         display: block;
+                        clear: both;
                         font-style: normal;
                         margin-top: 0.1em;
                         margin-bottom: 0.5em;
@@ -1500,18 +1520,23 @@ e-Research Support in the Humanities” (2022–25)</p>
         </section>
         <section id="vorgehen" class="slide level2">
         <h2>Vorgehen</h2>
+        <div class="columns">
+        <div class="column">
         <h3 id="kein-tool-directory-nr.-x">Kein Tool Directory Nr.
         x</h3>
         <ul>
-        <li>Kuratierte Werkzeuglisten gibt es schon z.B. DiRT Directory
-        oder TAPoR 3</li>
-        <li>Problem:
+        <li>Kuratierte Werkzeuglisten gibt es schon z.B. Bamboo, DiRT
+        Directory, TAPoR 3, forText …</li>
+        <li>Probleme oder die “DiRT-Trap” <span class="citation"
+        data-cites="GrantEtAl2020AbsorbingDiRT">(Grant u. a.
+        <span>„Absorbing DiRT“</span> 2020)</span>
         <ul>
-        <li>Maintainance</li>
-        <li>Aktualität</li>
-        <li>Nachnutzbarkeit (in anderen Kontexten)</li>
+        <li>Inhalt: Kuratierung, Umfang, Aktualität</li>
+        <li>Technisch: Maintenance, Nachnutzbarkeit (in anderen
+        Kontexten)</li>
         </ul></li>
         </ul>
+        </div><div class="column">
         <h3 id="kein-großprojekt">Kein Großprojekt</h3>
         <ul>
         <li>EU-Projekt <strong>SSHOC-Marketplace</strong> (European Open
@@ -1525,17 +1550,49 @@ e-Research Support in the Humanities” (2022–25)</p>
         </ul></li>
         </ul></li>
         </ul>
+        </div>
+        </div>
         </section>
         <section id="vorgehen-1" class="slide level2">
         <h2>Vorgehen</h2>
         <ul>
         <li>Informationen bedarfsorientiert aggregieren und verteilen,
         kein neues Tool Directory (“DiRT-trap”)</li>
+        <li>Prinzipen:
+        <ul>
+        <li>Minimaler und nachhaltiger Resourceneinsatz</li>
+        <li>Offen und modular von Anfang an</li>
         <li>Gemeinschaft(lich)</li>
-        <li>Offen und Modular</li>
-        <li>Aufwand für UX und UI minimieren</li>
-        <li>Ausnutzung vorhandener offener Services/Infrastrukturen</li>
+        </ul></li>
         </ul>
+        <!-- - Aufwand für UX und UI minimieren
+        - Ausnutzung vorhandener offener Services/Infrastrukturen -->
+        <aside class="notes">
+        <ul>
+        <li>wir schlucken unsere eigene Medizin und halten uns an
+        <em>minimal computing</em></li>
+        <li>minimal: wir haben nur unsere Resourcen
+        <ul>
+        <li>Planet</li>
+        <li>Projekt</li>
+        <li>dient der auch der Transparenz</li>
+        </ul></li>
+        <li>wir bauen nichts neu, das bereits besteht
+        <ul>
+        <li>Re-use von Infrastrukturen</li>
+        <li>Re-use von Inhalten</li>
+        </ul></li>
+        <li>offen von anfang an</li>
+        <li>gemeinschaftlich
+        <ul>
+        <li>das Projekt hat einen Zweck</li>
+        <li>Bedarf der Gemeinschaft decken</li>
+        <li>Gemeinschaften bildent</li>
+        <li>DH funktioniert nur im Zusammenspiel von Menschen
+        miteinander und mit Maschinen</li>
+        </ul></li>
+        </ul>
+        </aside>
         </section>
         <section id="implementierung" class="slide level2">
         <h2>Implementierung</h2>
@@ -1603,8 +1660,20 @@ e-Research Support in the Humanities” (2022–25)</p>
         <li><a href="infrastruktur.html">Unser Backend</a></li>
         </ul>
         </section>
-        <section id="refs" class="slide level2">
-        <h2>Literatur</h2>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        role="doc-bibliography">
+        <div id="ref-GrantEtAl2020AbsorbingDiRT" class="csl-entry"
+        role="doc-biblioentry">
+        Grant, Kaitlyn, Quinn Dombrowski, Kamal Ranaweera, Omar
+        Rodriguez-Arenas, Stéfan Sinclair, und Geoffrey Rockwell. 2020.
+        <span>„Absorbing DiRT: Tool Directories in the Digital
+        Age“</span>. <em>Digital Studies / Le Champ Numérique</em> 10
+        (1). <a
+        href="https://doi.org/10.16995/dscn.325">https://doi.org/10.16995/dscn.325</a>.
+        </div>
+        </div>
         </section></section>
       </div>
     </div>

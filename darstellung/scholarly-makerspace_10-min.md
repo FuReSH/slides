@@ -1,5 +1,5 @@
 ---
-title: "Kein 3D-Drucker?"
+title: "Kein 3D-Drucker?!"
 subtitle: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 author:
     - Till Grallert

@@ -6,8 +6,7 @@
           <meta name="author" content="Till Grallert">
           <meta name="author" content="Sophie Eckenstaler">
           <meta name="author" content="Samantha Tirtohusodo">
-              <meta name="dcterms.date" content="2022-11-14">
-                <title>Der Scholarly Makerspace an der UB der HU Berlin stellt sich vor</title>
+                    <title>Der Scholarly Makerspace an der UB der HU Berlin stellt sich vor</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -655,7 +654,7 @@
                     .columns-2 > .column,
                     .columns > .column,
                     .c_width-50  {
-                        width: 47%;
+                        width: 48%;
                     }
                     .c_width-60,
                     .column-60,
@@ -1000,6 +999,7 @@
                     ul,
                     ol {
                         display: block;
+                        clear: both;
                         font-style: normal;
                         margin-top: 0.1em;
                         margin-bottom: 0.5em;
@@ -1406,11 +1406,8 @@ e-Research Support in the Humanities” (2022–25)</p>
                                             <p class="url"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></p>
                   </div>
         <div class="column c_right c_right-align">
-                    <p class="event">
-                        <span>Eröffnung</span>
-          </p>
-                                <p class="date">2022-11-14</p>
-                              <p class="url"><a href="https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html">https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html</a></p>
+                                <p class="current-date"></p>
+                              <p class="url"><a href="https://furesh.github.io/slides/darstellung/operationalisierung.html">https://furesh.github.io/slides/darstellung/operationalisierung.html</a></p>
                   </div>
       </div>
         </section>
@@ -1519,12 +1516,6 @@ e-Research Support in the Humanities” (2022–25)</p>
         </ul>
         </aside>
         </section>
-        <section id="was-haben-wir-um-sie-zu-öffnen"
-        class="slide level2">
-        <h2>Was haben wir um sie zu öffnen?</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg" /></p>
-        </section>
         <section id="minimal-computing" class="slide level2">
         <h2>Minimal computing</h2>
         <blockquote>
@@ -1558,12 +1549,63 @@ e-Research Support in the Humanities” (2022–25)</p>
         </ul>
         </aside>
         </section>
-        <section id="was-haben-wir" class="slide level2">
-        <h2>Was haben wir?</h2>
+        <section id="was-haben-wir-um-sie-zu-öffnen"
+        class="slide level2">
+        <h2>Was haben wir um sie zu öffnen?</h2>
+        <p><img
+        data-src="https://furesh.github.io/slides/assets/images/operationalisierung/research-process_resources.jpg" /></p>
+        </section>
+        <section id="was-ist-in-unserem-werkzeugkoffer"
+        class="slide level2">
+        <h2>Was ist in unserem Werkzeugkoffer?</h2>
+        <pre class="mermaid">
+        flowchart LR
+            %% nodes
+            software{Software}
+            hardware[Hardware]
+            method((Verfahren))
+            theory(Theorien)
+            format[Formate]
+            language{{Sprachen}}
+            concept(Konzepte)
+
+            %% edges: note that the layout does not imply hierarchies
+            theory -->|informiert| method
+            method -->|wird umgesetzt\ndurch| software
+            method & format & language & software -.->|benutzen| concept
+            software -->|benötigt| hardware
+            software -->|geschrieben in| language
+            software -->|benötigt zur\nInteraktion| language
+            software -->|liest| format
+            software -->|schreibt| format
+
+            %% classes
+            classDef software fill:#ECA7F9
+            classDef language fill:#F24726
+            classDef concept fill:#F9C710
+            classDef format fill:#8BCA4B
+            classDef method fill:#00dada
+            class method method
+            class software software
+            class concept concept
+            class format format
+            class language language
+        </pre>
+        <aside class="notes">
+        <ul>
+        <li>was ist / muss <strong>vorhanden</strong> sein?</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="inwiefern-beherrschen-wir-ein-werkzeug"
+        class="slide level2">
+        <h2>Inwiefern beherrschen wir ein Werkzeug?</h2>
         <p><img
         data-src="https://furesh.github.io/slides/assets/images/operationalisierung/process_what-do-we-have.jpg" /></p>
         <aside class="notes">
         <ul>
+        <li>Es reicht nicht nur, dass etwas <strong>vorhanden</strong>
+        ist, es muss <strong>zuhanden</strong> sein</li>
         <li>Beispielhafter Prozess für den Einsatz von Software</li>
         </ul>
         </aside>
@@ -2339,12 +2381,12 @@ e-Research Support in the Humanities” (2022–25)</p>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2022-11-14</span>
+                    <span class="c_left current-date"></span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert, Sophie
 Eckenstaler, Samantha Tirtohusodo</span>
                         <span class="c_center">
-          <a href="https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html">https://furesh.github.io/slides/2022-eröffnung/operationalisierung.html</a>
+          <a href="https://furesh.github.io/slides/darstellung/operationalisierung.html">https://furesh.github.io/slides/darstellung/operationalisierung.html</a>
           <span></span>
         </span>
                 <!-- this should probably moved to the title slide only -->

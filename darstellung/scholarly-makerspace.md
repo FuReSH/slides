@@ -1,6 +1,6 @@
 ---
-title: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
-subtitle: "Was ist ein prototypischer *Scholarly Makerspace*?"
+title: "Kein 3D-Drucker?!"
+subtitle: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 author:
     - Till Grallert
     - Sophie Eckenstaler
@@ -9,8 +9,8 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-event: Eröffnung
-date: 2022-11-14
+# event: Eröffnung
+date: # will display the current date if left empty
 url: https://furesh.github.io/slides/2022-eröffnung/scholarly-makerspace.html
 status: published
 lang: de
@@ -86,7 +86,7 @@ Damit sind Makerspaces
 
 :::
 
-## Ein Makerspace, aber für was?
+## Ein Makerspace?
 
 
 ![Ein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer.jpg)
@@ -100,7 +100,7 @@ Damit sind Makerspaces
 
 :::
 
-## Ein Makerspace, aber für was?
+## Ein Makerspace ohne 3D-Drucker?
 
 ![Kein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg)
 
@@ -125,23 +125,61 @@ Damit sind Makerspaces
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
-- durch Forschungsfragen getrieben
-- die Auswirkungen der Digitalität auf den Erkenntnisprozess untersuchend
-- die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
+1. durch Forschungsfragen getrieben
+
+![Was sind die wichtigsten Werkzeuge in den Digital Humanities?](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
 
 ::: notes
 
-- durch Forschungsfragen getrieben:
+- Beispielfragen
     + Wie lassen sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
     + Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
     + Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
-- die Auswirkungen auf den Erkenntnisprozess untersuchend:
+
+:::
+
+## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
+
+Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
+
+2. die Auswirkungen der Digitalität auf den Erkenntnisprozess untersuchend
+
+![Fehlerhafte Scans und Stand von OCR. Quelle: [Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1](https://www.deutsche-digitale-bibliothek.de/newspaper/item/MP2O2HAR4Q6JRV2WUMWAHTV7QA7X3V32?issuepage=1)](https://furesh.github.io/slides/assets/images/ocr_deutsches-zeitungsportal.png){#fig:ocr}
+
+::: notes
+
+- Beispielfragen
     + Welche Auswirkungen haben OCR Algorithmen und Normalisierung auf die Qualität meines Korpus?
     + Was ist die Auswirkung von abstrahierenden Operationalisierungen für die quantitative Auswertung?
-- die gesellschaftlichen Auswirkungen untersuchend?
-    + Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
-    + Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
-    + Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
+
+:::
+
+## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
+
+Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
+
+3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
+
+::: columns
+:::: column
+
+![Transformermodell "Optimus Prime". Quelle: <https://www.flickr.com/photos/yellawolfstudios/5853934455>, CC BY-NC 2.0](../assets/images/ai/transformer-toy.png){#fig:transformer-model}
+
+
+::::
+:::: column
+
+![Transformermodell "ChatGPT" zur Frage: Was ist ein Scholarly Makerspace?](../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png){#fig:chatgpt}
+
+::::
+:::
+
+
+::: notes
+
++ Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
++ Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
++ Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
 
 :::
 
@@ -170,18 +208,28 @@ Aspekte / Komponenten computationeller Forschung in den Geistes- und Kulturwisse
 
 ## Digitale Werkzeugkompetenz in den Humanities?
 
-Maschinen sind auf dem Weg überzeugende Schöpfer werden ...
+>Do artefacts have politics? [@Winner+1980]
+>
+>Your computer is on fire. Humankind can no longer afford to be lulled into complacency by narratives of techno-utopianism or technoneutrality, or by self-assured and oversimplified evasion. [@Mullaney2021Intro, 4]
 
 ::: columns
 :::: column
 
 ### text2text
 
-Mit [you.com](https://you.com/search?q=how+to+write+well&&tbm=youwrite&cfr=write&)
+Mit OpenAI's [ChatGPT]()
+
+>Ein Scholarly Makerspace ist ein Raum, in dem akademische Forscher und Studierende Zugang zu den Werkzeugen, Materialien und Ressourcen haben, die sie benötigen, um ihre Forschungsprojekte und kreativen Ideen umzusetzen. Es kann ein physischer Raum sein, der mit moderner Technologie, Maschinen und Werkzeugen ausgestattet ist, aber es kann auch eine virtuelle Plattform sein, die die Zusammenarbeit und den Austausch von Ideen ermöglicht.
+
+>Der Fokus eines Scholarly Makerspaces liegt auf der Verbindung von akademischer Forschung und praktischer Umsetzung, um innovative Lösungen für komplexe Probleme zu entwickeln. Diese Umgebungen bieten den Teilnehmern die Möglichkeit, ihre Fähigkeiten und Kenntnisse zu erweitern, indem sie an interdisziplinären Projekten arbeiten und sich mit anderen ausgetauscht haben.
+
+<!-- >Insgesamt kann ein Scholarly Makerspace als eine Art "Innovationslabor" für akademische Forschung und Bildung beschrieben werden, das es den Teilnehmern ermöglicht, ihre Ideen zu verwirklichen und ihr Potenzial zu maximieren. -->
+
+<!-- Mit [you.com](https://you.com/search?q=how+to+write+well&&tbm=youwrite&cfr=write&)
 
 >The humanities are under pressure. In an age of big data and computational power, the traditional methods of hermeneutics--close reading and interpretation--seem quaint. New approaches are needed to engage with the digital world, and one promising avenue is the creation of a prototypical scholarly makerspace.
 >
->A makerspace is a place where people can come together to create things using technology. They are often open-ended environments where people can experiment and tinker with new ideas. This type of environment is ideal for exploring digital and computational tools, as well as for developing new ways of thinking about the humanities.
+>A makerspace is a place where people can come together to create things using technology. They are often open-ended environments where people can experiment and tinker with new ideas. This type of environment is ideal for exploring digital and computational tools, as well as for developing new ways of thinking about the humanities. -->
 
 <!-- >Digital technology is revolutionizing the way we live, work, and communicate. In particular, digital tools are transforming the humanities by providing new ways of accessing and analyzing information. As academics in the humanities, we need to be literate in these tools in order to keep up with the changing landscape of our discipline.
 
@@ -210,17 +258,36 @@ Mit OpenAIs [DALL-E](https://openai.com/blog/dall-e/)
 
 :::
 
-## Digitale Werkzeugkompetenz in den Humanities!
+## Ziel <br/>Von *digital consumers* zu *digital citizens*
 
->Do artefacts have politics? [@Winner+1980]
 
->Your computer is on fire. Humankind can no longer afford to be lulled into complacency by narratives of techno-utopianism or technoneutrality, or by self-assured and oversimplified evasion. [@Mullaney2021Intro, 4]
+Ziel der Stärkung von *tool literacy* ist:
 
-Stärkung der *tool literacy* (Werkzeugkompetenz) für:
+::: columns-3
+:::: column
 
-+ **Teilhabe** an der Digitalität durch computationelle Methoden,
-+ kritische **Reflexion** über ein neues epistemisches Paradigma,
-+ Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
+1. **Teilhabe** an der Digitalität durch computationelle Methoden,
+
+::::
+:::: column
+
+2. kritische **Reflexion** über ein neues epistemisches Paradigma,
+
+::::
+:::: column
+
+3 Genese **neuer Erkenntnisse**
+
+::::
+:::
+
+::: notes
+
+- *digital citizenry* ist von [@Rankin2018PeoplesHistory, 11] geprägt
+- kann **nur kollaborativ** adäquat bewältigt werden. 
++ Tool literacy ist extrem aufwändig
+
+:::
 
 ## Aber **Making** ?
 

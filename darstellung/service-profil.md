@@ -9,8 +9,8 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-event: Eröffnung
-date: 2022-11-14
+# event: Eröffnung
+date: 
 url: https://furesh.github.io/slides/2022-eröffnung/service-profil.html
 status: published
 lang: de
@@ -78,7 +78,7 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
 ## Was bieten wir an?
 ### Einen Lernort
 
-Der *Scholarly Makerspace* ist seit dem 14. November montags bis freitags von 10 bis 14 Uhr geöffnet
+Der *Scholarly Makerspace* ist seit dem 14. November montags, mittwochs und donnerstags von 10 bis 14 Uhr geöffnet
 
 ::: columns
 :::: column
