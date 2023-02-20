@@ -106,6 +106,9 @@ Damit sind Makerspaces
 
 ## Ein **Scholarly** Makerspace!
 
+- als Lernort für die digitale Werkzeugkompetenz in den Humanities
+- Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
+
 ::: columns
 :::: column
 
@@ -121,13 +124,10 @@ Damit sind Makerspaces
 ::::
 :::
 
-## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
+## Ein **Scholarly** Makerspace
+### 1. durch Forschungsfragen getrieben
 
-Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
-
-1. durch Forschungsfragen getrieben
-
-![Was sind die wichtigsten Werkzeuge in den Digital Humanities?](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg)
+![Was sind die wichtigsten Werkzeuge in den Digital Humanities?](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){height="400px" #fig:word-cloud}
 
 ::: notes
 
@@ -138,11 +138,8 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 :::
 
-## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
-
-Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
-
-2. die Auswirkungen der Digitalität auf den Erkenntnisprozess untersuchend
+## Ein **Scholarly** Makerspace 
+### 2. die Auswirkungen der Digitalität auf den Erkenntnisprozess untersuchend
 
 ![Fehlerhafte Scans und Stand von OCR. Quelle: [Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1](https://www.deutsche-digitale-bibliothek.de/newspaper/item/MP2O2HAR4Q6JRV2WUMWAHTV7QA7X3V32?issuepage=1)](https://furesh.github.io/slides/assets/images/ocr_deutsches-zeitungsportal.png){#fig:ocr}
 
@@ -154,11 +151,9 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 :::
 
-## Ein **Scholarly** Makerspace als Lernort für die digitale Werkzeugkompetenz in den Humanities
+## Ein **Scholarly** Makerspace
 
-Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
-
-3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
+### 3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
 
 ::: columns
 :::: column
