@@ -11,7 +11,7 @@ institute:
 homepage: https://makerspace.hypotheses.org/
 # event: Eröffnung
 date: # will display the current date if left empty
-url: https://furesh.github.io/slides/2022-eröffnung/scholarly-makerspace.html
+url: https://furesh.github.io/slides/darstellung/scholarly-makerspace.html
 status: published
 lang: de
 bibliography:
