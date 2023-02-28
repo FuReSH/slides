@@ -23,7 +23,7 @@ tags:
 
 ## Was?
 
-DFG-Projekt zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften unter Beteiligung von Universitätsbibliothek und den Lehrstühlen für Digital History (Inst. f. Geschichte) und Information Processing and Analytics (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin (2022--25).
+DFG-Projekt zur Förderung von *digitaler* und *computationaler* **Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften unter Beteiligung von Universitätsbibliothek und den Lehrstühlen für Digital History (Inst.f. Geschichtswissenschaften) und Information Processing and Analytics (Inst.f. Bibliotheks- und Informationswissenschaften) der Humboldt-Universität zu Berlin (2022--25).
 
 # Raison d'etre
 ## Postdigitaler Moment
