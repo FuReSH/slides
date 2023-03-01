@@ -267,7 +267,7 @@ Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
 ## Was bieten wir an?
 ### Einen Lernort
 
-Der *Scholarly Makerspace* ist seit dem 14. November montags, mittwochs und freitags von 10 bis 14 Uhr ohne Anmeldung geöffnet
+Der *Scholarly Makerspace* ist seit dem 14. November montags, mittwochs und donnerstags von 10 bis 14 Uhr ohne Anmeldung geöffnet
 
 ::: columns
 :::: column
