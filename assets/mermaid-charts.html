@@ -353,7 +353,7 @@ flowchart LR
 title: categories
 ---
 
-flowchart TD
+flowchart LR
     %% nodes
     software{Software}
     hardware[Hardware]
@@ -366,7 +366,7 @@ flowchart TD
     %% edges: note that the layout does not imply hierarchies
     theory -->|informiert| method
     method -->|wird umgesetzt\ndurch| software
-    method & format & language & software -.->|benutzen| concept
+    method & format & language & software -.->|benutzt| concept
     software -->|benötigt| hardware
     software -->|geschrieben in| language
     software -->|benötigt zur\nInteraktion| language
@@ -374,6 +374,48 @@ flowchart TD
     software -->|schreibt| format
 
     %% classes
+    classDef software fill:#ECA7F9
+    classDef language fill:#F24726
+    classDef concept fill:#F9C710
+    classDef format fill:#8BCA4B
+    classDef method fill:#00dada
+    classDef node font-size:48px
+    class method method
+    class software software
+    class concept concept
+    class format format
+    class language language
+</pre>
+
+<pre class="mermaid">
+---
+title: categories
+---
+
+flowchart LR
+    %% nodes
+    software(Software)
+    hardware(Hardware)
+    method(Verfahren)
+    theory(Theorie)
+    format(Format)
+    language(Sprache)
+    concept(Konzept)
+
+    %% edges: note that the layout does not imply hierarchies
+    theory -->|informiert| method
+    method -->|wird umgesetzt\ndurch| software
+    method & format & language & software -.->|benutzt| concept
+    software -->|benötigt| hardware
+    software -->|geschrieben in| language
+    software -->|benötigt zur\nInteraktion| language
+    software -->|liest| format
+    software -->|schreibt| format
+
+    %% classes
+    classDef node font-size:32px,fill:white,stroke:black
+    classDef edgeLabel fill:none,background-color:none
+    classDef edgePath stroke-width:8px
     classDef software fill:#ECA7F9
     classDef language fill:#F24726
     classDef concept fill:#F9C710
