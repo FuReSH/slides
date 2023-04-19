@@ -8,7 +8,7 @@ institute:
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
 homepage: https://makerspace.hypotheses.org/
-event: Mittelbausitzung am IfG
+event: Institutsratssitzung am IBI
 date: 2023-04-19
 url: https://furesh.github.io/slides/2023-04-19-ibi
 status: published
@@ -29,7 +29,7 @@ tags:
 
 Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanities" an der Universitätsbibliothek der Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle für *Digital History* (Inst.f. Geschichtswissenschaften) und *Information Processing and Analytics* (Inst.f. Bibliotheks- und Informationswissenschaften) einen **prototypischen *Scholarly Makerspace*** zur Förderung **digitaler** und **computationaler Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften auf (2022--25).
 
-::: columns
+::: columns-3
 :::: column
 
 ![Sophie Eckenstaler](https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png)
@@ -38,13 +38,6 @@ Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanitie
 :::: column
 
 ![Till Grallert, PhD](https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png)
-
-::::
-:::
-::: columns
-:::: column
-
-Dr. Claus-Michael Schlesinger
 
 ::::
 :::: column
@@ -109,8 +102,8 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 :::notes
 
-+ Wie lassen sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
 + Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
+    * konkretes Beispiel: wer sind die wichtigsten Autor:innen innerhalb einer von Periodika abgebildeten Öffentlichkeit?
 + Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
 
 :::
@@ -127,6 +120,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 + Welche Auswirkungen haben OCR Algorithmen und Normalisierung auf die Qualität meines Korpus?
 + Was ist die Auswirkung von abstrahierenden Operationalisierungen für die quantitative Auswertung?
++ Welche Folge hat es, wenn Quellen nur noch gezielt und dekontextualisiert über Schlagworte gesucht werden können, aber kein Stöbern mehr möglich ist?
 
 :::
 
@@ -134,7 +128,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
-3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
+3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen von Digitalität reflektierend
 
 ::: columns
 :::: column
@@ -145,7 +139,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 ::::
 :::: column
 
-![Transformermodell "ChatGPT"](../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png){#fig:chatgpt}
+![Die Antwort des auf einem Transformermodell basierenden "ChatGPT" auf die Frage: Was ist ein Scholarly Makerspace?](../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png){#fig:chatgpt}
 
 ::::
 :::
@@ -153,6 +147,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 ::: notes
 
+- Die Folie zeigt zwei Transformermodelle
 + Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
 + Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
 + Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
@@ -166,10 +161,25 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 >Do artefacts have politics? [@Winner+1980]
 
 
+::: notes
+
+- Folie soll erklären warum digitale Werkzeugkompetenz nötig ist
+- Alle Aspekte des Forschungsprozesse sind bereits digital remediiert und duch informationstechnische Systeme angefasst worden
+    1. Erstellung, Aufbereitung **digitaler Materialien**
+    2. **computationelle Be- / Verarbeitung** dieser Materialien
+    3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
+
+- Es herrscht in der Breite ein Mangel an 
+    + **Theorie**: Verständnis des epistemischen Wandels
+    + **Methode**: Beherrschung der notwendigen Werkzeuge
+    + positivem **Wissen**: Überblick über die Möglichkeiten
+- *"Digital" Humanities* als Indikator
+
+:::
+
+
 ## Ziel <br/>Von *digital consumers* zu *digital citizens*
 
-
-Ziel der Stärkung von *tool literacy* ist:
 
 ::: columns-3
 :::: column
@@ -184,16 +194,16 @@ Ziel der Stärkung von *tool literacy* ist:
 ::::
 :::: column
 
-3 Genese **neuer Erkenntnisse**
+3. Genese **neuer Erkenntnisse**
 
 ::::
 :::
 
 ::: notes
 
+- Ziel der Vermittlung von *tool literacy* ist es die Kolleg_innen auf dem Weg von *digital consumers* zu *digital citizens* zu begleiten
 - *digital citizenry* ist von [@Rankin2018PeoplesHistory, 11] geprägt
-- kann **nur kollaborativ** adäquat bewältigt werden. 
-+ Tool literacy ist extrem aufwändig
+
 
 :::
 
@@ -225,7 +235,10 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 
 ::: notes
 
+
 - Grundsatz: Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+- Tool literacy ist extrem aufwändig
+    + kann **nur kollaborativ** adäquat bewältigt werden. 
 - Geschichte
     + 1970er Kalifornien: kooperative Werkstätten
     + Recht auf Reparatur
@@ -244,34 +257,6 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 
 
 # Wie sieht das konkret aus?
-## Wer sind unsere Zielgruppen?
-
-Forscher_innen aller Karrierstufen ab der Promotionsphase
-
-::: columns-3
-:::: column
-
-### Typ 1
-
-Keine / geringe Kenntnisse aber Interesse an Digital Humanities
-
-::::
-:::: column
-
-### Typ 2
-
-Detaillierte Vorstellungen aber mangelnde Kenntnisse für konkrete Umsetzung
-
-::::
-:::: column
-
-### Typ 3
-
-Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
-
-::::
-:::
-
 ## Was bieten wir an?
 ### Einen Lernort
 
@@ -410,6 +395,42 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 :::
 
+## Für wen bieten wir das an?
+
+Forscher_innen aller Karrierstufen ab der Promotionsphase
+
+::: columns-3
+:::: column
+
+### Typ 1
+
+Keine / geringe Kenntnisse aber Interesse an Digital Humanities
+
+::::
+:::: column
+
+### Typ 2
+
+Detaillierte Vorstellungen aber mangelnde Kenntnisse für konkrete Umsetzung
+
+::::
+:::: column
+
+### Typ 3
+
+Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
+
+::::
+:::
+
+
+::: notes
+
+- Das konkrete Angebot differenziert sich nach Typen von Nutzer_innen
+- nicht auf Typologie eingehen
+
+:::
+
 ## Was bieten wir nicht an?
 
 
@@ -436,6 +457,8 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 - Wir können Kontakt zu Leuten mit 3D Druckern herstellen
 
 :::
+
+
 
 
 # Schluß / Danke!
