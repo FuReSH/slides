@@ -3,7 +3,7 @@ title: "Kein 3D-Drucker?"
 subtitle: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 author:
     - Till Grallert
-    - Claus-Michael Schlesinger
+    - Sophie Eckenstaler
 institute: 
     - "Humboldt-Universität zu Berlin, Universitätsbibliothek, Grimm-Zentrum"
     - "DFG-Projekt \"Future e-Research Support in the Humanities\" (2022--25)"
