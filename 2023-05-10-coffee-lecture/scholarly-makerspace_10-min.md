@@ -213,38 +213,6 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 >To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. [@Tenen2016BluntInstrumentalism, 85]
 
-<!-- funktionale Blackbox -->
-
-<div class="blackbox">
-<div id="bb_div_input" class="input">
-<!-- ### Input -->
-<textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
-<button type="button" id="bb_button_create_input">Generiere Input</button>
-</div>
-<div id="bb_div_output" class="hidden output">
-<!-- ### Output -->
-<p><span id="bb_result_compute" class="to_clear"></span>
-<!-- <p id="bb_input_preprocessed" hidden class="to_clear"></p> --></p>
-</div>
-<div id="bb_div_blackbox" class="computing">
-<!-- ### Blackbox -->
-<button class="button-49" type="button" id="bb_button_compute">
-???
-</button>
-<button type="button" class="button-49 hidden" id="bb_button_input">
-Öffne Blackbox
-</button>
-<button type="button" class="button-49 hidden" id="bb_button_clear">
-Leeren
-</button>
-</div>
-<div id="bb_div_content" class="hidden content">
-<p><span id="bb_input_preprocessed" class="to_clear"></span></p>
-</div>
-</div>
-
-<!-- the script powering the blackboxes -->
-<script type="module" src="https://furesh.github.io/blackbox-gamification/src/main.js"></script>
 
 ::: columns
 :::: column
