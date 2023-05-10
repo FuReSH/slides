@@ -624,10 +624,8 @@
                     div.columns-3 {
                         /* newer? versions of reveal use display: flex */
                         display: block;
-                        /*flex: none;*/
-                    }
-                    div.columns-3 {
                         clear: both;
+                        /*flex: none;*/
                     }
                     div.column {
                     /*    display: inline-block;*/
@@ -1412,7 +1410,7 @@ e-Research Support in the Humanities” (2022–25)</p>
                   </div>
       </div>
         </section>
-                
+
         <section class="slide level2">
 
         <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
@@ -1733,20 +1731,44 @@ e-Research Support in the Humanities” (2022–25)</p>
         Instrumentalism: On Tools and Methods“</span> 2016,
         85)</span></p>
         </blockquote>
-        <div class="columns">
-        <div class="column">
-        <h3 id="making">Making</h3>
-        <ul>
-        <li>Experimentieren, Tüfteln, Ausprobieren, Werkeln</li>
-        <li>Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der
-        Produktionsmittel</li>
-        </ul>
-        </div><div class="column">
-        <h3 id="maker-turn">Maker turn</h3>
-        <p>Kreativität von Design, Herstellung und Erfahrung von
-        (digitalen) Objekten als From von Wissenschaft</p>
+        <p><em>Making</em> als Experimentieren, Tüfteln, Ausprobieren,
+        Werkeln mit dem Ziel der Selbstbefähigung. Probieren wir es aus
+        …</p>
+        <div class="blackbox columns-3">
+        <div id="bb_div_input" class="input">
+        <!-- ### Input -->
+        <textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
+        <!-- <button type="button" id="bb_button_create_input">Generiere Input</button> -->
+        </div>
+        <div id="bb_div_output" class="hidden output">
+        <!-- ### Output -->
+        <div class="arrow-right">
+
+        </div>
+        <p><span id="bb_result_compute" class="to_clear"></span>
+        <!-- <p id="bb_input_preprocessed" hidden class="to_clear"></p> --></p>
+        </div>
+        <div id="bb_div_blackbox" class="computing">
+        <!-- ### Blackbox -->
+        <button class="button-49" type="button" id="bb_button_compute">
+        ???
+        </button>
+        <button type="button" class="button-49 hidden" id="bb_button_input">
+        Zeige den Inhalt
+        </button>
+        <button type="button" class="button-49 hidden" id="bb_button_clear">
+        Leeren
+        </button>
+        </div>
+        <div id="bb_div_content" class="hidden content">
+        <div class="arrow-down">
+
+        </div>
+        <p><span id="bb_input_preprocessed" class="to_clear"></span></p>
         </div>
         </div>
+        <!-- the script powering the blackbox -->
+        <script src="../assets/js/blackbox_count-ascii.js"></script>
         <aside class="notes">
         <ul>
         <li>Grundsatz: Werkzeuge und Methoden sind mit

@@ -209,28 +209,53 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 ## Aber **Making** ?
 
 
+
 <!-- >Do politics have artefacts? [@DunbarHester2014LowPower] -->
 
 >To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. [@Tenen2016BluntInstrumentalism, 85]
 
 
-::: columns
-:::: column
+**Making** als Experimentieren, Tüfteln, Ausprobieren, Werkeln mit dem Ziel der Selbstbefähigung. Probieren wir es aus ...
 
-### Making
 
-- Experimentieren, Tüfteln, Ausprobieren, Werkeln 
-- Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+::: {.blackbox .columns-3}
+:::: {.input #bb_div_input}
+
+<!-- ### Input -->
+
+<textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
+<!-- <button type="button" id="bb_button_create_input">Generiere Input</button> -->
 
 ::::
-:::: column
+:::: {.hidden .output #bb_div_output}
 
-### Maker turn
+<!-- ### Output -->
+<div class="arrow-right"></div>
+<span id="bb_result_compute" class="to_clear"></span>
+<!-- <p id="bb_input_preprocessed" hidden class="to_clear"></p> -->
 
-Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+::::
+:::: {.computing #bb_div_blackbox}
 
+<!-- ### Blackbox -->
+
+<button class="button-49" type="button" id="bb_button_compute">???</button>
+<button type="button" class="button-49 hidden" id="bb_button_input">Zeige den Inhalt</button>
+<button type="button" class="button-49 hidden" id="bb_button_clear">Leeren</button>
+
+
+::::
+
+:::: {.hidden .content #bb_div_content}
+<div class="arrow-down"></div>
+<span class="to_clear" id="bb_input_preprocessed"></span>
 ::::
 :::
+
+
+<!-- the script powering the blackbox -->
+<script src="../assets/js/blackbox_count-ascii.js"></script>
+
 
 
 ::: notes
