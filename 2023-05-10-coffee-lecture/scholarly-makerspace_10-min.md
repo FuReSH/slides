@@ -1,5 +1,5 @@
 ---
-title: "Kein 3D-Drucker?"
+title: "Kein 3D-Drucker?!"
 subtitle: "Der *Scholarly Makerspace* an der UB der HU Berlin stellt sich vor"
 author:
     - Till Grallert
@@ -92,17 +92,33 @@ Damit sind Makerspaces
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
+::: columns
+:::: column
 
 1. durch Forschungsfragen getrieben
 
-![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png){#fig:network-analysis}
+::::
+:::: column
+
+![Wordcloud der häufigsten Werkzeuge in den Digital Humanities](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){#fig:wordcloud}
+
+::::
+:::
+
+
+
+<!-- ![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png){#fig:network-analysis} -->
 
 <!-- ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png) -->
 
 :::notes
 
 + Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
-    * konkretes Beispiel: wer sind die wichtigsten Autor:innen innerhalb einer von Periodika abgebildeten Öffentlichkeit?
+    * konkretes Beispiel: 
+        - was sind die wichtigsten Werkzeuge in den DH?
+            + DH: abgebildet durch Konferenzen, Journals, Anträge etc.
+            + wichtig: am häufigsten
+        - wer sind die wichtigsten Autor:innen innerhalb einer von Periodika abgebildeten Öffentlichkeit?
 + Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
 
 :::

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
-                    <title>Kein 3D-Drucker?</title>
+                    <title>Kein 3D-Drucker?!</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -624,8 +624,10 @@
                     div.columns-3 {
                         /* newer? versions of reveal use display: flex */
                         display: block;
-                        clear: both;
                         /*flex: none;*/
+                    }
+                    div.columns-3 {
+                        clear: both;
                     }
                     div.column {
                     /*    display: inline-block;*/
@@ -1388,7 +1390,7 @@
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">Kein 3D-Drucker?</h1>
+          <h1 class="title">Kein 3D-Drucker?!</h1>
                     <h2 class="subtitle">Der <em>Scholarly
 Makerspace</em> an der UB der HU Berlin stellt sich vor</h2>
                     <div class="columns">
@@ -1410,7 +1412,7 @@ e-Research Support in the Humanities” (2022–25)</p>
                   </div>
       </div>
         </section>
-
+                
         <section class="slide level2">
 
         <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
@@ -1532,24 +1534,39 @@ e-Research Support in the Humanities” (2022–25)</p>
         <p>Fokus auf <strong>digitale</strong> und
         <strong>computationelle</strong> Aspekte zeitgenössischer
         Geistes- und Kulturwissenschaften</p>
+        <div class="columns">
+        <div class="column">
         <ol type="1">
         <li>durch Forschungsfragen getrieben</li>
         </ol>
-        <figure id="fig:network-analysis">
+        </div><div class="column">
+        <figure id="fig:wordcloud">
         <img
-        data-src="https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png"
-        alt="Netzwerkanalyse mit R und Gephi" />
-        <figcaption>Figure 1: Netzwerkanalyse mit R und
-        Gephi</figcaption>
+        data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg"
+        alt="Wordcloud der häufigsten Werkzeuge in den Digital Humanities" />
+        <figcaption>Figure 1: Wordcloud der häufigsten Werkzeuge in den
+        Digital Humanities</figcaption>
         </figure>
+        </div>
+        </div>
+        <!-- ![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png){#fig:network-analysis} -->
         <!-- ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png) -->
         <aside class="notes">
         <ul>
         <li>Wie lassen sich (sehr) große Corpora mit <em>distant
         reading</em> statistisch valide erschließen?
         <ul>
-        <li>konkretes Beispiel: wer sind die wichtigsten Autor:innen
-        innerhalb einer von Periodika abgebildeten Öffentlichkeit?</li>
+        <li>konkretes Beispiel:
+        <ul>
+        <li>was sind die wichtigsten Werkzeuge in den DH?
+        <ul>
+        <li>DH: abgebildet durch Konferenzen, Journals, Anträge
+        etc.</li>
+        <li>wichtig: am häufigsten</li>
+        </ul></li>
+        <li>wer sind die wichtigsten Autor:innen innerhalb einer von
+        Periodika abgebildeten Öffentlichkeit?</li>
+        </ul></li>
         </ul></li>
         <li>Wie lassen sich Soziale Medien für die Untersuchung
         gesellschaftlichen Wandels in repressiven Systemen nutzen?</li>
@@ -1731,9 +1748,9 @@ e-Research Support in the Humanities” (2022–25)</p>
         Instrumentalism: On Tools and Methods“</span> 2016,
         85)</span></p>
         </blockquote>
-        <p><em>Making</em> als Experimentieren, Tüfteln, Ausprobieren,
-        Werkeln mit dem Ziel der Selbstbefähigung. Probieren wir es aus
-        …</p>
+        <p><strong>Making</strong> als Experimentieren, Tüfteln,
+        Ausprobieren, Werkeln mit dem Ziel der Selbstbefähigung.
+        Probieren wir es aus …</p>
         <div class="blackbox columns-3">
         <div id="bb_div_input" class="input">
         <!-- ### Input -->

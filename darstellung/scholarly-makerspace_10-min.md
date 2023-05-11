@@ -113,8 +113,12 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 :::notes
 
-+ Wie lassen sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
 + Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
+    * konkretes Beispiel: 
+        - was sind die wichtigsten Werkzeuge in den DH?
+            + DH: abgebildet durch Konferenzen, Journals, Anträge etc.
+            + wichtig: am häufigsten
+        - wer sind die wichtigsten Autor:innen innerhalb einer von Periodika abgebildeten Öffentlichkeit?
 + Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
 
 :::
@@ -131,6 +135,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 + Welche Auswirkungen haben OCR Algorithmen und Normalisierung auf die Qualität meines Korpus?
 + Was ist die Auswirkung von abstrahierenden Operationalisierungen für die quantitative Auswertung?
++ Welche Folge hat es, wenn Quellen nur noch gezielt und dekontextualisiert über Schlagworte gesucht werden können, aber kein Stöbern mehr möglich ist?
 
 :::
 
@@ -138,7 +143,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
-3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen reflektierend
+3. die gesellschaftlichen Auswirkungen und Rahmenbedingungen von Digitalität reflektierend
 
 ::: columns
 :::: column
@@ -149,7 +154,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 ::::
 :::: column
 
-![Transformermodell "ChatGPT"](../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png){#fig:chatgpt}
+![Die Antwort des auf einem Transformermodell basierenden "ChatGPT" auf die Frage: Was ist ein Scholarly Makerspace?](../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png){#fig:chatgpt}
 
 ::::
 :::
@@ -157,6 +162,7 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 
 ::: notes
 
+- Die Folie zeigt zwei Transformermodelle
 + Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
 + Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
 + Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
@@ -170,10 +176,25 @@ Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes
 >Do artefacts have politics? [@Winner+1980]
 
 
+::: notes
+
+- Folie soll erklären warum digitale Werkzeugkompetenz nötig ist
+- Alle Aspekte des Forschungsprozesse sind bereits digital remediiert und duch informationstechnische Systeme angefasst worden
+    1. Erstellung, Aufbereitung **digitaler Materialien**
+    2. **computationelle Be- / Verarbeitung** dieser Materialien
+    3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
+
+- Es herrscht in der Breite ein Mangel an 
+    + **Theorie**: Verständnis des epistemischen Wandels
+    + **Methode**: Beherrschung der notwendigen Werkzeuge
+    + positivem **Wissen**: Überblick über die Möglichkeiten
+- *"Digital" Humanities* als Indikator
+
+:::
+
+
 ## Ziel <br/>Von *digital consumers* zu *digital citizens*
 
-
-Ziel der Stärkung von *tool literacy* ist:
 
 ::: columns-3
 :::: column
@@ -188,48 +209,77 @@ Ziel der Stärkung von *tool literacy* ist:
 ::::
 :::: column
 
-3 Genese **neuer Erkenntnisse**
+3. Genese **neuer Erkenntnisse**
 
 ::::
 :::
 
 ::: notes
 
+- Ziel der Vermittlung von *tool literacy* ist es die Kolleg_innen auf dem Weg von *digital consumers* zu *digital citizens* zu begleiten
 - *digital citizenry* ist von [@Rankin2018PeoplesHistory, 11] geprägt
-- kann **nur kollaborativ** adäquat bewältigt werden. 
-+ Tool literacy ist extrem aufwändig
+
 
 :::
 
 ## Aber **Making** ?
 
 
+
 <!-- >Do politics have artefacts? [@DunbarHester2014LowPower] -->
 
 >To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. [@Tenen2016BluntInstrumentalism, 85]
 
-::: columns
-:::: column
 
-### Making
+**Making** als Experimentieren, Tüfteln, Ausprobieren, Werkeln mit dem Ziel der Selbstbefähigung. Probieren wir es aus ...
 
-- Experimentieren, Tüfteln, Ausprobieren, Werkeln 
-- Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+
+::: {.blackbox .columns-3}
+:::: {.input #bb_div_input}
+
+<!-- ### Input -->
+
+<textarea class="form-control to_clear" type="text" placeholder="Geben Sie einen Text ein" id="bb_input"></textarea>
+<!-- <button type="button" id="bb_button_create_input">Generiere Input</button> -->
 
 ::::
-:::: column
+:::: {.hidden .output #bb_div_output}
 
-### Maker turn
+<!-- ### Output -->
+<div class="arrow-right"></div>
+<span id="bb_result_compute" class="to_clear"></span>
+<!-- <p id="bb_input_preprocessed" hidden class="to_clear"></p> -->
 
-Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+::::
+:::: {.computing #bb_div_blackbox}
 
+<!-- ### Blackbox -->
+
+<button class="button-49" type="button" id="bb_button_compute">???</button>
+<button type="button" class="button-49 hidden" id="bb_button_input">Zeige den Inhalt</button>
+<button type="button" class="button-49 hidden" id="bb_button_clear">Leeren</button>
+
+
+::::
+
+:::: {.hidden .content #bb_div_content}
+<div class="arrow-down"></div>
+<span class="to_clear" id="bb_input_preprocessed"></span>
 ::::
 :::
 
 
+<!-- the script powering the blackbox -->
+<script src="../assets/js/blackbox_count-ascii.js"></script>
+
+
+
 ::: notes
 
+
 - Grundsatz: Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+- Tool literacy ist extrem aufwändig
+    + kann **nur kollaborativ** adäquat bewältigt werden. 
 - Geschichte
     + 1970er Kalifornien: kooperative Werkstätten
     + Recht auf Reparatur
@@ -248,38 +298,10 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 
 
 # Wie sieht das konkret aus?
-## Wer sind unsere Zielgruppen?
-
-Forscher_innen aller Karrierstufen ab der Promotionsphase
-
-::: columns-3
-:::: column
-
-### Typ 1
-
-Keine / geringe Kenntnisse aber Interesse an Digital Humanities
-
-::::
-:::: column
-
-### Typ 2
-
-Detaillierte Vorstellungen aber mangelnde Kenntnisse für konkrete Umsetzung
-
-::::
-:::: column
-
-### Typ 3
-
-Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
-
-::::
-:::
-
 ## Was bieten wir an?
 ### Einen Lernort
 
-Der *Scholarly Makerspace* ist seit dem 14. November montags, mittwochs und donnerstags von 10 bis 14 Uhr geöffnet
+Der *Scholarly Makerspace* ist seit dem 14. November montags, mittwochs und donnerstags von 10 bis 14 Uhr ohne Anmeldung geöffnet
 
 ::: columns
 :::: column
@@ -414,6 +436,42 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 
 :::
 
+## Für wen bieten wir das an?
+
+Forscher_innen aller Karrierstufen ab der Promotionsphase
+
+::: columns-3
+:::: column
+
+### Typ 1
+
+Keine / geringe Kenntnisse aber Interesse an Digital Humanities
+
+::::
+:::: column
+
+### Typ 2
+
+Detaillierte Vorstellungen aber mangelnde Kenntnisse für konkrete Umsetzung
+
+::::
+:::: column
+
+### Typ 3
+
+Detaillierte Kenntnisse aber mangelnder Zugang zu Infrastrukturen
+
+::::
+:::
+
+
+::: notes
+
+- Das konkrete Angebot differenziert sich nach Typen von Nutzer_innen
+- nicht auf Typologie eingehen
+
+:::
+
 ## Was bieten wir nicht an?
 
 
@@ -440,6 +498,8 @@ Hinsichtlich der Ressourcen denken wir den Makerspace zweiteilig:
 - Wir können Kontakt zu Leuten mit 3D Druckern herstellen
 
 :::
+
+
 
 
 # Schluß / Danke!
