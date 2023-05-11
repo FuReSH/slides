@@ -92,10 +92,22 @@ Damit sind Makerspaces
 
 Fokus auf **digitale** und **computationelle** Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
 
+::: columns
+:::: column
 
 1. durch Forschungsfragen getrieben
 
-![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png){#fig:network-analysis}
+::::
+:::: column
+
+![Wordcloud der häufigsten Werkzeuge in den Digital Humanities](https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){#fig:wordcloud}
+
+::::
+:::
+
+
+
+<!-- ![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png){#fig:network-analysis} -->
 
 <!-- ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png) -->
 

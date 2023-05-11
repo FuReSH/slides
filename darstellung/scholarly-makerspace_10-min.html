@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
-                    <title>Kein 3D-Drucker?</title>
+                    <title>Kein 3D-Drucker?!</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -26,11 +26,12 @@
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for citations */
       div.csl-bib-body { }
       div.csl-entry {
         clear: both;
       }
-      .hanging div.csl-entry {
+      .hanging-indent div.csl-entry {
         margin-left:2em;
         text-indent:-2em;
       }
@@ -44,8 +45,7 @@
       }
       div.csl-indent {
         margin-left: 2em;
-      }
-    </style>
+      }    </style>
         <link rel="stylesheet" href="https://furesh.github.io/slides/revealjs/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
@@ -110,8 +110,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em)
-                        accumulate for nested elements and must thus be avoided.
+                        /*keep in mind that relative sizes (%, em) 
+                        accumulate for nested elements and must thus be avoided. 
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -144,9 +144,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
                       font-size: 12px;*/
-                      line-height: 1.2;
+                      line-height: 1.2; 
                       word-wrap: break-word;
                     }
                     body,
@@ -157,8 +157,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header,
-                    footer,
+                    header, 
+                    footer, 
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -550,8 +550,10 @@
                     figure {
                         margin-block-start: 0;
                         margin-block-end: 0;
-                        margin-inline-start: 40px;
-                        margin-inline-end: 40px;
+                        /*margin-inline-start: 40px;
+                        margin-inline-end: 40px;*/
+                        margin-inline-start: 0;
+                        margin-inline-end: 0;
                     }
                     div.figure p.caption,
                     figcaption {
@@ -1388,7 +1390,7 @@
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">Kein 3D-Drucker?</h1>
+          <h1 class="title">Kein 3D-Drucker?!</h1>
                     <h2 class="subtitle">Der <em>Scholarly
 Makerspace</em> an der UB der HU Berlin stellt sich vor</h2>
                     <div class="columns">
@@ -1410,14 +1412,14 @@ e-Research Support in the Humanities” (2022–25)</p>
                   </div>
       </div>
         </section>
-
+                
         <section class="slide level2">
 
         <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
         Support in the Humanities” an der Universitätsbibliothek der
         Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle
-        für <em>Digital History</em> (Inst.f. Geschichtswissenschaften) und
-        <em>Information Processing and Analytics</em> (Inst.f.
+        für <em>Digital History</em> (Inst.f. Geschichtswissenschaften)
+        und <em>Information Processing and Analytics</em> (Inst.f.
         Bibliotheks- und Informationswissenschaften) einen
         <strong>prototypischen <em>Scholarly Makerspace</em></strong>
         zur Förderung <strong>digitaler</strong> und
@@ -1532,17 +1534,22 @@ e-Research Support in the Humanities” (2022–25)</p>
         <p>Fokus auf <strong>digitale</strong> und
         <strong>computationelle</strong> Aspekte zeitgenössischer
         Geistes- und Kulturwissenschaften</p>
+        <div class="columns">
+        <div class="column">
         <ol type="1">
         <li>durch Forschungsfragen getrieben</li>
         </ol>
-        <figure>
+        </div><div class="column">
+        <figure id="fig:wordcloud">
         <img
-        data-src="https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png"
-        id="fig:network-analysis"
-        alt="Figure 1: Netzwerkanalyse mit R und Gephi" />
-        <figcaption aria-hidden="true">Figure 1: Netzwerkanalyse mit R
-        und Gephi</figcaption>
+        data-src="https://furesh.github.io/slides/assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg"
+        alt="Wordcloud der häufigsten Werkzeuge in den Digital Humanities" />
+        <figcaption>Figure 1: Wordcloud der häufigsten Werkzeuge in den
+        Digital Humanities</figcaption>
         </figure>
+        </div>
+        </div>
+        <!-- ![Netzwerkanalyse mit R und Gephi](https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png){#fig:network-analysis} -->
         <!-- ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png) -->
         <aside class="notes">
         <ul>
@@ -1567,13 +1574,12 @@ e-Research Support in the Humanities” (2022–25)</p>
         <li>die Auswirkungen der Digitalität auf den Erkenntnisprozess
         untersuchend</li>
         </ol>
-        <figure>
+        <figure id="fig:ocr">
         <img
         data-src="https://furesh.github.io/slides/assets/images/ocr_deutsches-zeitungsportal.png"
-        id="fig:ocr"
-        alt="Figure 2: Fehlerhafte Scans und Stand von OCR. Quelle: Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1" />
-        <figcaption aria-hidden="true">Figure 2: Fehlerhafte Scans und
-        Stand von OCR. Quelle: <a
+        alt="Fehlerhafte Scans und Stand von OCR. Quelle: Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1" />
+        <figcaption>Figure 2: Fehlerhafte Scans und Stand von OCR.
+        Quelle: <a
         href="https://www.deutsche-digitale-bibliothek.de/newspaper/item/MP2O2HAR4Q6JRV2WUMWAHTV7QA7X3V32?issuepage=1">Deutsches
         Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2.
         Sep. 1891, S.1</a></figcaption>
@@ -1601,23 +1607,21 @@ e-Research Support in the Humanities” (2022–25)</p>
         </ol>
         <div class="columns">
         <div class="column">
-        <figure>
+        <figure id="fig:transformer-model">
         <img data-src="../assets/images/ai/transformer-toy.png"
-        id="fig:transformer-model"
-        alt="Figure 3: Transformermodell “Optimus Prime”. Quelle: https://www.flickr.com/photos/yellawolfstudios/5853934455, CC BY-NC 2.0" />
-        <figcaption aria-hidden="true">Figure 3: Transformermodell
-        “Optimus Prime”. Quelle: <a
+        alt="Transformermodell “Optimus Prime”. Quelle: https://www.flickr.com/photos/yellawolfstudios/5853934455, CC BY-NC 2.0" />
+        <figcaption>Figure 3: Transformermodell “Optimus Prime”. Quelle:
+        <a
         href="https://www.flickr.com/photos/yellawolfstudios/5853934455"
         class="uri">https://www.flickr.com/photos/yellawolfstudios/5853934455</a>,
         CC BY-NC 2.0</figcaption>
         </figure>
         </div><div class="column">
-        <figure>
+        <figure id="fig:chatgpt">
         <img
         data-src="../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png"
-        id="fig:chatgpt" alt="Figure 4: Transformermodell “ChatGPT”" />
-        <figcaption aria-hidden="true">Figure 4: Transformermodell
-        “ChatGPT”</figcaption>
+        alt="Transformermodell “ChatGPT”" />
+        <figcaption>Figure 4: Transformermodell “ChatGPT”</figcaption>
         </figure>
         </div>
         </div>
@@ -1789,7 +1793,8 @@ e-Research Support in the Humanities” (2022–25)</p>
         <h2>Was bieten wir an?</h2>
         <h3 id="einen-lernort">Einen Lernort</h3>
         <p>Der <em>Scholarly Makerspace</em> ist seit dem 14. November
-        montags, mittwochs und donnerstags von 10 bis 14 Uhr geöffnet</p>
+        montags, mittwochs und donnerstags von 10 bis 14 Uhr
+        geöffnet</p>
         <div class="columns">
         <div class="column">
         <figure>
@@ -2050,21 +2055,21 @@ e-Research Support in the Humanities” (2022–25)</p>
         <section id="refs" class="slide level2 unnumbered">
         <h2 class="unnumbered">Literatur</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
-        role="doc-bibliography">
-        <div id="ref-CPCAbout" class="csl-entry" role="doc-biblioentry">
+        role="list">
+        <div id="ref-CPCAbout" class="csl-entry" role="listitem">
         Centre for Postdigital Cultures. 2018. <span>„About Us“</span>.
         Centre for Postdigital Cultures. 2018. <a
         href="https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/">https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/</a>.
         </div>
         <div id="ref-DunbarHester2014LowPower" class="csl-entry"
-        role="doc-biblioentry">
+        role="listitem">
         Dunbar-Hester, Christina. 2014. <em>Low Power to the People:
         Pirates, Protest, and Politics in FM Radio Activism</em>.
         Cambridge: MIT Press. <a
         href="https://worldcat.org/title/895772974">https://worldcat.org/title/895772974</a>.
         </div>
         <div id="ref-Heinzeletal2020Einleitung" class="csl-entry"
-        role="doc-biblioentry">
+        role="listitem">
         Heinzel, Viktoria, Tobias Seidl, und Richard Stang. 2020.
         <span>„Einleitung“</span>. In <em>Lernwelt Makerspace:
         Perspektiven im öffentlichen und wissenschaftlichen
@@ -2073,12 +2078,12 @@ e-Research Support in the Humanities” (2022–25)</p>
         href="https://doi.org/10.1515/9783110665994">https://doi.org/10.1515/9783110665994</a>.
         </div>
         <div id="ref-Rankin2018PeoplesHistory" class="csl-entry"
-        role="doc-biblioentry">
+        role="listitem">
         Rankin, Joy Lisi. 2018. <em>A People’s History of Computing in
         the United States</em>. Harvard: Harvard University Press.
         </div>
         <div id="ref-Sayers2017Introduction" class="csl-entry"
-        role="doc-biblioentry">
+        role="listitem">
         Sayers, Jentery. 2017. <span>„Introduction: <span>‚I Don’t Know
         All the Circuitry‘</span>“</span>. In <em>Making Things and
         Drawing Boundaries</em>, herausgegeben von Jentery Sayers, 1–18.
@@ -2087,7 +2092,7 @@ e-Research Support in the Humanities” (2022–25)</p>
         href="https://doi.org/10.5749/j.ctt1pwt6wq.3">https://doi.org/10.5749/j.ctt1pwt6wq.3</a>.
         </div>
         <div id="ref-Tenen2016BluntInstrumentalism" class="csl-entry"
-        role="doc-biblioentry">
+        role="listitem">
         Tenen, Dennis. 2016. <span>„Blunt Instrumentalism: On Tools and
         Methods“</span>. In <em>Debates in the Digital Humanities</em>,
         herausgegeben von Matthew K. Gold und Lauren F. Klein, 83–91.
@@ -2095,13 +2100,12 @@ e-Research Support in the Humanities” (2022–25)</p>
         Minnesota Press. <a
         href="https://doi.org/10.5749/j.ctt1cn6thb.12">https://doi.org/10.5749/j.ctt1cn6thb.12</a>.
         </div>
-        <div id="ref-Winner+1980" class="csl-entry"
-        role="doc-biblioentry">
+        <div id="ref-Winner+1980" class="csl-entry" role="listitem">
         Winner, Langdon. 1980. <span>„Do artifacts have
         politics?“</span> <em>Daedalus</em>, 121–36.
         </div>
         <div id="ref-Wythoff2022MinimalComputing" class="csl-entry"
-        role="doc-biblioentry">
+        role="listitem">
         Wythoff, Grant. 2022. <span>„Ensuring Minimal Computing Serves
         Maximal Connection“</span>. Herausgegeben von Alex Gil und
         Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
@@ -2119,7 +2123,7 @@ e-Research Support in the Humanities” (2022–25)</p>
     <script src="https://furesh.github.io/slides/revealjs/plugin/notes/notes.js"></script>
     <script src="https://furesh.github.io/slides/revealjs/plugin/search/search.js"></script>
     <script src="https://furesh.github.io/slides/revealjs/plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
@@ -2265,13 +2269,13 @@ e-Research Support in the Humanities” (2022–25)</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1000,
                         height: 800,
-
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
