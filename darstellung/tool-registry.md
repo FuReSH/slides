@@ -13,7 +13,10 @@ homepage: https://makerspace.hypotheses.org/
 url: 
 status: published
 lang: de
-bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json 
+bibliography: 
+    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json 
+    - ../assets/bibliography/FuReSH.csl.json
+    - /Users/Shared/HUBox/FuReSH/assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
@@ -22,33 +25,79 @@ tags:
     - slides
 ---
 
----------
+## Idee
 
-**Idee**
-
-(bekannt) Erstellung einer offenen Wikidata-basierten Tool Registry im Rahmen des Aufbaus eines **prototypischen** Scholarly Makerspace.
+(bekannt) Erstellung einer offenen, Wikidata-basierten Tool Registry im Rahmen des Aufbaus eines **prototypischen** Scholarly Makerspace.
 
 # Zielstellung
 
-## Was wir wollen
+## Anforderungen
 
-- Tools kategorisiert (nach TaDiRAH) sammeln und auffindbar machen
-    - dient in erster Linie als Arbeitsgrundlage für den Makerspace im Kontext von Beratungen
-- im Sinne von *Tool-Landschaft* bzw. *Tool-Bandbreite*: Welche Tools existieren überhaupt zu einem bestimmten Verfahren?
+::: columns
+:::: column
+
+### Inhalte
+
 - Tools minimal formal beschreiben sowie aggregieren
+- Tools kategorisiert (z.B. nach [TaDiRAH](https://vocabs.dariah.eu/tadirah)) sammeln und auffindbar machen
+    - in erster Linie als Arbeitsgrundlage / Wissensspeicher für den Makerspace im Kontext von Beratungen
+- Wachsender Survey einer *Tool-Landschaft* bzw. *Tool-Bandbreite*: Welche Tools existieren überhaupt zu einem bestimmten Verfahren?
+
+
+::::
+:::: column
+
+### Nachhaltige Infrastruktur
+
+- Nutzung vorhandener Informationen
+    + vorzugsweise LOD
+- Unsere Daten als Beitrag zu *digital commons*
+- Dokumentation einer exemplarischen, offenen Infrastruktur für die Nutzung durch andere
+
+::::
+:::
+
+
  
 ## Was ist daran neu?
 
-- Idee ist nicht neu → SSH Open Marketplace, Tapor, University of Toronto, etc. machen es bereits
-- **Neu ist der Ansatz** : Tool Registy, die sich auf allen Ebenen als offen versteht:
+::: columns
+:::: column
+
+### Bisher
+
+Tool registries sind Legion: 
+
+- DiRT -> Bamboo -> [TAPoR (3.0)](https://tapor.ca/) [@GrantEtAl2020AbsorbingDiRT]
+- *Social Sciences and Humanities Open Marketplace*](https://marketplace.sshopencloud.eu)
+
+Problem: "DiRT trap" [@Dombrowski2021DirectoryParadox]
+
+- Geschlossene Systeme
+- Anspruch der Vollständigkeit
+- Funding
+
+::::
+:::: column
+
+### Unser Ansatz
+
+Auf allen Ebenen offen
+
+- **Open Data**
     - Bereitstellung (Zugang), 
     - Bearbeitung, 
     - Nachnutzung sowie Interoperabilität
-    - = **Open Data**
+- Infrastruktur
+    + Wikidata
+    + APIs, SPARQL
+
+::::
+:::
 
 ## Werkzeugbegriff
 
-- Software, mit der bestimmte Verfahren praktisch umgesetzt werden und die in der geistes- und kulturwissenschaftlichen Forschung zum Einsatz kommen (z.B. 3D-Modelling, Topic Modelling, Stilometrie, Netzwerkanalyse, Digital Publishing)
+<!-- - Software, mit der bestimmte Verfahren praktisch umgesetzt werden und die in der geistes- und kulturwissenschaftlichen Forschung zum Einsatz kommen (z.B. 3D-Modelling, Topic Modelling, Stilometrie, Netzwerkanalyse, Digital Publishing)
 - Die Verfahren beziehen sich auf alle Verfahren im Forschungsprozess, also von Datenbeschaffung und -aufbereitung über die Analyse und Interpretation bis hin zur Präsentation und Veröffentlichung
 - Beispiel für solche Software kann sein:
     - Open Refine
@@ -56,7 +105,31 @@ tags:
     - Voyant Tools
     - Passim
     - Wordpress
-    - etc.
+    - etc. -->
+
+::: columns
+:::: column
+
+**Software**
+
++ setzt **Verfahren** praktisch um
++ benötigt Hardware, weitere Software
++ interagiert mit **Formaten**
++ Bsp.: Gephi, VoyantTools, passim ...
+
+
+::::
+:::: column
+
+**Verfahren** 
+
+- sind Teil von Methoden der geistes- und kulturwissenschaftlichen Forschung
++ Bsp.: 3D-Modelling, Topic Modelling, Stilometrie, Netzwerkanalyse, Digital Publishing ...
+
+::::
+:::
+
+![](../assets/images/taxonomy-tools_2.svg)
 
 ## Ziel
 
@@ -92,9 +165,13 @@ Ziel ist ein allgemeingültiges minimales Datenmodell in Wikidata mit ersten exe
     - **hier kommt das GitHub-Repo ins Spiel (darüber haben wir noch nicht gesprochen und können wir auch erstmal noch weglassen)**
 
 # Vorgehen
+## Vorgehen
 
-- Anspruch eines allgemeingültigen minimalen Datenmodells erfordert ein iteratives Vorgehen mit Datenmodellanpassungen
+Anspruch eines allgemeingültigen minimalen Datenmodells erfordert ein iteratives Vorgehen mit Datenmodellanpassungen
 
-## minimales Datenmodell (1. Version)
+## minimales Datenmodell
 
-![](https://furesh.github.io/slides/assets/images/tool-registry_wikidata-datamodel.jpg)
+![Unser minimales Datenmodell, v0.1](https://furesh.github.io/slides/assets/images/tool-registry_wikidata-datamodel.jpg){#fig:data-model}
+
+
+## Literatur {#refs}

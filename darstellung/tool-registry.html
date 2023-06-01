@@ -29,7 +29,26 @@
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    </style>
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
         <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
@@ -94,8 +113,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -128,9 +147,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -141,8 +160,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -1401,67 +1420,131 @@ e-Research Support in the Humanities” (2022–25)</p>
                             </div>
       </div>
         </section>
-                
-        <section class="slide level1">
 
-        <p><strong>Idee</strong></p>
-        <p>(bekannt) Erstellung einer offenen Wikidata-basierten Tool
+        <section id="idee" class="slide level2">
+        <h2>Idee</h2>
+        <p>(bekannt) Erstellung einer offenen, Wikidata-basierten Tool
         Registry im Rahmen des Aufbaus eines
         <strong>prototypischen</strong> Scholarly Makerspace.</p>
         </section>
-        <section id="zielstellung" class="slide level1">
+        <section>
+        <section id="zielstellung" class="title-slide slide level1">
         <h1>Zielstellung</h1>
-        <h2 id="was-wir-wollen">Was wir wollen</h2>
+
+        </section>
+        <section id="anforderungen" class="slide level2">
+        <h2>Anforderungen</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="inhalte">Inhalte</h3>
         <ul>
-        <li>Tools kategorisiert (nach TaDiRAH) sammeln und auffindbar
-        machen
+        <li>Tools minimal formal beschreiben sowie aggregieren</li>
+        <li>Tools kategorisiert (z.B. nach <a
+        href="https://vocabs.dariah.eu/tadirah">TaDiRAH</a>) sammeln und
+        auffindbar machen
         <ul>
-        <li>dient in erster Linie als Arbeitsgrundlage für den
-        Makerspace im Kontext von Beratungen</li>
+        <li>in erster Linie als Arbeitsgrundlage / Wissensspeicher für
+        den Makerspace im Kontext von Beratungen</li>
         </ul></li>
-        <li>im Sinne von <em>Tool-Landschaft</em> bzw.
+        <li>Wachsender Survey einer <em>Tool-Landschaft</em> bzw.
         <em>Tool-Bandbreite</em>: Welche Tools existieren überhaupt zu
         einem bestimmten Verfahren?</li>
-        <li>Tools minimal formal beschreiben sowie aggregieren</li>
         </ul>
-        <h2 id="was-ist-daran-neu">Was ist daran neu?</h2>
+        </div><div class="column">
+        <h3 id="nachhaltige-infrastruktur">Nachhaltige
+        Infrastruktur</h3>
         <ul>
-        <li>Idee ist nicht neu → SSH Open Marketplace, Tapor, University
-        of Toronto, etc. machen es bereits</li>
-        <li><strong>Neu ist der Ansatz</strong> : Tool Registy, die sich
-        auf allen Ebenen als offen versteht:
+        <li>Nutzung vorhandener Informationen
+        <ul>
+        <li>vorzugsweise LOD</li>
+        </ul></li>
+        <li>Unsere Daten als Beitrag zu <em>digital commons</em></li>
+        <li>Dokumentation einer exemplarischen, offenen Infrastruktur
+        für die Nutzung durch andere</li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="was-ist-daran-neu" class="slide level2">
+        <h2>Was ist daran neu?</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="bisher">Bisher</h3>
+        <p>Tool registries sind Legion:</p>
+        <ul>
+        <li>DiRT -&gt; Bamboo -&gt; <a href="https://tapor.ca/">TAPoR
+        (3.0)</a> <span class="citation"
+        data-cites="GrantEtAl2020AbsorbingDiRT">(Grant u. a.
+        <span>„Absorbing DiRT“</span> 2020)</span></li>
+        <li><em>Social Sciences and Humanities Open
+        Marketplace</em>](https://marketplace.sshopencloud.eu)</li>
+        </ul>
+        <p>Problem: “DiRT trap” <span class="citation"
+        data-cites="Dombrowski2021DirectoryParadox">(Dombrowski
+        <span>„The Directory Paradox“</span> 2021)</span></p>
+        <ul>
+        <li>Geschlossene Systeme</li>
+        <li>Anspruch der Vollständigkeit</li>
+        <li>Funding</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="unser-ansatz">Unser Ansatz</h3>
+        <p>Auf allen Ebenen offen</p>
+        <ul>
+        <li><strong>Open Data</strong>
         <ul>
         <li>Bereitstellung (Zugang),</li>
         <li>Bearbeitung,</li>
         <li>Nachnutzung sowie Interoperabilität</li>
-        <li>= <strong>Open Data</strong></li>
+        </ul></li>
+        <li>Infrastruktur
+        <ul>
+        <li>Wikidata</li>
+        <li>APIs, SPARQL</li>
         </ul></li>
         </ul>
-        <h2 id="werkzeugbegriff">Werkzeugbegriff</h2>
+        </div>
+        </div>
+        </section>
+        <section id="werkzeugbegriff" class="slide level2">
+        <h2>Werkzeugbegriff</h2>
+        <!-- - Software, mit der bestimmte Verfahren praktisch umgesetzt werden und die in der geistes- und kulturwissenschaftlichen Forschung zum Einsatz kommen (z.B. 3D-Modelling, Topic Modelling, Stilometrie, Netzwerkanalyse, Digital Publishing)
+        - Die Verfahren beziehen sich auf alle Verfahren im Forschungsprozess, also von Datenbeschaffung und -aufbereitung über die Analyse und Interpretation bis hin zur Präsentation und Veröffentlichung
+        - Beispiel für solche Software kann sein:
+            - Open Refine
+            - Gephi
+            - Voyant Tools
+            - Passim
+            - Wordpress
+            - etc. -->
+        <div class="columns">
+        <div class="column">
+        <p><strong>Software</strong></p>
         <ul>
-        <li>Software, mit der bestimmte Verfahren praktisch umgesetzt
-        werden und die in der geistes- und kulturwissenschaftlichen
-        Forschung zum Einsatz kommen (z.B. 3D-Modelling, Topic
-        Modelling, Stilometrie, Netzwerkanalyse, Digital
-        Publishing)</li>
-        <li>Die Verfahren beziehen sich auf alle Verfahren im
-        Forschungsprozess, also von Datenbeschaffung und -aufbereitung
-        über die Analyse und Interpretation bis hin zur Präsentation und
-        Veröffentlichung</li>
-        <li>Beispiel für solche Software kann sein:
-        <ul>
-        <li>Open Refine</li>
-        <li>Gephi</li>
-        <li>Voyant Tools</li>
-        <li>Passim</li>
-        <li>Wordpress</li>
-        <li>etc.</li>
-        </ul></li>
+        <li>setzt <strong>Verfahren</strong> praktisch um</li>
+        <li>benötigt Hardware, weitere Software</li>
+        <li>interagiert mit <strong>Formaten</strong></li>
+        <li>Bsp.: Gephi, VoyantTools, passim …</li>
         </ul>
-        <h2 id="ziel">Ziel</h2>
+        </div><div class="column">
+        <p><strong>Verfahren</strong></p>
+        <ul>
+        <li>sind Teil von Methoden der geistes- und
+        kulturwissenschaftlichen Forschung</li>
+        <li>Bsp.: 3D-Modelling, Topic Modelling, Stilometrie,
+        Netzwerkanalyse, Digital Publishing …</li>
+        </ul>
+        </div>
+        </div>
+        <p><img data-src="../assets/images/taxonomy-tools_2.svg" /></p>
+        </section>
+        <section id="ziel" class="slide level2">
+        <h2>Ziel</h2>
         <p>Ziel ist ein allgemeingültiges minimales Datenmodell in
         Wikidata mit ersten exemplarisch verzeichneten Tools.</p>
-        <h2 id="prototypisch-weil">Prototypisch, weil…</h2>
+        </section>
+        <section id="prototypisch-weil" class="slide level2">
+        <h2>Prototypisch, weil…</h2>
         <ul>
         <li>übertragbar und anwendbar in anderen Makerspace-Kontexten
         (oder gänzlich anderen Projektkontexten wie FID)
@@ -1483,10 +1566,14 @@ e-Research Support in the Humanities” (2022–25)</p>
         </ul></li>
         </ul></li>
         </ul>
-        </section>
-        <section id="grobstruktur" class="slide level1">
+        </section></section>
+        <section>
+        <section id="grobstruktur" class="title-slide slide level1">
         <h1>Grobstruktur</h1>
-        <h2 id="in-wikidata">in Wikidata</h2>
+
+        </section>
+        <section id="in-wikidata" class="slide level2">
+        <h2>in Wikidata</h2>
         <ul>
         <li>Anlegen und redaktionelle Betreuung eines WikiProjects
         <ul>
@@ -1499,8 +1586,10 @@ e-Research Support in the Humanities” (2022–25)</p>
         </ul></li>
         <li>Aufnahme eines kleinen exemplarischen Datasets an Tools</li>
         </ul>
-        <h2 id="webanwendung-auf-wikidata-aufsitzend">Webanwendung (auf
-        Wikidata aufsitzend)</h2>
+        </section>
+        <section id="webanwendung-auf-wikidata-aufsitzend"
+        class="slide level2">
+        <h2>Webanwendung (auf Wikidata aufsitzend)</h2>
         <ul>
         <li>Verbesserung der Daten-Zugänglichkeit (Portalcharakter)</li>
         <li>Repräsentationscharakter für den Scholarly Makerspace
@@ -1517,22 +1606,51 @@ e-Research Support in the Humanities” (2022–25)</p>
         weglassen)</strong></li>
         </ul></li>
         </ul>
-        </section>
-        <section id="vorgehen" class="slide level1">
+        </section></section>
+        <section>
+        <section id="vorgehen" class="title-slide slide level1">
         <h1>Vorgehen</h1>
-        <ul>
-        <li>Anspruch eines allgemeingültigen minimalen Datenmodells
-        erfordert ein iteratives Vorgehen mit
-        Datenmodellanpassungen</li>
-        </ul>
-        <h2 id="minimales-datenmodell-1.-version">minimales Datenmodell
-        (1. Version)</h2>
-        <p><img
-        data-src="https://furesh.github.io/slides/assets/images/tool-registry_wikidata-datamodel.jpg" /></p>
+
         </section>
-        <section id="refs" class="slide level1">
-        <h1>Literatur</h1>
+        <section id="vorgehen-1" class="slide level2">
+        <h2>Vorgehen</h2>
+        <p>Anspruch eines allgemeingültigen minimalen Datenmodells
+        erfordert ein iteratives Vorgehen mit Datenmodellanpassungen</p>
         </section>
+        <section id="minimales-datenmodell" class="slide level2">
+        <h2>minimales Datenmodell</h2>
+        <figure id="fig:data-model">
+        <img
+        data-src="https://furesh.github.io/slides/assets/images/tool-registry_wikidata-datamodel.jpg"
+        alt="Unser minimales Datenmodell, v0.1" />
+        <figcaption>Figure 1: Unser minimales Datenmodell,
+        v0.1</figcaption>
+        </figure>
+        </section>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        role="list">
+        <div id="ref-Dombrowski2021DirectoryParadox" class="csl-entry"
+        role="listitem">
+        Dombrowski, Quinn. 2021. <span>„The Directory Paradox“</span>.
+        In <em>People, Practice, Power: Digital Humanities Outside the
+        Center</em>, herausgegeben von Anne B. McGrail, Angel David
+        Nieves, und Siobhan Senier. Debates in the Digital Humanities.
+        Minneapolis: University of Minnesota Press. <a
+        href="https://www.upress.umn.edu/book-division/books/people-practice-power">https://www.upress.umn.edu/book-division/books/people-practice-power</a>.
+        </div>
+        <div id="ref-GrantEtAl2020AbsorbingDiRT" class="csl-entry"
+        role="listitem">
+        Grant, Kaitlyn, Quinn Dombrowski, Kamal Ranaweera, Omar
+        Rodriguez-Arenas, Stéfan Sinclair, und Geoffrey Rockwell. 2020.
+        <span>„Absorbing DiRT: Tool Directories in the Digital
+        Age“</span>. <em>Digital Studies / Le Champ Numérique</em> 10
+        (1). <a
+        href="https://doi.org/10.16995/dscn.325">https://doi.org/10.16995/dscn.325</a>.
+        </div>
+        </div>
+        </section></section>
       </div>
     </div>
 
