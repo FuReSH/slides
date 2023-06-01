@@ -23,6 +23,8 @@ tags:
     - FuReSH
     - tool registry
     - slides
+nocite: |
+    @BorekEtAl2016TaDiRAHCaseStudy; @BorekEtAl2021InformationOrganizationAccess; @Zhao2022SystematicReviewWikidata; @FischerEtAl2023Preface
 ---
 
 ## Idee
@@ -131,9 +133,29 @@ Auf allen Ebenen offen
 
 ![](../assets/images/taxonomy-tools_2.svg)
 
-## Ziel
+## praktische Ziele
 
-Ziel ist ein allgemeingültiges minimales Datenmodell in Wikidata mit ersten exemplarisch verzeichneten Tools.
+1. exemplarische Infrastruktur auf der Basis von Wikidata, inkl.
+    + minimaler Datenmodelle
+    + Front-end / Webanwendung?
+    + Pipeline zum Druck von Setcards?
+    + Social-Media Bots für Dateneingabe und Werbung?
+2. exemplarischer Datensatz, inkl.
+    + mapping von TaDiRAH nach Wikidata
+    + mapping von SSH Open Marketplace (und damit TaPOR) nach Wikidata?
+3. detailliert Dokumentation der Infrastruktur und Workflows
+    + im Rahmen eines Wikiprojects
+    + als unabhängige Publikation
+
+<!-- Ziel ist ein allgemeingültiges minimales Datenmodell in Wikidata mit ersten exemplarisch verzeichneten Tools. -->
+
+::: notes
+
+- zu 2.
+    + wir haben das vorhandene Mapping von TaDiRAH zu Wikidata in Wikidata gespiegelt
+    + wir haben bereits 500+ Tools aus dem Datensatz mit Wikidata rekonziliiert
+
+:::
 
 ## Prototypisch, weil...
 
@@ -152,26 +174,30 @@ Ziel ist ein allgemeingültiges minimales Datenmodell in Wikidata mit ersten exe
     
 - Anlegen und redaktionelle Betreuung eines WikiProjects
     - [WikiProject DH Tool Registry](https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry)
-    - dient zur Dokumentation des Datenmodells, als Hilfestellung und Diskussionsforum sowie zum Monitoring von Tools, die im Scholary Makerspace in Beratungskontexten verwendet werden
+    - dient zur Dokumentation <!--des Datenmodells-->, als Hilfestellung und Diskussionsforum sowie zum Monitoring von Tools, die im Scholary Makerspace in Beratungskontexten verwendet werden
 - Aufnahme eines kleinen exemplarischen Datasets an Tools
 
 ## Webanwendung (auf Wikidata aufsitzend)
 
 - Verbesserung der Daten-Zugänglichkeit (Portalcharakter)
 - Repräsentationscharakter für den Scholarly Makerspace (Corporate Design, Hintergrundinformationen zum Projekt, etc.)
-    - ähnlich zu Archivkolonialführer: https://archivfuehrer-kolonialzeit.de/
+    - ähnlich zu 
+        + Archivkolonialführer: <https://archivfuehrer-kolonialzeit.de/>
+        + Scholia: <https://scholia.toolforge.org>
 - Recherche von Tools
 - (ggf. kontrolliertes Hinzufügen von Tools über json-Schema)
-    - **hier kommt das GitHub-Repo ins Spiel (darüber haben wir noch nicht gesprochen und können wir auch erstmal noch weglassen)**
+
+::: notes
+
+- beim letzten Punkt kommt das GitHub-Repo ins Spiel (darüber haben wir noch nicht gesprochen und können wir auch erstmal noch weglassen)
+
+:::
 
 # Vorgehen
-## Vorgehen
-
-Anspruch eines allgemeingültigen minimalen Datenmodells erfordert ein iteratives Vorgehen mit Datenmodellanpassungen
-
 ## minimales Datenmodell
 
 ![Unser minimales Datenmodell, v0.1](https://furesh.github.io/slides/assets/images/tool-registry_wikidata-datamodel.jpg){#fig:data-model}
 
+Anspruch eines allgemeingültigen minimalen Datenmodells erfordert ein iteratives Vorgehen mit Datenmodellanpassungen
 
 ## Literatur {#refs}
