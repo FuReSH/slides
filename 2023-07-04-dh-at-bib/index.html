@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
-          <meta name="author" content="Till Grallert">
-          <meta name="author" content="Claus-Michael Schlesinger">
-              <meta name="dcterms.date" content="2023-04-19">
-                <title>Kein 3D-Drucker?</title>
+          <meta name="author" content="Sophie Eckenstaler">
+                    <title>Tool Registry</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -1181,8 +1179,9 @@
                         border-bottom-width: 1px;
                         border-bottom-style: solid;
                     }
-                    td:hover {
+                    td:hover, td:hover * {
                         background-color: #F46A00;
+                        color: black;
                     }
                     .focus {
                         border-color: red;
@@ -1285,6 +1284,12 @@
                         border-color: red;
                         margin-left: 2em;
                         border-left-width: 1em;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
                     }
                     /*
                      hide images for work around for save as bug
@@ -1392,14 +1397,13 @@
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">Kein 3D-Drucker?</h1>
-                    <h2 class="subtitle">Der <em>Scholarly
-Makerspace</em> an der UB der HU Berlin stellt sich vor</h2>
+          <h1 class="title">Tool Registry</h1>
+                    <h2 class="subtitle">Bedarf, Anforderungen,
+Zielvorstellung und Vorgehen</h2>
                     <div class="columns">
           <div class="column c_left c_left-align">
                       <p class="author">
-                          Till Grallert,               Claus-Michael
-Schlesinger            </p>
+                          Sophie Eckenstaler            </p>
                                                 <p class="institute">Humboldt-Universität
 zu Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
                             <p class="institute">DFG-Projekt “Future
@@ -1408,754 +1412,228 @@ e-Research Support in the Humanities” (2022–25)</p>
                   </div>
         <div class="column c_right c_right-align">
                     <p class="event">
-                        <span>Institutsratssitzung am IBI</span>
+                        <span>Netzwerktreffen DH@Bib</span>
           </p>
-                                <p class="date">2023-04-19</p>
-                              <p class="url"><a href="https://furesh.github.io/slides/2023-04-19-ibi">https://furesh.github.io/slides/2023-04-19-ibi</a></p>
+                                <p class="current-date"></p>
+                              <p class="url"><a href="https://furesh.github.io/slides/2023-07-04-dh-at-bib">https://furesh.github.io/slides/2023-07-04-dh-at-bib</a></p>
                   </div>
       </div>
         </section>
-
-        <section class="slide level2">
-
-        <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
-        Support in the Humanities” an der Universitätsbibliothek der
-        Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle
-        für <em>Digital History</em> (Inst.f. Geschichtswissenschaften)
-        und <em>Information Processing and Analytics</em> (Inst.f.
-        Bibliotheks- und Informationswissenschaften) einen
-        <strong>prototypischen <em>Scholarly Makerspace</em></strong>
-        zur Förderung <strong>digitaler</strong> und
-        <strong>computationaler Werkzeugkompetenz</strong> (<em>tool
-        literacy</em>) in den Geistes- und Kulturwissenschaften auf
-        (2022–25).</p>
-        <div class="columns-3">
+                
+        <section id="bedarf" class="slide level2">
+        <h2>Bedarf</h2>
+        <p>Wir benötigen einen Survey über die digitale Tool-Landschaft
+        in der geistes- und kulturwissenschaftenlichen Forschung. Sie
+        dient in erster Linie als Arbeitsgrundlage/ Wissensspeicher für
+        den Scholarly Makerspace im Kontext von Service- und
+        Supportangeboten.</p>
+        </section>
+        <section id="werkzeugbegriff" class="slide level2">
+        <h2>Werkzeugbegriff</h2>
+        <!-- - Software, mit der bestimmte Verfahren praktisch umgesetzt werden und die in der geistes- und kulturwissenschaftlichen Forschung zum Einsatz kommen (z.B. 3D-Modelling, Topic Modelling, Stilometrie, Netzwerkanalyse, Digital Publishing)
+        - Die Verfahren beziehen sich auf alle Verfahren im Forschungsprozess, also von Datenbeschaffung und -aufbereitung über die Analyse und Interpretation bis hin zur Präsentation und Veröffentlichung
+        - Beispiel für solche Software kann sein:
+            - Open Refine
+            - Gephi
+            - Voyant Tools
+            - Passim
+            - Wordpress
+            - etc. -->
+        <div class="columns">
         <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png"
-        alt="Sophie Eckenstaler" />
-        <figcaption aria-hidden="true">Sophie Eckenstaler</figcaption>
-        </figure>
-        </div>
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png"
-        alt="Till Grallert, PhD" />
-        <figcaption aria-hidden="true">Till Grallert, PhD</figcaption>
-        </figure>
-        </div>
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_st-circle.png"
-        alt="Samantha Tirtohusodo" />
-        <figcaption aria-hidden="true">Samantha Tirtohusodo</figcaption>
-        </figure>
-        </div>
-        </div>
-        <aside class="notes">
+        <p><strong>Software</strong></p>
         <ul>
-        <li>Sophie
-        <ul>
-        <li>Museologie, Medieninformatik sowie Digital History (MA)</li>
-        <li>Doktorandin und Wimi am Lehrstuhl Digital History</li>
-        <li>Schwerpunkt auf Research Software Engineering</li>
-        </ul></li>
-        <li>Till
-        <ul>
-        <li>Geschichte (PhD, MA)</li>
-        <li>Islamwissenschaft, Judaistik und VWL</li>
-        <li>mehr als 10 Jahre Erfahrungen in den DH
-        <ul>
-        <li>Global DH, critical DH: unter den Bedingungen des Globalen
-        Südens</li>
-        <li>multilingual DH: vor allem Arabisch und Osmanisch</li>
-        <li>Digitale Editorik, NER</li>
-        <li>Netzwerkanalyse, Stilometrie</li>
-        <li>Data viz</li>
-        </ul></li>
-        </ul></li>
-        <li>Sam
-        <ul>
-        <li>Bibliotheks- und Informationsmanagement</li>
-        <li>Information Science</li>
-        <li>Außerdem am FID Buch-, Bibliothek-, und
-        Informationswissenschaft angestellt</li>
-        <li>Schwerpunkt
-        <ul>
-        <li>User Experience</li>
-        </ul></li>
-        </ul></li>
+        <li>setzt <strong>Verfahren</strong> praktisch um</li>
+        <li>benötigt Hardware, weitere Software</li>
+        <li>interagiert mit <strong>Formaten</strong></li>
+        <li>Bsp.: Gephi, VoyantTools, passim …</li>
         </ul>
-        </aside>
+        </div><div class="column">
+        <p><strong>Verfahren</strong></p>
+        <ul>
+        <li>sind Teil von Methoden der geistes- und
+        kulturwissenschaftlichen Forschung</li>
+        <li>Bsp.: 3D-Modelling, Topic Modelling, Stilometrie,
+        Netzwerkanalyse, Digital Publishing …</li>
+        </ul>
+        </div>
+        </div>
+        <p><img data-src="../assets/images/taxonomy-tools_2.svg" /></p>
         </section>
         <section>
-        <section id="ein-scholarly-makerspace"
-        class="title-slide slide level1">
-        <h1>Ein Scholarly Makerspace?!</h1>
+        <section id="zielstellung" class="title-slide slide level1">
+        <h1>Zielstellung</h1>
 
         </section>
-        <section id="ein-makerspace" class="slide level2">
-        <h2>Ein Makerspace?</h2>
-        <blockquote>
-        <p>Im Wesentlichen geht es bei der Makerbewegung um das Teilen
-        von <strong>Räumen</strong>, <strong>Ressourcen</strong> und
-        <strong>Wissen</strong> innerhalb einer
-        <strong>Gemeinschaft</strong>. Diese Ressourcen stehen
-        Einzelpersonen privat oft nicht zur Verfügung. Die Ermöglichung
-        des Zugangs für alle, stellt so einen zentralen Faktor für eine
-        offene und demokratische Gesellschaft dar. <span
-        class="citation"
-        data-cites="Heinzeletal2020Einleitung">(Heinzel, Seidl, und
-        Stang <span>„Einleitung“</span> 2020, 2)</span></p>
-        </blockquote>
-        <aside class="notes">
-        <p>Damit sind Makerspaces - <em>Lernorte</em> - wichtige
-        Schnittstelle zwischen <strong>formellem</strong> und
-        <strong>informellem</strong> Lernen <span class="citation"
-        data-cites="Heinzeletal2020Einleitung">(Heinzel, Seidl, und
-        Stang <span>„Einleitung“</span> 2020, 1)</span></p>
-        </aside>
-        </section>
-        <section id="ein-makerspace-ohne-3d-drucker"
-        class="slide level2">
-        <h2>Ein Makerspace ohne 3D-Drucker?</h2>
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg"
-        alt="Kein 3D Drucker" />
-        <figcaption aria-hidden="true">Kein 3D Drucker</figcaption>
-        </figure>
-        </section>
-        <section
-        id="ein-scholarly-makerspace-als-lernort-für-die-digitale-werkzeugkompetenz-in-den-humanities"
-        class="slide level2">
-        <h2>Ein <strong>Scholarly</strong> Makerspace als Lernort für
-        die digitale Werkzeugkompetenz in den Humanities</h2>
-        <p>Fokus auf <strong>digitale</strong> und
-        <strong>computationelle</strong> Aspekte zeitgenössischer
-        Geistes- und Kulturwissenschaften</p>
-        <ol type="1">
-        <li>durch Forschungsfragen getrieben</li>
-        </ol>
-        <figure id="fig:network-analysis">
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree_ar.png"
-        alt="Netzwerkanalyse mit R und Gephi" />
-        <figcaption>Figure 1: Netzwerkanalyse mit R und
-        Gephi</figcaption>
-        </figure>
-        <!-- ![Digitale Editionen in TEI XML](https://furesh.github.io/slides/assets/images/sublime_zuhur.png) -->
-        <aside class="notes">
-        <ul>
-        <li>Wie lassen sich (sehr) große Corpora mit <em>distant
-        reading</em> statistisch valide erschließen?
-        <ul>
-        <li>konkretes Beispiel: wer sind die wichtigsten Autor:innen
-        innerhalb einer von Periodika abgebildeten Öffentlichkeit?</li>
-        </ul></li>
-        <li>Wie lassen sich Soziale Medien für die Untersuchung
-        gesellschaftlichen Wandels in repressiven Systemen nutzen?</li>
-        </ul>
-        </aside>
-        </section>
-        <section
-        id="ein-scholarly-makerspace-als-lernort-für-die-digitale-werkzeugkompetenz-in-den-humanities-1"
-        class="slide level2">
-        <h2>Ein <strong>Scholarly</strong> Makerspace als Lernort für
-        die digitale Werkzeugkompetenz in den Humanities</h2>
-        <p>Fokus auf <strong>digitale</strong> und
-        <strong>computationelle</strong> Aspekte zeitgenössischer
-        Geistes- und Kulturwissenschaften</p>
-        <ol start="2" type="1">
-        <li>die Auswirkungen der Digitalität auf den Erkenntnisprozess
-        untersuchend</li>
-        </ol>
-        <figure id="fig:ocr">
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/ocr_deutsches-zeitungsportal.png"
-        alt="Fehlerhafte Scans und Stand von OCR. Quelle: Deutsches Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2. Sep. 1891, S.1" />
-        <figcaption>Figure 2: Fehlerhafte Scans und Stand von OCR.
-        Quelle: <a
-        href="https://www.deutsche-digitale-bibliothek.de/newspaper/item/MP2O2HAR4Q6JRV2WUMWAHTV7QA7X3V32?issuepage=1">Deutsches
-        Zeitungsportal: Berliner Tageblatt und Handels-Zeitung, 2.
-        Sep. 1891, S.1</a></figcaption>
-        </figure>
-        <aside class="notes">
-        <ul>
-        <li>Welche Auswirkungen haben OCR Algorithmen und Normalisierung
-        auf die Qualität meines Korpus?</li>
-        <li>Was ist die Auswirkung von abstrahierenden
-        Operationalisierungen für die quantitative Auswertung?</li>
-        <li>Welche Folge hat es, wenn Quellen nur noch gezielt und
-        dekontextualisiert über Schlagworte gesucht werden können, aber
-        kein Stöbern mehr möglich ist?</li>
-        </ul>
-        </aside>
-        </section>
-        <section
-        id="ein-scholarly-makerspace-als-lernort-für-die-digitale-werkzeugkompetenz-in-den-humanities-2"
-        class="slide level2">
-        <h2>Ein <strong>Scholarly</strong> Makerspace als Lernort für
-        die digitale Werkzeugkompetenz in den Humanities</h2>
-        <p>Fokus auf <strong>digitale</strong> und
-        <strong>computationelle</strong> Aspekte zeitgenössischer
-        Geistes- und Kulturwissenschaften</p>
-        <ol start="3" type="1">
-        <li>die gesellschaftlichen Auswirkungen und Rahmenbedingungen
-        von Digitalität reflektierend</li>
-        </ol>
+        <section id="anforderungen" class="slide level2">
+        <h2>Anforderungen</h2>
         <div class="columns">
         <div class="column">
-        <figure id="fig:transformer-model">
-        <img data-src="../assets/images/ai/transformer-toy.png"
-        alt="Transformermodell “Optimus Prime”. Quelle: https://www.flickr.com/photos/yellawolfstudios/5853934455, CC BY-NC 2.0" />
-        <figcaption>Figure 3: Transformermodell “Optimus Prime”. Quelle:
-        <a
-        href="https://www.flickr.com/photos/yellawolfstudios/5853934455"
-        class="uri">https://www.flickr.com/photos/yellawolfstudios/5853934455</a>,
-        CC BY-NC 2.0</figcaption>
-        </figure>
-        </div><div class="column">
-        <figure id="fig:chatgpt">
-        <img
-        data-src="../assets/images/ai/chatgpt_was-ist-ein-scholarly-makerspace.png"
-        alt="Die Antwort des auf einem Transformermodell basierenden “ChatGPT” auf die Frage: Was ist ein Scholarly Makerspace?" />
-        <figcaption>Figure 4: Die Antwort des auf einem
-        Transformermodell basierenden “ChatGPT” auf die Frage: Was ist
-        ein Scholarly Makerspace?</figcaption>
-        </figure>
-        </div>
-        </div>
-        <aside class="notes">
+        <h3 id="inhaltlich">Inhaltlich</h3>
         <ul>
-        <li>Die Folie zeigt zwei Transformermodelle</li>
-        <li>Wie hoch ist der Verbrauch natürlicher Ressourcen für das
-        Training einer KI auf die Klassifizierung von Abbildungen in
-        mittelalterlichen Handschriften?</li>
-        <li>Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen
-        für die Herstellung und Erhalt der notwendigen technischen
-        Infrastrukturen?</li>
-        <li>Welche Folge hat eine auf Beiträge in den Sozialmedien
-        trainierte KI für die Hausratversicherungen in sozialen
-        Brennpunkten?</li>
-        </ul>
-        </aside>
-        </section>
-        <section
-        id="digitale-werkzeugkompetenz-tool-literacy-in-den-humanities"
-        class="slide level2">
-        <h2><strong>Digitale Werkzeugkompetenz</strong> (tool literacy)
-        in den Humanities?!</h2>
-        <blockquote>
-        <p>It is our position that the “digital” cannot be understood as
-        a separate domain of culture. If we actually examine the digital
-        […] we see that today digital information processing is present
-        in every aspect of our lives <span class="citation"
-        data-cites="CPCAbout">(Centre for Postdigital Cultures
-        <span>„About Us“</span> 2018)</span>.</p>
-        </blockquote>
-        <blockquote>
-        <p>Do artefacts have politics? <span class="citation"
-        data-cites="Winner+1980">(Winner <span>„Do artifacts have
-        politics?“</span> 1980)</span></p>
-        </blockquote>
-        <aside class="notes">
-        <ul>
-        <li>Folie soll erklären warum digitale Werkzeugkompetenz nötig
-        ist</li>
-        <li>Alle Aspekte des Forschungsprozesse sind bereits digital
-        remediiert und duch informationstechnische Systeme angefasst
-        worden
-        <ol type="1">
-        <li>Erstellung, Aufbereitung <strong>digitaler
-        Materialien</strong></li>
-        <li><strong>computationelle Be- / Verarbeitung</strong> dieser
-        Materialien</li>
-        <li><strong>Präsentation</strong> der Ergebnisse, der Prozesse
-        und der Materialien</li>
-        </ol></li>
-        <li>Es herrscht in der Breite ein Mangel an
-        <ul>
-        <li><strong>Theorie</strong>: Verständnis des epistemischen
-        Wandels</li>
-        <li><strong>Methode</strong>: Beherrschung der notwendigen
-        Werkzeuge</li>
-        <li>positivem <strong>Wissen</strong>: Überblick über die
-        Möglichkeiten</li>
-        </ul></li>
-        <li><em>“Digital” Humanities</em> als Indikator</li>
-        </ul>
-        </aside>
-        </section>
-        <section id="ziel-von-digital-consumers-zu-digital-citizens"
-        class="slide level2">
-        <h2>Ziel <br/>Von <em>digital consumers</em> zu <em>digital
-        citizens</em></h2>
-        <div class="columns-3">
-        <div class="column">
-        <ol type="1">
-        <li><strong>Teilhabe</strong> an der Digitalität durch
-        computationelle Methoden,</li>
-        </ol>
-        </div>
-        <div class="column">
-        <ol start="2" type="1">
-        <li>kritische <strong>Reflexion</strong> über ein neues
-        epistemisches Paradigma,</li>
-        </ol>
-        </div>
-        <div class="column">
-        <ol start="3" type="1">
-        <li>Genese <strong>neuer Erkenntnisse</strong></li>
-        </ol>
-        </div>
-        </div>
-        <aside class="notes">
-        <ul>
-        <li>Ziel der Vermittlung von <em>tool literacy</em> ist es die
-        Kolleg_innen auf dem Weg von <em>digital consumers</em> zu
-        <em>digital citizens</em> zu begleiten</li>
-        <li><em>digital citizenry</em> ist von <span class="citation"
-        data-cites="Rankin2018PeoplesHistory">(Rankin <em>A People’s
-        History</em> 2018, 11)</span> geprägt</li>
-        </ul>
-        </aside>
-        </section>
-        <section id="aber-making" class="slide level2">
-        <h2>Aber <strong>Making</strong> ?</h2>
-        <!-- >Do politics have artefacts? [@DunbarHester2014LowPower] -->
-        <blockquote>
-        <p>To use […] tools well, we must, in some real sense,
-        understand them better than the tool makers. […] The best kind
-        of tools are therefore the ones that we make ourselves. <span
-        class="citation"
-        data-cites="Tenen2016BluntInstrumentalism">(Tenen <span>„Blunt
-        Instrumentalism: On Tools and Methods“</span> 2016,
-        85)</span></p>
-        </blockquote>
-        <div class="columns">
-        <div class="column">
-        <h3 id="making">Making</h3>
-        <ul>
-        <li>Experimentieren, Tüfteln, Ausprobieren, Werkeln</li>
-        <li>Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der
-        Produktionsmittel</li>
+        <li>Tools minimal formal beschreiben sowie aggregieren</li>
+        <li>Tools <em>kategorisiert</em> (z.B. nach <a
+        href="https://vocabs.dariah.eu/tadirah">TaDiRAH</a>) sammeln und
+        auffindbar machen</li>
+        <li>Tools eindeutig referenzierbar machen</li>
+        <li>Wachsender Survey einer <em>Tool-Landschaft</em> bzw.
+        <em>Tool-Bandbreite</em>: Welche Tools existieren überhaupt zu
+        einem bestimmten Verfahren?</li>
         </ul>
         </div><div class="column">
-        <h3 id="maker-turn">Maker turn</h3>
-        <p>Kreativität von Design, Herstellung und Erfahrung von
-        (digitalen) Objekten als From von Wissenschaft</p>
+        <h3 id="formal-nachhaltige-infrastruktur">Formal: Nachhaltige
+        Infrastruktur</h3>
+        <ul>
+        <li>Nutzung vorhandener Informationen zu Tools
+        <ul>
+        <li>ggf. aus unterschiedlichen Datenquellen</li>
+        <li>vorzugsweise LOD</li>
+        </ul></li>
+        <li>Unsere Daten als Beitrag zu <em>digital commons</em></li>
+        <li>Dokumentation einer exemplarischen, offenen Infrastruktur
+        für die Nutzung durch andere</li>
+        </ul>
         </div>
         </div>
-        <aside class="notes">
+        </section>
+        <section id="ziel" class="slide level2">
+        <h2>Ziel</h2>
+        <p>Erstellung einer offenen, Wikidata-basierten Tool Registry im
+        Rahmen des Aufbaus eines Scholarly Makerspace, die durch andere
+        nachnutzbar ist.</p>
+        </section>
+        <section id="was-ist-daran-neu" class="slide level2">
+        <h2>Was ist daran neu?</h2>
+        <h3 id="bisher">Bisher</h3>
+        <p>Tool Registries sind Legion:</p>
         <ul>
-        <li>Grundsatz: Werkzeuge und Methoden sind mit
-        Machtverhältnissen verwoben</li>
-        <li>Tool literacy ist extrem aufwändig
+        <li>DiRT -&gt; Bamboo -&gt; <a href="https://tapor.ca/">TAPoR
+        (3.0)</a> <span class="citation"
+        data-cites="GrantEtAl2020AbsorbingDiRT">(<strong>GrantEtAl2020AbsorbingDiRT?</strong>)</span></li>
+        <li><em>Social Sciences and Humanities Open
+        Marketplace</em>](https://marketplace.sshopencloud.eu)</li>
+        </ul>
+        <p>Problem: “DiRT trap” <span class="citation"
+        data-cites="Dombrowski2021DirectoryParadox">(Dombrowski
+        <span>„The Directory Paradox“</span> 2021)</span></p>
         <ul>
-        <li>kann <strong>nur kollaborativ</strong> adäquat bewältigt
-        werden.</li>
+        <li>Geschlossene Systeme</li>
+        <li>Anspruch der Vollständigkeit</li>
+        <li>Funding</li>
+        </ul>
+        </section>
+        <section id="unser-ansatz" class="slide level2">
+        <h2>Unser Ansatz</h2>
+        <p>Auf allen Ebenen offen</p>
+        <ul>
+        <li><strong>Open Data</strong>
+        <ul>
+        <li>Bereitstellung (Zugang),</li>
+        <li>Bearbeitung,</li>
+        <li>Nachnutzung sowie Interoperabilität</li>
         </ul></li>
-        <li>Geschichte
+        <li>Infrastruktur
         <ul>
-        <li>1970er Kalifornien: kooperative Werkstätten</li>
-        <li>Recht auf Reparatur</li>
-        <li>DIY: do it yourself culture</li>
-        <li>“Maker Movement Manifesto” von Hatch (2013)
-        <ul>
-        <li>make, share, give, learn, tool up, play, participate,
-        support, change</li>
-        </ul></li>
-        </ul></li>
-        <li>bezieht sich auf <span class="citation"
-        data-cites="Wythoff2022MinimalComputing">(Wythoff
-        <span>„Ensuring Minimal Computing Serves Maximal
-        Connection“</span> 2022)</span>, der die beiden Fragen verknüpft
-        hat
-        <ul>
-        <li>Do artefacts have politics? <span class="citation"
-        data-cites="Winner+1980">(Winner <span>„Do artifacts have
-        politics?“</span> 1980)</span></li>
-        <li>Do politics have artefacts? <span class="citation"
-        data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
-        Power to the People</em> 2014)</span></li>
-        </ul></li>
-        <li>Kritik an Maker culture als omnipotenter maskuliner Raum:
-        <ul>
-        <li><blockquote>
-        <p>knowledge of circuitry is often conflated with (superheroic)
-        command over people, situations, and things. In present-day
-        “maker” cultures, consider the ubiquity of remarks such as
-        “getting under the hood” or “knowing the nuts and bolts,” which
-        tend to fuse logic with mastery, control with masculinity,
-        engineering with rationality, and programming with revealing.
-        <span class="citation"
-        data-cites="Sayers2017Introduction">(Sayers
-        <span>„Introduction“</span> 2017, 3)</span></p>
-        </blockquote></li>
+        <li>Wikidata</li>
+        <li>LOD Interface, APIs, SPARQL</li>
         </ul></li>
         </ul>
-        </aside>
         </section></section>
         <section>
-        <section id="wie-sieht-das-konkret-aus"
-        class="title-slide slide level1">
-        <h1>Wie sieht das konkret aus?</h1>
+        <section id="vorgehen" class="title-slide slide level1">
+        <h1>Vorgehen</h1>
 
         </section>
-        <section id="was-bieten-wir-an" class="slide level2">
-        <h2>Was bieten wir an?</h2>
-        <h3 id="einen-lernort">Einen Lernort</h3>
-        <p>Der <em>Scholarly Makerspace</em> ist seit dem 14. November
-        montags, mittwochs und donnerstags von 10 bis 14 Uhr ohne
-        Anmeldung geöffnet</p>
-        <div class="columns">
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/location-within-the-library_2d-annotated.jpg"
-        alt="Lage des Scholarly Makerspaces im 3. OG des Grimm-Zentrums" />
-        <figcaption aria-hidden="true">Lage des <em>Scholarly
-        Makerspace</em>s im 3. OG des Grimm-Zentrums</figcaption>
-        </figure>
-        </div><div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/ub-makerspace_2.jpg"
-        alt="Der Scholarly Makerspace im Grimm-Zentrum" />
-        <figcaption aria-hidden="true">Der <em>Scholarly Makerspace</em>
-        im Grimm-Zentrum</figcaption>
-        </figure>
-        </div>
-        </div>
-        </section>
-        <section id="was-bieten-wir-an-1" class="slide level2">
-        <h2>Was bieten wir an?</h2>
-        <h3 id="hilfe-zur-selbsthilfe">Hilfe zur Selbsthilfe</h3>
-        <div class="columns-3">
-        <div class="column">
-        <h3 id="infrastruktur">Infrastruktur</h3>
-        <p>und Resourcen für eigenes Arbeiten</p>
+        <section id="in-wikidata" class="slide level2">
+        <h2>in Wikidata</h2>
         <ul>
-        <li>wöchentliche Einführungen in den Scholarly Makerspace</li>
-        <li>offene Materialien und Infrastrukturen für die Nachnutzung
-        und Erweiterung
-        <!-- + Zugang zu technischen Infrastrukturen der HU (z.B. CMS) --></li>
-        </ul>
-        </div>
-        <div class="column">
-        <h3 id="gemeinsames-tüfteln">gemeinsames Tüfteln</h3>
-        <ul>
-        <li>Drop-in</li>
-        <li>Offene Sprechstunde</li>
-        <li>gezielte Beratung</li>
-        </ul>
-        </div>
-        <div class="column">
-        <h3 id="vernetzung">Vernetzung</h3>
-        <p>in die DH Community in Berlin und beyond</p>
-        <ul>
-        <li>Community hours für den Austausch</li>
-        <li><a
-        href="https://makerspace.hypotheses.org/324">Veranstaltungskalender</a></li>
-        </ul>
-        </div>
-        </div>
-        <aside class="notes">
-        <ul>
-        <li>bestehende Vernetzungen
-        <ul>
-        <li>Hackathon zur Archivierung von Ukrainischem Kulturgut
-        <ul>
-        <li>in den Räumen des IfG</li>
-        </ul></li>
-        <li>SPK Lab Partner</li>
-        <li>Stiftung für die deutsche Wissenschaft (in der Folge des
-        Hackathons)</li>
-        <li>ADA Lovelace Center
-        <ul>
-        <li>gemeinsamer jour fixe</li>
-        <li>Veranstaltung zu Kulturen des Scheiterns</li>
-        </ul></li>
-        <li>SUB Hamburg, Symposium “Wissen Bauen 2025”</li>
-        </ul></li>
-        </ul>
-        </aside>
-        </section>
-        <section id="was-bieten-wir-an-2" class="slide level2">
-        <h2>Was bieten wir an</h2>
-        <h3 id="erfahrungen-und-wissen">Erfahrungen und Wissen</h3>
-        <div class="columns-3">
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png"
-        alt="Sophie Eckenstaler" />
-        <figcaption aria-hidden="true">Sophie Eckenstaler</figcaption>
-        </figure>
-        </div>
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png"
-        alt="Till Grallert, PhD" />
-        <figcaption aria-hidden="true">Till Grallert, PhD</figcaption>
-        </figure>
-        </div>
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_st-circle.png"
-        alt="Samantha Tirtohusodo" />
-        <figcaption aria-hidden="true">Samantha Tirtohusodo</figcaption>
-        </figure>
-        </div>
-        </div>
-        <aside class="notes">
-        <ul>
-        <li>wichtig für den gemeinschaftlichen Ansatz ist es, diesen
-        nicht hierarchisch zu denken
-        <ul>
-        <li>wir das Personal sind nicht die Experten, die frontal
-        erklären</li>
-        </ul></li>
-        <li><blockquote>
-        <p>To say, “I can do first aid,” is to underscore our
-        entanglement with circuitry. And to say, “I don’t know all the
-        circuitry,” at least implies the impossibility of such
-        knowledge. That is, we can reject the autonomy or privacy of
-        technologies without supposing we know them completely. Although
-        we may understand how something works, we may not apprehend how
-        or under what conditions it was made. <span class="citation"
-        data-cites="Sayers2017Introduction">(Sayers
-        <span>„Introduction“</span> 2017, 2)</span></p>
-        </blockquote></li>
-        <li><blockquote>
-        <p>knowledge of circuitry is often conflated with (superheroic)
-        command over people, situations, and things. In present-day
-        “maker” cultures, consider the ubiquity of remarks such as
-        “getting under the hood” or “knowing the nuts and bolts,” which
-        tend to fuse logic with mastery, control with masculinity,
-        engineering with rationality, and programming with revealing.
-        <span class="citation"
-        data-cites="Sayers2017Introduction">(Sayers
-        <span>„Introduction“</span> 2017, 3)</span></p>
-        </blockquote></li>
-        </ul>
-        </aside>
-        </section>
-        <section id="was-bieten-wir-an-3" class="slide level2">
-        <h2>Was bieten wir an?</h2>
-        <h3 id="infrastruktur-und-resourcen">Infrastruktur und
-        Resourcen</h3>
-        <div class="columns">
-        <div class="column">
-        <h3 id="werkzeuge">Werkzeuge</h3>
-        <ul>
-        <li>Modularisierte Werkzeuge, Werkzeugkisten und -regale</li>
-        <li>Verweise auf Literatur, Tutorials, Use cases</li>
-        </ul>
-        <figure>
-        <img
-        data-src="../assets/images/photos/makerspace_werkzeugregal.jpg"
-        alt="Unser Werkzeugregal und Werkzeugkisten" />
-        <figcaption aria-hidden="true">Unser Werkzeugregal und
-        Werkzeugkisten</figcaption>
-        </figure>
-        </div><div class="column">
-        <h3 id="infrastruktur-1">Infrastruktur</h3>
-        <ul>
-        <li>Dockingstationen für Laptops</li>
-        <li>Nutzbarmachung vorhandener Resourcen an der HU
-        <ul>
-        <li>GPU-Rechner und Server</li>
-        <li>3D Drucker :-)</li>
-        </ul></li>
-        </ul>
-        <!-- ![Unsere Dockingstationen](../assets/images/photos/makerspace_docking-stations.jpg) -->
-        </div>
-        </div>
-        <aside class="notes">
-        <p>Hinsichtlich der Ressourcen denken wir den Makerspace
-        zweiteilig:</p>
-        <ol type="1">
-        <li>zum einen wollen wir Infrastrukturen vor Ort zur Verfügung
-        stellen (Hardware, mit der gearbeitet werden kann, aktuell
-        Dockingstations, kann durchaus erweitert werden z.B. 3D-Drucker,
-        wenn Bedarf da ist), aber auch vorhandene Infrastrukturangebote
-        an der HU nutzbar machen (Zugang zu GPU-Rechenkapazitäten,
-        Server des CMS, etc.)</li>
-        <li>zum anderen aggregieren wir bei uns digitale Werkzeuge,
-        welche im geisteswissenschaftlichen Forschungsprozess zum
-        Einsatz kommen
-        <ul>
-        <li>wobei wir Werkzeuge metaphorisch als physisch denken und
-        diese entsprechend nach Werkzeugkisten und -regale
-        systematisieren</li>
-        <li>daneben gibt es Werkzeuganleitungen, die aus Literatur,
-        Tutorials und Best Practices bestehen</li>
-        </ul></li>
-        </ol>
-        </aside>
-        </section>
-        <section id="für-wen-bieten-wir-das-an" class="slide level2">
-        <h2>Für wen bieten wir das an?</h2>
-        <p>Forscher_innen aller Karrierstufen ab der Promotionsphase</p>
-        <div class="columns-3">
-        <div class="column">
-        <h3 id="typ-1">Typ 1</h3>
-        <p>Keine / geringe Kenntnisse aber Interesse an Digital
-        Humanities</p>
-        </div>
-        <div class="column">
-        <h3 id="typ-2">Typ 2</h3>
-        <p>Detaillierte Vorstellungen aber mangelnde Kenntnisse für
-        konkrete Umsetzung</p>
-        </div>
-        <div class="column">
-        <h3 id="typ-3">Typ 3</h3>
-        <p>Detaillierte Kenntnisse aber mangelnder Zugang zu
-        Infrastrukturen</p>
-        </div>
-        </div>
-        <aside class="notes">
-        <ul>
-        <li>Das konkrete Angebot differenziert sich nach Typen von
-        Nutzer_innen</li>
-        <li>nicht auf Typologie eingehen</li>
-        </ul>
-        </aside>
-        </section>
-        <section id="was-bieten-wir-nicht-an" class="slide level2">
-        <h2>Was bieten wir nicht an?</h2>
-        <div class="columns">
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg"
-        alt="Kein 3D Drucker" />
-        <figcaption aria-hidden="true">Kein 3D Drucker</figcaption>
-        </figure>
-        </div><div class="column">
-        <ul>
-        <li>Wir haben keine 3D Drucker</li>
-        <li>Wir schreiben keine Anträge</li>
-        <li>Wir setzen keine Projekte um</li>
-        <li>Wir machen keinen dauerhaften Support</li>
-        <li>Wir bauen und hosten keine Werkzeuge</li>
-        <li>Wir bauen keine Webseiten</li>
-        </ul>
-        </div>
-        </div>
-        <aside class="notes">
-        <ul>
-        <li>Wir können Kontakt zu Leuten mit 3D Druckern herstellen</li>
-        </ul>
-        </aside>
-        </section></section>
-        <section>
-        <section id="schluß-danke" class="title-slide slide level1">
-        <h1>Schluß / Danke!</h1>
-
-        </section>
-        <section id="weitere-informationen" class="slide level2">
-        <h2>Weitere Informationen</h2>
-        <div class="columns">
-        <div class="column">
-        <h3 id="orte">Orte</h3>
-        <ul>
-        <li><em>Scholarly Makerspace</em> im Grimm-Zentrum: Raum 3D
-        (ohne Drucker)</li>
-        <li>Webseite: <a
-        href="https://makerspace.hypotheses.org/">makerspace.hypotheses.org</a></li>
-        </ul>
-        </div><div class="column">
-        <h3 id="folien">Folien</h3>
+        <li>Anlegen und redaktionelle Betreuung eines WikiProjects
         <ul>
         <li><a
-        href="https://furesh.github.io/slides/darstellung/scholarly-makerspace.html">Was
-        ist ein protoypischer <em>Scholarly Makerspace</em>?</a></li>
-        <li><a
-        href="https://furesh.github.io/slides/darstellung/service-profil.html">Unser
-        Serviceportfolio</a></li>
-        <li><a
-        href="https://furesh.github.io/slides/darstellung/operationalisierung.html">Wie
-        sieht das Tüfteln aus?</a></li>
-        <li><a
-        href="https://furesh.github.io/slides/darstellung/infrastruktur.html">Unser
-        Backend</a></li>
+        href="https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry">WikiProject
+        DH Tool Registry</a></li>
+        <li>dient zur Dokumentation <!--des Datenmodells-->, als
+        Hilfestellung und Diskussionsforum sowie zum Monitoring von
+        Tools, die im Scholary Makerspace in Beratungskontexten
+        verwendet werden</li>
+        </ul></li>
+        <li>Aufnahme eines kleinen exemplarischen Datasets an Tools</li>
         </ul>
-        <h3 id="material">Material</h3>
-        <ul>
-        <li><a
-        href="https://furesh.github.io/blackbox-gamification/">Blackboxes
-        zum Ausprobieren</a></li>
-        </ul>
-        </div>
-        </div>
         </section>
-        <section id="refs" class="slide level2 unnumbered">
-        <h2 class="unnumbered">Literatur</h2>
+        <section id="minimales-datenmodell" class="slide level2">
+        <h2>Minimales Datenmodell</h2>
+        <figure id="fig:data-model">
+        <img
+        data-src="https://furesh.github.io/slides/assets/images/tool-registry_wikidata-datamodel.jpg"
+        alt="Unser minimales Datenmodell, v0.1" />
+        <figcaption>Abbildung 1: Unser minimales Datenmodell,
+        v0.1</figcaption>
+        </figure>
+        <p>Anspruch eines allgemeingültigen minimalen Datenmodells
+        erfordert ein iteratives Vorgehen mit
+        Datenmodellanpassungen.</p>
+        <p>Ziel ist ein allgemeingültiges minimales Datenmodell in
+        Wikidata mit ersten exemplarisch verzeichneten Tools.</p>
+        </section>
+        <section id="webanwendung" class="slide level2">
+        <h2>Webanwendung</h2>
+        <ul>
+        <li>Verbesserung der Daten-Zugänglichkeit sowie -Aufbereitung
+        (Portalcharakter)</li>
+        <li>Repräsentationscharakter für den Scholarly Makerspace
+        (Corporate Design, Hintergrundinformationen zum Projekt, etc.)
+        <ul>
+        <li>ähnlich zu:
+        <ul>
+        <li>Archivführer Deutsche Kolonialgeschichte: <a
+        href="https://archivfuehrer-kolonialzeit.de/"
+        class="uri">https://archivfuehrer-kolonialzeit.de/</a></li>
+        <li>Scholia: <a href="https://scholia.toolforge.org"
+        class="uri">https://scholia.toolforge.org</a></li>
+        </ul></li>
+        </ul></li>
+        <li>Recherche von Tools</li>
+        <li>Kontrolliertes Hinzufügen von Tools über json-Schema</li>
+        </ul>
+        </section>
+        <section id="zusammenfassung" class="slide level2">
+        <h2>Zusammenfassung</h2>
+        <p>Nachhaltiges Konzept mit dem Ziel…</p>
+        <ul>
+        <li>übertragbar und anwendbar in anderen DH-Kontexten
+        <ul>
+        <li>offen und skalierbar:
+        <ul>
+        <li>Zugangsperspektive: jede/r kann Tools editieren und
+        hinzufügen</li>
+        <li>Datenmodellperspektive: Das Modell kann später erweitert
+        werden</li>
+        </ul></li>
+        <li>modular:
+        <ul>
+        <li>multiple projektspezifische Wikidata-Projekte können
+        angelegt werden</li>
+        <li>multiple projektspezifische Anwendungen können auf Wikidata
+        aufsetzen</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </section>
+        <section id="vielen-dank" class="slide level2">
+        <h2>Vielen Dank!</h2>
+        </section>
+        <section id="literatur-ref" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur {ref}</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
         role="list">
-        <div id="ref-CPCAbout" class="csl-entry" role="listitem">
-        Centre for Postdigital Cultures. 2018. <span>„About Us“</span>.
-        Centre for Postdigital Cultures. 2018. <a
-        href="https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/">https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/</a>.
-        </div>
-        <div id="ref-DunbarHester2014LowPower" class="csl-entry"
+        <div id="ref-Dombrowski2021DirectoryParadox" class="csl-entry"
         role="listitem">
-        Dunbar-Hester, Christina. 2014. <em>Low Power to the People:
-        Pirates, Protest, and Politics in FM Radio Activism</em>.
-        Cambridge: MIT Press. <a
-        href="https://worldcat.org/title/895772974">https://worldcat.org/title/895772974</a>.
-        </div>
-        <div id="ref-Heinzeletal2020Einleitung" class="csl-entry"
-        role="listitem">
-        Heinzel, Viktoria, Tobias Seidl, und Richard Stang. 2020.
-        <span>„Einleitung“</span>. In <em>Lernwelt Makerspace:
-        Perspektiven im öffentlichen und wissenschaftlichen
-        Kontext</em>, herausgegeben von Viktoria Heinzel, Tobias Seidl,
-        und Richard Stang. Berlin: De Gruyter Saur. <a
-        href="https://doi.org/10.1515/9783110665994">https://doi.org/10.1515/9783110665994</a>.
-        </div>
-        <div id="ref-Rankin2018PeoplesHistory" class="csl-entry"
-        role="listitem">
-        Rankin, Joy Lisi. 2018. <em>A People’s History of Computing in
-        the United States</em>. Harvard: Harvard University Press.
-        </div>
-        <div id="ref-Sayers2017Introduction" class="csl-entry"
-        role="listitem">
-        Sayers, Jentery. 2017. <span>„Introduction: <span>‚I Don’t Know
-        All the Circuitry‘</span>“</span>. In <em>Making Things and
-        Drawing Boundaries</em>, herausgegeben von Jentery Sayers, 1–18.
-        Experiments in the Digital Humanities. University of Minnesota
-        Press. <a
-        href="https://doi.org/10.5749/j.ctt1pwt6wq.3">https://doi.org/10.5749/j.ctt1pwt6wq.3</a>.
-        </div>
-        <div id="ref-Tenen2016BluntInstrumentalism" class="csl-entry"
-        role="listitem">
-        Tenen, Dennis. 2016. <span>„Blunt Instrumentalism: On Tools and
-        Methods“</span>. In <em>Debates in the Digital Humanities</em>,
-        herausgegeben von Matthew K. Gold und Lauren F. Klein, 83–91.
-        Debates in the Digital Humanities 2. Minneapolis: University of
-        Minnesota Press. <a
-        href="https://doi.org/10.5749/j.ctt1cn6thb.12">https://doi.org/10.5749/j.ctt1cn6thb.12</a>.
-        </div>
-        <div id="ref-Winner+1980" class="csl-entry" role="listitem">
-        Winner, Langdon. 1980. <span>„Do artifacts have
-        politics?“</span> <em>Daedalus</em>, 121–36.
-        </div>
-        <div id="ref-Wythoff2022MinimalComputing" class="csl-entry"
-        role="listitem">
-        Wythoff, Grant. 2022. <span>„Ensuring Minimal Computing Serves
-        Maximal Connection“</span>. Herausgegeben von Alex Gil und
-        Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
-        "Minimal Computing"). <a
-        href="http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html">http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html</a>.
+        Dombrowski, Quinn. 2021. <span>„The Directory Paradox“</span>.
+        In <em>People, Practice, Power: Digital Humanities Outside the
+        Center</em>, herausgegeben von Anne B. McGrail, Angel David
+        Nieves, und Siobhan Senier. Debates in the Digital Humanities.
+        Minneapolis: University of Minnesota Press. <a
+        href="https://www.upress.umn.edu/book-division/books/people-practice-power">https://www.upress.umn.edu/book-division/books/people-practice-power</a>.
         </div>
         </div>
         </section></section>
@@ -2337,12 +1815,11 @@ e-Research Support in the Humanities” (2022–25)</p>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2023-04-19</span>
+                    <span class="c_left current-date"></span>
                             <span class="c_left">|</span>
-            <span class="c_left">Till Grallert, Claus-Michael
-Schlesinger</span>
+            <span class="c_left">Sophie Eckenstaler</span>
                         <span class="c_center">
-          <a href="https://furesh.github.io/slides/2023-04-19-ibi">https://furesh.github.io/slides/2023-04-19-ibi</a>
+          <a href="https://furesh.github.io/slides/2023-07-04-dh-at-bib">https://furesh.github.io/slides/2023-07-04-dh-at-bib</a>
           <span></span>
         </span>
                 <!-- this should probably moved to the title slide only -->
