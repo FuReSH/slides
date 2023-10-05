@@ -34,20 +34,20 @@ nocite: |
 ## Überblick
 
 # Warum ein neues Toolverzeichnis?
-## Toolverzeichnisse bedienen einen evidenten Bedarf
-
-Überblick über ein sich kontinuierlich wandelndes Feld
+## Überblick über ein sich kontinuierlich wandelndes Feld
 
 ::: columns
 :::: column
 
-* Informationen zu Werkzeugen: 
-    - Was gibt es?
-    - Wofür kann es im DH Kontext eingesetzt werden?
+![Word cloud der häufigsten Werkzeuge in den Digital Humanities gemessen an der Anzahl von Abstracts für die ADHO Konferenzen](../assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg){#fig:wordcloud-tools}
 
 ::::
 :::: column
 
+- Toolverzeichnisse bedienen einen evidenten Bedarf
+* Informationen zu Werkzeugen: 
+    - Was gibt es?
+    - Wofür kann es im DH Kontext eingesetzt werden?
 * Informationen zum Gebrauch von Werkzeugen: 
     - Wie kann ich das Lernen?
     - Wer hat es wie und mit welchem Ergebnis bereits angewendet?
@@ -63,9 +63,7 @@ nocite: |
 
 :::
 
-## IST-Stand der Toolverzeichnis-Landschaft
-
-**Tool Registries sind Legion:**
+## Tool Registries sind Legion und ein eigenes Genre der DH
 
 ::: columns
 :::: column
@@ -90,11 +88,13 @@ nocite: |
 ::: notes
 
 - Abkürzungen
+    + Bamboo DiRT, 2011, 2012--
     + CESSDA
     + CLARIN
-    + DARIAH
-    + DiRT
-    + TAPoR
+    + DARIAH: Digital Research Infrastructure for the Arts and Humanities, 2011
+    + DiRT: Digital Research Tools, 2008--
+    + TaDiRAH: developed as collaboration between DiRT and DARIAH-DE, 2013
+    + TAPoR: maintained by Geoffrey Roper
 :::
 
 
@@ -109,17 +109,21 @@ nocite: |
 ::: columns
 :::: column
 
+- Projektfinanzierung
 - Datensilos 
     + Fokus auf Präsentationsschicht
+    + Proprietäre bzw. custom Infrastrukturen
     + schlecht dokumentierte oder gar keine Schnittstellen (API's)
     + Kein Normdatensätze
-    + Aus Datenmodellierungsperspektive geschlossene Systeme
 - Kuratierung
     + (unbezahlte) Expert_innen und Gremien
-- Projektfinanzierung
+    + praktisch kein community engagement
+    + unmöglich Informationen aktuel zu halten
 
 ::::
 :::: column
+
+<!-- Screenshot von TAPoR mit dem Verweis auf Stefan Sinclairs Emailadresse -->
 
 ::::
 :::
@@ -141,9 +145,41 @@ nocite: |
 
 ## Ergebnis
 
-Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, representativen und je aktuellen Abbildes der verfügbaren Möglichkeiten computationeller Forschung und digitaler Wissenschaft als gescheitert zu verstehen (vgl. Dombrowski 2021).
+Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, representativen und je aktuellen Abbildes der verfügbaren Möglichkeiten computationeller Forschung und digitaler Wissenschaft als gescheitert zu verstehen.
 
-# Unser Ansatz: Offene Tool Registry mit Wikidata
+# Unser Vorschlag: ein weiteres Toolverzeichnis
+## Wirklich?
+
+![Source: <https://xkcd.com/927>](https://imgs.xkcd.com/comics/standards.png){#fig:xkcd-standards}
+
+ <!-- Unser Ansatz: Offene Tool Registry mit Wikidata -->
+
+## Prinzipien des *minimal computing*
+
+::: columns
+:::: column
+
+>minimal computing connotes digital humanities work undertaken in the context of some set of constraints. This could include lack of access to hardware or software, network capacity, technical education, or even a reliable power grid.
+
+<cite>[@RisamGil2022Introduction, §3]</cite>
+
+![Screenshot einer [Website](https://bulthaup.com/en/b3/) für luxuriöse Küchen](../assets/images/bulthaupt.png){#fig:bulthaupt}
+
+::::
+:::: column
+
+
+
+>this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, **without the help we can’t get**, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
+
+<cite>[@Gil+2016, 29]</cite>
+
+![Frankfurter Küche, Source: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg){#fig:bauhaus}
+
+::::
+:::
+
+
 ## Anforderungen
 
 ::: columns

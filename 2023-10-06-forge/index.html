@@ -1392,9 +1392,9 @@
                     </style>
       </head>
   <body onload="setCurrentDate()">
-        <!-- FuReSH header -->
+        <!-- HU Berlin header -->
     <header>
-        <!-- <a href="https://makerspace.hypotheses.org"><img class="c_left c_logo" src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png"></a> -->
+        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
     </header>
     <div class="reveal">
@@ -1444,21 +1444,28 @@ NFDI 4Memory</p>
         <h1>Warum ein neues Toolverzeichnis?</h1>
 
         </section>
-        <section id="toolverzeichnisse-bedienen-einen-evidenten-bedarf"
+        <section
+        id="überblick-über-ein-sich-kontinuierlich-wandelndes-feld"
         class="slide level2">
-        <h2>Toolverzeichnisse bedienen einen evidenten Bedarf</h2>
-        <p>Überblick über ein sich kontinuierlich wandelndes Feld</p>
+        <h2>Überblick über ein sich kontinuierlich wandelndes Feld</h2>
         <div class="columns">
         <div class="column">
+        <figure id="fig:wordcloud-tools">
+        <img
+        data-src="../assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg"
+        alt="Word cloud der häufigsten Werkzeuge in den Digital Humanities gemessen an der Anzahl von Abstracts für die ADHO Konferenzen" />
+        <figcaption>Figure 1: Word cloud der häufigsten Werkzeuge in den
+        Digital Humanities gemessen an der Anzahl von Abstracts für die
+        ADHO Konferenzen</figcaption>
+        </figure>
+        </div><div class="column">
         <ul>
+        <li>Toolverzeichnisse bedienen einen evidenten Bedarf</li>
         <li>Informationen zu Werkzeugen:
         <ul>
         <li>Was gibt es?</li>
         <li>Wofür kann es im DH Kontext eingesetzt werden?</li>
         </ul></li>
-        </ul>
-        </div><div class="column">
-        <ul>
         <li>Informationen zum Gebrauch von Werkzeugen:
         <ul>
         <li>Wie kann ich das Lernen?</li>
@@ -1477,10 +1484,11 @@ NFDI 4Memory</p>
         </ul>
         </aside>
         </section>
-        <section id="ist-stand-der-toolverzeichnis-landschaft"
+        <section
+        id="tool-registries-sind-legion-und-ein-eigenes-genre-der-dh"
         class="slide level2">
-        <h2>IST-Stand der Toolverzeichnis-Landschaft</h2>
-        <p><strong>Tool Registries sind Legion:</strong></p>
+        <h2>Tool Registries sind Legion und ein eigenes Genre der
+        DH</h2>
         <div class="columns">
         <div class="column">
         <ul>
@@ -1509,11 +1517,15 @@ NFDI 4Memory</p>
         <ul>
         <li>Abkürzungen
         <ul>
+        <li>Bamboo DiRT, 2011, 2012–</li>
         <li>CESSDA</li>
         <li>CLARIN</li>
-        <li>DARIAH</li>
-        <li>DiRT</li>
-        <li>TAPoR</li>
+        <li>DARIAH: Digital Research Infrastructure for the Arts and
+        Humanities, 2011</li>
+        <li>DiRT: Digital Research Tools, 2008–</li>
+        <li>TaDiRAH: developed as collaboration between DiRT and
+        DARIAH-DE, 2013</li>
+        <li>TAPoR: maintained by Geoffrey Roper</li>
         </ul></li>
         </ul>
         </aside>
@@ -1533,22 +1545,24 @@ NFDI 4Memory</p>
         <div class="columns">
         <div class="column">
         <ul>
+        <li>Projektfinanzierung</li>
         <li>Datensilos
         <ul>
         <li>Fokus auf Präsentationsschicht</li>
+        <li>Proprietäre bzw. custom Infrastrukturen</li>
         <li>schlecht dokumentierte oder gar keine Schnittstellen
         (API’s)</li>
         <li>Kein Normdatensätze</li>
-        <li>Aus Datenmodellierungsperspektive geschlossene Systeme</li>
         </ul></li>
         <li>Kuratierung
         <ul>
         <li>(unbezahlte) Expert_innen und Gremien</li>
+        <li>praktisch kein community engagement</li>
+        <li>unmöglich Informationen aktuel zu halten</li>
         </ul></li>
-        <li>Projektfinanzierung</li>
         </ul>
         </div><div class="column">
-
+        <!-- Screenshot von TAPoR mit dem Verweis auf Stefan Sinclairs Emailadresse -->
         </div>
         </div>
         <aside class="notes">
@@ -1590,14 +1604,67 @@ NFDI 4Memory</p>
         <p>Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch
         eines umfassenden, representativen und je aktuellen Abbildes der
         verfügbaren Möglichkeiten computationeller Forschung und
-        digitaler Wissenschaft als gescheitert zu verstehen (vgl.
-        Dombrowski 2021).</p>
+        digitaler Wissenschaft als gescheitert zu verstehen.</p>
         </section></section>
         <section>
-        <section id="unser-ansatz-offene-tool-registry-mit-wikidata"
+        <section id="unser-vorschlag-ein-weiteres-toolverzeichnis"
         class="title-slide slide level1">
-        <h1>Unser Ansatz: Offene Tool Registry mit Wikidata</h1>
+        <h1>Unser Vorschlag: ein weiteres Toolverzeichnis</h1>
 
+        </section>
+        <section id="wirklich" class="slide level2">
+        <h2>Wirklich?</h2>
+        <figure id="fig:xkcd-standards">
+        <img data-src="https://imgs.xkcd.com/comics/standards.png"
+        alt="Source: https://xkcd.com/927" />
+        <figcaption>Figure 2: Source: <a href="https://xkcd.com/927"
+        class="uri">https://xkcd.com/927</a></figcaption>
+        </figure>
+        <p><!-- Unser Ansatz: Offene Tool Registry mit Wikidata --></p>
+        </section>
+        <section id="prinzipien-des-minimal-computing"
+        class="slide level2">
+        <h2>Prinzipien des <em>minimal computing</em></h2>
+        <div class="columns">
+        <div class="column">
+        <blockquote>
+        <p>minimal computing connotes digital humanities work undertaken
+        in the context of some set of constraints. This could include
+        lack of access to hardware or software, network capacity,
+        technical education, or even a reliable power grid.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="RisamGil2022Introduction">(Risam und Gil
+        <span>„Introduction: The Questions of Minimal Computing“</span>
+        2022, Abschn. 3)</span></cite></p>
+        <figure id="fig:bulthaupt">
+        <img data-src="../assets/images/bulthaupt.png"
+        alt="Screenshot einer Website für luxuriöse Küchen" />
+        <figcaption>Figure 3: Screenshot einer <a
+        href="https://bulthaup.com/en/b3/">Website</a> für luxuriöse
+        Küchen</figcaption>
+        </figure>
+        </div><div class="column">
+        <blockquote>
+        <p>this implies learning how to produce, disseminate, and
+        preserve digital scholarship ourselves, <strong>without the help
+        we can’t get</strong>, even as we fight to build the
+        infrastructures we need at the intersection of, with, and beyond
+        institutional libraries and schools.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Gil+2016">(Gil und
+        Ortega <span>„Global Outlooks in Digital Humanities“</span>
+        2016, 29)</span></cite></p>
+        <figure id="fig:bauhaus">
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
+        alt="Frankfurter Küche, Source: WikiCommons, CCO" />
+        <figcaption>Figure 4: Frankfurter Küche, Source: <a
+        href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
+        CCO</a></figcaption>
+        </figure>
+        </div>
+        </div>
         </section>
         <section id="anforderungen" class="slide level2">
         <h2>Anforderungen</h2>
@@ -1640,7 +1707,7 @@ NFDI 4Memory</p>
         <figure id="fig:data-model">
         <img data-src="../assets/images/data-model-v_1.png"
         alt="Basales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption>Figure 1: Basales Datenmodell am Beispiel der
+        <figcaption>Figure 5: Basales Datenmodell am Beispiel der
         Beschreibung von “Gephi”</figcaption>
         </figure>
         </section>
@@ -1765,6 +1832,21 @@ NFDI 4Memory</p>
         Minneapolis: University of Minnesota Press. <a
         href="https://www.upress.umn.edu/book-division/books/people-practice-power">https://www.upress.umn.edu/book-division/books/people-practice-power</a>.
         </div>
+        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
+        Gil, Alex, und Élika Ortega. 2016. <span>„Global Outlooks in
+        Digital Humanities: Multilingual Practices and Minimal
+        Computing“</span>. In <em>Doing digital humanities: practice,
+        training, research</em>, herausgegeben von Constance Crompton,
+        Richard J Lane, und Ray Siemens, 22–34. Abingdon: Routledge.
+        </div>
+        <div id="ref-RisamGil2022Introduction" class="csl-entry"
+        role="listitem">
+        Risam, Roopika, und Alex Gil. 2022. <span>„Introduction: The
+        Questions of Minimal Computing“</span>. Herausgegeben von Alex
+        Gil und Roopika Risam. <em>Digital Humanities Quarterly</em> 16
+        (2, "Minimal Computing"). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
+        </div>
         </div>
         </section></section>
       </div>
@@ -1776,7 +1858,7 @@ NFDI 4Memory</p>
     <script src="../revealjs/plugin/notes/notes.js"></script>
     <script src="../revealjs/plugin/search/search.js"></script>
     <script src="../revealjs/plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -1877,7 +1959,7 @@ NFDI 4Memory</p>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
+                autoSlide: 0,
 
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
@@ -1922,13 +2004,20 @@ NFDI 4Memory</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1000,
-                        height: 800,
-                                        
+                width: 1200,
+                        height: 1000,
+
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+
+        // Bounds for smallest/largest possible scale to apply to content
+
+
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -1954,7 +2043,7 @@ Grallert, Claus-Michael Schlesinger, Samantha Tirtohusodo</span>
           <span></span>
         </span>
                 <!-- this should probably moved to the title slide only -->
-        <span id="institution" class="c_right"><a href="https://www.ub.hu-berlin.de">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>
     <script>
