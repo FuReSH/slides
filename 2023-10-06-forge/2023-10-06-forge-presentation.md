@@ -185,7 +185,7 @@ Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, repr
 Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten können
 
 ::: columns
-:::: {.column .small-font}
+:::: column
 
 ### Was brauchen *wir*?
 
@@ -236,7 +236,7 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 ## Vorschlag
 
 ::: columns
-:::: column
+:::: {.narrow .small-font}
 
 ### Was brauchen *wir*?
 
@@ -254,20 +254,20 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
     + Community Management
 
 ::::
-:::: column
+:::: wide
 
 ### Was machen wir?
 
-- Setzen alles auf Wikidata auf
+- Setzen alles auf [Wikidata][wikidata] auf
     + (Linked) Open Data
     + Community und User Management
-    + Multilingual
+    + Multilingualität von Interface und Daten
     + hohe Sichtbarkeit: Suchmaschinen, Integration in Normdateien ([VIAF](https://viaf.org/))
 - (Nach)-nutzung bestehender Datensätze
     + Mapping nach Wikidata
-        - TAPoR
-        - SSH Open Marketplace
-        - TaDiRAH
+        - [TAPoR][tapor]
+        - [SSH Open Marketplace][sshmarketplace]
+        - [TaDiRAH][tadirah]
 - Entwicklung minimaler Datenmodelle
 
 ::::
