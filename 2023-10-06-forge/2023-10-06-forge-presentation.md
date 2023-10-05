@@ -292,10 +292,10 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
         - How to use (mit Beispielqueries)
 - Dient der Dokumentation <!--des Datenmodells-->, als Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum Monitoring von Tools
 
+![Wikidata:WikiProjekt DH Tool Registry](../assets/images/wikiproject-screenshot.png){#fig:wikidata-wikiproject}
+
 ::::
 :::
-
-<!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
 
 ## Minimales Datenmodel
 
@@ -345,10 +345,30 @@ SELECT DISTINCT ?tool ?toolLabel ?tadirahID ?method WHERE {
 
 <iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3Fmethod%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0A%23ORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
+## Daten: Demonstration TaDiRAH-Mapping
+
+<!--![](../assets/video/wikidata-tadirah-mapping-demo.webm)-->
+
+ <video controls autoplay loop width="100%" style="border: 1px solid #cfcfcf;">
+  <source src="../assets/video/wikidata-tadirah-mapping-demo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video> 
+
 ## Prototypisches Frontend
 
+<video controls autoplay loop width="100%" style="border: 1px solid #cfcfcf;">
+  <source src="../assets/video/kdh-interface.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video> 
+
+:::notes
+
+- Warum:
 - Zugeschnitten auf Einsatz im Beratungskontext der Kompetenzwerkstatt Digital Humanities (KDH)
 - Verbesserung der Daten-Zugänglichkeit sowie -Aufbereitung (Portalcharakter)
+    - Das Wikidata Frontend ist nicht das Nutzer_innenfreundlichste
+        - Dafür braucht es SPARQL oder ein extra Frontend
+        - Wir stellen den SPARQL Query über das WikiProject zur VErfügung (s.o.)
 - Stärkeren Repräsentationscharakter für die KDH (Corporate Design, Hintergrundinformationen zum Projekt, etc.)
     - Wichtig: Daten davon getrennt lassen
 - ähnlich zu: 
@@ -356,19 +376,7 @@ SELECT DISTINCT ?tool ?toolLabel ?tadirahID ?method WHERE {
     - Scholia: <https://scholia.toolforge.org>
 - Recherche von Tools
 - Kontrolliertes Hinzufügen von Tools über json-Schema
-
-<!-- HIER GGF. EIN Scrennshot oder Screencast VOM FRONTEND
-Inhalt der Folie ersetzen oder bearbeiten
- -->
-
-
-::: notes
-
-- Warum
-    + Das Wikidata Frontend ist nicht das Nutzer_innenfreundlichste
-    + Über das Frontend kann ich nicht schnell alle Werkzeuge der Registry abfragen
-        * Dafür braucht es SPARQL oder ein extra Frontend
-        * Wir stellen den SPARQL Query über das WikiProject zur VErfügung (s.o.)
+- Über das Frontend kann ich nicht schnell alle Werkzeuge der Registry abfragen
 
 ::: 
 
