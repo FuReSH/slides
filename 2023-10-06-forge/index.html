@@ -30,6 +30,70 @@
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+          color: #aaaaaa;
+        }
+      pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+      code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+      code span.at { color: #7d9029; } /* Attribute */
+      code span.bn { color: #40a070; } /* BaseN */
+      code span.bu { color: #008000; } /* BuiltIn */
+      code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+      code span.ch { color: #4070a0; } /* Char */
+      code span.cn { color: #880000; } /* Constant */
+      code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+      code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+      code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+      code span.dt { color: #902000; } /* DataType */
+      code span.dv { color: #40a070; } /* DecVal */
+      code span.er { color: #ff0000; font-weight: bold; } /* Error */
+      code span.ex { } /* Extension */
+      code span.fl { color: #40a070; } /* Float */
+      code span.fu { color: #06287e; } /* Function */
+      code span.im { color: #008000; font-weight: bold; } /* Import */
+      code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+      code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+      code span.op { color: #666666; } /* Operator */
+      code span.ot { color: #007020; } /* Other */
+      code span.pp { color: #bc7a00; } /* Preprocessor */
+      code span.sc { color: #4070a0; } /* SpecialChar */
+      code span.ss { color: #bb6688; } /* SpecialString */
+      code span.st { color: #4070a0; } /* String */
+      code span.va { color: #19177c; } /* Variable */
+      code span.vs { color: #4070a0; } /* VerbatimString */
+      code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
       /* CSS for citations */
       div.csl-bib-body { }
       div.csl-entry {
@@ -1562,7 +1626,17 @@ NFDI 4Memory</p>
         </ul></li>
         </ul>
         </div><div class="column">
-        <!-- Screenshot von TAPoR mit dem Verweis auf Stefan Sinclairs Emailadresse -->
+        <figure id="fig:tapor-about">
+        <img data-src="../assets/images/tapor_about.png"
+        alt="TAPoR’s about page" />
+        <figcaption>Figure 2: TAPoR’s about page</figcaption>
+        </figure>
+        <figure id="fig:tapor-contribute">
+        <img data-src="../assets/images/tapor_contribute.png"
+        alt="TAPoR asking you to send the late Stefan Sinclair an email" />
+        <figcaption>Figure 3: TAPoR asking you to send the late Stefan
+        Sinclair an email</figcaption>
+        </figure>
         </div>
         </div>
         <aside class="notes">
@@ -1617,7 +1691,7 @@ NFDI 4Memory</p>
         <figure id="fig:xkcd-standards">
         <img data-src="https://imgs.xkcd.com/comics/standards.png"
         alt="Source: https://xkcd.com/927" />
-        <figcaption>Figure 2: Source: <a href="https://xkcd.com/927"
+        <figcaption>Figure 4: Source: <a href="https://xkcd.com/927"
         class="uri">https://xkcd.com/927</a></figcaption>
         </figure>
         <p><!-- Unser Ansatz: Offene Tool Registry mit Wikidata --></p>
@@ -1640,7 +1714,7 @@ NFDI 4Memory</p>
         <figure id="fig:bulthaupt">
         <img data-src="../assets/images/bulthaupt.png"
         alt="Screenshot einer Website für luxuriöse Küchen" />
-        <figcaption>Figure 3: Screenshot einer <a
+        <figcaption>Figure 5: Screenshot einer <a
         href="https://bulthaup.com/en/b3/">Website</a> für luxuriöse
         Küchen</figcaption>
         </figure>
@@ -1659,7 +1733,7 @@ NFDI 4Memory</p>
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
         alt="Frankfurter Küche, Source: WikiCommons, CCO" />
-        <figcaption>Figure 4: Frankfurter Küche, Source: <a
+        <figcaption>Figure 6: Frankfurter Küche, Source: <a
         href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
         CCO</a></figcaption>
         </figure>
@@ -1781,15 +1855,11 @@ NFDI 4Memory</p>
         </ul>
         </div>
         </div>
-        </section>
-        <section id="daten-wikidata" class="slide level2">
-        <h2>Daten: Wikidata</h2>
-        <figure id="fig:data-model">
-        <img data-src="../assets/images/data-model-v_1.png"
-        alt="Basales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption>Figure 5: Basales Datenmodell am Beispiel der
-        Beschreibung von “Gephi”</figcaption>
-        </figure>
+        </section></section>
+        <section>
+        <section id="umsetzung" class="title-slide slide level1">
+        <h1>Umsetzung</h1>
+
         </section>
         <section id="community-wikiproject-dh-tool-registry"
         class="slide level2">
@@ -1815,41 +1885,30 @@ NFDI 4Memory</p>
         </ul>
         <!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
         </section>
-        <section id="anforderungen" class="slide level2">
-        <h2>Anforderungen</h2>
-        <div class="columns">
-        <div class="column">
-        <h3 id="inhaltlich">Inhaltlich</h3>
-        <ul>
-        <li>Tools minimal formal beschreiben sowie aggregieren</li>
-        <li>Tools kategorisiert (z.B. nach <a
-        href="https://vocabs.dariah.eu/tadirah">TaDiRAH</a>) sammeln und
-        auffindbar machen</li>
-        <li>Tools eindeutig referenzierbar machen</li>
-        <li>Wachsender Survey einer <em>Tool-Landschaft</em> bzw.
-        <em>Tool-Bandbreite</em></li>
-        </ul>
-        </div><div class="column">
-        <h3 id="formal-nachhaltige-infrastruktur">Formal: Nachhaltige
-        Infrastruktur</h3>
-        <ul>
-        <li>Nutzung vorhandener Informationen zu Tools
-        <ul>
-        <li>ggf. aus unterschiedlichen Datenquellen</li>
-        <li>vorzugsweise LOD (nach 5-Sterne-Modell von Tim
-        Berners-Lee)</li>
-        </ul></li>
-        <li>Unsere Daten als Beitrag zu <em>digital commons</em></li>
-        <li>Dokumentation einer exemplarischen, offenen Infrastruktur
-        für die Nutzung durch andere</li>
-        </ul>
-        </div>
-        </div>
-        </section></section>
-        <section>
-        <section id="umsetzung" class="title-slide slide level1">
-        <h1>Umsetzung</h1>
-
+        <section id="daten-wikidata" class="slide level2">
+        <h2>Daten: Wikidata</h2>
+        <figure id="fig:data-model">
+        <img data-src="../assets/images/data-model-v_1.png"
+        alt="Basales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
+        <figcaption>Figure 7: Basales Datenmodell am Beispiel der
+        Beschreibung von “Gephi”</figcaption>
+        </figure>
+        </section>
+        <section id="daten-sparql-abfragen" class="slide level2">
+        <h2>Daten: SPARQL abfragen</h2>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> ?tool ?toolLabel ?<span class="kw">method</span> ?methodLabel ?tadirahID <span class="kw">WHERE</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  SERVICE wikibase<span class="ch">:label</span> { bd<span class="ch">:serviceParam</span> wikibase<span class="ch">:language</span> <span class="ot">&quot;[AUTO_LANGUAGE],en&quot;</span>. }</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  # <span class="kw">select</span> <span class="kw">all</span> items that have a TaDiRAH <span class="kw">ID</span> <span class="kw">and</span> are therefore assumed <span class="kw">to</span> be research methods</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  ?<span class="kw">method</span> p<span class="ch">:P9309</span> ?statement0.</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  ?statement0 ps<span class="ch">:P9309</span> ?tadirahID.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  # <span class="kw">select</span> <span class="kw">all</span> items that have assigned a <span class="kw">method</span> <span class="kw">from</span> our subset <span class="kw">through</span> `has use`</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  ?tool wdt<span class="ch">:P366</span> ?<span class="kw">method</span>;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        # <span class="kw">filter</span> <span class="cf">for</span> <span class="kw">all</span> items that are an `instance of` <span class="ot">&quot;software&quot;</span> <span class="kw">or</span> its subclasses</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        wdt<span class="ch">:P31</span><span class="op">/</span>wdt<span class="ch">:P279</span><span class="op">*</span> wd<span class="ch">:Q7397</span>.  </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+        <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3Fmethod%20%3FmethodLabel%20%3FtadirahID%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0AORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups">
+        </iframe>
         </section>
         <section id="prototypisches-frontend" class="slide level2">
         <h2>Prototypisches Frontend</h2>
@@ -1903,7 +1962,7 @@ NFDI 4Memory</p>
         <li>Multiple projektspezifische Wikidata-Projekte können
         angelegt werden.
         <ul>
-        <li>Datenmodell kann domänspezifischen Krititerien erweitert
+        <li>Datenmodell kann um domänspezifischen Krititerien erweitert
         werden.</li>
         </ul></li>
         <li>Multiple projektspezifische Anwendungen können auf Wikidata
@@ -1920,8 +1979,8 @@ NFDI 4Memory</p>
         <h1>Vielen Dank für Ihre Aufmerksamkeit!</h1>
 
         </section>
-        <section id="literatur-ref" class="slide level2 unnumbered">
-        <h2 class="unnumbered">Literatur {ref}</h2>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
         role="list">
         <div id="ref-BarbotEtAl2019ToolsMentioned" class="csl-entry"
