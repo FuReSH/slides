@@ -15,7 +15,7 @@ markdown: pandoc
 revealjs-url: https://furesh.github.io/slides/revealjs
 tags:
     - FuReSH
-    - public relations
+    - PublicRelations
     - slides
 ---
 

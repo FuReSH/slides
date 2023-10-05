@@ -17,7 +17,7 @@ revealjs-url: https://furesh.github.io/slides/revealjs
 url: https://furesh.github.io/slides/2022-hamburg
 tags:
     - FuReSH
-    - public relations
+    - PublicRelations
     - slides
 ---
 

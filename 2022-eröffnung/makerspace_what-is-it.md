@@ -19,7 +19,7 @@ licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
     - FuReSH
-    - public relations
+    - PublicRelations
     - slides
 ---
 

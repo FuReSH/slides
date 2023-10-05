@@ -21,7 +21,7 @@ licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
     - FuReSH
-    - tool registry
+    - ToolRegistry
     - slides
 nocite: |
     @BorekEtAl2016TaDiRAHCaseStudy; @BorekEtAl2021InformationOrganizationAccess; @Zhao2022SystematicReviewWikidata; @FischerEtAl2023Preface
