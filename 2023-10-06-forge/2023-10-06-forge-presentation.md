@@ -16,7 +16,7 @@ institute:
 homepage: https://makerspace.hypotheses.org/
 event: FORGE 2023
 date: 2023-10-06
-url: https://furesh.github.io/slides/2023-10-06_forge
+url: https://furesh.github.io/slides/2023-10-06-forge
 status: published
 lang: de
 bibliography:
@@ -169,7 +169,6 @@ Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, repr
 :::: column
 
 
-
 >this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, **without the help we can’t get**, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
 
 <cite>[@Gil+2016, 29]</cite>
@@ -179,6 +178,34 @@ Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, repr
 ::::
 :::
 
+## Ansatz
+
+Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten können
+
+::: columns
+:::: column
+
+### Was brauchen *wir*?
+
+
+::::
+:::: column
+
+### Wer sind *wir*?
+
++ 3 Personen
++ Projektfinanziert
++ Gemeinschaft von Praktitioners
+
+### Was haben *wir*?
+
++ Know-how
++ Kontakte
++ Anschubfinanzierung
++ anteilige Arbeitszeit
+
+::::
+:::
 
 ## Anforderungen
 
