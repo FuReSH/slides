@@ -68,8 +68,8 @@ nocite: |
 ::: columns
 :::: column
 
-- DiRT -> Bamboo -> [TAPoR (3.0)](https://tapor.ca/)
-- [Social Sciences and Humanities (SSH) Open Marketplace](https://marketplace.sshopencloud.eu)
+- DiRT -> Bamboo -> [TAPoR (3.0)][tapor]
+- [Social Sciences and Humanities (SSH) Open Marketplace][sshmarketplace]
     + DARIAH, CLARIN, CESSDA
 - NFDIs
     + [fortext](https://fortext.net/tools)
@@ -89,12 +89,12 @@ nocite: |
 
 - Abkürzungen
     + Bamboo DiRT, 2011, 2012--
-    + CESSDA
-    + CLARIN
+    + CESSDA: Consortium of European Social Science Data Archives
+    + CLARIN: Common Language Resources and Technology Infrastructure
     + DARIAH: Digital Research Infrastructure for the Arts and Humanities, 2011
     + DiRT: Digital Research Tools, 2008--
     + TaDiRAH: developed as collaboration between DiRT and DARIAH-DE, 2013
-    + TAPoR: maintained by Geoffrey Roper
+    + TAPoR: Text Analysis Portal for Research, maintained by Geoffrey Roper
 :::
 
 
@@ -137,7 +137,7 @@ nocite: |
 - Sehr eingeschränkter Einsatz von APIs
     + Bsp. TAPoR hat eine nicht-dokumentierte API, auf die wir nur durch eine Analyese des  [ToolXtractor](https://github.com/lehkost/ToolXtractor)  [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools] gestoßen sind.
     + Bsp. SSH Open Marketplace hat eine dokumentierte API, aber es lassen sich nicht alle Werkzeuge abfragen, die mit einem bestimmten TaDiRAH-Konzept kategorisiert sind
-- Folge: frozen in time:
+- Folge: Momentaufnahme
     + IDs können nicht von externen für LOD benutzt werden 
     + Es können keine neuen Werkzeuge hinzugefügt werden
     + Es gibt keine dauerhafte Maintenance (Finanzierung)
@@ -207,7 +207,7 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 
 ### Wer sind *wir*?
 
-+ 3 Personen
++ 4 Personen
 + Projektfinanziert
 + Gemeinschaft von Praktitioners
 
@@ -262,7 +262,7 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
     + (Linked) Open Data
     + Community und User Management
     + Multilingual
-    + hohe Sichtbarkeit: Suchmaschinen, [VIAF](https://viaf.org/)
+    + hohe Sichtbarkeit: Suchmaschinen, Integration in Normdateien ([VIAF](https://viaf.org/))
 - (Nach)-nutzung bestehender Datensätze
     + Mapping nach Wikidata
         - TAPoR
@@ -283,13 +283,18 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
         - Datamodel
         - How to use (mit Beispielqueries)
 - Dient der Dokumentation <!--des Datenmodells-->, als Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum Monitoring von Tools
-- Aufnahme eines kleinen exemplarischen Datasets an Tools
 
 <!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
 
 ## Daten: Wikidata
 
 ![Basales Datenmodell am Beispiel der Beschreibung von "Gephi"](../assets/images/data-model-v_1.png){#fig:data-model}
+
+::: notes
+
+- Aufnahme eines kleinen exemplarischen Datasets an Tools
+
+:::
 
 ## Daten: SPARQL abfragen
 
@@ -312,7 +317,7 @@ SELECT DISTINCT ?tool ?toolLabel ?method ?methodLabel ?tadirahID WHERE {
 
 ## Prototypisches Frontend
 
-- Zugeschnitten auf Einsatz im Beratungskontext der Kompetenzwerkstatt Digital Humanities (KWDH)
+- Zugeschnitten auf Einsatz im Beratungskontext der Kompetenzwerkstatt Digital Humanities (KDH)
 - Verbesserung der Daten-Zugänglichkeit sowie -Aufbereitung (Portalcharakter)
 - Stärkeren Repräsentationscharakter für die KDH (Corporate Design, Hintergrundinformationen zum Projekt, etc.)
     - Wichtig: Daten davon getrennt lassen
@@ -322,7 +327,20 @@ SELECT DISTINCT ?tool ?toolLabel ?method ?methodLabel ?tadirahID WHERE {
 - Recherche von Tools
 - Kontrolliertes Hinzufügen von Tools über json-Schema
 
-<!-- HIER GGF. EIN VIDEO VOM FRONTEND -->
+<!-- HIER GGF. EIN Scrennshot oder Screencast VOM FRONTEND
+Inhalt der Folie ersetzen oder bearbeiten
+ -->
+
+
+::: notes
+
+- Warum
+    + Das Wikidata Frontend ist nicht das Nutzer_innenfreundlichste
+    + Über das Frontend kann ich nicht schnell alle Werkzeuge der Registry abfragen
+        * Dafür braucht es SPARQL oder ein extra Frontend
+        * Wir stellen den SPARQL Query über das WikiProject zur VErfügung (s.o.)
+
+::: 
 
 # Zusammenfassung
 ## Nachhaltiges Konzept mit dem Ziel ...
@@ -339,4 +357,18 @@ SELECT DISTINCT ?tool ?toolLabel ?method ?methodLabel ?tadirahID WHERE {
         - Unabhängig von Interfaces.
 
 # Vielen Dank für Ihre Aufmerksamkeit!
+-----------------
+
+<!-- QR COde zum WikiProject -->
+
 ## Literatur {#refs}
+
+
+[huberlin]: https://hu-berlin.de/
+[scholia]: https://scholia.toolforge.org/
+[sshmarketplace]: https://marketplace.sshopencloud.eu/
+[tadirah]: https://vocabs.dariah.eu/tadirah/
+[tapor]: https://tapor.ca/
+[viaf]: https://viaf.org/
+[wikidata]: https://wikidata.org/
+[4memory]: https://4memory.de/
