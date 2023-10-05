@@ -1840,11 +1840,12 @@ NFDI 4Memory</p>
         </section><section id="was-machen-wir" class="wide">
         <h3>Was machen wir?</h3>
         <ul>
-        <li>Setzen alles auf Wikidata auf
+        <li>Setzen alles auf <a
+        href="https://wikidata.org/">Wikidata</a> auf
         <ul>
         <li>(Linked) Open Data</li>
         <li>Community und User Management</li>
-        <li>Multilingual</li>
+        <li>Multilingualität von Interface und Daten</li>
         <li>hohe Sichtbarkeit: Suchmaschinen, Integration in Normdateien
         (<a href="https://viaf.org/">VIAF</a>)</li>
         </ul></li>
@@ -1852,9 +1853,10 @@ NFDI 4Memory</p>
         <ul>
         <li>Mapping nach Wikidata
         <ul>
-        <li>TAPoR</li>
-        <li>SSH Open Marketplace</li>
-        <li>TaDiRAH</li>
+        <li><a href="https://tapor.ca/">TAPoR</a></li>
+        <li><a href="https://marketplace.sshopencloud.eu/">SSH Open
+        Marketplace</a></li>
+        <li><a href="https://vocabs.dariah.eu/tadirah/">TaDiRAH</a></li>
         </ul></li>
         </ul></li>
         <li>Entwicklung minimaler Datenmodelle</li>
@@ -1870,6 +1872,16 @@ NFDI 4Memory</p>
         <section id="community-wikiproject-dh-tool-registry"
         class="slide level2">
         <h2>Community: WikiProject DH Tool Registry</h2>
+        <div class="columns">
+        <div class="narrow">
+        <figure>
+        <img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/url_wikiproject.jpg"
+        alt="Link zu unserem WikiProject" />
+        <figcaption aria-hidden="true">Link zu unserem <a
+        href="https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry">WikiProject</a></figcaption>
+        </figure>
+        </div><div class="wide">
         <ul>
         <li>Anlegen und redaktionelle Betreuung eines WikiProjekts in
         Wikidata
@@ -1888,26 +1900,57 @@ NFDI 4Memory</p>
         Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum
         Monitoring von Tools</li>
         </ul>
+        </div>
+        </div>
         <!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
         </section>
-        <section id="daten-wikidata" class="slide level2">
-        <h2>Daten: Wikidata</h2>
-        <figure id="fig:data-model">
-        <img data-src="../assets/images/data-model-v_1.png"
-        alt="Basales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption>Figure 7: Basales Datenmodell am Beispiel der
+        <section id="minimales-datenmodel" class="slide level2">
+        <h2>Minimales Datenmodel</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Methoden bzw. <strong>Verfahren</strong> sind durch
+        <strong>Theorien</strong> informiert und haben einen
+        <em>Zweck</em>.</li>
+        <li><strong>Software-Werkzeuge</strong> implementieren
+        <strong>Verfahren</strong>
+        <ul>
+        <li>stellen Anforderungen an <strong>Hardware</strong> und
+        Infrastrukturen</li>
+        <li>interagieren mit <strong>Formaten</strong> (lesen,
+        schreiben).</li>
+        <li>sind in <strong>Sprachen</strong> geschrieben und benötigen
+        ohne GUI <strong>Sprachen</strong> zur Interaktion.</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:data-model-minimal">
+        <img data-src="../assets/images/data-model_minimal-v_1.png"
+        alt="Minimales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
+        <figcaption>Figure 7: Minimales Datenmodell am Beispiel der
         Beschreibung von “Gephi”</figcaption>
         </figure>
+        </div>
+        </div>
         <aside class="notes">
         <ul>
         <li>Aufnahme eines kleinen exemplarischen Datasets an Tools</li>
         </ul>
         </aside>
         </section>
+        <section id="erweiterte-datenmodelle" class="slide level2">
+        <h2>Erweiterte Datenmodelle</h2>
+        <figure id="fig:data-model-extended">
+        <img data-src="../assets/images/data-model_extended-v_1.png"
+        alt="Erweitertes Datenmodell am Beispiel der Beschreibung von “Gephi”" />
+        <figcaption>Figure 8: Erweitertes Datenmodell am Beispiel der
+        Beschreibung von “Gephi”</figcaption>
+        </figure>
+        </section>
         <section id="daten-sparql-abfragen" class="slide level2">
         <h2>Daten: SPARQL abfragen</h2>
         <div class="sourceCode" id="cb1"><pre
-        class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> ?tool ?toolLabel ?<span class="kw">method</span> ?methodLabel ?tadirahID <span class="kw">WHERE</span> {</span>
+        class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> ?tool ?toolLabel ?tadirahID ?<span class="kw">method</span> <span class="kw">WHERE</span> {</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  SERVICE wikibase<span class="ch">:label</span> { bd<span class="ch">:serviceParam</span> wikibase<span class="ch">:language</span> <span class="ot">&quot;[AUTO_LANGUAGE],en&quot;</span>. }</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  # <span class="kw">select</span> <span class="kw">all</span> items that have a TaDiRAH <span class="kw">ID</span> <span class="kw">and</span> are therefore assumed <span class="kw">to</span> be research methods</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  ?<span class="kw">method</span> p<span class="ch">:P9309</span> ?statement0.</span>
@@ -1917,7 +1960,7 @@ NFDI 4Memory</p>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        # <span class="kw">filter</span> <span class="cf">for</span> <span class="kw">all</span> items that are an `instance of` <span class="ot">&quot;software&quot;</span> <span class="kw">or</span> its subclasses</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        wdt<span class="ch">:P31</span><span class="op">/</span>wdt<span class="ch">:P279</span><span class="op">*</span> wd<span class="ch">:Q7397</span>.  </span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-        <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3Fmethod%20%3FmethodLabel%20%3FtadirahID%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0AORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups">
+        <iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3Fmethod%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0A%23ORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups">
         </iframe>
         </section>
         <section id="prototypisches-frontend" class="slide level2">
@@ -2003,8 +2046,14 @@ NFDI 4Memory</p>
         </section>
         <section id="vielen-dank-für-ihre-aufmerksamkeit"
         class="slide level2">
-        <h2># Vielen Dank für Ihre Aufmerksamkeit!</h2>
-        <!-- QR COde zum WikiProject -->
+        <h2>Vielen Dank für Ihre Aufmerksamkeit!</h2>
+        <figure>
+        <img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/url_wikiproject.jpg"
+        alt="Link zu unserem WikiProject" />
+        <figcaption aria-hidden="true">Link zu unserem <a
+        href="https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry">WikiProject</a></figcaption>
+        </figure>
         </section>
         <section id="refs" class="slide level2 unnumbered">
         <h2 class="unnumbered">Literatur</h2>

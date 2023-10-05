@@ -276,6 +276,14 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 # Umsetzung
 ## Community: WikiProject DH Tool Registry
 
+::: columns
+:::: narrow
+
+![Link zu unserem [WikiProject][wikiproject]](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/url_wikiproject.jpg)
+
+::::
+:::: wide
+
 - Anlegen und redaktionelle Betreuung eines WikiProjekts in Wikidata
     - [WikiProject DH Tool Registry](https://www.wikidata.org/wiki/Wikidata:WikiProject\_DH\_Tool_Registry) mit:
         - Landingpage
@@ -284,11 +292,29 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
         - How to use (mit Beispielqueries)
 - Dient der Dokumentation <!--des Datenmodells-->, als Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum Monitoring von Tools
 
+::::
+:::
+
 <!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
 
-## Daten: Wikidata
+## Minimales Datenmodel
 
-![Basales Datenmodell am Beispiel der Beschreibung von "Gephi"](../assets/images/data-model-v_1.png){#fig:data-model}
+::: columns
+:::: column
+
+- Methoden bzw. **Verfahren** sind durch **Theorien** informiert und haben einen _Zweck_. 
+- **Software-Werkzeuge** implementieren **Verfahren**
+    + stellen Anforderungen an **Hardware** und Infrastrukturen
+    + interagieren mit **Formaten** (lesen, schreiben).
+    + sind in **Sprachen** geschrieben und benötigen ohne GUI **Sprachen** zur Interaktion.
+
+::::
+:::: column
+
+![Minimales Datenmodell am Beispiel der Beschreibung von "Gephi"](../assets/images/data-model_minimal-v_1.png){#fig:data-model-minimal}
+
+::::
+:::
 
 ::: notes
 
@@ -296,10 +322,14 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 
 :::
 
+## Erweiterte Datenmodelle
+
+![Erweitertes Datenmodell am Beispiel der Beschreibung von "Gephi"](../assets/images/data-model_extended-v_1.png){#fig:data-model-extended}
+
 ## Daten: SPARQL abfragen
 
 ```sql
-SELECT DISTINCT ?tool ?toolLabel ?method ?methodLabel ?tadirahID WHERE {
+SELECT DISTINCT ?tool ?toolLabel ?tadirahID ?method WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
   # select all items that have a TaDiRAH ID and are therefore assumed to be research methods
   ?method p:P9309 ?statement0.
@@ -313,7 +343,7 @@ SELECT DISTINCT ?tool ?toolLabel ?method ?methodLabel ?tadirahID WHERE {
 
 
 
-<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3Fmethod%20%3FmethodLabel%20%3FtadirahID%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0AORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3Fmethod%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0A%23ORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 ## Prototypisches Frontend
 
@@ -356,10 +386,9 @@ Inhalt der Folie ersetzen oder bearbeiten
     - Multiple projektspezifische Anwendungen können auf Wikidata aufsetzen.
         - Unabhängig von Interfaces.
 
-# Vielen Dank für Ihre Aufmerksamkeit!
------------------
+## Vielen Dank für Ihre Aufmerksamkeit!
 
-<!-- QR COde zum WikiProject -->
+![Link zu unserem [WikiProject][wikiproject]](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/url_wikiproject.jpg)
 
 ## Literatur {#refs}
 
@@ -371,4 +400,5 @@ Inhalt der Folie ersetzen oder bearbeiten
 [tapor]: https://tapor.ca/
 [viaf]: https://viaf.org/
 [wikidata]: https://wikidata.org/
+[wikiproject]: https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry
 [4memory]: https://4memory.de/
