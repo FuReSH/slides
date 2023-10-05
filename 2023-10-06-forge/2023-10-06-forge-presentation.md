@@ -147,7 +147,7 @@ nocite: |
 
 Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, representativen und je aktuellen Abbildes der verfügbaren Möglichkeiten computationeller Forschung und digitaler Wissenschaft als gescheitert zu verstehen.
 
-# Unser Vorschlag: ein weiteres Toolverzeichnis
+# Unser Vorschlag <br/>ein weiteres Toolverzeichnis
 ## Wirklich?
 
 ![Source: <https://xkcd.com/927>](https://imgs.xkcd.com/comics/standards.png){#fig:xkcd-standards}
@@ -183,7 +183,7 @@ Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, repr
 Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten können
 
 ::: columns
-:::: column
+:::: {.column .small-font}
 
 ### Was brauchen *wir*?
 
@@ -196,7 +196,7 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
     + referenzierbar sein
     + auffindbar sein
 - Einbettung in bestehende Infrastruktur
-    + offen
+    + Linked Open Data
     + hohe Sichtbarkeit
     + Community Management
 
