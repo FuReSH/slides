@@ -1666,13 +1666,35 @@ NFDI 4Memory</p>
         </div>
         </div>
         </section>
-        <section id="ansatz" class="slide level2">
-        <h2>Ansatz</h2>
+        <section id="grundlagen" class="slide level2">
+        <h2>Grundlagen</h2>
         <p>Wir müssen die Frage “was brauchen <em>wir</em>” mit “was
         haben <em>wir</em>” beantworten können</p>
         <div class="columns">
         <div class="column">
         <h3 id="was-brauchen-wir">Was brauchen <em>wir</em>?</h3>
+        <ul>
+        <li>Toolverzeichnis (s.o.), als Abbild
+        <ul>
+        <li>der sich wandelden <em>Tool-Landschaft</em> bzw.
+        <em>Tool-Bandbreite</em></li>
+        <li>des <em>Toolgebrauchs</em> in den Digital Humanities,
+        Digital History …</li>
+        </ul></li>
+        <li>Tools sollen
+        <ul>
+        <li>beschrieben werden</li>
+        <li>klassifiziert werden</li>
+        <li>referenzierbar sein</li>
+        <li>auffindbar sein</li>
+        </ul></li>
+        <li>Einbettung in bestehende Infrastruktur
+        <ul>
+        <li>offen</li>
+        <li>hohe Sichtbarkeit</li>
+        <li>Community Management</li>
+        </ul></li>
+        </ul>
         </div><div class="column">
         <h3 id="wer-sind-wir">Wer sind <em>wir</em>?</h3>
         <ul>
@@ -1689,6 +1711,109 @@ NFDI 4Memory</p>
         </ul>
         </div>
         </div>
+        <aside class="notes">
+        <ul>
+        <li>Funktionen von Toolverzeichnissen
+        <ul>
+        <li>Informationen zu Werkzeugen:
+        <ul>
+        <li>Was gibt es?</li>
+        <li>Wofür kann es im DH Kontext eingesetzt werden?</li>
+        </ul></li>
+        <li>Informationen zum Gebrauch von Werkzeugen:
+        <ul>
+        <li>Wie kann ich das Lernen?</li>
+        <li>Wer hat es wie und mit welchem Ergebnis bereits
+        angewendet?</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="vorschlag" class="slide level2">
+        <h2>Vorschlag</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="was-brauchen-wir-1">Was brauchen <em>wir</em>?</h3>
+        <ul>
+        <li>Toolverzeichnis (s.o.), als Abbild
+        <ul>
+        <li>der sich wandelden <em>Tool-Landschaft</em> bzw.
+        <em>Tool-Bandbreite</em></li>
+        <li>des <em>Toolgebrauchs</em> in den Digital Humanities,
+        Digital History …</li>
+        </ul></li>
+        <li>Tools sollen
+        <ul>
+        <li>beschrieben werden</li>
+        <li>klassifiziert werden</li>
+        <li>referenzierbar sein</li>
+        <li>auffindbar sein</li>
+        </ul></li>
+        <li>Einbettung in bestehende Infrastruktur
+        <ul>
+        <li>Linked Open Data</li>
+        <li>hohe Sichtbarkeit</li>
+        <li>Community Management</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <h3 id="was-machen-wir">Was machen wir?</h3>
+        <ul>
+        <li>Setzen alles auf Wikidata auf
+        <ul>
+        <li>(Linked) Open Data</li>
+        <li>Community und User Management</li>
+        <li>Multilingual</li>
+        <li>hohe Sichtbarkeit: Suchmaschinen, <a
+        href="https://viaf.org/">VIAF</a></li>
+        </ul></li>
+        <li>(Nach)-nutzung bestehender Datensätze
+        <ul>
+        <li>Mapping nach Wikidata
+        <ul>
+        <li>TAPoR</li>
+        <li>SSH Open Marketplace</li>
+        <li>TaDiRAH</li>
+        </ul></li>
+        </ul></li>
+        <li>Entwicklung minimaler Datenmodelle</li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="daten-wikidata" class="slide level2">
+        <h2>Daten: Wikidata</h2>
+        <figure id="fig:data-model">
+        <img data-src="../assets/images/data-model-v_1.png"
+        alt="Basales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
+        <figcaption>Figure 5: Basales Datenmodell am Beispiel der
+        Beschreibung von “Gephi”</figcaption>
+        </figure>
+        </section>
+        <section id="community-wikiproject-dh-tool-registry"
+        class="slide level2">
+        <h2>Community: WikiProject DH Tool Registry</h2>
+        <ul>
+        <li>Anlegen und redaktionelle Betreuung eines WikiProjekts in
+        Wikidata
+        <ul>
+        <li><a
+        href="https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry">WikiProject
+        DH Tool Registry</a> mit:
+        <ul>
+        <li>Landingpage</li>
+        <li>Background</li>
+        <li>Datamodel</li>
+        <li>How to use (mit Beispielqueries)</li>
+        </ul></li>
+        </ul></li>
+        <li>Dient der Dokumentation <!--des Datenmodells-->, als
+        Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum
+        Monitoring von Tools</li>
+        <li>Aufnahme eines kleinen exemplarischen Datasets an Tools</li>
+        </ul>
+        <!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
         </section>
         <section id="anforderungen" class="slide level2">
         <h2>Anforderungen</h2>
@@ -1697,8 +1822,8 @@ NFDI 4Memory</p>
         <h3 id="inhaltlich">Inhaltlich</h3>
         <ul>
         <li>Tools minimal formal beschreiben sowie aggregieren</li>
-        <li>Tools kategorisiert (z.B. nach
-        [TaDiRAH](https://vocabs.dariah.eu/tadirah)) sammeln und
+        <li>Tools kategorisiert (z.B. nach <a
+        href="https://vocabs.dariah.eu/tadirah">TaDiRAH</a>) sammeln und
         auffindbar machen</li>
         <li>Tools eindeutig referenzierbar machen</li>
         <li>Wachsender Survey einer <em>Tool-Landschaft</em> bzw.
@@ -1725,39 +1850,6 @@ NFDI 4Memory</p>
         <section id="umsetzung" class="title-slide slide level1">
         <h1>Umsetzung</h1>
 
-        </section>
-        <section id="basisdatenmodell" class="slide level2">
-        <h2>Basisdatenmodell</h2>
-        <figure id="fig:data-model">
-        <img data-src="../assets/images/data-model-v_1.png"
-        alt="Basales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption>Figure 5: Basales Datenmodell am Beispiel der
-        Beschreibung von “Gephi”</figcaption>
-        </figure>
-        </section>
-        <section id="wikidatawikiproject-dh-tool-registry"
-        class="slide level2">
-        <h2>Wikidata:WikiProject DH Tool Registry</h2>
-        <ul>
-        <li>Anlegen und redaktionelle Betreuung eines WikiProjekts in
-        Wikidata
-        <ul>
-        <li><a
-        href="https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry">WikiProject
-        DH Tool Registry</a> mit:
-        <ul>
-        <li>Landingpage</li>
-        <li>Background</li>
-        <li>Datamodel</li>
-        <li>How to use (mit Beispielqueries)</li>
-        </ul></li>
-        </ul></li>
-        <li>Dient der Dokumentation <!--des Datenmodells-->, als
-        Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum
-        Monitoring von Tools</li>
-        <li>Aufnahme eines kleinen exemplarischen Datasets an Tools</li>
-        </ul>
-        <!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
         </section>
         <section id="prototypisches-frontend" class="slide level2">
         <h2>Prototypisches Frontend</h2>

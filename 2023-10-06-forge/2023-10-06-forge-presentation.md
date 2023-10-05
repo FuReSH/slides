@@ -178,7 +178,7 @@ Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, repr
 ::::
 :::
 
-## Ansatz
+## Grundlagen
 
 Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten können
 
@@ -187,6 +187,18 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 
 ### Was brauchen *wir*?
 
+- Toolverzeichnis (s.o.), als Abbild 
+    + der sich wandelden *Tool-Landschaft* bzw. *Tool-Bandbreite*
+    + des *Toolgebrauchs* in den Digital Humanities, Digital History ...
+- Tools sollen
+    + beschrieben werden
+    + klassifiziert werden
+    + referenzierbar sein
+    + auffindbar sein
+- Einbettung in bestehende Infrastruktur
+    + offen
+    + hohe Sichtbarkeit
+    + Community Management
 
 ::::
 :::: column
@@ -207,6 +219,77 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 ::::
 :::
 
+::: notes
+
+- Funktionen von Toolverzeichnissen
+    * Informationen zu Werkzeugen: 
+        - Was gibt es?
+        - Wofür kann es im DH Kontext eingesetzt werden?
+    * Informationen zum Gebrauch von Werkzeugen: 
+        - Wie kann ich das Lernen?
+        - Wer hat es wie und mit welchem Ergebnis bereits angewendet?
+
+:::
+
+## Vorschlag
+
+::: columns
+:::: column
+
+### Was brauchen *wir*?
+
+- Toolverzeichnis (s.o.), als Abbild 
+    + der sich wandelden *Tool-Landschaft* bzw. *Tool-Bandbreite*
+    + des *Toolgebrauchs* in den Digital Humanities, Digital History ...
+- Tools sollen
+    + beschrieben werden
+    + klassifiziert werden
+    + referenzierbar sein
+    + auffindbar sein
+- Einbettung in bestehende Infrastruktur
+    + Linked Open Data
+    + hohe Sichtbarkeit
+    + Community Management
+
+::::
+:::: column
+
+### Was machen wir?
+
+- Setzen alles auf Wikidata auf
+    + (Linked) Open Data
+    + Community und User Management
+    + Multilingual
+    + hohe Sichtbarkeit: Suchmaschinen, [VIAF](https://viaf.org/)
+- (Nach)-nutzung bestehender Datensätze
+    + Mapping nach Wikidata
+        - TAPoR
+        - SSH Open Marketplace
+        - TaDiRAH
+- Entwicklung minimaler Datenmodelle
+
+::::
+:::
+
+## Daten: Wikidata
+
+![Basales Datenmodell am Beispiel der Beschreibung von "Gephi"](../assets/images/data-model-v_1.png){#fig:data-model}
+
+
+
+## Community: WikiProject DH Tool Registry
+
+- Anlegen und redaktionelle Betreuung eines WikiProjekts in Wikidata
+    - [WikiProject DH Tool Registry](https://www.wikidata.org/wiki/Wikidata:WikiProject\_DH\_Tool_Registry) mit:
+        - Landingpage
+        - Background
+        - Datamodel
+        - How to use (mit Beispielqueries)
+- Dient der Dokumentation <!--des Datenmodells-->, als Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum Monitoring von Tools
+- Aufnahme eines kleinen exemplarischen Datasets an Tools
+
+<!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
+
 ## Anforderungen
 
 ::: columns
@@ -215,7 +298,7 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 ### Inhaltlich
 
 - Tools minimal formal beschreiben sowie aggregieren
-- Tools kategorisiert (z.B. nach \[TaDiRAH\](https://vocabs.dariah.eu/tadirah)) sammeln und auffindbar machen
+- Tools kategorisiert (z.B. nach [TaDiRAH](https://vocabs.dariah.eu/tadirah)) sammeln und auffindbar machen
 - Tools eindeutig referenzierbar machen
 - Wachsender Survey einer *Tool-Landschaft* bzw. *Tool-Bandbreite*
 
@@ -235,23 +318,7 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 :::
 
 # Umsetzung
-## Basisdatenmodell
 
-![Basales Datenmodell am Beispiel der Beschreibung von "Gephi"](../assets/images/data-model-v_1.png){#fig:data-model}
-
-
-## Wikidata:WikiProject DH Tool Registry
-
-- Anlegen und redaktionelle Betreuung eines WikiProjekts in Wikidata
-    - [WikiProject DH Tool Registry](https://www.wikidata.org/wiki/Wikidata:WikiProject\_DH\_Tool_Registry) mit:
-        - Landingpage
-        - Background
-        - Datamodel
-        - How to use (mit Beispielqueries)
-- Dient der Dokumentation <!--des Datenmodells-->, als Hilfestellung (Beispielqueries) und Diskussionsforum sowie zum Monitoring von Tools
-- Aufnahme eines kleinen exemplarischen Datasets an Tools
-
-<!-- HIER GGF. EIN VIDEO VOM WIKIPROJEKT -->
 
 ## Prototypisches Frontend
 
