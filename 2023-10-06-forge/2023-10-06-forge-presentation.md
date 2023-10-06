@@ -325,6 +325,18 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 
 ![Erweitertes Datenmodell am Beispiel der Beschreibung von "Gephi"](../assets/images/data-model_extended-v_1.png){#fig:data-model-extended}
 
+
+::: notes
+
+- the **wichtigsten Properties** sind:
+- [`described at URL`](https://www.wikidata.org/wiki/Property:P973): link to other tool registries or tutorials
+    + tool registries
+        * [TaPOR 3][tapor]: URLs follow the pattern `https://tapor.ca/tools/{ID}`, e.g. <https://tapor.ca/tools/171> for Gephi.
+        * [SSH Open Marketplace][sshmarketplace]: URLs follow the pattern `https://marketplace.sshopencloud.eu/tool-or-service/{ID}`, e.g. <https://marketplace.sshopencloud.eu/tool-or-service/87wJWo> for Gephi.
+- [`used by`](https://www.wikidata.org/wiki/Property:P1535): pointing to items for research papers, software packages, project websites that make use of a specific tool. One can for instance, as we did, query the full corpus of [*Digital Humanities Quarterly*](http://digitalhumanities.org/dhq/), add bibliographical information for papers to Wikidata and then point to the Wikidata item of this paper, e.g. [Daniel Burckhardt "Comparing Disciplinary Patterns: Exploring the Humanities through the Lens of Scholarly Communication"](https://www.wikidata.org/wiki/Q122834645) makes use of Gephi.
+
+:::
+
 ## Daten: SPARQL abfragen
 
 ```sql
