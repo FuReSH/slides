@@ -31,9 +31,8 @@ nocite: |
     @BorekEtAl2016TaDiRAHCaseStudy; @BorekEtAl2021InformationOrganizationAccess; @Zhao2022SystematicReviewWikidata; @FischerEtAl2023Preface; @SochatEtAl2022ResearchSoftware
 ---
 
-## Überblick
 
-# Warum ein neues Toolverzeichnis?
+# Toolverzeichnisse in den DH
 ## Überblick über ein sich kontinuierlich wandelndes Feld
 
 ::: columns
@@ -80,7 +79,7 @@ nocite: |
 ::::
 :::: column
 
-<!-- HIER GGF. SCREENSHOTS VON DEN WEBSITES? -->
+![Einige Beispiele](../assets/images/registries_websites.png){#fig:websites}
 
 ::::
 :::
@@ -145,7 +144,7 @@ nocite: |
         * Die API des SSH Open Marketplace liefert `informationContributor` und `lastInfoUpdate`
 :::
 
-## Ergebnis
+## Zusammenfassung
 
 Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, representativen und je aktuellen Abbildes der verfügbaren Möglichkeiten computationeller Forschung und digitaler Wissenschaft als gescheitert zu verstehen.
 
@@ -155,30 +154,6 @@ Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, repr
 ![Source: <https://xkcd.com/927>](https://imgs.xkcd.com/comics/standards.png){#fig:xkcd-standards}
 
  <!-- Unser Ansatz: Offene Tool Registry mit Wikidata -->
-
-## Prinzipien des *minimal computing*
-
-::: columns
-:::: column
-
->minimal computing connotes digital humanities work undertaken in the context of some set of constraints. This could include lack of access to hardware or software, network capacity, technical education, or even a reliable power grid.
-
-<cite>[@RisamGil2022Introduction, §3]</cite>
-
-![Screenshot einer [Website](https://bulthaup.com/en/b3/) für luxuriöse Küchen](../assets/images/bulthaupt.png){#fig:bulthaupt}
-
-::::
-:::: column
-
-
->this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, **without the help we can’t get**, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
-
-<cite>[@Gil+2016, 29]</cite>
-
-![Frankfurter Küche, Source: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg){#fig:bauhaus}
-
-::::
-:::
 
 ## Grundlagen
 
@@ -231,6 +206,30 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
         - Wie kann ich das Lernen?
         - Wer hat es wie und mit welchem Ergebnis bereits angewendet?
 
+:::
+
+## Hintergrund: *minimal computing*
+
+::: columns
+:::: column
+
+>minimal computing connotes digital humanities work undertaken in the context of some set of constraints. This could include lack of access to hardware or software, network capacity, technical education, or even a reliable power grid.
+
+<cite>[@RisamGil2022Introduction, §3]</cite>
+
+![Screenshot einer [Website](https://bulthaup.com/en/b3/) für luxuriöse Küchen](../assets/images/bulthaupt.png){#fig:bulthaupt}
+
+::::
+:::: column
+
+
+>this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, **without the help we can’t get**, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
+
+<cite>[@Gil+2016, 29]</cite>
+
+![Frankfurter Küche, Source: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg){#fig:bauhaus}
+
+::::
 :::
 
 ## Vorschlag
@@ -396,7 +395,24 @@ SELECT DISTINCT ?tool ?toolLabel ?tadirahID ?method WHERE {
 
 ## Vielen Dank für Ihre Aufmerksamkeit!
 
-![Link zu unserem [WikiProject][wikiproject]](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/url_wikiproject.jpg)
+::: columns
+:::: column
+
+### WikiProject
+
+![Link zu unserem [WikiProject][wikiproject]](../assets/qrcodes/url_wikiproject.jpg)
+
+::::
+:::: column
+
+### Frontend Prototyp
+
+![Link zum [Frontend](https://furesh.github.io/tool-storage-interface/)](../assets/qrcodes/url_frontend.jpg)
+
+::::
+:::
+
+
 
 ## Literatur {#refs}
 
