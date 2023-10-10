@@ -412,14 +412,14 @@ SELECT DISTINCT ?tool ?toolLabel ?tadirahID ?method WHERE {
 
 ### WikiProject
 
-![Link zu unserem [WikiProject][wikiproject]](../assets/qrcodes/url_wikiproject.jpg)
+[![Link zu unserem [WikiProject][wikiproject]](../assets/qrcodes/url_wikiproject.jpg)][wikiproject]
 
 ::::
 :::: column
 
 ### Frontend Prototyp
 
-![Link zum [Frontend](https://furesh.github.io/tool-storage-interface/)](../assets/qrcodes/url_frontend.jpg)
+[![Link zum Frontend: <https://furesh.github.io/tool-storage-interface/>](../assets/qrcodes/url_frontend.jpg)](https://furesh.github.io/tool-storage-interface/)
 
 ::::
 :::
