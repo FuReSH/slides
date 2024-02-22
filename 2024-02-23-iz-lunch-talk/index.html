@@ -6,8 +6,7 @@
           <meta name="author" content="Sophie Eckenstaler">
           <meta name="author" content="Till Grallert">
           <meta name="author" content="Claus-Michael Schlesinger">
-          <meta name="author" content="Samantha Tirtohusodo">
-              <meta name="dcterms.date" content="2023-10-06">
+              <meta name="dcterms.date" content="2024-02-23">
                 <title>Ein weiteres Toolverzeichnis für die Digital Humanities?!</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -178,8 +177,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -212,9 +211,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -225,8 +224,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -1459,9 +1458,9 @@
                     </style>
       </head>
   <body onload="setCurrentDate()">
-        <!-- HU Berlin header -->
+        <!-- FuReSH header -->
     <header>
-        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+        <!-- <a href="https://makerspace.hypotheses.org"><img class="c_left c_logo" src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png"></a> -->
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
     </header>
     <div class="reveal">
@@ -1476,14 +1475,11 @@ Wikidata</h2>
           <div class="column c_left c_left-align">
                       <p class="author">
                           Sophie Eckenstaler,               Till
-Grallert,               Claus-Michael
-Schlesinger,               Samantha Tirtohusodo            </p>
+Grallert,               Claus-Michael Schlesinger            </p>
                                                 <p class="institute">Humboldt-Universität
 zu Berlin</p>
                             <p class="institute">Universitätsbibliothek,
 Grimm-Zentrum</p>
-                            <p class="institute">Institut für
-Bibliotheks- und Informationswissenschaften</p>
                             <p class="institute">Institut für
 Geschichtswissenschaften</p>
                             <p class="institute">“Future e-Research
@@ -1494,14 +1490,14 @@ NFDI 4Memory</p>
                   </div>
         <div class="column c_right c_right-align">
                     <p class="event">
-                        <span>FORGE 2023</span>
+                        <span>IZ Lunch Talk</span>
           </p>
-                                <p class="date">2023-10-06</p>
-                              <p class="url"><a href="https://furesh.github.io/slides/2023-10-06-forge">https://furesh.github.io/slides/2023-10-06-forge</a></p>
+                                <p class="date">2024-02-23</p>
+                              <p class="url"><a href="https://furesh.github.io/slides/2024-02-23-iz-lunch-talk">https://furesh.github.io/slides/2024-02-23-iz-lunch-talk</a></p>
                   </div>
       </div>
         </section>
-                
+
         <section>
         <section id="toolverzeichnisse-in-den-dh"
         class="title-slide slide level1">
@@ -1992,18 +1988,28 @@ NFDI 4Memory</p>
         <section id="daten-sparql-abfragen" class="slide level2">
         <h2>Daten: SPARQL abfragen</h2>
         <div class="sourceCode" id="cb1"><pre
-        class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> ?tool ?toolLabel ?tadirahID ?<span class="kw">method</span> <span class="kw">WHERE</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  SERVICE wikibase<span class="ch">:label</span> { bd<span class="ch">:serviceParam</span> wikibase<span class="ch">:language</span> <span class="ot">&quot;[AUTO_LANGUAGE],en&quot;</span>. }</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  # <span class="kw">select</span> <span class="kw">all</span> items that have a TaDiRAH <span class="kw">ID</span> <span class="kw">and</span> are therefore assumed <span class="kw">to</span> be research methods</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  ?<span class="kw">method</span> p<span class="ch">:P9309</span> ?statement0.</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  ?statement0 ps<span class="ch">:P9309</span> ?tadirahID.</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  # <span class="kw">select</span> <span class="kw">all</span> items that have assigned a <span class="kw">method</span> <span class="kw">from</span> our subset <span class="kw">through</span> `has use`</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  ?tool wdt<span class="ch">:P366</span> ?<span class="kw">method</span>;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        # <span class="kw">filter</span> <span class="cf">for</span> <span class="kw">all</span> items that are an `instance of` <span class="ot">&quot;software&quot;</span> <span class="kw">or</span> its subclasses</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        wdt<span class="ch">:P31</span><span class="op">/</span>wdt<span class="ch">:P279</span><span class="op">*</span> wd<span class="ch">:Q7397</span>.  </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-        <iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3Fmethod%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0A%23ORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups">
+        class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> ?tool ?toolLabel ?tadirahID ?methodLabel ?<span class="kw">method</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  ?<span class="kw">method</span> wdt<span class="ch">:P9309</span> ?tadirahID.</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  ?tool wdt<span class="ch">:P366</span> ?<span class="kw">method</span>;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    wdt<span class="ch">:P31</span><span class="op">/</span>wdt<span class="ch">:P279</span><span class="op">*</span> wd<span class="ch">:Q7397</span>.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  SERVICE wikibase<span class="ch">:label</span> { bd<span class="ch">:serviceParam</span> wikibase<span class="ch">:language</span> <span class="ot">&quot;[AUTO_LANGUAGE],en&quot;</span>. }</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> ?toolLabel</span></code></pre></div>
+        <iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3FmethodLabel%20%3Fmethod%0AWHERE%20%7B%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20methods%0A%20%20%3Fmethod%20wdt%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20which%20are%20linked%20to%20these%20methods%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%23%20limit%20tools%20to%20software%20in%20the%20broadest%20sense%0A%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20%3FtoolLabel%0ALIMIT%201000" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups">
         </iframe>
+        <aside class="notes">
+        <ul>
+        <li>SPARQL query
+        <ol type="1">
+        <li>Fragt alle items ab, die mit TaDiRAH verlinkt sind und die
+        wir deswegen als Methoden / betrachten</li>
+        <li>Fragt alle Items ab, die für diese Methoden eingesetzt
+        werden (<code>has use</code>)</li>
+        <li>Label werden in der Systemsprache ausgegeben</li>
+        </ol></li>
+        </ul>
+        </aside>
         </section>
         <section id="daten-demonstration-tadirah-mapping"
         class="slide level2">
@@ -2267,8 +2273,8 @@ NFDI 4Memory</p>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-                autoSlide: 0,
-        
+        autoSlide: 0,
+
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -2316,16 +2322,9 @@ NFDI 4Memory</p>
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1200,
-                        height: 1000,
-        
-        // Factor of the display size that should remain empty around the content
-                margin: 0,
-        
-        // Bounds for smallest/largest possible scale to apply to content
-        
-        
-        
+                width: 1000,
+                        height: 800,
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2342,16 +2341,18 @@ NFDI 4Memory</p>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2023-10-06</span>
+                    <span class="c_left">2024-02-23</span>
                             <span class="c_left">|</span>
             <span class="c_left">Sophie Eckenstaler, Till
-Grallert, Claus-Michael Schlesinger, Samantha Tirtohusodo</span>
-                        <span class="c_center">
-          <a href="https://furesh.github.io/slides/2023-10-06-forge">https://furesh.github.io/slides/2023-10-06-forge</a>
+Grallert, Claus-Michael Schlesinger</span>
+        
+        <span class="c_center">
+                    <a href="https://doi.org/10.5281/zenodo.10691509">10.5281/zenodo.10691509</a>
           <span></span>
-        </span>
-                <!-- this should probably moved to the title slide only -->
-        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+                  </span>
+
+        <!-- this should probably moved to the title slide only -->
+        <span id="institution" class="c_right"><a href="https://www.ub.hu-berlin.de">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>
     <script>

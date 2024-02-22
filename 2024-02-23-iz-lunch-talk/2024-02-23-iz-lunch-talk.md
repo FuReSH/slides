@@ -5,18 +5,17 @@ author:
   - Sophie Eckenstaler
   - Till Grallert
   - Claus-Michael Schlesinger
-  - Samantha Tirtohusodo
 institute: 
   - "Humboldt-Universität zu Berlin"
   - "Universitätsbibliothek, Grimm-Zentrum"
-  - "Institut für Bibliotheks- und Informationswissenschaften"
   - "Institut für Geschichtswissenschaften"
   - "\"Future e-Research Support in the Humanities\" (DFG, 2022--25)"
   - "Methods Innovation Lab, NFDI 4Memory"
 homepage: https://makerspace.hypotheses.org/
-event: FORGE 2023
-date: 2023-10-06
-url: https://furesh.github.io/slides/2023-10-06-forge
+event: IZ Lunch Talk
+date: 2024-02-23
+url: https://furesh.github.io/slides/2024-02-23-iz-lunch-talk
+DOI: 10.5281/zenodo.10691509
 status: published
 lang: de
 bibliography:
@@ -340,21 +339,27 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 ## Daten: SPARQL abfragen
 
 ```sql
-SELECT DISTINCT ?tool ?toolLabel ?tadirahID ?method WHERE {
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-  # select all items that have a TaDiRAH ID and are therefore assumed to be research methods
-  ?method p:P9309 ?statement0.
-  ?statement0 ps:P9309 ?tadirahID.
-  # select all items that have assigned a method from our subset through `has use`
+SELECT DISTINCT ?tool ?toolLabel ?tadirahID ?methodLabel ?method
+WHERE {
+  ?method wdt:P9309 ?tadirahID.
   ?tool wdt:P366 ?method;
-        # filter for all items that are an `instance of` "software" or its subclasses
-        wdt:P31/wdt:P279* wd:Q7397.  
+    wdt:P31/wdt:P279* wd:Q7397.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
+ORDER BY ?toolLabel
 ```
 
 
+<iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3FmethodLabel%20%3Fmethod%0AWHERE%20%7B%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20methods%0A%20%20%3Fmethod%20wdt%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20which%20are%20linked%20to%20these%20methods%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%23%20limit%20tools%20to%20software%20in%20the%20broadest%20sense%0A%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20%3FtoolLabel%0ALIMIT%201000" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
-<iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3Fmethod%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0A%23ORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+::: notes
+
+- SPARQL query
+    1. Fragt alle items ab, die mit TaDiRAH verlinkt sind und die wir deswegen als Methoden / betrachten 
+    2. Fragt alle Items ab, die für diese Methoden eingesetzt werden (`has use`)
+    3. Label werden in der Systemsprache ausgegeben
+
+:::
 
 ## Daten: Demonstration TaDiRAH-Mapping
 
