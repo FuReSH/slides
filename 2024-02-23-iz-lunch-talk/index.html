@@ -5,7 +5,6 @@
     <meta name="generator" content="pandoc">
           <meta name="author" content="Sophie Eckenstaler">
           <meta name="author" content="Till Grallert">
-          <meta name="author" content="Claus-Michael Schlesinger">
               <meta name="dcterms.date" content="2024-02-23">
                 <title>Ein weiteres Toolverzeichnis für die Digital Humanities?!</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,8 +21,11 @@
       div.columns{display: flex; gap: min(4vw, 1.5em);}
       div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
       ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
         width: 0.8em;
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
@@ -31,7 +33,7 @@
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
       /* CSS for syntax highlighting */
       pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span { line-height: 1.25; }
       pre > code.sourceCode > span:empty { height: 1.2em; }
       .sourceCode { overflow: visible; }
       code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -97,6 +99,7 @@
       div.csl-bib-body { }
       div.csl-entry {
         clear: both;
+        margin-bottom: 0em;
       }
       .hanging-indent div.csl-entry {
         margin-left:2em;
@@ -737,12 +740,9 @@
                     .c_width-30,
                     .column-30,
                     .columns .narrow {
-                        width: 31%;
+                        width: 33%;
                         position: relative;
                         float: left;
-                    }
-                    .columns .small-font {
-                        font-size: 70%;
                     }
                     .c_left {
                         display: block;
@@ -1458,9 +1458,9 @@
                     </style>
       </head>
   <body onload="setCurrentDate()">
-        <!-- FuReSH header -->
+        <!-- HU Berlin header -->
     <header>
-        <!-- <a href="https://makerspace.hypotheses.org"><img class="c_left c_logo" src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png"></a> -->
+        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
     </header>
     <div class="reveal">
@@ -1475,17 +1475,16 @@ Wikidata</h2>
           <div class="column c_left c_left-align">
                       <p class="author">
                           Sophie Eckenstaler,               Till
-Grallert,               Claus-Michael Schlesinger            </p>
+Grallert            </p>
                                                 <p class="institute">Humboldt-Universität
 zu Berlin</p>
                             <p class="institute">Universitätsbibliothek,
 Grimm-Zentrum</p>
                             <p class="institute">Institut für
 Geschichtswissenschaften</p>
-                            <p class="institute">“Future e-Research
-Support in the Humanities” (DFG, 2022–25)</p>
-                            <p class="institute">Methods Innovation Lab,
-NFDI 4Memory</p>
+                            <p class="institute">Future e-Research
+Support in the Humanities (FuReSH, DFG, 2022–25)</p>
+                            <p class="institute">NFDI4Memory</p>
                                             <p class="url"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></p>
                   </div>
         <div class="column c_right c_right-align">
@@ -1496,6 +1495,19 @@ NFDI 4Memory</p>
                               <p class="url"><a href="https://furesh.github.io/slides/2024-02-23-iz-lunch-talk">https://furesh.github.io/slides/2024-02-23-iz-lunch-talk</a></p>
                   </div>
       </div>
+        </section>
+
+        <section id="hintergrund" class="title-slide slide level1">
+        <h1>Hintergrund</h1>
+
+        </section>
+
+        <section
+        id="wer-sind-wir-und-warum-bauen-wir-ein-weiteres-toolverzeichnis-für-die-digital-humanities"
+        class="title-slide slide level1">
+        <h1>Wer sind wir? <br/>Und warum bauen <strong>wir</strong> ein
+        weiteres Toolverzeichnis für die Digital Humanities?</h1>
+
         </section>
 
         <section>
@@ -1514,9 +1526,9 @@ NFDI 4Memory</p>
         <img
         data-src="../assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg"
         alt="Word cloud der häufigsten Werkzeuge in den Digital Humanities gemessen an der Anzahl von Abstracts für die ADHO Konferenzen" />
-        <figcaption>Figure 1: Word cloud der häufigsten Werkzeuge in den
-        Digital Humanities gemessen an der Anzahl von Abstracts für die
-        ADHO Konferenzen</figcaption>
+        <figcaption aria-hidden="true">Word cloud der häufigsten
+        Werkzeuge in den Digital Humanities gemessen an der Anzahl von
+        Abstracts für die ADHO Konferenzen</figcaption>
         </figure>
         </div><div class="column">
         <ul>
@@ -1573,7 +1585,7 @@ NFDI 4Memory</p>
         <figure id="fig:websites">
         <img data-src="../assets/images/registries_websites.png"
         alt="Einige Beispiele" />
-        <figcaption>Figure 2: Einige Beispiele</figcaption>
+        <figcaption aria-hidden="true">Einige Beispiele</figcaption>
         </figure>
         </div>
         </div>
@@ -1632,13 +1644,13 @@ NFDI 4Memory</p>
         <figure id="fig:tapor-about">
         <img data-src="../assets/images/tapor_about.png"
         alt="TAPoR’s about page" />
-        <figcaption>Figure 3: TAPoR’s about page</figcaption>
+        <figcaption aria-hidden="true">TAPoR’s about page</figcaption>
         </figure>
         <figure id="fig:tapor-contribute">
         <img data-src="../assets/images/tapor_contribute.png"
         alt="TAPoR asking you to send the late Stéfan Sinclair an email" />
-        <figcaption>Figure 4: TAPoR asking you to send the late Stéfan
-        Sinclair an email</figcaption>
+        <figcaption aria-hidden="true">TAPoR asking you to send the late
+        Stéfan Sinclair an email</figcaption>
         </figure>
         </div>
         </div>
@@ -1686,7 +1698,7 @@ NFDI 4Memory</p>
         <section>
         <section id="unser-vorschlag-ein-weiteres-toolverzeichnis"
         class="title-slide slide level1">
-        <h1>Unser Vorschlag <br/>ein weiteres Toolverzeichnis</h1>
+        <h1>Unser Vorschlag: <br/>Ein weiteres Toolverzeichnis</h1>
 
         </section>
         <section id="wirklich" class="slide level2">
@@ -1694,7 +1706,8 @@ NFDI 4Memory</p>
         <figure id="fig:xkcd-standards">
         <img data-src="https://imgs.xkcd.com/comics/standards.png"
         alt="Source: https://xkcd.com/927" />
-        <figcaption>Figure 5: Source: <a href="https://xkcd.com/927"
+        <figcaption aria-hidden="true">Source: <a
+        href="https://xkcd.com/927"
         class="uri">https://xkcd.com/927</a></figcaption>
         </figure>
         <p><!-- Unser Ansatz: Offene Tool Registry mit Wikidata --></p>
@@ -1781,7 +1794,7 @@ NFDI 4Memory</p>
         <figure id="fig:bulthaupt">
         <img data-src="../assets/images/bulthaupt.png"
         alt="Screenshot einer Website für luxuriöse Küchen" />
-        <figcaption>Figure 6: Screenshot einer <a
+        <figcaption aria-hidden="true">Screenshot einer <a
         href="https://bulthaup.com/en/b3/">Website</a> für luxuriöse
         Küchen</figcaption>
         </figure>
@@ -1800,7 +1813,7 @@ NFDI 4Memory</p>
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
         alt="Frankfurter Küche, Source: WikiCommons, CCO" />
-        <figcaption>Figure 7: Frankfurter Küche, Source: <a
+        <figcaption aria-hidden="true">Frankfurter Küche, Source: <a
         href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
         CCO</a></figcaption>
         </figure>
@@ -1900,7 +1913,7 @@ NFDI 4Memory</p>
         <figure id="fig:wikidata-wikiproject">
         <img data-src="../assets/images/wikiproject-screenshot.png"
         alt="Wikidata:WikiProjekt DH Tool Registry" />
-        <figcaption>Figure 8: Wikidata:WikiProjekt DH Tool
+        <figcaption aria-hidden="true">Wikidata:WikiProjekt DH Tool
         Registry</figcaption>
         </figure>
         </div>
@@ -1929,8 +1942,8 @@ NFDI 4Memory</p>
         <figure id="fig:data-model-minimal">
         <img data-src="../assets/images/data-model_minimal-v_1.png"
         alt="Minimales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption>Figure 9: Minimales Datenmodell am Beispiel der
-        Beschreibung von “Gephi”</figcaption>
+        <figcaption aria-hidden="true">Minimales Datenmodell am Beispiel
+        der Beschreibung von “Gephi”</figcaption>
         </figure>
         </div>
         </div>
@@ -1945,8 +1958,8 @@ NFDI 4Memory</p>
         <figure id="fig:data-model-extended">
         <img data-src="../assets/images/data-model_extended-v_1.png"
         alt="Erweitertes Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption>Figure 10: Erweitertes Datenmodell am Beispiel der
-        Beschreibung von “Gephi”</figcaption>
+        <figcaption aria-hidden="true">Erweitertes Datenmodell am
+        Beispiel der Beschreibung von “Gephi”</figcaption>
         </figure>
         <aside class="notes">
         <ul>
@@ -2121,7 +2134,7 @@ NFDI 4Memory</p>
         <section id="refs" class="slide level2 unnumbered">
         <h2 class="unnumbered">Literatur</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
-        role="list">
+        data-entry-spacing="0" role="list">
         <div id="ref-BarbotEtAl2019ToolsMentioned" class="csl-entry"
         role="listitem">
         Barbot, Laure, Frank Fischer, Yoann Moranville, und Ivan
@@ -2172,7 +2185,7 @@ NFDI 4Memory</p>
     <script src="../revealjs/plugin/notes/notes.js"></script>
     <script src="../revealjs/plugin/search/search.js"></script>
     <script src="../revealjs/plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -2273,7 +2286,7 @@ NFDI 4Memory</p>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
+                autoSlide: 0,
 
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
@@ -2318,13 +2331,20 @@ NFDI 4Memory</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1000,
-                        height: 800,
-                                        
+                width: 1200,
+                        height: 1000,
+
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+
+        // Bounds for smallest/largest possible scale to apply to content
+
+
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2344,15 +2364,13 @@ NFDI 4Memory</p>
                     <span class="c_left">2024-02-23</span>
                             <span class="c_left">|</span>
             <span class="c_left">Sophie Eckenstaler, Till
-Grallert, Claus-Michael Schlesinger</span>
-        
-        <span class="c_center">
-                    <a href="https://doi.org/10.5281/zenodo.10691509">10.5281/zenodo.10691509</a>
+Grallert</span>
+                        <span class="c_center">
+          <a href="https://furesh.github.io/slides/2024-02-23-iz-lunch-talk">https://furesh.github.io/slides/2024-02-23-iz-lunch-talk</a>
           <span></span>
-                  </span>
-
-        <!-- this should probably moved to the title slide only -->
-        <span id="institution" class="c_right"><a href="https://www.ub.hu-berlin.de">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+        </span>
+                <!-- this should probably moved to the title slide only -->
+        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>
     <script>

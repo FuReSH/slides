@@ -4,13 +4,12 @@ subtitle: "Aber diesmal offen und mit Wikidata"
 author:
   - Sophie Eckenstaler
   - Till Grallert
-  - Claus-Michael Schlesinger
 institute: 
   - "Humboldt-Universität zu Berlin"
   - "Universitätsbibliothek, Grimm-Zentrum"
   - "Institut für Geschichtswissenschaften"
-  - "\"Future e-Research Support in the Humanities\" (DFG, 2022--25)"
-  - "Methods Innovation Lab, NFDI 4Memory"
+  - "Future e-Research Support in the Humanities (FuReSH, DFG, 2022--25)"
+  - "NFDI4Memory"
 homepage: https://makerspace.hypotheses.org/
 event: IZ Lunch Talk
 date: 2024-02-23
@@ -30,6 +29,8 @@ nocite: |
     @BorekEtAl2016TaDiRAHCaseStudy; @BorekEtAl2021InformationOrganizationAccess; @Zhao2022SystematicReviewWikidata; @FischerEtAl2023Preface; @SochatEtAl2022ResearchSoftware
 ---
 
+# Hintergrund 
+# Wer sind wir? <br/>Und warum bauen **wir** ein weiteres Toolverzeichnis für die Digital Humanities?
 
 # Toolverzeichnisse in den DH
 ## Überblick über ein sich kontinuierlich wandelndes Feld
@@ -147,7 +148,7 @@ nocite: |
 
 Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch eines umfassenden, representativen und je aktuellen Abbildes der verfügbaren Möglichkeiten computationeller Forschung und digitaler Wissenschaft als gescheitert zu verstehen.
 
-# Unser Vorschlag <br/>ein weiteres Toolverzeichnis
+# Unser Vorschlag: <br/>Ein weiteres Toolverzeichnis
 ## Wirklich?
 
 ![Source: <https://xkcd.com/927>](https://imgs.xkcd.com/comics/standards.png){#fig:xkcd-standards}
