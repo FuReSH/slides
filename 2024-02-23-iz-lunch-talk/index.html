@@ -5,7 +5,9 @@
     <meta name="generator" content="pandoc">
           <meta name="author" content="Sophie Eckenstaler">
           <meta name="author" content="Till Grallert">
-              <meta name="dcterms.date" content="2024-02-23">
+          <meta name="author" content="Claus-Michael Schlesinger">
+          <meta name="author" content="Samantha Tirtohusodo">
+              <meta name="dcterms.date" content="2023-10-06">
                 <title>Ein weiteres Toolverzeichnis für die Digital Humanities?!</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -21,11 +23,8 @@
       div.columns{display: flex; gap: min(4vw, 1.5em);}
       div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      /* The extra [class] is a hack that increases specificity enough to
-         override a similar rule in reveal.js */
-      ul.task-list[class]{list-style: none;}
+      ul.task-list{list-style: none;}
       ul.task-list li input[type="checkbox"] {
-        font-size: inherit;
         width: 0.8em;
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
@@ -33,7 +32,7 @@
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
       /* CSS for syntax highlighting */
       pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
       pre > code.sourceCode > span:empty { height: 1.2em; }
       .sourceCode { overflow: visible; }
       code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -95,27 +94,7 @@
       code span.va { color: #19177c; } /* Variable */
       code span.vs { color: #4070a0; } /* VerbatimString */
       code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-      /* CSS for citations */
-      div.csl-bib-body { }
-      div.csl-entry {
-        clear: both;
-        margin-bottom: 0em;
-      }
-      .hanging-indent div.csl-entry {
-        margin-left:2em;
-        text-indent:-2em;
-      }
-      div.csl-left-margin {
-        min-width:2em;
-        float:left;
-      }
-      div.csl-right-inline {
-        margin-left:2em;
-        padding-left:1em;
-      }
-      div.csl-indent {
-        margin-left: 2em;
-      }    </style>
+    </style>
         <link rel="stylesheet" href="../revealjs/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
@@ -180,8 +159,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em)
-                        accumulate for nested elements and must thus be avoided.
+                        /*keep in mind that relative sizes (%, em) 
+                        accumulate for nested elements and must thus be avoided. 
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -214,9 +193,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
                       font-size: 12px;*/
-                      line-height: 1.2;
+                      line-height: 1.2; 
                       word-wrap: break-word;
                     }
                     body,
@@ -227,8 +206,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header,
-                    footer,
+                    header, 
+                    footer, 
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -367,9 +346,6 @@
                     }
                     table {
                         font-size: 0.8em;
-                    }
-                    .small-font {
-                        font-size: 70%;
                     }
                     /******************
                     set colours
@@ -743,7 +719,7 @@
                     .c_width-30,
                     .column-30,
                     .columns .narrow {
-                        width: 31%;
+                        width: 33%;
                         position: relative;
                         float: left;
                     }
@@ -1350,28 +1326,13 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /******************
-                    alerts
-                    *******************/
-
-
+                    /* alerts */
                     div.alert {
-                        clear: both;
-                        display: block;
-                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                    /*    border-color: red;*/
-                        background-color: white;
+                        border-color: red;
                         margin-left: 2em;
                         border-left-width: 1em;
-                        width: 60%;
-                        float: right;
-                    }
-
-                    div.alert.red {
-                        border-color: red;
-                        color: black;
                     }
                     .green {
                         color: green;
@@ -1476,9 +1437,9 @@
                     </style>
       </head>
   <body onload="setCurrentDate()">
-        <!-- HU Berlin header -->
+        <!-- FuReSH header -->
     <header>
-        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+        <!-- <a href="https://makerspace.hypotheses.org"><img class="c_left c_logo" src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png"></a> -->
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
     </header>
     <div class="reveal">
@@ -1493,232 +1454,39 @@ Wikidata</h2>
           <div class="column c_left c_left-align">
                       <p class="author">
                           Sophie Eckenstaler,               Till
-Grallert            </p>
+Grallert,               Claus-Michael
+Schlesinger,               Samantha Tirtohusodo            </p>
                                                 <p class="institute">Humboldt-Universität
 zu Berlin</p>
                             <p class="institute">Universitätsbibliothek,
 Grimm-Zentrum</p>
                             <p class="institute">Institut für
+Bibliotheks- und Informationswissenschaften</p>
+                            <p class="institute">Institut für
 Geschichtswissenschaften</p>
-                            <p class="institute">Future e-Research
-Support in the Humanities (FuReSH, DFG, 2022–25)</p>
-                            <p class="institute">NFDI4Memory</p>
+                            <p class="institute">“Future e-Research
+Support in the Humanities” (DFG, 2022–25)</p>
+                            <p class="institute">Methods Innovation Lab,
+NFDI 4Memory</p>
                                             <p class="url"><a href="https://makerspace.hypotheses.org/">https://makerspace.hypotheses.org/</a></p>
                   </div>
         <div class="column c_right c_right-align">
                     <p class="event">
-                        <span>IZ Lunch Talk</span>
+                        <span>FORGE 2023</span>
           </p>
-                                <p class="date">2024-02-23</p>
-                              <p class="url"><a href="https://furesh.github.io/slides/2024-02-23-iz-lunch-talk">https://furesh.github.io/slides/2024-02-23-iz-lunch-talk</a></p>
+                                <p class="date">2023-10-06</p>
+                              <p class="url"><a href="https://furesh.github.io/slides/2023-10-06-forge">https://furesh.github.io/slides/2023-10-06-forge</a></p>
                   </div>
       </div>
         </section>
-
-        <section id="hintergrund" class="title-slide slide level1">
-        <h1>Hintergrund</h1>
-
+                
+        <section id="überblick" class="slide level2">
+        <h2>Überblick</h2>
         </section>
-
         <section>
-        <section
-        id="wer-sind-wir-und-warum-bauen-wir-ein-weiteres-toolverzeichnis-für-die-digital-humanities"
+        <section id="warum-ein-neues-toolverzeichnis"
         class="title-slide slide level1">
-        <h1>Wer sind wir? <br/>Und warum bauen <strong>wir</strong> ein
-        weiteres Toolverzeichnis für die Digital Humanities?</h1>
-
-        </section>
-        <section id="wer-sind-wir" class="slide level2">
-        <h2>Wer sind wir?</h2>
-        <div class="columns">
-        <div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png"
-        alt="Sophie Eckenstaler, IfG und UB, Kompetenzwerkstatt DH" />
-        <figcaption aria-hidden="true">Sophie Eckenstaler, IfG und UB,
-        Kompetenzwerkstatt DH</figcaption>
-        </figure>
-        </div><div class="column">
-        <figure>
-        <img
-        data-src="https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png"
-        alt="Till Grallert, IfG, NFDI4Memory, Methods Innovation Lab" />
-        <figcaption aria-hidden="true">Till Grallert, IfG, NFDI4Memory,
-        Methods Innovation Lab</figcaption>
-        </figure>
-        </div>
-        </div>
-        </section>
-        <section id="nfdi4memory" class="slide level2">
-        <h2>NFDI4Memory</h2>
-        <p>NFDI4Memory fokussiert auf die spezifischen Herausforderungen
-        der <strong>Datafizierung</strong> für:</p>
-        <div class="columns">
-        <div class="column">
-        <h3 id="disziplinen-die">1. Disziplinen, die …</h3>
-        <p>… historische Methoden anwenden (also zunächst einmal die
-        Geschichtswissenschaften selbst).</p>
-        </div><div class="column">
-        <h3 id="disziplinen-die-1">2. Disziplinen, die …</h3>
-        <p>… auf Daten angewiesen sind, die eine historische
-        Kontextualisierung erfordern (also so gut wie alle anderen
-        Geistes- und Sozialwissenschaftlichen Disziplinen, inklusive
-        GLAM Institutionen).</p>
-        </div>
-        </div>
-        <div class="alert red">
-        <p><strong>Datafizierung</strong> bezeichnet den Prozess der
-        zunehmenden Erfassung, Speicherung und Analyse von Daten in
-        allen Bereichen der Gesellschaft, gefördert durch die digitale
-        Transformation und die Entwicklung fortgeschrittener
-        Technologien. Dieser Prozess führt zu einem grundlegenden Wandel
-        in der Generierung, Verarbeitung und Nutzung von Informationen,
-        wobei Daten zu einem zentralen Bestandteil in nahezu allen
-        Aspekten des Lebens und der Arbeit werden.</p>
-        </div>
-        <aside class="notes">
-        <p><strong>Datafizierung</strong> bezeichnet den Prozess der
-        zunehmenden Erfassung, Speicherung und Analyse von Daten in
-        allen Bereichen der Gesellschaft, gefördert durch die digitale
-        Transformation und die Entwicklung fortgeschrittener
-        Technologien. Dieser Prozess führt zu einem grundlegenden Wandel
-        in der Generierung, Verarbeitung und Nutzung von Informationen,
-        wobei Daten zu einem zentralen Bestandteil in nahezu allen
-        Aspekten des Lebens und der Arbeit werden.</p>
-        </aside>
-        </section>
-        <section id="die-task-area-data-culture" class="slide level2">
-        <h2>Die Task Area “Data culture”</h2>
-        <blockquote>
-        <p>Aus der <strong>Datafizierung</strong> folgt, dass unsere
-        Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt
-        werden kann, sondern zugleich von einem datafizierten
-        Forschungsprozess ausgehen müssen. Ein datafizierter
-        Forschungsprozess jedoch bedarf einer gelebten
-        <strong>Datenkultur</strong>.</p>
-        </blockquote>
-        <div class="columns">
-        <section id="ausgangslage" class="wide">
-        <h3>Ausgangslage</h3>
-        <ul>
-        <li>Nutzung von Forschungsdaten und datengetriebener Methoden in
-        den historisch arbeitenden Fächern noch wenig verbreitet</li>
-        <li>Konzept, Inhalt und Potential von Forschungsdaten und deren
-        Nutzen noch weitgehend unbekannt</li>
-        <li>Vorbehalte gegen datengetriebene Methoden und die Arbeit mit
-        Forschungsdaten</li>
-        <li>Sich stetig verändernder technisch-kultureller Kontext mit
-        neuen Herausforderungen (Digitalität → KI-Zeitalter)</li>
-        </ul>
-        </section><section id="zielstellung" class="narrow">
-        <h3>Zielstellung</h3>
-        <ul>
-        <li>Den Aufbau einer robusten und nachhaltigen, innovativen und
-        kritisch-reflektierenden Datenkultur in den historisch
-        arbeitenden Fächern fördern und gestalten</li>
-        <li>Die Akzeptanz von Forschungsdaten und datengetriebener
-        Forschung erhöhen</li>
-        </ul>
-        </section>
-        </div>
-        </section>
-        <section id="was-meinen-wir-mit-datenkultur"
-        class="slide level2">
-        <h2>Was meinen wir mit Datenkultur?</h2>
-        <blockquote>
-        <p>Aus der <strong>Datafizierung</strong> folgt, dass unsere
-        Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt
-        werden kann, sondern zugleich von einem datafizierten
-        Forschungsprozess ausgehen müssen. Ein datafizierter
-        Forschungsprozess jedoch bedarf einer gelebten
-        <strong>Datenkultur</strong></p>
-        </blockquote>
-        <div class="columns">
-        <div class="column">
-        <h3 id="im-weiteren-sinne">im weiteren Sinne</h3>
-        <p>eine <strong>Fachkultur</strong>, bei der (Forschungs-)daten
-        und datengetriebener Methoden ein integraler Bestandteil sind,
-        die Arbeit mit und an Daten also nicht mehr als ein netter
-        Appendix zum “eigentlichen” Forschungsprozess verstanden
-        wird.</p>
-        </div><div class="column">
-        <h3 id="im-engeren-sinne">im engeren Sinne</h3>
-        <p><strong>alltägliche Praktiken</strong> und
-        Verantwortlichkeiten (auch rechtlich und ethisch) im Umgang mit
-        Forschungsdaten, bei deren Erzeugung, Bereitstellung und Nutzung
-        mit Hilfe von computationellen Methoden und Werkzeugen.</p>
-        </div>
-        </div>
-        <div class="columns">
-        <h3 id="braucht">braucht</h3>
-        <div class="column">
-        <p>Verständnis der theoretischen und epistemologischen
-        Grundlagen und Implikationen der Datafizierung und Diskussion
-        über deren Folgen</p>
-        </div>
-        <div class="column">
-        <p>Orientierung, Guidelines und Unterstützung</p>
-        </div>
-        </div>
-        </section></section>
-        <section>
-        <section id="werkzeug--und-methodenkritik"
-        class="title-slide slide level1">
-        <h1>Werkzeug- und Methodenkritik</h1>
-
-        </section>
-        <section
-        id="das-methodenlabor-als-experimentierwerkstatt-an-der-schnittstelle-von-datenkultur-im-weiteren-und-engeren-sinn"
-        class="slide level2">
-        <h2>Das Methodenlabor als Experimentierwerkstatt <br/>an der
-        Schnittstelle von Datenkultur im weiteren und engeren Sinn</h2>
-        <p>Forschende brauchen ein klares Verständnis dafür, welche
-        Möglichkeiten (Forschungs-)Daten für ihre Arbeit bieten und
-        welche Anforderungen spezifische Daten an Infrastruktur und
-        Fähigkeiten stellen. Dafür sollen digitale und computationelle
-        Methoden identifiziert und für ihre Anwendung in den historisch
-        arbeitenden Wissenschaften evaluiert, erklärt und (nach)nutzbar
-        bereitgestellt werden.</p>
-        <div class="columns">
-        <h4 id="aufgaben">Aufgaben</h4>
-        <div class="column">
-        <ul>
-        <li>Evaluation und Exploration einzelner Methoden und deren
-        Demonstration und Bereitstellung durch Tutorials und
-        exemplarische Data Stories</li>
-        <li>Field Surveys zum Gebrauch von Forschungsdaten und
-        computationellen Methoden in den Geschichtswissenschaften</li>
-        </ul>
-        </div>
-        <div class="column">
-        <ul>
-        <li>Austausch mit DH-Zentren</li>
-        <li>Förderung kollaborativer Projekte durch gemeinsame
-        Bearbeitung von Fallstudien aus der Community</li>
-        </ul>
-        </div>
-        </div>
-        </section>
-        <section id="section" class="slide level2">
-        <h2><img
-        data-src="../assets/images/logo_KDH-primary-HU-digital-blau.svg" /></h2>
-        <p>Wir bauen im Rahmen des DFG-Projekts “Future e-Research
-        Support in the Humanities” an der Universitätsbibliothek der
-        Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle
-        für <em>Digital History</em> (Inst.f. Geschichtswissenschaften)
-        und <em>Information Processing and Analytics</em> (Inst.f.
-        Bibliotheks- und Informationswissenschaften) einen
-        <strong>prototypischen <em>Scholarly Makerspace</em></strong>
-        zur Förderung <strong>digitaler</strong> und
-        <strong>computationaler Werkzeugkompetenz</strong> (<em>tool
-        literacy</em>) in den Geistes- und Kulturwissenschaften auf
-        (2022–25).</p>
-        </section></section>
-        <section>
-        <section id="toolverzeichnisse-in-den-dh"
-        class="title-slide slide level1">
-        <h1>Toolverzeichnisse in den DH</h1>
+        <h1>Warum ein neues Toolverzeichnis?</h1>
 
         </section>
         <section
@@ -1731,9 +1499,9 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <img
         data-src="../assets/images/wordcloud/wordcloud-rel-100_tools-in-1036-dh-conferences-2014-2018-w_100.svg"
         alt="Word cloud der häufigsten Werkzeuge in den Digital Humanities gemessen an der Anzahl von Abstracts für die ADHO Konferenzen" />
-        <figcaption aria-hidden="true">Word cloud der häufigsten
-        Werkzeuge in den Digital Humanities gemessen an der Anzahl von
-        Abstracts für die ADHO Konferenzen</figcaption>
+        <figcaption>Abbildung 1: Word cloud der häufigsten Werkzeuge in
+        den Digital Humanities gemessen an der Anzahl von Abstracts für
+        die ADHO Konferenzen</figcaption>
         </figure>
         </div><div class="column">
         <ul>
@@ -1787,11 +1555,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         Software Directory</a>, Netherlands eScience Center</li>
         </ul>
         </div><div class="column">
-        <figure id="fig:websites">
-        <img data-src="../assets/images/registries_websites.png"
-        alt="Einige Beispiele" />
-        <figcaption aria-hidden="true">Einige Beispiele</figcaption>
-        </figure>
+        <!-- HIER GGF. SCREENSHOTS VON DEN WEBSITES? -->
         </div>
         </div>
         <aside class="notes">
@@ -1824,8 +1588,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         track – to do that work indefinitely.</p>
         </blockquote>
         <p><cite><span class="citation"
-        data-cites="Dombrowski2021DirectoryParadox">Dombrowski
-        (<span>„The Directory Paradox“</span> 2021)</span></cite></p>
+        data-cites="Dombrowski2021DirectoryParadox">(<strong>Dombrowski2021DirectoryParadox?</strong>)</span></cite></p>
         <div class="columns">
         <div class="column">
         <ul>
@@ -1849,12 +1612,12 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <figure id="fig:tapor-about">
         <img data-src="../assets/images/tapor_about.png"
         alt="TAPoR’s about page" />
-        <figcaption aria-hidden="true">TAPoR’s about page</figcaption>
+        <figcaption>Abbildung 2: TAPoR’s about page</figcaption>
         </figure>
         <figure id="fig:tapor-contribute">
         <img data-src="../assets/images/tapor_contribute.png"
         alt="TAPoR asking you to send the late Stéfan Sinclair an email" />
-        <figcaption aria-hidden="true">TAPoR asking you to send the late
+        <figcaption>Abbildung 3: TAPoR asking you to send the late
         Stéfan Sinclair an email</figcaption>
         </figure>
         </div>
@@ -1867,10 +1630,8 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         durch eine Analyese des <a
         href="https://github.com/lehkost/ToolXtractor">ToolXtractor</a>
         <span class="citation"
-        data-cites="BarbotEtAl2019ToolsMentioned BarbotEtAl2019WhichDHTools">(Barbot
-        u. a. <span>„Tools mentioned in the proceedings of the annual
-        ADHO conferences (2015–2019)“</span> 2019, <span>„Which DH Tools
-        Are Actually Used in Research?“</span> 2019)</span> gestoßen
+        data-cites="BarbotEtAl2019ToolsMentioned BarbotEtAl2019WhichDHTools">(<strong>BarbotEtAl2019ToolsMentioned?</strong>;
+        <strong>BarbotEtAl2019WhichDHTools?</strong>)</span> gestoßen
         sind.</li>
         <li>Bsp. SSH Open Marketplace hat eine dokumentierte API, aber
         es lassen sich nicht alle Werkzeuge abfragen, die mit einem
@@ -1893,8 +1654,8 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         </ul>
         </aside>
         </section>
-        <section id="zusammenfassung" class="slide level2">
-        <h2>Zusammenfassung</h2>
+        <section id="ergebnis" class="slide level2">
+        <h2>Ergebnis</h2>
         <p>Im Ergebnis sind diese Toolverzeichnisse in dem Anspruch
         eines umfassenden, representativen und je aktuellen Abbildes der
         verfügbaren Möglichkeiten computationeller Forschung und
@@ -1903,7 +1664,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <section>
         <section id="unser-vorschlag-ein-weiteres-toolverzeichnis"
         class="title-slide slide level1">
-        <h1>Unser Vorschlag: <br/>Ein weiteres Toolverzeichnis</h1>
+        <h1>Unser Vorschlag <br/>ein weiteres Toolverzeichnis</h1>
 
         </section>
         <section id="wirklich" class="slide level2">
@@ -1911,11 +1672,51 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <figure id="fig:xkcd-standards">
         <img data-src="https://imgs.xkcd.com/comics/standards.png"
         alt="Source: https://xkcd.com/927" />
-        <figcaption aria-hidden="true">Source: <a
-        href="https://xkcd.com/927"
+        <figcaption>Abbildung 4: Source: <a href="https://xkcd.com/927"
         class="uri">https://xkcd.com/927</a></figcaption>
         </figure>
         <p><!-- Unser Ansatz: Offene Tool Registry mit Wikidata --></p>
+        </section>
+        <section id="prinzipien-des-minimal-computing"
+        class="slide level2">
+        <h2>Prinzipien des <em>minimal computing</em></h2>
+        <div class="columns">
+        <div class="column">
+        <blockquote>
+        <p>minimal computing connotes digital humanities work undertaken
+        in the context of some set of constraints. This could include
+        lack of access to hardware or software, network capacity,
+        technical education, or even a reliable power grid.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="RisamGil2022Introduction">(<strong>RisamGil2022Introduction?</strong>)</span></cite></p>
+        <figure id="fig:bulthaupt">
+        <img data-src="../assets/images/bulthaupt.png"
+        alt="Screenshot einer Website für luxuriöse Küchen" />
+        <figcaption>Abbildung 5: Screenshot einer <a
+        href="https://bulthaup.com/en/b3/">Website</a> für luxuriöse
+        Küchen</figcaption>
+        </figure>
+        </div><div class="column">
+        <blockquote>
+        <p>this implies learning how to produce, disseminate, and
+        preserve digital scholarship ourselves, <strong>without the help
+        we can’t get</strong>, even as we fight to build the
+        infrastructures we need at the intersection of, with, and beyond
+        institutional libraries and schools.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Gil+2016">(<strong>Gil+2016?</strong>)</span></cite></p>
+        <figure id="fig:bauhaus">
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
+        alt="Frankfurter Küche, Source: WikiCommons, CCO" />
+        <figcaption>Abbildung 6: Frankfurter Küche, Source: <a
+        href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
+        CCO</a></figcaption>
+        </figure>
+        </div>
+        </div>
         </section>
         <section id="grundlagen" class="slide level2">
         <h2>Grundlagen</h2>
@@ -1947,7 +1748,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         </ul></li>
         </ul>
         </div><div class="column">
-        <h3 id="wer-sind-wir-1">Wer sind <em>wir</em>?</h3>
+        <h3 id="wer-sind-wir">Wer sind <em>wir</em>?</h3>
         <ul>
         <li>4 Personen</li>
         <li>Projektfinanziert</li>
@@ -1980,50 +1781,6 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         </ul></li>
         </ul>
         </aside>
-        </section>
-        <section id="hintergrund-minimal-computing"
-        class="slide level2">
-        <h2>Hintergrund: <em>minimal computing</em></h2>
-        <div class="columns">
-        <div class="column">
-        <blockquote>
-        <p>minimal computing connotes digital humanities work undertaken
-        in the context of some set of constraints. This could include
-        lack of access to hardware or software, network capacity,
-        technical education, or even a reliable power grid.</p>
-        </blockquote>
-        <p><cite><span class="citation"
-        data-cites="RisamGil2022Introduction">(Risam und Gil
-        <span>„Introduction: The Questions of Minimal Computing“</span>
-        2022, Abschn. 3)</span></cite></p>
-        <figure id="fig:bulthaupt">
-        <img data-src="../assets/images/bulthaupt.png"
-        alt="Screenshot einer Website für luxuriöse Küchen" />
-        <figcaption aria-hidden="true">Screenshot einer <a
-        href="https://bulthaup.com/en/b3/">Website</a> für luxuriöse
-        Küchen</figcaption>
-        </figure>
-        </div><div class="column">
-        <blockquote>
-        <p>this implies learning how to produce, disseminate, and
-        preserve digital scholarship ourselves, <strong>without the help
-        we can’t get</strong>, even as we fight to build the
-        infrastructures we need at the intersection of, with, and beyond
-        institutional libraries and schools.</p>
-        </blockquote>
-        <p><cite><span class="citation" data-cites="Gil+2016">(Gil und
-        Ortega <span>„Global Outlooks in Digital Humanities“</span>
-        2016, 29)</span></cite></p>
-        <figure id="fig:bauhaus">
-        <img
-        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
-        alt="Frankfurter Küche, Source: WikiCommons, CCO" />
-        <figcaption aria-hidden="true">Frankfurter Küche, Source: <a
-        href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
-        CCO</a></figcaption>
-        </figure>
-        </div>
-        </div>
         </section>
         <section id="vorschlag" class="slide level2">
         <h2>Vorschlag</h2>
@@ -2118,7 +1875,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <figure id="fig:wikidata-wikiproject">
         <img data-src="../assets/images/wikiproject-screenshot.png"
         alt="Wikidata:WikiProjekt DH Tool Registry" />
-        <figcaption aria-hidden="true">Wikidata:WikiProjekt DH Tool
+        <figcaption>Abbildung 7: Wikidata:WikiProjekt DH Tool
         Registry</figcaption>
         </figure>
         </div>
@@ -2147,8 +1904,8 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <figure id="fig:data-model-minimal">
         <img data-src="../assets/images/data-model_minimal-v_1.png"
         alt="Minimales Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption aria-hidden="true">Minimales Datenmodell am Beispiel
-        der Beschreibung von “Gephi”</figcaption>
+        <figcaption>Abbildung 8: Minimales Datenmodell am Beispiel der
+        Beschreibung von “Gephi”</figcaption>
         </figure>
         </div>
         </div>
@@ -2163,83 +1920,37 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <figure id="fig:data-model-extended">
         <img data-src="../assets/images/data-model_extended-v_1.png"
         alt="Erweitertes Datenmodell am Beispiel der Beschreibung von “Gephi”" />
-        <figcaption aria-hidden="true">Erweitertes Datenmodell am
-        Beispiel der Beschreibung von “Gephi”</figcaption>
+        <figcaption>Abbildung 9: Erweitertes Datenmodell am Beispiel der
+        Beschreibung von “Gephi”</figcaption>
         </figure>
-        <aside class="notes">
-        <ul>
-        <li>the <strong>wichtigsten Properties</strong> sind:</li>
-        <li><a
-        href="https://www.wikidata.org/wiki/Property:P973"><code>described at URL</code></a>:
-        link to other tool registries or tutorials
-        <ul>
-        <li>tool registries
-        <ul>
-        <li><a href="https://tapor.ca/">TaPOR 3</a>: URLs follow the
-        pattern <code>https://tapor.ca/tools/{ID}</code>, e.g. <a
-        href="https://tapor.ca/tools/171"
-        class="uri">https://tapor.ca/tools/171</a> for Gephi.</li>
-        <li><a href="https://marketplace.sshopencloud.eu/">SSH Open
-        Marketplace</a>: URLs follow the pattern
-        <code>https://marketplace.sshopencloud.eu/tool-or-service/{ID}</code>,
-        e.g. <a
-        href="https://marketplace.sshopencloud.eu/tool-or-service/87wJWo"
-        class="uri">https://marketplace.sshopencloud.eu/tool-or-service/87wJWo</a>
-        for Gephi.</li>
-        </ul></li>
-        </ul></li>
-        <li><a
-        href="https://www.wikidata.org/wiki/Property:P1535"><code>used by</code></a>:
-        pointing to items for research papers, software packages,
-        project websites that make use of a specific tool. One can for
-        instance, as we did, query the full corpus of <a
-        href="http://digitalhumanities.org/dhq/"><em>Digital Humanities
-        Quarterly</em></a>, add bibliographical information for papers
-        to Wikidata and then point to the Wikidata item of this paper,
-        e.g. <a href="https://www.wikidata.org/wiki/Q122834645">Daniel
-        Burckhardt “Comparing Disciplinary Patterns: Exploring the
-        Humanities through the Lens of Scholarly Communication”</a>
-        makes use of Gephi.</li>
-        </ul>
-        </aside>
         </section>
         <section id="daten-sparql-abfragen" class="slide level2">
         <h2>Daten: SPARQL abfragen</h2>
         <div class="sourceCode" id="cb1"><pre
-        class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> ?tool ?toolLabel ?tadirahID ?methodLabel ?<span class="kw">method</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> {</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  ?<span class="kw">method</span> wdt<span class="ch">:P9309</span> ?tadirahID.</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  ?tool wdt<span class="ch">:P366</span> ?<span class="kw">method</span>;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    wdt<span class="ch">:P31</span><span class="op">/</span>wdt<span class="ch">:P279</span><span class="op">*</span> wd<span class="ch">:Q7397</span>.</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  SERVICE wikibase<span class="ch">:label</span> { bd<span class="ch">:serviceParam</span> wikibase<span class="ch">:language</span> <span class="ot">&quot;[AUTO_LANGUAGE],en&quot;</span>. }</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> ?toolLabel</span></code></pre></div>
-        <iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3FmethodLabel%20%3Fmethod%0AWHERE%20%7B%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20methods%0A%20%20%3Fmethod%20wdt%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20which%20are%20linked%20to%20these%20methods%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%23%20limit%20tools%20to%20software%20in%20the%20broadest%20sense%0A%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20%3FtoolLabel%0ALIMIT%201000" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups">
+        class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> ?tool ?toolLabel ?tadirahID ?<span class="kw">method</span> <span class="kw">WHERE</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  SERVICE wikibase<span class="ch">:label</span> { bd<span class="ch">:serviceParam</span> wikibase<span class="ch">:language</span> <span class="ot">&quot;[AUTO_LANGUAGE],en&quot;</span>. }</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  # <span class="kw">select</span> <span class="kw">all</span> items that have a TaDiRAH <span class="kw">ID</span> <span class="kw">and</span> are therefore assumed <span class="kw">to</span> be research methods</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  ?<span class="kw">method</span> p<span class="ch">:P9309</span> ?statement0.</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  ?statement0 ps<span class="ch">:P9309</span> ?tadirahID.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  # <span class="kw">select</span> <span class="kw">all</span> items that have assigned a <span class="kw">method</span> <span class="kw">from</span> our subset <span class="kw">through</span> `has use`</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  ?tool wdt<span class="ch">:P366</span> ?<span class="kw">method</span>;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        # <span class="kw">filter</span> <span class="cf">for</span> <span class="kw">all</span> items that are an `instance of` <span class="ot">&quot;software&quot;</span> <span class="kw">or</span> its subclasses</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        wdt<span class="ch">:P31</span><span class="op">/</span>wdt<span class="ch">:P279</span><span class="op">*</span> wd<span class="ch">:Q7397</span>.  </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+        <iframe style="height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Ftool%20%3FtoolLabel%20%3FtadirahID%20%3Fmethod%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%23%20select%20all%20items%20that%20have%20a%20TaDiRAH%20ID%20and%20are%20therefore%20assumed%20to%20be%20research%20methods%0A%20%20%3Fmethod%20p%3AP9309%20%3Fstatement0.%0A%20%20%3Fstatement0%20ps%3AP9309%20%3FtadirahID.%0A%20%20%23%20select%20all%20items%20that%20have%20assigned%20a%20method%20from%20our%20subset%20through%20%60has%20use%60%0A%20%20%3Ftool%20wdt%3AP366%20%3Fmethod%3B%0A%20%20%20%20%20%20%20%20%23%20filter%20for%20all%20items%20that%20are%20an%20%60instance%20of%60%20%22software%22%20or%20its%20subclasses%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ7397.%20%20%0A%7D%0A%23ORDER%20BY%20ASC%28%3FtadirahID%29%20ASC%28%3FtoolLabel%29%0ALIMIT%2050" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups">
         </iframe>
-        <aside class="notes">
-        <ul>
-        <li>SPARQL query
-        <ol type="1">
-        <li>Fragt alle items ab, die mit TaDiRAH verlinkt sind und die
-        wir deswegen als Methoden / betrachten</li>
-        <li>Fragt alle Items ab, die für diese Methoden eingesetzt
-        werden (<code>has use</code>)</li>
-        <li>Label werden in der Systemsprache ausgegeben</li>
-        </ol></li>
-        </ul>
-        </aside>
         </section>
         <section id="daten-demonstration-tadirah-mapping"
         class="slide level2">
         <h2>Daten: Demonstration TaDiRAH-Mapping</h2>
         <!--![](../assets/video/wikidata-tadirah-mapping-demo.webm)-->
-        <p><video controls autoplay loop width="100%" style="border: 1px solid #cfcfcf;">
+        <p><video controls autoplay width="100%" style="border: 1px solid #cfcfcf;">
         <source src="../assets/video/wikidata-tadirah-mapping-demo.webm" type="video/webm">
         Your browser does not support the video tag. </video></p>
         </section>
         <section id="prototypisches-frontend" class="slide level2">
         <h2>Prototypisches Frontend</h2>
-        <video controls autoplay loop width="100%" style="border: 1px solid #cfcfcf;">
+        <video controls autoplay width="100%" style="border: 1px solid #cfcfcf;">
         <source src="../assets/video/kdh-interface.webm" type="video/webm">
         <p>Your browser does not support the video tag. </video></p>
         <aside class="notes">
@@ -2279,8 +1990,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         </aside>
         </section></section>
         <section>
-        <section id="zusammenfassung-1"
-        class="title-slide slide level1">
+        <section id="zusammenfassung" class="title-slide slide level1">
         <h1>Zusammenfassung</h1>
 
         </section>
@@ -2320,66 +2030,16 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         <section id="vielen-dank-für-ihre-aufmerksamkeit"
         class="slide level2">
         <h2>Vielen Dank für Ihre Aufmerksamkeit!</h2>
-        <div class="columns">
-        <div class="column">
-        <h3 id="wikiproject">WikiProject</h3>
-        <p><a
-        href="https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry"><img
-        data-src="../assets/qrcodes/url_wikiproject.jpg"
-        alt="Link zu unserem [WikiProject][wikiproject]" /></a></p>
-        </div><div class="column">
-        <h3 id="frontend-prototyp">Frontend Prototyp</h3>
-        <p><a
-        href="https://furesh.github.io/tool-storage-interface/"><img
-        data-src="../assets/qrcodes/url_frontend.jpg"
-        alt="Link zum Frontend: &lt;https://furesh.github.io/tool-storage-interface/&gt;" /></a></p>
-        </div>
-        </div>
+        <figure>
+        <img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/url_wikiproject.jpg"
+        alt="Link zu unserem WikiProject" />
+        <figcaption aria-hidden="true">Link zu unserem <a
+        href="https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry">WikiProject</a></figcaption>
+        </figure>
         </section>
-        <section id="refs" class="slide level2 unnumbered">
-        <h2 class="unnumbered">Literatur</h2>
-        <div id="refs" class="references csl-bib-body hanging-indent"
-        data-entry-spacing="0" role="list">
-        <div id="ref-BarbotEtAl2019ToolsMentioned" class="csl-entry"
-        role="listitem">
-        Barbot, Laure, Frank Fischer, Yoann Moranville, und Ivan
-        Pozdniakov. 2019. <span>„Tools mentioned in the proceedings of
-        the annual ADHO conferences (2015–2019)“</span>. 6. Dezember
-        2019. <a
-        href="https://lehkost.github.io/tools-dh-proceedings/index.html">https://lehkost.github.io/tools-dh-proceedings/index.html</a>.
-        </div>
-        <div id="ref-BarbotEtAl2019WhichDHTools" class="csl-entry"
-        role="listitem">
-        ———. 2019. <span>„Which DH Tools Are Actually Used in
-        Research?“</span> <em>weltliteratur.net: A Black Market for the
-        Digital Humanities</em> (blog). 6. Dezember 2019. <a
-        href="https://weltliteratur.net/dh-tools-used-in-research/">https://weltliteratur.net/dh-tools-used-in-research/</a>.
-        </div>
-        <div id="ref-Dombrowski2021DirectoryParadox" class="csl-entry"
-        role="listitem">
-        Dombrowski, Quinn. 2021. <span>„The Directory Paradox“</span>.
-        In <em>People, Practice, Power: Digital Humanities Outside the
-        Center</em>, herausgegeben von Anne B. McGrail, Angel David
-        Nieves, und Siobhan Senier. Debates in the Digital Humanities.
-        Minneapolis: University of Minnesota Press. <a
-        href="https://www.upress.umn.edu/book-division/books/people-practice-power">https://www.upress.umn.edu/book-division/books/people-practice-power</a>.
-        </div>
-        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
-        Gil, Alex, und Élika Ortega. 2016. <span>„Global Outlooks in
-        Digital Humanities: Multilingual Practices and Minimal
-        Computing“</span>. In <em>Doing digital humanities: practice,
-        training, research</em>, herausgegeben von Constance Crompton,
-        Richard J Lane, und Ray Siemens, 22–34. Abingdon: Routledge.
-        </div>
-        <div id="ref-RisamGil2022Introduction" class="csl-entry"
-        role="listitem">
-        Risam, Roopika, und Alex Gil. 2022. <span>„Introduction: The
-        Questions of Minimal Computing“</span>. Herausgegeben von Alex
-        Gil und Roopika Risam. <em>Digital Humanities Quarterly</em> 16
-        (2, "Minimal Computing"). <a
-        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
-        </div>
-        </div>
+        <section id="refs" class="slide level2">
+        <h2>Literatur</h2>
         </section></section>
       </div>
     </div>
@@ -2390,7 +2050,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
     <script src="../revealjs/plugin/notes/notes.js"></script>
     <script src="../revealjs/plugin/search/search.js"></script>
     <script src="../revealjs/plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
@@ -2491,7 +2151,7 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-                autoSlide: 0,
+        autoSlide: 0,
 
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
@@ -2536,20 +2196,13 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1200,
-                        height: 1000,
-
-        // Factor of the display size that should remain empty around the content
-                margin: 0,
-
-        // Bounds for smallest/largest possible scale to apply to content
-
-
-
+                width: 1000,
+                        height: 800,
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2566,16 +2219,16 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2024-02-23</span>
+                    <span class="c_left">2023-10-06</span>
                             <span class="c_left">|</span>
             <span class="c_left">Sophie Eckenstaler, Till
-Grallert</span>
+Grallert, Claus-Michael Schlesinger, Samantha Tirtohusodo</span>
                         <span class="c_center">
-          <a href="https://furesh.github.io/slides/2024-02-23-iz-lunch-talk">https://furesh.github.io/slides/2024-02-23-iz-lunch-talk</a>
+          <a href="https://furesh.github.io/slides/2023-10-06-forge">https://furesh.github.io/slides/2023-10-06-forge</a>
           <span></span>
         </span>
                 <!-- this should probably moved to the title slide only -->
-        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+        <span id="institution" class="c_right"><a href="https://www.ub.hu-berlin.de">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>
     <script>

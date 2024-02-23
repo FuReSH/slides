@@ -10,7 +10,7 @@ institute:
   - "Institut für Geschichtswissenschaften"
   - "Future e-Research Support in the Humanities (FuReSH, DFG, 2022--25)"
   - "NFDI4Memory"
-homepage: https://makerspace.hypotheses.org/
+homepage: https://blogs.hu-berlin.de/furesh/
 event: IZ Lunch Talk
 date: 2024-02-23
 url: https://furesh.github.io/slides/2024-02-23-iz-lunch-talk
@@ -172,7 +172,39 @@ Forschende brauchen ein klares Verständnis dafür, welche Möglichkeiten (Forsc
 
 ## ![](../assets/images/logo_KDH-primary-HU-digital-blau.svg)
 
-Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanities" an der Universitätsbibliothek der Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle für *Digital History* (Inst.f. Geschichtswissenschaften) und *Information Processing and Analytics* (Inst.f. Bibliotheks- und Informationswissenschaften) einen **prototypischen *Scholarly Makerspace*** zur Förderung **digitaler** und **computationaler Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften auf (2022--25).
+Die Kompetenzwerkstatt Digital Humanities unterstützt Forscher*innen in allen Fragen computergestützter Forschung in den Geistes- und Kulturwissenschaften. 
+
+Unser Angebot umfasst: 
+
+- individuelle Beratung, 
+- Projektberatung, 
+- Workshops und Prototypenentwicklung. 
+
+Im Vordergrund steht dabei die Tool Literacy, das heißt die Entwicklung eigener Kompetenzen im Umgang mit digitalen Tools.
+
+
+::: columns
+
+#### Showcases
+
+:::: column
+
+- [Tool Registry mit Wikidata](https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry)
+- [Heraldik-Projekt mit Infrastrukturaufbau für die digitale Bildsammlung sowie Aufbau einer Online-Forschungsumgebung](https://digitalheraldry.org/)
+- [Datasprint mit großen Tweet-Korpora, März 2024](https://www.dnb.de/DE/Professionell/Sammeln/Sammlung_Websites/Twittertagung/twitterDatasprint.html?nn=246608)
+
+::::
+:::: column
+
+- [Workshop Hands-On Generative KI mit KDH KI-Playground](https://blogs.hu-berlin.de/furesh/2023/10/18/workshop-hands-on-generative-ki/)
+- Workshop OCR4All
+- [Vortragsreihe “Werkzeug”](https://hu.berlin/werkzeug)
+- Bildmetadaten scrapen mit Selenium
+
+::::
+:::
+
+DFG-Projekt 2022-2025
 
 # Toolverzeichnisse in den DH
 ## Überblick über ein sich kontinuierlich wandelndes Feld
@@ -442,12 +474,15 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 
 ::: columns
 :::: column
-
-- Methoden bzw. **Verfahren** sind durch **Theorien** informiert und haben einen _Zweck_. 
+ 
 - **Software-Werkzeuge** implementieren **Verfahren**
     + stellen Anforderungen an **Hardware** und Infrastrukturen
     + interagieren mit **Formaten** (lesen, schreiben).
     + sind in **Sprachen** geschrieben und benötigen ohne GUI **Sprachen** zur Interaktion.
+- Basisdatenmodell als gemeinsame Ausgangslage
+- Mapping nach nach [TaDiRAH](https://de.dariah.eu/tadirah) zur Methoden-Zuordnung sowie zur Wiederauffindbarkeit in Wikidata:
+
+>[...] anwendungsorientierte Taxonomie, die unter Einbeziehung der Community dazu dient, Ressourcen aus dem Kontext der digitalen Geisteswissenschaften nach bestimmten Kategorien des Forschungsprozesses klassifizieren zu können. 
 
 ::::
 :::: column
