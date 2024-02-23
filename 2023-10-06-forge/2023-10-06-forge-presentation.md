@@ -278,7 +278,7 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 ::: columns
 :::: narrow
 
-![Link zu unserem [WikiProject][wikiproject]](/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/assets/qrcodes/url_wikiproject.jpg)
+![Link zu unserem [WikiProject][wikiproject]](../assets/qrcodes/url_wikiproject.jpg)
 
 ::::
 :::: wide
