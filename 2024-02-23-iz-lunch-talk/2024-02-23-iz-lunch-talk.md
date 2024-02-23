@@ -82,7 +82,7 @@ NFDI4Memory fokussiert auf die spezifischen Herausforderungen der **Datafizierun
 
 ## Die Task Area "Data culture"
 
-Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
+>Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
 
 ::: columns
 :::: wide
@@ -108,12 +108,9 @@ Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdate
 
 ## Was meinen wir mit Datenkultur?
 
-Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
+>Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**
 
 ::: columns
-
-### Datenkultur
-
 :::: column
 
 ### im weiteren Sinne
@@ -131,6 +128,46 @@ eine **Fachkultur**, bei der (Forschungs-)daten und datengetriebener Methoden ei
 ::::
 :::
 
+::: columns
+
+### braucht
+
+:::: column
+
+Verständnis der theoretischen und epistemologischen Grundlagen und Implikationen der Datafizierung und Diskussion über deren Folgen
+
+::::
+:::: column
+
+Orientierung, Guidelines und Unterstützung
+
+::::
+:::
+
+# Werkzeug- und Methodenkritik
+## Das Methodenlabor als Experimentierwerkstatt <br/>an der Schnittstelle von Datenkultur im weiteren und engeren Sinn
+
+
+Forschende brauchen ein klares Verständnis dafür, welche Möglichkeiten (Forschungs-)Daten für ihre Arbeit bieten und welche Anforderungen spezifische Daten an Infrastruktur und Fähigkeiten stellen. Dafür sollen digitale und computationelle Methoden identifiziert und für ihre Anwendung in den historisch arbeitenden Wissenschaften evaluiert, erklärt und (nach)nutzbar bereitgestellt werden.
+
+::: columns
+
+#### Aufgaben
+
+:::: column
+
+
+- Evaluation und Exploration einzelner Methoden und deren Demonstration und Bereitstellung durch Tutorials und exemplarische Data Stories
+- Field Surveys zum Gebrauch von Forschungsdaten und computationellen Methoden in den Geschichtswissenschaften
+
+::::
+:::: column
+
+- Austausch mit DH-Zentren
+- Förderung kollaborativer Projekte durch gemeinsame Bearbeitung von Fallstudien aus der Community
+
+::::
+:::
 
 
 ## ![](../assets/images/logo_KDH-primary-HU-digital-blau.svg)
