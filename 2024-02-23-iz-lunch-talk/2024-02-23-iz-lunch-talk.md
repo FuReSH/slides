@@ -164,10 +164,6 @@ Orientierung, Guidelines und Unterstützung
 ::::
 :::
 
-## Werkzeug- und Methodenkritik
-
-<!-- eine der Measures innerhalb der TA5 -->
-
 ## Das Methodenlabor als Experimentierwerkstatt <br/>an der Schnittstelle von Datenkultur im weiteren und engeren Sinn
 
 
