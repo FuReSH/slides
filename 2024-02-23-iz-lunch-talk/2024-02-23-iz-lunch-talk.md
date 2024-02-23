@@ -46,6 +46,23 @@ nocite: |
 ::::
 :::
 
+::: notes
+
+- Sophie
+    - Fokus auf Research Software Engineering
+    + Hintergrund: Museologie, Medieninformatik sowie Digital History (MA)
+    + Position: 
+        + Doktorandin und Wimi am Lehrstuhl Digital History
+        + WiMi an der UB im Projekt FuReSH
+- Till
+    - Hintergrund: Sozial- und Mediengeschichte des östlichen Mittelmeerraumes vom 19. bis 21. Jahrhundert. Mit einer Geschichte der Strasse promoviert worden.
+    - Fokus auf Methodenkritik, Critical Code and Infrastructure Studies, Global and Multilingual DH unter den Bedingungen des Globalen Südens
+    - Position:
+        - WiMi im Projekt NFDI4Memory
+        - Leitung des Methods Innovation Lab
+
+:::
+
 ## NFDI4Memory
 
 NFDI4Memory fokussiert auf die spezifischen Herausforderungen der **Datafizierung** für:
@@ -68,11 +85,8 @@ NFDI4Memory fokussiert auf die spezifischen Herausforderungen der **Datafizierun
 :::
 
 
-::: {.alert .red}
+![](../assets/images/nfdi4memory_tas.png)
 
-**Datafizierung** bezeichnet den Prozess der zunehmenden Erfassung, Speicherung und Analyse von Daten in allen Bereichen der Gesellschaft, gefördert durch die digitale Transformation und die Entwicklung fortgeschrittener Technologien. Dieser Prozess führt zu einem grundlegenden Wandel in der Generierung, Verarbeitung und Nutzung von Informationen, wobei Daten zu einem zentralen Bestandteil in nahezu allen Aspekten des Lebens und der Arbeit werden.
-
-:::
 
 ::: notes
 
@@ -86,7 +100,7 @@ NFDI4Memory fokussiert auf die spezifischen Herausforderungen der **Datafizierun
 
 >Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
 
-## Die Task Area "Data culture"
+## Die Notwendigkeit eines Kulturwandels
 
 >Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
 
@@ -150,7 +164,10 @@ Orientierung, Guidelines und Unterstützung
 ::::
 :::
 
-# Werkzeug- und Methodenkritik
+## Werkzeug- und Methodenkritik
+
+<!-- eine der Measures innerhalb der TA5 -->
+
 ## Das Methodenlabor als Experimentierwerkstatt <br/>an der Schnittstelle von Datenkultur im weiteren und engeren Sinn
 
 
@@ -561,7 +578,7 @@ ORDER BY ?toolLabel
 
 ## Vielen Dank für Ihre Aufmerksamkeit!
 
-::: columns
+::: columns-3
 :::: column
 
 ### WikiProject
@@ -569,6 +586,13 @@ ORDER BY ?toolLabel
 [![Link zu unserem [WikiProject][wikiproject]](../assets/qrcodes/url_wikiproject.jpg)][wikiproject]
 
 ::::
+:::: column
+
+### DHd2024
+
+[![](../assets/qrcodes/poster_dhd2024.svg)](https://doi.org/10.5281/zenodo.10657609)
+
+:::: 
 :::: column
 
 ### Frontend Prototyp
