@@ -36,12 +36,12 @@ nocite: |
 ::: columns
 :::: column
 
-![Sophie Eckenstaler, IfG und UB, Kompetenzwerkstatt DH](https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png)
+![Sophie Eckenstaler, IfG und UB, Kompetenzwerkstatt DH](https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png){style="width:400px"}
 
 ::::
 :::: column
 
-![Till Grallert, IfG, NFDI4Memory, Methods Innovation Lab](https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png)
+![Till Grallert, IfG, NFDI4Memory, Methods Innovation Lab](https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png){style="width:400px"}
 
 ::::
 :::
@@ -79,6 +79,12 @@ NFDI4Memory fokussiert auf die spezifischen Herausforderungen der **Datafizierun
 **Datafizierung** bezeichnet den Prozess der zunehmenden Erfassung, Speicherung und Analyse von Daten in allen Bereichen der Gesellschaft, gefördert durch die digitale Transformation und die Entwicklung fortgeschrittener Technologien. Dieser Prozess führt zu einem grundlegenden Wandel in der Generierung, Verarbeitung und Nutzung von Informationen, wobei Daten zu einem zentralen Bestandteil in nahezu allen Aspekten des Lebens und der Arbeit werden.
 
 :::
+
+## Die Task Area "Data culture"
+
+![](../assets/images/photos/nfdi4memory_ta-5.png)
+
+>Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
 
 ## Die Task Area "Data culture"
 
