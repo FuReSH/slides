@@ -368,6 +368,9 @@
                     table {
                         font-size: 0.8em;
                     }
+                    .small-font {
+                        font-size: 70%;
+                    }
                     /******************
                     set colours
                     *******************/
@@ -743,9 +746,6 @@
                         width: 31%;
                         position: relative;
                         float: left;
-                    }
-                    .columns .small-font {
-                        font-size: 70%;
                     }
                     .c_left {
                         display: block;
@@ -1350,13 +1350,28 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /* alerts */
+                    /******************
+                    alerts
+                    *******************/
+
+
                     div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                        border-color: red;
+                    /*    border-color: red;*/
+                        background-color: white;
                         margin-left: 2em;
                         border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
                     }
                     .green {
                         color: green;
@@ -1541,16 +1556,18 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         der <strong>Datafizierung</strong> für:</p>
         <div class="columns">
         <div class="column">
-        <p>Disziplinen, die historische Methoden anwenden (also zunächst
-        einmal die Geschichtswissenschaften selbst) und</p>
+        <h3 id="disziplinen-die">1. Disziplinen, die …</h3>
+        <p>… historische Methoden anwenden (also zunächst einmal die
+        Geschichtswissenschaften selbst).</p>
         </div><div class="column">
-        <p>Disziplinen, die auf Daten angewiesen sind, die eine
-        historische Kontextualisierung erfordern (also so gut wie alle
-        anderen Geistes- und Sozialwissenschaftlichen Disziplinen,
-        inklusive GLAM Institutionen)</p>
+        <h3 id="disziplinen-die-1">2. Disziplinen, die …</h3>
+        <p>… auf Daten angewiesen sind, die eine historische
+        Kontextualisierung erfordern (also so gut wie alle anderen
+        Geistes- und Sozialwissenschaftlichen Disziplinen, inklusive
+        GLAM Institutionen).</p>
         </div>
         </div>
-        <div class="note">
+        <div class="alert red">
         <p><strong>Datafizierung</strong> bezeichnet den Prozess der
         zunehmenden Erfassung, Speicherung und Analyse von Daten in
         allen Bereichen der Gesellschaft, gefördert durch die digitale
@@ -1560,6 +1577,16 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         wobei Daten zu einem zentralen Bestandteil in nahezu allen
         Aspekten des Lebens und der Arbeit werden.</p>
         </div>
+        <aside class="notes">
+        <p><strong>Datafizierung</strong> bezeichnet den Prozess der
+        zunehmenden Erfassung, Speicherung und Analyse von Daten in
+        allen Bereichen der Gesellschaft, gefördert durch die digitale
+        Transformation und die Entwicklung fortgeschrittener
+        Technologien. Dieser Prozess führt zu einem grundlegenden Wandel
+        in der Generierung, Verarbeitung und Nutzung von Informationen,
+        wobei Daten zu einem zentralen Bestandteil in nahezu allen
+        Aspekten des Lebens und der Arbeit werden.</p>
+        </aside>
         </section>
         <section id="die-task-area-data-culture" class="slide level2">
         <h2>Die Task Area “Data culture”</h2>
@@ -1594,8 +1621,31 @@ Support in the Humanities (FuReSH, DFG, 2022–25)</p>
         </section>
         </div>
         </section>
-        <section id="die-task-area-data-culture-1" class="slide level2">
-        <h2>Die Task Area “Data culture”</h2>
+        <section id="was-meinen-wir-mit-datenkultur"
+        class="slide level2">
+        <h2>Was meinen wir mit Datenkultur?</h2>
+        <p>Aus der <strong>Datafizierung</strong> folgt, dass unsere
+        Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt
+        werden kann, sondern zugleich von einem datafizierten
+        Forschungsprozess ausgehen müssen. Ein datafizierter
+        Forschungsprozess jedoch bedarf einer gelebten
+        <strong>Datenkultur</strong>.</p>
+        <div class="columns">
+        <h3 id="datenkultur">Datenkultur</h3><div class="column">
+        <h3 id="im-weiteren-sinne">im weiteren Sinne</h3>
+        <p>eine <strong>Fachkultur</strong>, bei der (Forschungs-)daten
+        und datengetriebener Methoden ein integraler Bestandteil sind,
+        die Arbeit mit und an Daten also nicht mehr als ein netter
+        Appendix zum “eigentlichen” Forschungsprozess verstanden
+        wird.</p>
+        </div><div class="column">
+        <h3 id="im-engeren-sinne">im engeren Sinne</h3>
+        <p><strong>alltägliche Praktiken</strong> und
+        Verantwortlichkeiten (auch rechtlich und ethisch) im Umgang mit
+        Forschungsdaten, bei deren Erzeugung, Bereitstellung und Nutzung
+        mit Hilfe von computationellen Methoden und Werkzeugen.</p>
+        </div>
+        </div>
         </section>
         <section id="section" class="slide level2">
         <h2><img

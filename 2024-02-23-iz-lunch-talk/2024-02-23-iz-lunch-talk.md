@@ -53,17 +53,28 @@ NFDI4Memory fokussiert auf die spezifischen Herausforderungen der **Datafizierun
 ::: columns
 :::: column
 
-Disziplinen, die historische Methoden anwenden (also zunächst einmal die Geschichtswissenschaften selbst) und
+### 1. Disziplinen, die ...
+
+... historische Methoden anwenden (also zunächst einmal die Geschichtswissenschaften selbst).
 
 ::::
 :::: column
 
-Disziplinen, die auf Daten angewiesen sind, die eine historische Kontextualisierung erfordern (also so gut wie alle anderen Geistes- und Sozialwissenschaftlichen Disziplinen, inklusive GLAM Institutionen)
+### 2. Disziplinen, die ...
+
+... auf Daten angewiesen sind, die eine historische Kontextualisierung erfordern (also so gut wie alle anderen Geistes- und Sozialwissenschaftlichen Disziplinen, inklusive GLAM Institutionen).
 
 ::::
 :::
 
-::: note
+
+::: {.alert .red}
+
+**Datafizierung** bezeichnet den Prozess der zunehmenden Erfassung, Speicherung und Analyse von Daten in allen Bereichen der Gesellschaft, gefördert durch die digitale Transformation und die Entwicklung fortgeschrittener Technologien. Dieser Prozess führt zu einem grundlegenden Wandel in der Generierung, Verarbeitung und Nutzung von Informationen, wobei Daten zu einem zentralen Bestandteil in nahezu allen Aspekten des Lebens und der Arbeit werden.
+
+:::
+
+::: notes
 
 **Datafizierung** bezeichnet den Prozess der zunehmenden Erfassung, Speicherung und Analyse von Daten in allen Bereichen der Gesellschaft, gefördert durch die digitale Transformation und die Entwicklung fortgeschrittener Technologien. Dieser Prozess führt zu einem grundlegenden Wandel in der Generierung, Verarbeitung und Nutzung von Informationen, wobei Daten zu einem zentralen Bestandteil in nahezu allen Aspekten des Lebens und der Arbeit werden.
 
@@ -95,8 +106,30 @@ Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdate
 :::
 
 
-## Die Task Area "Data culture"
+## Was meinen wir mit Datenkultur?
 
+Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
+
+::: columns
+
+### Datenkultur
+
+:::: column
+
+### im weiteren Sinne
+
+eine **Fachkultur**, bei der (Forschungs-)daten und datengetriebener Methoden ein integraler Bestandteil sind, die Arbeit mit und an Daten also nicht mehr als ein netter Appendix zum “eigentlichen” Forschungsprozess verstanden wird.
+
+::::
+:::: column
+
+### im engeren Sinne
+
+**alltägliche Praktiken** und Verantwortlichkeiten (auch rechtlich und ethisch) im Umgang mit Forschungsdaten, bei deren Erzeugung, Bereitstellung und Nutzung mit Hilfe von computationellen Methoden und Werkzeugen.
+
+
+::::
+:::
 
 
 
