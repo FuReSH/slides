@@ -31,6 +31,78 @@ nocite: |
 
 # Hintergrund 
 # Wer sind wir? <br/>Und warum bauen **wir** ein weiteres Toolverzeichnis für die Digital Humanities?
+## Wer sind wir?
+
+::: columns
+:::: column
+
+![Sophie Eckenstaler, IfG und UB, Kompetenzwerkstatt DH](https://furesh.github.io/slides/assets/images/photos/portrait_se-circle.png)
+
+::::
+:::: column
+
+![Till Grallert, IfG, NFDI4Memory, Methods Innovation Lab](https://furesh.github.io/slides/assets/images/photos/portrait_tg-circle.png)
+
+::::
+:::
+
+## NFDI4Memory
+
+NFDI4Memory fokussiert auf die spezifischen Herausforderungen der **Datafizierung** für:
+
+::: columns
+:::: column
+
+Disziplinen, die historische Methoden anwenden (also zunächst einmal die Geschichtswissenschaften selbst) und
+
+::::
+:::: column
+
+Disziplinen, die auf Daten angewiesen sind, die eine historische Kontextualisierung erfordern (also so gut wie alle anderen Geistes- und Sozialwissenschaftlichen Disziplinen, inklusive GLAM Institutionen)
+
+::::
+:::
+
+::: note
+
+**Datafizierung** bezeichnet den Prozess der zunehmenden Erfassung, Speicherung und Analyse von Daten in allen Bereichen der Gesellschaft, gefördert durch die digitale Transformation und die Entwicklung fortgeschrittener Technologien. Dieser Prozess führt zu einem grundlegenden Wandel in der Generierung, Verarbeitung und Nutzung von Informationen, wobei Daten zu einem zentralen Bestandteil in nahezu allen Aspekten des Lebens und der Arbeit werden.
+
+:::
+
+## Die Task Area "Data culture"
+
+Aus der **Datafizierung** folgt, dass unsere Arbeit nicht auf das Forschungsdatenmanagement (FDM) verengt werden kann, sondern zugleich von einem datafizierten Forschungsprozess ausgehen müssen. Ein datafizierter Forschungsprozess jedoch bedarf einer gelebten **Datenkultur**.
+
+::: columns
+:::: wide
+
+### Ausgangslage
+
+- Nutzung von Forschungsdaten und datengetriebener Methoden in den historisch arbeitenden Fächern noch wenig verbreitet
+- Konzept, Inhalt und Potential von Forschungsdaten und deren Nutzen noch weitgehend unbekannt
+- Vorbehalte gegen datengetriebene Methoden und die Arbeit mit Forschungsdaten
+- Sich stetig verändernder technisch-kultureller Kontext mit neuen Herausforderungen (Digitalität → KI-Zeitalter)
+
+::::
+:::: narrow
+
+### Zielstellung
+
+- Den Aufbau einer robusten und nachhaltigen, innovativen und kritisch-reflektierenden Datenkultur in den historisch arbeitenden Fächern fördern und gestalten
+- Die Akzeptanz von Forschungsdaten und datengetriebener Forschung erhöhen
+
+::::
+:::
+
+
+## Die Task Area "Data culture"
+
+
+
+
+## ![](../assets/images/logo_KDH-primary-HU-digital-blau.svg)
+
+Wir bauen im Rahmen des DFG-Projekts "Future e-Research Support in the Humanities" an der Universitätsbibliothek der Humboldt-Universität zu Berlin unter Beteiligung der Lehrstühle für *Digital History* (Inst.f. Geschichtswissenschaften) und *Information Processing and Analytics* (Inst.f. Bibliotheks- und Informationswissenschaften) einen **prototypischen *Scholarly Makerspace*** zur Förderung **digitaler** und **computationaler Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften auf (2022--25).
 
 # Toolverzeichnisse in den DH
 ## Überblick über ein sich kontinuierlich wandelndes Feld
